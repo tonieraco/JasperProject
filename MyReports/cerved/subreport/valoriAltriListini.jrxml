@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.4.3.final using JasperReports Library version 6.4.3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="CervedElementiComparazione" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="4e841fd9-2393-43fe-beaa-74213041040c">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<subDataset name="omiDataset" uuid="1d9c428f-79b3-4bf1-ac81-c864345e1537">
+		<field name="valoriAltriListini" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.cerved.data.CervedPdfValoriAltriListini">
+			<fieldDescription><![CDATA[_THIS]]></fieldDescription>
+		</field>
+	</subDataset>
+	<parameter name="data" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.cerved.data.CervedPdfMainCollection"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="77" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<textField>
+				<reportElement positionType="Float" mode="Opaque" x="0" y="3" width="525" height="14" forecolor="#FFFFFF" backcolor="#879C3F" uuid="ad20afb8-e852-4137-a949-42c382e26ab1">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<box leftPadding="1" rightPadding="1">
+					<topPen lineWidth="1.0" lineColor="#C9CDD3"/>
+					<leftPen lineWidth="0.0" lineColor="#C9CDD3"/>
+					<bottomPen lineWidth="1.0" lineColor="#C9CDD3"/>
+					<rightPen lineWidth="0.0" lineColor="#C9CDD3"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial_BNL" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Valori altri listini"]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="17" width="525" height="60" uuid="f1a44a3c-9c53-452a-8ae5-1667b5397e8d">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="net.sf.jasperreports.export.headertoolbar.table.name" value=""/>
+				</reportElement>
+				<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
+					<datasetRun subDataset="omiDataset" uuid="c4244f76-d132-4457-b6a8-648601a92b49">
+						<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{data}.getValoriAltriListini())]]></dataSourceExpression>
+					</datasetRun>
+					<jr:listContents height="60" width="525">
+						<textField isStretchWithOverflow="true">
+							<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="0" y="0" width="300" height="15" backcolor="#C9CDD3" uuid="621530b2-460c-4d81-b469-8f0fca963384">
+								<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+							</reportElement>
+							<box leftPadding="2">
+								<pen lineWidth="0.5" lineColor="#ACAFB5"/>
+							</box>
+							<textElement verticalAlignment="Middle">
+								<font fontName="Arial_BNL" size="8"/>
+							</textElement>
+							<textFieldExpression><![CDATA["Fonte: " + $F{valoriAltriListini}.getFonteDiRiferimento()]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true">
+							<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="300" y="0" width="224" height="15" backcolor="#C9CDD3" uuid="14ad1557-15a2-4964-88ca-1ee287064946">
+								<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+								<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							</reportElement>
+							<box leftPadding="2">
+								<pen lineWidth="0.5" lineColor="#ACAFB5"/>
+							</box>
+							<textElement verticalAlignment="Middle">
+								<font fontName="Arial_BNL" size="8"/>
+							</textElement>
+							<textFieldExpression><![CDATA["Categoria: " + $F{valoriAltriListini}.getCategoria()]]></textFieldExpression>
+						</textField>
+						<frame>
+							<reportElement positionType="Float" x="0" y="30" width="524" height="15" uuid="1eecc100-bb81-4951-b143-ee93f1ec4278"/>
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="174" y="0" width="174" height="15" uuid="e3a01ca8-9bf0-4e20-b005-63b4009d0bce">
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box leftPadding="2">
+									<topPen lineWidth="1.0" lineColor="#C9CDD3"/>
+									<leftPen lineWidth="1.0" lineColor="#C9CDD3"/>
+									<bottomPen lineWidth="1.0" lineColor="#C9CDD3"/>
+									<rightPen lineWidth="1.0" lineColor="#C9CDD3"/>
+								</box>
+								<textElement verticalAlignment="Middle">
+									<font fontName="Arial_BNL" size="8"/>
+								</textElement>
+								<textFieldExpression><![CDATA["Val max di vendita: " + $F{valoriAltriListini}.getValoreMaxVenduto()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="174" height="15" uuid="de2ab397-b150-4bb3-9fd7-58c6706b1e45">
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+								</reportElement>
+								<box leftPadding="2">
+									<topPen lineWidth="1.0" lineColor="#C9CDD3"/>
+									<leftPen lineWidth="1.0" lineColor="#C9CDD3"/>
+									<bottomPen lineWidth="1.0" lineColor="#C9CDD3"/>
+									<rightPen lineWidth="1.0" lineColor="#C9CDD3"/>
+								</box>
+								<textElement verticalAlignment="Middle">
+									<font fontName="Arial_BNL" size="8"/>
+								</textElement>
+								<textFieldExpression><![CDATA["Val min di vendita: " + $F{valoriAltriListini}.getValoreMinVenduto()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="348" y="0" width="176" height="15" uuid="3a617788-315b-46ac-965d-d18b41836265">
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									<property name="com.jaspersoft.studio.unit.width" value="px"/>
+								</reportElement>
+								<box leftPadding="2">
+									<topPen lineWidth="1.0" lineColor="#C9CDD3"/>
+									<leftPen lineWidth="1.0" lineColor="#C9CDD3"/>
+									<bottomPen lineWidth="1.0" lineColor="#C9CDD3"/>
+									<rightPen lineWidth="1.0" lineColor="#C9CDD3"/>
+								</box>
+								<textElement verticalAlignment="Middle">
+									<font fontName="Arial_BNL" size="8"/>
+								</textElement>
+								<textFieldExpression><![CDATA["Val medio di vendita: " + $F{valoriAltriListini}.getValoreMedioVenduto()]]></textFieldExpression>
+							</textField>
+						</frame>
+						<textField isStretchWithOverflow="true">
+							<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="0" y="15" width="380" height="15" backcolor="#C9CDD3" uuid="afd3e6ed-82a2-4b77-97bd-cd77bed76097">
+								<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+							</reportElement>
+							<box leftPadding="2">
+								<pen lineWidth="0.5" lineColor="#ACAFB5"/>
+							</box>
+							<textElement verticalAlignment="Middle">
+								<font fontName="Arial_BNL" size="8"/>
+							</textElement>
+							<textFieldExpression><![CDATA["Comune/Zona/Stato: " + $F{valoriAltriListini}.getComuneZonaStato()]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true">
+							<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="380" y="15" width="144" height="15" backcolor="#C9CDD3" uuid="4ac00ef0-7fe3-46ed-acac-4db5e2926c77">
+								<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+								<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							</reportElement>
+							<box leftPadding="2">
+								<pen lineWidth="0.5" lineColor="#ACAFB5"/>
+							</box>
+							<textElement verticalAlignment="Middle">
+								<font fontName="Arial_BNL" size="8"/>
+							</textElement>
+							<textFieldExpression><![CDATA["Anno: " + $F{valoriAltriListini}.getAnnoDiRiferimento()]]></textFieldExpression>
+						</textField>
+					</jr:listContents>
+				</jr:list>
+			</componentElement>
+		</band>
+	</detail>
+</jasperReport>

@@ -1,0 +1,818 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 7.0.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2026-08-27T16:58:20 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="170c5b6d-6a79-4601-801c-974412c4fe64">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<subDataset name="operesDataset" uuid="dad8a960-cbff-4831-9a42-5ad2d0784ab6">
+		<field name="operes" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.bancobpm.data.BancoBPMPdfDataOpere">
+			<fieldDescription><![CDATA[_THIS]]></fieldDescription>
+		</field>
+	</subDataset>
+	<parameter name="data" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.bancobpm.data.BancoBPMPdfData"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="500">
+			<frame>
+				<reportElement positionType="Float" x="0" y="0" width="555" height="112" uuid="bb73bca4-8a91-4904-9ce5-728396e3a096"/>
+				<textField>
+					<reportElement mode="Opaque" x="0" y="0" width="430" height="24" backcolor="#B4C6E7" uuid="adb7461a-a0f8-42d6-8d66-4c92d1f9ae7f"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["PIANO DI INVESTIMENTO DELL'INIZIATIVA"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="430" y="0" width="125" height="24" backcolor="#D9E1F2" uuid="44291fce-fa9d-49cc-ad8e-1a84d77866a5"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getId()]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="0" y="24" width="220" height="24" backcolor="#D9E1F2" uuid="e29985fe-6f15-4a82-a315-a392b9447c2a"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["DITTA MUTUATARIA"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="220" y="24" width="335" height="24" backcolor="#D9E1F2" uuid="974253d9-eb5d-4f23-bdc1-33621158e004"/>
+					<box padding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="0" y="52" width="40" height="20" backcolor="#D9E1F2" uuid="c83e15b1-3c21-4d85-ae28-94ca6e94cb84"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["n."]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="40" y="52" width="365" height="20" backcolor="#D9E1F2" uuid="fe62d36c-621b-4a97-a931-6f29443b390f"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Descrizione delle opere"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="405" y="52" width="50" height="20" backcolor="#D9E1F2" uuid="4ee98e0c-d2e4-40f5-ae9d-7e0cff6b9aab"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["%"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="455" y="52" width="50" height="20" backcolor="#D9E1F2" uuid="af91e83a-3dee-47e0-9a23-af507f434c2f"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Realizzato"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="505" y="52" width="50" height="20" backcolor="#D9E1F2" uuid="2478df86-906e-4f94-8e86-cad0065a005c"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["% Totale"]]></textFieldExpression>
+				</textField>
+				<componentElement>
+					<reportElement positionType="Float" x="0" y="72" width="555" height="20" backcolor="#EDEDED" uuid="add5dcba-12fd-4942-ab98-fa79c15a9a79">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<property name="net.sf.jasperreports.export.headertoolbar.table.name" value=""/>
+					</reportElement>
+					<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
+						<datasetRun subDataset="operesDataset" uuid="309d5e29-a647-4972-bb87-d72fa317041f">
+							<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{data}.getOperes())]]></dataSourceExpression>
+						</datasetRun>
+						<jr:listContents height="20" width="555">
+							<frame>
+								<reportElement positionType="Float" x="0" y="0" width="555" height="20" uuid="b3439dc8-02be-4f3f-b107-be93ae4f5d81"/>
+								<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+									<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="40" height="20" forecolor="#000000" uuid="a85ff200-ac97-427c-a9ef-4857340fcb4a"/>
+									<box leftPadding="2">
+										<pen lineWidth="0.5" lineColor="#000000"/>
+									</box>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$F{operes}.getNum()]]></textFieldExpression>
+								</textField>
+								<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+									<reportElement stretchType="RelativeToTallestObject" x="40" y="0" width="365" height="20" forecolor="#000000" uuid="1e48ac5e-1786-4504-bf31-a6e4cce905dc"/>
+									<box padding="2">
+										<pen lineWidth="0.5" lineColor="#000000"/>
+									</box>
+									<textElement textAlignment="Left" verticalAlignment="Middle">
+										<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$F{operes}.getDescrizione()]]></textFieldExpression>
+								</textField>
+								<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+									<reportElement stretchType="RelativeToTallestObject" x="405" y="0" width="50" height="20" forecolor="#000000" uuid="3e5c389a-086c-4243-a6c4-1e5757d3077d"/>
+									<box padding="2">
+										<pen lineWidth="0.5" lineColor="#000000"/>
+									</box>
+									<textElement textAlignment="Right" verticalAlignment="Middle">
+										<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$F{operes}.getPercentuale()]]></textFieldExpression>
+								</textField>
+								<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+									<reportElement stretchType="RelativeToTallestObject" x="505" y="0" width="50" height="20" forecolor="#000000" uuid="4e739af1-fd63-44f7-b166-50b24185c1bf"/>
+									<box padding="2">
+										<pen lineWidth="0.5" lineColor="#000000"/>
+									</box>
+									<textElement textAlignment="Right" verticalAlignment="Middle">
+										<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$F{operes}.getPercentualeTotale()]]></textFieldExpression>
+								</textField>
+								<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+									<reportElement stretchType="RelativeToTallestObject" x="455" y="0" width="50" height="20" forecolor="#000000" uuid="c417794b-903a-474e-899d-6c3c86b0421f"/>
+									<box padding="2">
+										<pen lineWidth="0.5" lineColor="#000000"/>
+									</box>
+									<textElement textAlignment="Right" verticalAlignment="Middle">
+										<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$F{operes}.getRealizzato()]]></textFieldExpression>
+								</textField>
+							</frame>
+						</jr:listContents>
+					</jr:list>
+				</componentElement>
+				<frame>
+					<reportElement positionType="Float" x="0" y="92" width="555" height="20" uuid="2723aa2f-442c-4d67-a58b-d4cadb5022f6"/>
+					<textField>
+						<reportElement mode="Transparent" x="0" y="0" width="405" height="20" backcolor="#D9E1F2" uuid="317b3180-c489-498d-8bef-939d0d51312c"/>
+						<box>
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="true"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Totale investimenti effettuati in %"]]></textFieldExpression>
+					</textField>
+					<textField isBlankWhenNull="true">
+						<reportElement positionType="Float" mode="Transparent" x="405" y="0" width="50" height="20" backcolor="#D9E1F2" uuid="e2ccde0c-5230-4dd3-881e-792c0ad70d46"/>
+						<box padding="2">
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Right" verticalAlignment="Middle">
+							<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="true"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{data}.getTabellaSALtotaleInvestimentiPercentuale()]]></textFieldExpression>
+					</textField>
+					<textField isBlankWhenNull="true">
+						<reportElement positionType="Float" mode="Transparent" x="455" y="0" width="50" height="20" backcolor="#D9E1F2" uuid="a34ee467-a510-4fd1-abdf-b93cdc88baed"/>
+						<box padding="2">
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Right" verticalAlignment="Middle">
+							<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="true"/>
+						</textElement>
+						<textFieldExpression><![CDATA[""]]></textFieldExpression>
+					</textField>
+					<textField isBlankWhenNull="true">
+						<reportElement positionType="Float" mode="Transparent" x="505" y="0" width="50" height="20" backcolor="#D9E1F2" uuid="654c20ac-ff3e-47df-ab45-7bcbdd008f53"/>
+						<box padding="2">
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Right" verticalAlignment="Middle">
+							<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="true"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{data}.getTabellaSALtotaleInvestimentiPercentualeTotale()]]></textFieldExpression>
+					</textField>
+				</frame>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="118" width="555" height="224" uuid="7fe389cd-f9a0-463c-8269-2faf39071b2a"/>
+				<textField>
+					<reportElement positionType="Float" mode="Opaque" x="0" y="0" width="555" height="24" backcolor="#B4C6E7" uuid="86e3ce3c-aa27-45dc-8a9a-cf66d4bd94d7"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Calcolo degli investimenti effettuati"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement positionType="Float" mode="Transparent" x="0" y="24" width="180" height="20" backcolor="#D9E1F2" uuid="637de4c7-a752-49f3-8439-5c6573f40c40"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Costi desunti dalla perizia d'impianto n."]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Transparent" x="180" y="24" width="255" height="20" backcolor="#D9E1F2" uuid="4c7309f1-0d73-4a7a-892b-2617d014ad7c"/>
+					<box padding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getTabellaSALCostiDesunti()]]></textFieldExpression>
+				</textField>
+				<frame>
+					<reportElement positionType="Float" x="0" y="44" width="555" height="20" uuid="67ccf5e9-16ac-4be3-9c07-9517fd318d4f"/>
+					<box padding="0"/>
+					<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+						<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="0" y="0" width="180" height="20" backcolor="#D9E1F2" uuid="3d4f228d-f40e-46c6-94bf-47c0761977c2"/>
+						<box padding="2">
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+						</textElement>
+						<textFieldExpression><![CDATA["VOCI DI COSTO"]]></textFieldExpression>
+					</textField>
+					<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+						<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="180" y="0" width="180" height="20" backcolor="#D9E1F2" uuid="c7baefd0-3a5f-45b3-84fd-b806e39f62ef"/>
+						<box padding="2">
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+						</textElement>
+						<textFieldExpression><![CDATA["COSTO TOTALE FINANZIABILE"]]></textFieldExpression>
+					</textField>
+					<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+						<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="360" y="0" width="75" height="20" backcolor="#D9E1F2" uuid="8275dd6f-58be-4672-b1ba-d10084ca3029"/>
+						<box padding="2">
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+						</textElement>
+						<textFieldExpression><![CDATA["% d'esecuzione"]]></textFieldExpression>
+					</textField>
+					<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+						<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="435" y="0" width="120" height="20" backcolor="#D9E1F2" uuid="59f792d6-2ad6-42fc-915b-d2db89abf1ea"/>
+						<box padding="2">
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+						</textElement>
+						<textFieldExpression><![CDATA["COSTI SOSTENUTI"]]></textFieldExpression>
+					</textField>
+				</frame>
+				<textField>
+					<reportElement positionType="Float" mode="Transparent" x="0" y="64" width="180" height="20" backcolor="#D9E1F2" uuid="02f721c7-5a69-4c3c-a2aa-b23159d46b61"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Opere edili"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement positionType="Float" mode="Transparent" x="0" y="84" width="180" height="20" backcolor="#D9E1F2" uuid="f6bf5ef7-f4c1-4098-b089-48d1388b1dae"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Urbanizzazioni e contributi concessori"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement positionType="Float" mode="Transparent" x="0" y="164" width="435" height="20" backcolor="#D9E1F2" uuid="0cfc5a6d-5aeb-464a-8d44-838ee49ef9da"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="true" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Arrotondamento"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement positionType="Float" mode="Transparent" x="0" y="104" width="180" height="20" backcolor="#D9E1F2" uuid="a2140f96-d7bd-40a5-9aba-552212ab9818"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Spese tecniche"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement positionType="Float" mode="Transparent" x="0" y="124" width="180" height="20" backcolor="#D9E1F2" uuid="e487bdce-f497-40af-bba8-87039d738cf8"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="true" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Totale costi di costruzione"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement positionType="Float" mode="Transparent" x="0" y="144" width="435" height="20" backcolor="#D9E1F2" uuid="b5f2e940-45dc-4dd0-8caa-94ebc943fda5"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Area / Fabbricato"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement positionType="Float" mode="Transparent" x="0" y="184" width="435" height="20" backcolor="#D9E1F2" uuid="496a445b-756a-4ec5-9a89-384e8fd266ce"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="true" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["TOTALE COSTI INVESTITI"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement positionType="Float" mode="Transparent" x="0" y="204" width="435" height="20" backcolor="#D9E1F2" uuid="031bd098-e5cd-4dd1-8283-5b53069c1c07"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="true" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["OPERE RESIDUE"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Transparent" x="180" y="64" width="180" height="20" backcolor="#D9E1F2" uuid="a25ad201-5a34-450b-88f8-a334daee0a49"/>
+					<box padding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getTabellaSALOpereEdiliTotFinanziabile()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Transparent" x="180" y="84" width="180" height="20" backcolor="#D9E1F2" uuid="37b26ca6-6cc1-4897-9913-4d81a542d3de"/>
+					<box padding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getTabellaSALUrbanizzazioniTotFinanziabile()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Transparent" x="180" y="104" width="180" height="20" backcolor="#D9E1F2" uuid="425480cd-d684-425b-aa2a-8417387fff50"/>
+					<box padding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getTabellaSALSpeseTecnicheTotFinanziabile()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Transparent" x="180" y="124" width="180" height="20" backcolor="#D9E1F2" uuid="e27c222f-f9ca-4bb7-a843-078e31c45b42"/>
+					<box padding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getTabellaSALTotaleCostiTotFinanziabile()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Transparent" x="360" y="84" width="75" height="20" backcolor="#D9E1F2" uuid="be021c92-1fe4-4b96-a056-c1a790034960"/>
+					<box padding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getTabellaSALUrbanizzazioniPercEsecuzione()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Transparent" x="360" y="104" width="75" height="20" backcolor="#D9E1F2" uuid="cbb8c475-a806-43ee-be92-aa6fe37207e0"/>
+					<box padding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getTabellaSALSpeseTecnichePercEsecuzione()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Transparent" x="360" y="64" width="75" height="20" backcolor="#D9E1F2" uuid="397d3b76-fed3-4de4-89c7-2cb7bec157f4"/>
+					<box padding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getTabellaSALOpereEdiliPercEsecuzione()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Transparent" x="360" y="124" width="75" height="20" backcolor="#D9E1F2" uuid="c929dd67-2442-4021-a3ce-d48fb37db189"/>
+					<box padding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getTabellaSALTotaleCostiPercEsecuzione()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Transparent" x="435" y="84" width="120" height="20" backcolor="#D9E1F2" uuid="5d553628-0618-4c5a-8b0d-abf6cc5fdddb"/>
+					<box padding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getTabellaSALUrbanizzazioniCostiSostenuti()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Transparent" x="435" y="104" width="120" height="20" backcolor="#D9E1F2" uuid="0fd7678b-801e-49fb-8134-efb9154e3ff5"/>
+					<box padding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getTabellaSALSpeseTecnicheCostiSostenuti()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Transparent" x="435" y="64" width="120" height="20" backcolor="#D9E1F2" uuid="c147e91b-a314-4450-9913-079ddf7d9b70"/>
+					<box padding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getTabellaSALOpereEdiliCostiSostenuti()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Transparent" x="435" y="124" width="120" height="20" backcolor="#D9E1F2" uuid="57d5c5d7-1a70-4e47-b061-84614bf86623"/>
+					<box padding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getTabellaSALTotaleCostiCostiSostenuti()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Transparent" x="435" y="144" width="120" height="20" backcolor="#D9E1F2" uuid="63cf2c68-a784-44cf-86d6-9f34bad63234"/>
+					<box padding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getTabellaSALFabbricatoCostiSostenuti()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Transparent" x="435" y="204" width="120" height="20" backcolor="#D9E1F2" uuid="37fa0e8b-d923-44e5-88cd-e4e89578242c"/>
+					<box padding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getTabellaSALOpereResidueCostiSostenuti()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Transparent" x="435" y="164" width="120" height="20" backcolor="#D9E1F2" uuid="09bf5b5b-bb3f-4caf-b827-4afddda06057"/>
+					<box padding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getTabellaSALArrotondamentoCostiSostenuti()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Transparent" x="435" y="184" width="120" height="20" backcolor="#D9E1F2" uuid="9ffa37fb-1554-417e-9426-e71c0485f870"/>
+					<box padding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getTabellaSALTotaleCostiInvestitiCostiSostenuti()]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="348" width="555" height="84" isRemoveLineWhenBlank="true" uuid="5bf748c5-df1f-4c94-a143-06fbd7841ef4">
+					<printWhenExpression><![CDATA[$P{data}.isTabellaSALIndicatoriControlloVisibile() == true]]></printWhenExpression>
+				</reportElement>
+				<textField>
+					<reportElement mode="Opaque" x="0" y="0" width="555" height="24" backcolor="#B4C6E7" uuid="65718bfa-e2f3-46e3-836a-bf417db8cc99"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Indicatori di controllo SAL delle sole Opere Edili"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement positionType="Float" mode="Transparent" x="0" y="24" width="180" height="20" backcolor="#D9E1F2" uuid="d3741e05-ff6e-440b-bbbe-d76961d54e81"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Perizia SAL precedente ID N."]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Opaque" x="180" y="24" width="80" height="20" backcolor="#FFFFCC" uuid="12232661-4cae-4c6f-a715-ca02eda3ec8e"/>
+					<box padding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getTabellaSALPeriziaPrecedenteId()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Transparent" x="260" y="24" width="40" height="40" backcolor="#D9E1F2" uuid="8aaddaed-6e5f-4563-aa68-c3ab5c2fedfb"/>
+					<box padding="0">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["del"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Transparent" x="180" y="44" width="80" height="20" backcolor="#D9E1F2" uuid="e88458a8-7761-4af5-9f1c-c9a7e1f2e158"/>
+					<box padding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getId()]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement positionType="Float" mode="Transparent" x="0" y="44" width="180" height="20" backcolor="#D9E1F2" uuid="6845dc0b-7387-4744-9663-ac21a009d91c"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Perizia SAL ATTUALE ID N."]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Opaque" x="300" y="24" width="70" height="20" backcolor="#FFFFCC" uuid="2ce67f86-7848-477c-b762-d1b919ba37d8"/>
+					<box padding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getTabellaSALPeriziaPrecedenteData()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Transparent" x="300" y="44" width="70" height="20" backcolor="#D9E1F2" uuid="492ced36-2a13-4003-8f8c-680a02e80c72"/>
+					<box padding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getTabellaSALPeriziaData()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Transparent" x="370" y="44" width="80" height="20" backcolor="#D9E1F2" uuid="ab33495a-ce8b-4c60-8164-6f0b1df413e3"/>
+					<box padding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["avanzamento"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Transparent" x="370" y="24" width="80" height="20" backcolor="#D9E1F2" uuid="3522292f-2c75-402c-9a51-83da2a3786b2"/>
+					<box padding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["avanzamento"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Transparent" x="500" y="24" width="54" height="40" backcolor="#D9E1F2" uuid="8d89f068-0a8f-406d-b90a-fe94ae24ceda"/>
+					<box padding="0">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Incremento medio mensile"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement positionType="Float" mode="Transparent" x="0" y="64" width="300" height="20" backcolor="#D9E1F2" uuid="8f9aafa7-cf1b-4250-8071-1aa63f7fea24"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Mesi trascorsi dal SAL precedente"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Transparent" x="300" y="64" width="70" height="20" backcolor="#D9E1F2" uuid="440e38d2-f144-428d-a860-ea6f10823bd5"/>
+					<box padding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getTabellaSALMesiTrascorsiSALPrecedente()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Transparent" x="370" y="64" width="80" height="20" backcolor="#D9E1F2" uuid="4553bf4d-d9ea-467e-9347-f8ffaf32f038"/>
+					<box padding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["differenza"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Transparent" x="500" y="64" width="55" height="20" backcolor="#D9E1F2" uuid="dcd9f72a-8ef4-49fa-baf7-e18c647a40ea"/>
+					<box padding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getTabellaSALIncrementoMedioMensile()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Transparent" x="450" y="64" width="50" height="20" backcolor="#D9E1F2" uuid="b3169510-dae4-465f-be2f-5ff2ace8c9dd"/>
+					<box padding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getTabellaSALPercAvanzamentoDifferenza()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Transparent" x="450" y="44" width="50" height="20" backcolor="#D9E1F2" uuid="81b7bb6d-2aa7-40e7-900a-6a9e794d7edb"/>
+					<box padding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getTabellaSALPeriziaPercAvanzamento()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Opaque" x="450" y="24" width="50" height="20" backcolor="#FFFFCC" uuid="41292ce1-bcb9-40fa-8753-a81eb30af20f"/>
+					<box padding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getTabellaSALPeriziaPrecedentePercAvanzamento()]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="1" y="439" width="525" height="61" isRemoveLineWhenBlank="true" uuid="d62eb2cd-0cf6-4962-a528-b6fc23982c32"/>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Opaque" x="0" y="11" width="140" height="20" backcolor="#FFFFFF" uuid="50a19fa1-2937-4568-8ef4-9dffcf9bbc83"/>
+					<box padding="2">
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Justified" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Luogo, Data"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement key="" positionType="Float" mode="Transparent" x="0" y="31" width="140" height="10" forecolor="#000000" backcolor="rgba(135, 156, 63, 0.0)" uuid="8fa48575-f42c-4937-ae6d-baa44739c996">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="3">
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial" size="8" isBold="false" isItalic="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getLuogoData()]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement positionType="Float" mode="Transparent" x="140" y="0" width="385" height="61" forecolor="#FFFFFF" backcolor="#FFFFFF" uuid="f1bf53ff-aaab-4f2d-b4c9-190b417a2264">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+					</reportElement>
+					<box leftPadding="5" rightPadding="1">
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement verticalAlignment="Top">
+						<font fontName="Arial_BNL" size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Firme"]]></textFieldExpression>
+				</textField>
+				<image hAlign="Center" vAlign="Middle">
+					<reportElement positionType="Float" x="349" y="10" width="150" height="50" uuid="3807d0a6-353f-41cb-abf2-90391d862dcd">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					</reportElement>
+					<imageExpression><![CDATA[$P{data}.getSignaturePath()]]></imageExpression>
+				</image>
+				<frame>
+					<reportElement x="159" y="11" width="190" height="40" isRemoveLineWhenBlank="true" uuid="14d8455b-1366-41ef-9160-a14caa12f64c"/>
+					<textField isBlankWhenNull="true">
+						<reportElement x="0" y="1" width="190" height="10" uuid="5939208c-6766-4b77-bb6c-9554260a8ec8"/>
+						<box>
+							<topPen lineWidth="0.0"/>
+						</box>
+						<textElement textAlignment="Center">
+							<font fontName="Arial_BNL" size="8" isItalic="true"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{data}.getRevisore()]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement x="0" y="11" width="190" height="10" isRemoveLineWhenBlank="true" uuid="f3584347-d958-41bb-a420-c35243459080"/>
+						<box>
+							<topPen lineWidth="0.0"/>
+						</box>
+						<textElement textAlignment="Center">
+							<font fontName="Arial_BNL" size="8" isItalic="true"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Il gestore"]]></textFieldExpression>
+					</textField>
+					<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+						<reportElement x="0" y="21" width="180" height="10" uuid="f1febfa6-86d1-4ccd-b877-f7d62e6b9a35"/>
+						<box>
+							<topPen lineWidth="0.0"/>
+						</box>
+						<textElement textAlignment="Center">
+							<font fontName="Arial_BNL" size="8" isItalic="true"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{data}.getCertificazioneRevisore()]]></textFieldExpression>
+					</textField>
+				</frame>
+			</frame>
+		</band>
+	</detail>
+</jasperReport>

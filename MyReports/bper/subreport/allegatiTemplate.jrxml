@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2016-06-03T11:35:02 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="allegatiTemplate" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="94c6156b-62ab-41aa-a6c3-095c98a1f4df">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="tipoDocumento" class="java.lang.String">
+		<fieldDescription><![CDATA[tipoDocumento]]></fieldDescription>
+	</field>
+	<field name="descrizione" class="java.lang.String">
+		<fieldDescription><![CDATA[descrizione]]></fieldDescription>
+	</field>
+	<field name="filename" class="java.lang.String">
+		<fieldDescription><![CDATA[filename]]></fieldDescription>
+	</field>
+	<detail>
+		<band height="27" splitType="Stretch">
+			<textField>
+				<reportElement x="10" y="4" width="210" height="14" uuid="5bd8a82c-c999-4c50-a582-a8aeb585d800">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{descrizione}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

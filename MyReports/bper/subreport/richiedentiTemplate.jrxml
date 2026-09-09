@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.2.final using JasperReports Library version 6.2.2  -->
+<!-- 2016-06-06T17:38:33 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="richiedentiTemplate" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="953bbc89-def8-4aaf-9540-4f35f8ef3ea0">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="nome" class="java.lang.String">
+		<fieldDescription><![CDATA[nome]]></fieldDescription>
+	</field>
+	<field name="cognome" class="java.lang.String">
+		<fieldDescription><![CDATA[cognome]]></fieldDescription>
+	</field>
+	<field name="telefono" class="java.lang.String">
+		<fieldDescription><![CDATA[telefono]]></fieldDescription>
+	</field>
+	<field name="cellulare" class="java.lang.String">
+		<fieldDescription><![CDATA[cellulare]]></fieldDescription>
+	</field>
+	<field name="email" class="java.lang.String">
+		<fieldDescription><![CDATA[email]]></fieldDescription>
+	</field>
+	<detail>
+		<band height="14" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="0" width="112" height="14" uuid="88a1bfae-727f-4a9c-b12b-24fde9c70747">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box leftPadding="2">
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nome}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="112" y="0" width="116" height="14" uuid="ad6f5ef9-3f41-474b-900e-a3f7ce2387f0">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box leftPadding="2">
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cognome}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="228" y="0" width="100" height="14" uuid="ff93a4e6-ab79-47b2-9403-85dff42dfbe2">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box leftPadding="2">
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{telefono}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="328" y="0" width="93" height="14" uuid="ec25c2c4-d199-4df1-add4-cfa404801656">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box leftPadding="2">
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cellulare}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="421" y="0" width="126" height="14" uuid="b5da5964-a6c5-4167-b957-d6f3a2874f96">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box leftPadding="2">
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

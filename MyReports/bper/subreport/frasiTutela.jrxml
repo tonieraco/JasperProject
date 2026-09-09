@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.0.final using JasperReports Library version 6.3.0  -->
+<!-- 2026-06-10T11:40:06 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="CervedElementiComparazione" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="4e841fd9-2393-43fe-beaa-74213041040c">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="data" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.bper.data.BPERPdfMainCollection"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="40" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<frame>
+				<reportElement positionType="Float" x="0" y="0" width="555" height="40" uuid="44ac7018-ac4b-4e3a-a904-6953bb0bfa6e">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="2">
+					<topPen lineWidth="1.0" lineColor="#C9CDD3"/>
+					<leftPen lineWidth="1.0" lineColor="#C9CDD3"/>
+					<bottomPen lineWidth="1.0" lineColor="#C9CDD3"/>
+					<rightPen lineWidth="1.0" lineColor="#C9CDD3"/>
+				</box>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement key="" mode="Transparent" x="0" y="0" width="543" height="40" forecolor="#000000" backcolor="rgba(135, 156, 63, 0.0)" uuid="fb7f3d9b-0253-4097-a577-37c8395ea67a">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box bottomPadding="2">
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					</box>
+					<textElement textAlignment="Justified" verticalAlignment="Top" markup="styled">
+						<font fontName="Arial" size="8" isItalic="false"/>
+						<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+					</textElement>
+					<textFieldExpression><![CDATA["L'istituto di credito e Cerved Group S.p.A. convengono che l'istituto del Gruppo BPER Banca è e resta l'unico committente e proprietario della presente perizia-RdV. I criteri di stima, i contenuti e la documentazione di corredo della presente perizia-RdV sono esclusivamente finalizzati ad eventuale esposizione creditizia immobiliare. L'istituto del Gruppo BPER Banca e Cerved Group S.p.A. non sono responsabili in alcun modo, dal punto di vista sia tecnico-estimativo che amministrativo e giuridico-legale, dell'utilizzo della presente perizia-RdV (nonché suoi contenuti e corredo documentale) per scopi non strettamente connaturati a quello citato, ritenendo improprio ogni altro loro uso o fruizione esterna all'incarico formalizzato tra l'istituto del Gruppo BPER Banca e Cerved Group S.p.A."]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+</jasperReport>

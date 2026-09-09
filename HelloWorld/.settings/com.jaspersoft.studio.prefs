@@ -1,0 +1,11 @@
+com.jaspersoft.studio.compatibility.version=last
+com.jaspersoft.studio.jr.compile.version=6.3.0
+com.jaspersoft.studio.theme.ui.dark=pageBackground\=0,0,0\ncontainerMarginColor\=0,255,0\ngridColor\=255,255,255\nelementDesignBorderColor\=255,255,0\npageMarginColor\=255,0,0\n
+com.jaspersoft.studio.theme.ui.light=pageBackground\=255,255,255\ncontainerMarginColor\=170,168,255\ngridColor\=192,192,192\nelementDesignBorderColor\=0,0,0\npageMarginColor\=170,168,255\n
+com.jaspersoft.studio.timestamp.onsave=true
+eclipse.preferences.version=1
+net.sf.jasperreports.JRPROPERTIES=net.sf.jasperreports.web.resource.pattern.customvisualization.scripts\=com/jaspersoft/jasperreports/customvisualization/resources/require/.*\nnet.sf.jasperreports.compiler.temp.dir\=C\\\:\\\\Users\\\\CG08449\\\\dev\\\\jaspersoftstudio\nnet.sf.jasperreports.chrome.enabled\=true\nnet.sf.jasperreports.compiler.classpath\=C\\\:\\\\Users\\\\CG08449\\\\dev\\\\jaspersoftstudio\\\\\\\\plugins/org.eclipse.equinox.launcher_1.6.500.v20230717-2134.jar\nnet.sf.jasperreports.chrome.page.isolate\=true\nnet.sf.jasperreports.chrome.argument.remote-allow-origins\=*\n
+pageDEFAULTUNITS=pixel
+tableCrosstabChangeStyle=ask_everytime
+tableCrosstabDelete=ask_everytime
+tableCrosstabDeleteStyle=ask_everytime

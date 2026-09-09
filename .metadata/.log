@@ -1,0 +1,949 @@
+!SESSION 2026-09-04 08:55:16.644 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_EN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data @noDefault
+
+This is a continuation of log file C:\Users\CG08449\JaspersoftWorkspace6\.metadata\.bak_0.log
+Created Time: 2026-09-04 14:34:09.297
+
+!ENTRY com.jaspersoft.studio 4 0 2026-09-04 14:34:09.297
+!MESSAGE Problem occurred when trying to load the resource: caratteristicheLimitiIncarico.jasper
+!STACK 0
+net.sf.jasperreports.engine.JRRuntimeException: net.sf.jasperreports.engine.JRException: Error loading object from InputStream.
+	at net.sf.jasperreports.repo.SerializedObjectPersistenceService.load(SerializedObjectPersistenceService.java:66)
+	at net.sf.jasperreports.repo.SerializedReportPersistenceService.load(SerializedReportPersistenceService.java:46)
+	at net.sf.jasperreports.repo.FileRepositoryService.getResource(FileRepositoryService.java:236)
+	at com.jaspersoft.studio.utils.jasper.JSSFileRepositoryService.doGetResource(JSSFileRepositoryService.java:86)
+	at com.jaspersoft.studio.utils.jasper.JSSFileRepositoryService.getResource(JSSFileRepositoryService.java:76)
+	at net.sf.jasperreports.repo.RepositoryUtil.getResourceFromLocation(RepositoryUtil.java:149)
+	at net.sf.jasperreports.repo.RepositoryUtil.getReport(RepositoryUtil.java:117)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.loadReport(JRFillSubreport.java:481)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.loadReportSource(JRFillSubreport.java:446)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.getReportSource(JRFillSubreport.java:420)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluateReportSource(JRFillSubreport.java:369)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluateSubreport(JRFillSubreport.java:507)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluate(JRFillSubreport.java:361)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:283)
+	at net.sf.jasperreports.engine.fill.JRFillFrame.evaluate(JRFillFrame.java:175)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:283)
+	at net.sf.jasperreports.engine.fill.JRFillFrame.evaluate(JRFillFrame.java:175)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:283)
+	at net.sf.jasperreports.engine.fill.JRFillBand.evaluate(JRFillBand.java:530)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillColumnBand(JRVerticalFiller.java:2614)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillDetail(JRVerticalFiller.java:837)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReportStart(JRVerticalFiller.java:276)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReport(JRVerticalFiller.java:119)
+	at net.sf.jasperreports.engine.fill.JRBaseFiller.fill(JRBaseFiller.java:625)
+	at net.sf.jasperreports.engine.fill.BaseReportFiller.fill(BaseReportFiller.java:435)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.fillSubreport(JRFillSubreport.java:831)
+	at net.sf.jasperreports.engine.fill.JRSubreportRunnable.run(JRSubreportRunnable.java:61)
+	at net.sf.jasperreports.engine.fill.AbstractThreadSubreportRunner.run(AbstractThreadSubreportRunner.java:221)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: net.sf.jasperreports.engine.JRException: Error loading object from InputStream.
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:229)
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:209)
+	at net.sf.jasperreports.repo.SerializedObjectPersistenceService.load(SerializedObjectPersistenceService.java:62)
+	... 30 more
+Caused by: java.io.EOFException
+	at java.base/java.io.ObjectInputStream$PeekInputStream.readFully(Unknown Source)
+	at java.base/java.io.ObjectInputStream$BlockDataInputStream.readShort(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readStreamHeader(Unknown Source)
+	at java.base/java.io.ObjectInputStream.<init>(Unknown Source)
+	at net.sf.jasperreports.engine.util.ContextClassLoaderObjectInputStream.<init>(ContextClassLoaderObjectInputStream.java:56)
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:224)
+	... 32 more
+
+!ENTRY com.jaspersoft.studio 4 0 2026-09-04 14:34:27.562
+!MESSAGE Problem occurred when trying to load the resource: caratteristicheLimitiIncarico.jasper
+!STACK 0
+net.sf.jasperreports.engine.JRRuntimeException: net.sf.jasperreports.engine.JRException: Error loading object from InputStream.
+	at net.sf.jasperreports.repo.SerializedObjectPersistenceService.load(SerializedObjectPersistenceService.java:66)
+	at net.sf.jasperreports.repo.SerializedReportPersistenceService.load(SerializedReportPersistenceService.java:46)
+	at net.sf.jasperreports.repo.DefaultRepositoryService.getResource(DefaultRepositoryService.java:176)
+	at com.jaspersoft.studio.utils.jasper.JSSFileRepositoryService.doGetResource(JSSFileRepositoryService.java:86)
+	at com.jaspersoft.studio.utils.jasper.JSSFileRepositoryService.getResource(JSSFileRepositoryService.java:76)
+	at net.sf.jasperreports.repo.RepositoryUtil.getResourceFromLocation(RepositoryUtil.java:149)
+	at net.sf.jasperreports.repo.RepositoryUtil.getReport(RepositoryUtil.java:117)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.loadReport(JRFillSubreport.java:481)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.loadReportSource(JRFillSubreport.java:446)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.getReportSource(JRFillSubreport.java:420)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluateReportSource(JRFillSubreport.java:369)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluateSubreport(JRFillSubreport.java:507)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluate(JRFillSubreport.java:361)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:283)
+	at net.sf.jasperreports.engine.fill.JRFillFrame.evaluate(JRFillFrame.java:175)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:283)
+	at net.sf.jasperreports.engine.fill.JRFillFrame.evaluate(JRFillFrame.java:175)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:283)
+	at net.sf.jasperreports.engine.fill.JRFillBand.evaluate(JRFillBand.java:530)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillColumnBand(JRVerticalFiller.java:2614)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillDetail(JRVerticalFiller.java:837)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReportStart(JRVerticalFiller.java:276)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReport(JRVerticalFiller.java:119)
+	at net.sf.jasperreports.engine.fill.JRBaseFiller.fill(JRBaseFiller.java:625)
+	at net.sf.jasperreports.engine.fill.BaseReportFiller.fill(BaseReportFiller.java:435)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.fillSubreport(JRFillSubreport.java:831)
+	at net.sf.jasperreports.engine.fill.JRSubreportRunnable.run(JRSubreportRunnable.java:61)
+	at net.sf.jasperreports.engine.fill.AbstractThreadSubreportRunner.run(AbstractThreadSubreportRunner.java:221)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: net.sf.jasperreports.engine.JRException: Error loading object from InputStream.
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:229)
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:209)
+	at net.sf.jasperreports.repo.SerializedObjectPersistenceService.load(SerializedObjectPersistenceService.java:62)
+	... 30 more
+Caused by: java.io.EOFException
+	at java.base/java.io.ObjectInputStream$PeekInputStream.readFully(Unknown Source)
+	at java.base/java.io.ObjectInputStream$BlockDataInputStream.readShort(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readStreamHeader(Unknown Source)
+	at java.base/java.io.ObjectInputStream.<init>(Unknown Source)
+	at net.sf.jasperreports.engine.util.ContextClassLoaderObjectInputStream.<init>(ContextClassLoaderObjectInputStream.java:56)
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:224)
+	... 32 more
+
+!ENTRY com.jaspersoft.studio 4 0 2026-09-04 14:34:27.566
+!MESSAGE Problem occurred when trying to load the resource: caratteristicheLimitiIncarico.jasper
+!STACK 0
+net.sf.jasperreports.engine.JRRuntimeException: net.sf.jasperreports.engine.JRException: Error loading object from InputStream.
+	at net.sf.jasperreports.repo.SerializedObjectPersistenceService.load(SerializedObjectPersistenceService.java:66)
+	at net.sf.jasperreports.repo.SerializedReportPersistenceService.load(SerializedReportPersistenceService.java:46)
+	at net.sf.jasperreports.repo.FileRepositoryService.getResource(FileRepositoryService.java:236)
+	at com.jaspersoft.studio.utils.jasper.JSSFileRepositoryService.doGetResource(JSSFileRepositoryService.java:86)
+	at com.jaspersoft.studio.utils.jasper.JSSFileRepositoryService.getResource(JSSFileRepositoryService.java:76)
+	at net.sf.jasperreports.repo.RepositoryUtil.getResourceFromLocation(RepositoryUtil.java:149)
+	at net.sf.jasperreports.repo.RepositoryUtil.getReport(RepositoryUtil.java:117)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.loadReport(JRFillSubreport.java:481)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.loadReportSource(JRFillSubreport.java:446)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.getReportSource(JRFillSubreport.java:420)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluateReportSource(JRFillSubreport.java:369)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluateSubreport(JRFillSubreport.java:507)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluate(JRFillSubreport.java:361)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:283)
+	at net.sf.jasperreports.engine.fill.JRFillFrame.evaluate(JRFillFrame.java:175)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:283)
+	at net.sf.jasperreports.engine.fill.JRFillFrame.evaluate(JRFillFrame.java:175)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:283)
+	at net.sf.jasperreports.engine.fill.JRFillBand.evaluate(JRFillBand.java:530)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillColumnBand(JRVerticalFiller.java:2614)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillDetail(JRVerticalFiller.java:837)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReportStart(JRVerticalFiller.java:276)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReport(JRVerticalFiller.java:119)
+	at net.sf.jasperreports.engine.fill.JRBaseFiller.fill(JRBaseFiller.java:625)
+	at net.sf.jasperreports.engine.fill.BaseReportFiller.fill(BaseReportFiller.java:435)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.fillSubreport(JRFillSubreport.java:831)
+	at net.sf.jasperreports.engine.fill.JRSubreportRunnable.run(JRSubreportRunnable.java:61)
+	at net.sf.jasperreports.engine.fill.AbstractThreadSubreportRunner.run(AbstractThreadSubreportRunner.java:221)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: net.sf.jasperreports.engine.JRException: Error loading object from InputStream.
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:229)
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:209)
+	at net.sf.jasperreports.repo.SerializedObjectPersistenceService.load(SerializedObjectPersistenceService.java:62)
+	... 30 more
+Caused by: java.io.EOFException
+	at java.base/java.io.ObjectInputStream$PeekInputStream.readFully(Unknown Source)
+	at java.base/java.io.ObjectInputStream$BlockDataInputStream.readShort(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readStreamHeader(Unknown Source)
+	at java.base/java.io.ObjectInputStream.<init>(Unknown Source)
+	at net.sf.jasperreports.engine.util.ContextClassLoaderObjectInputStream.<init>(ContextClassLoaderObjectInputStream.java:56)
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:224)
+	... 32 more
+
+!ENTRY com.jaspersoft.studio 4 0 2026-09-04 14:35:02.255
+!MESSAGE Problem occurred when trying to load the resource: caratteristicheLimitiIncarico.jasper
+!STACK 0
+net.sf.jasperreports.engine.JRRuntimeException: net.sf.jasperreports.engine.JRException: Error loading object from InputStream.
+	at net.sf.jasperreports.repo.SerializedObjectPersistenceService.load(SerializedObjectPersistenceService.java:66)
+	at net.sf.jasperreports.repo.SerializedReportPersistenceService.load(SerializedReportPersistenceService.java:46)
+	at net.sf.jasperreports.repo.DefaultRepositoryService.getResource(DefaultRepositoryService.java:176)
+	at com.jaspersoft.studio.utils.jasper.JSSFileRepositoryService.doGetResource(JSSFileRepositoryService.java:86)
+	at com.jaspersoft.studio.utils.jasper.JSSFileRepositoryService.getResource(JSSFileRepositoryService.java:76)
+	at net.sf.jasperreports.repo.RepositoryUtil.getResourceFromLocation(RepositoryUtil.java:149)
+	at net.sf.jasperreports.repo.RepositoryUtil.getReport(RepositoryUtil.java:117)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.loadReport(JRFillSubreport.java:481)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.loadReportSource(JRFillSubreport.java:446)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.getReportSource(JRFillSubreport.java:420)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluateReportSource(JRFillSubreport.java:369)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluateSubreport(JRFillSubreport.java:507)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluate(JRFillSubreport.java:361)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:283)
+	at net.sf.jasperreports.engine.fill.JRFillFrame.evaluate(JRFillFrame.java:175)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:283)
+	at net.sf.jasperreports.engine.fill.JRFillFrame.evaluate(JRFillFrame.java:175)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:283)
+	at net.sf.jasperreports.engine.fill.JRFillBand.evaluate(JRFillBand.java:530)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillColumnBand(JRVerticalFiller.java:2614)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillDetail(JRVerticalFiller.java:837)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReportStart(JRVerticalFiller.java:276)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReport(JRVerticalFiller.java:119)
+	at net.sf.jasperreports.engine.fill.JRBaseFiller.fill(JRBaseFiller.java:625)
+	at net.sf.jasperreports.engine.fill.BaseReportFiller.fill(BaseReportFiller.java:435)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.fillSubreport(JRFillSubreport.java:831)
+	at net.sf.jasperreports.engine.fill.JRSubreportRunnable.run(JRSubreportRunnable.java:61)
+	at net.sf.jasperreports.engine.fill.AbstractThreadSubreportRunner.run(AbstractThreadSubreportRunner.java:221)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: net.sf.jasperreports.engine.JRException: Error loading object from InputStream.
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:229)
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:209)
+	at net.sf.jasperreports.repo.SerializedObjectPersistenceService.load(SerializedObjectPersistenceService.java:62)
+	... 30 more
+Caused by: java.io.EOFException
+	at java.base/java.io.ObjectInputStream$PeekInputStream.readFully(Unknown Source)
+	at java.base/java.io.ObjectInputStream$BlockDataInputStream.readShort(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readStreamHeader(Unknown Source)
+	at java.base/java.io.ObjectInputStream.<init>(Unknown Source)
+	at net.sf.jasperreports.engine.util.ContextClassLoaderObjectInputStream.<init>(ContextClassLoaderObjectInputStream.java:56)
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:224)
+	... 32 more
+
+!ENTRY com.jaspersoft.studio 4 0 2026-09-04 14:35:02.265
+!MESSAGE Problem occurred when trying to load the resource: caratteristicheLimitiIncarico.jasper
+!STACK 0
+net.sf.jasperreports.engine.JRRuntimeException: net.sf.jasperreports.engine.JRException: Error loading object from InputStream.
+	at net.sf.jasperreports.repo.SerializedObjectPersistenceService.load(SerializedObjectPersistenceService.java:66)
+	at net.sf.jasperreports.repo.SerializedReportPersistenceService.load(SerializedReportPersistenceService.java:46)
+	at net.sf.jasperreports.repo.FileRepositoryService.getResource(FileRepositoryService.java:236)
+	at com.jaspersoft.studio.utils.jasper.JSSFileRepositoryService.doGetResource(JSSFileRepositoryService.java:86)
+	at com.jaspersoft.studio.utils.jasper.JSSFileRepositoryService.getResource(JSSFileRepositoryService.java:76)
+	at net.sf.jasperreports.repo.RepositoryUtil.getResourceFromLocation(RepositoryUtil.java:149)
+	at net.sf.jasperreports.repo.RepositoryUtil.getReport(RepositoryUtil.java:117)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.loadReport(JRFillSubreport.java:481)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.loadReportSource(JRFillSubreport.java:446)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.getReportSource(JRFillSubreport.java:420)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluateReportSource(JRFillSubreport.java:369)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluateSubreport(JRFillSubreport.java:507)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluate(JRFillSubreport.java:361)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:283)
+	at net.sf.jasperreports.engine.fill.JRFillFrame.evaluate(JRFillFrame.java:175)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:283)
+	at net.sf.jasperreports.engine.fill.JRFillFrame.evaluate(JRFillFrame.java:175)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:283)
+	at net.sf.jasperreports.engine.fill.JRFillBand.evaluate(JRFillBand.java:530)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillColumnBand(JRVerticalFiller.java:2614)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillDetail(JRVerticalFiller.java:837)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReportStart(JRVerticalFiller.java:276)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReport(JRVerticalFiller.java:119)
+	at net.sf.jasperreports.engine.fill.JRBaseFiller.fill(JRBaseFiller.java:625)
+	at net.sf.jasperreports.engine.fill.BaseReportFiller.fill(BaseReportFiller.java:435)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.fillSubreport(JRFillSubreport.java:831)
+	at net.sf.jasperreports.engine.fill.JRSubreportRunnable.run(JRSubreportRunnable.java:61)
+	at net.sf.jasperreports.engine.fill.AbstractThreadSubreportRunner.run(AbstractThreadSubreportRunner.java:221)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: net.sf.jasperreports.engine.JRException: Error loading object from InputStream.
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:229)
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:209)
+	at net.sf.jasperreports.repo.SerializedObjectPersistenceService.load(SerializedObjectPersistenceService.java:62)
+	... 30 more
+Caused by: java.io.EOFException
+	at java.base/java.io.ObjectInputStream$PeekInputStream.readFully(Unknown Source)
+	at java.base/java.io.ObjectInputStream$BlockDataInputStream.readShort(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readStreamHeader(Unknown Source)
+	at java.base/java.io.ObjectInputStream.<init>(Unknown Source)
+	at net.sf.jasperreports.engine.util.ContextClassLoaderObjectInputStream.<init>(ContextClassLoaderObjectInputStream.java:56)
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:224)
+	... 32 more
+
+!ENTRY com.jaspersoft.studio 4 0 2026-09-04 14:35:18.752
+!MESSAGE Problem occurred when trying to load the resource: caratteristicheLimitiIncarico.jasper
+!STACK 0
+net.sf.jasperreports.engine.JRRuntimeException: net.sf.jasperreports.engine.JRException: Error loading object from InputStream.
+	at net.sf.jasperreports.repo.SerializedObjectPersistenceService.load(SerializedObjectPersistenceService.java:66)
+	at net.sf.jasperreports.repo.SerializedReportPersistenceService.load(SerializedReportPersistenceService.java:46)
+	at net.sf.jasperreports.repo.DefaultRepositoryService.getResource(DefaultRepositoryService.java:176)
+	at com.jaspersoft.studio.utils.jasper.JSSFileRepositoryService.doGetResource(JSSFileRepositoryService.java:86)
+	at com.jaspersoft.studio.utils.jasper.JSSFileRepositoryService.getResource(JSSFileRepositoryService.java:76)
+	at net.sf.jasperreports.repo.RepositoryUtil.getResourceFromLocation(RepositoryUtil.java:149)
+	at net.sf.jasperreports.repo.RepositoryUtil.getReport(RepositoryUtil.java:117)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.loadReport(JRFillSubreport.java:481)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.loadReportSource(JRFillSubreport.java:446)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.getReportSource(JRFillSubreport.java:420)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluateReportSource(JRFillSubreport.java:369)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluateSubreport(JRFillSubreport.java:507)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluate(JRFillSubreport.java:361)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:283)
+	at net.sf.jasperreports.engine.fill.JRFillFrame.evaluate(JRFillFrame.java:175)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:283)
+	at net.sf.jasperreports.engine.fill.JRFillFrame.evaluate(JRFillFrame.java:175)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:283)
+	at net.sf.jasperreports.engine.fill.JRFillBand.evaluate(JRFillBand.java:530)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillColumnBand(JRVerticalFiller.java:2614)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillDetail(JRVerticalFiller.java:837)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReportStart(JRVerticalFiller.java:276)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReport(JRVerticalFiller.java:119)
+	at net.sf.jasperreports.engine.fill.JRBaseFiller.fill(JRBaseFiller.java:625)
+	at net.sf.jasperreports.engine.fill.BaseReportFiller.fill(BaseReportFiller.java:435)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.fillSubreport(JRFillSubreport.java:831)
+	at net.sf.jasperreports.engine.fill.JRSubreportRunnable.run(JRSubreportRunnable.java:61)
+	at net.sf.jasperreports.engine.fill.AbstractThreadSubreportRunner.run(AbstractThreadSubreportRunner.java:221)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: net.sf.jasperreports.engine.JRException: Error loading object from InputStream.
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:229)
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:209)
+	at net.sf.jasperreports.repo.SerializedObjectPersistenceService.load(SerializedObjectPersistenceService.java:62)
+	... 30 more
+Caused by: java.io.EOFException
+	at java.base/java.io.ObjectInputStream$PeekInputStream.readFully(Unknown Source)
+	at java.base/java.io.ObjectInputStream$BlockDataInputStream.readShort(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readStreamHeader(Unknown Source)
+	at java.base/java.io.ObjectInputStream.<init>(Unknown Source)
+	at net.sf.jasperreports.engine.util.ContextClassLoaderObjectInputStream.<init>(ContextClassLoaderObjectInputStream.java:56)
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:224)
+	... 32 more
+
+!ENTRY com.jaspersoft.studio 4 0 2026-09-04 14:35:18.756
+!MESSAGE Problem occurred when trying to load the resource: caratteristicheLimitiIncarico.jasper
+!STACK 0
+net.sf.jasperreports.engine.JRRuntimeException: net.sf.jasperreports.engine.JRException: Error loading object from InputStream.
+	at net.sf.jasperreports.repo.SerializedObjectPersistenceService.load(SerializedObjectPersistenceService.java:66)
+	at net.sf.jasperreports.repo.SerializedReportPersistenceService.load(SerializedReportPersistenceService.java:46)
+	at net.sf.jasperreports.repo.FileRepositoryService.getResource(FileRepositoryService.java:236)
+	at com.jaspersoft.studio.utils.jasper.JSSFileRepositoryService.doGetResource(JSSFileRepositoryService.java:86)
+	at com.jaspersoft.studio.utils.jasper.JSSFileRepositoryService.getResource(JSSFileRepositoryService.java:76)
+	at net.sf.jasperreports.repo.RepositoryUtil.getResourceFromLocation(RepositoryUtil.java:149)
+	at net.sf.jasperreports.repo.RepositoryUtil.getReport(RepositoryUtil.java:117)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.loadReport(JRFillSubreport.java:481)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.loadReportSource(JRFillSubreport.java:446)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.getReportSource(JRFillSubreport.java:420)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluateReportSource(JRFillSubreport.java:369)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluateSubreport(JRFillSubreport.java:507)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluate(JRFillSubreport.java:361)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:283)
+	at net.sf.jasperreports.engine.fill.JRFillFrame.evaluate(JRFillFrame.java:175)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:283)
+	at net.sf.jasperreports.engine.fill.JRFillFrame.evaluate(JRFillFrame.java:175)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:283)
+	at net.sf.jasperreports.engine.fill.JRFillBand.evaluate(JRFillBand.java:530)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillColumnBand(JRVerticalFiller.java:2614)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillDetail(JRVerticalFiller.java:837)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReportStart(JRVerticalFiller.java:276)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReport(JRVerticalFiller.java:119)
+	at net.sf.jasperreports.engine.fill.JRBaseFiller.fill(JRBaseFiller.java:625)
+	at net.sf.jasperreports.engine.fill.BaseReportFiller.fill(BaseReportFiller.java:435)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.fillSubreport(JRFillSubreport.java:831)
+	at net.sf.jasperreports.engine.fill.JRSubreportRunnable.run(JRSubreportRunnable.java:61)
+	at net.sf.jasperreports.engine.fill.AbstractThreadSubreportRunner.run(AbstractThreadSubreportRunner.java:221)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: net.sf.jasperreports.engine.JRException: Error loading object from InputStream.
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:229)
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:209)
+	at net.sf.jasperreports.repo.SerializedObjectPersistenceService.load(SerializedObjectPersistenceService.java:62)
+	... 30 more
+Caused by: java.io.EOFException
+	at java.base/java.io.ObjectInputStream$PeekInputStream.readFully(Unknown Source)
+	at java.base/java.io.ObjectInputStream$BlockDataInputStream.readShort(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readStreamHeader(Unknown Source)
+	at java.base/java.io.ObjectInputStream.<init>(Unknown Source)
+	at net.sf.jasperreports.engine.util.ContextClassLoaderObjectInputStream.<init>(ContextClassLoaderObjectInputStream.java:56)
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:224)
+	... 32 more
+
+!ENTRY com.jaspersoft.studio 4 0 2026-09-04 14:36:21.688
+!MESSAGE Problem occurred when trying to load the resource: C:\Users\CG08449\JaspersoftWorkspace6\MyReports\bper\subreport\frasiTutela.jasper
+!STACK 0
+net.sf.jasperreports.engine.JRRuntimeException: net.sf.jasperreports.engine.JRException: Error loading object from InputStream.
+	at net.sf.jasperreports.repo.SerializedObjectPersistenceService.load(SerializedObjectPersistenceService.java:66)
+	at net.sf.jasperreports.repo.SerializedReportPersistenceService.load(SerializedReportPersistenceService.java:46)
+	at net.sf.jasperreports.repo.DefaultRepositoryService.getResource(DefaultRepositoryService.java:176)
+	at com.jaspersoft.studio.utils.jasper.JSSFileRepositoryService.doGetResource(JSSFileRepositoryService.java:86)
+	at com.jaspersoft.studio.utils.jasper.JSSFileRepositoryService.getResource(JSSFileRepositoryService.java:76)
+	at net.sf.jasperreports.repo.RepositoryUtil.getResourceFromLocation(RepositoryUtil.java:149)
+	at net.sf.jasperreports.repo.RepositoryUtil.getReport(RepositoryUtil.java:117)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.loadReport(JRFillSubreport.java:481)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.loadReportSource(JRFillSubreport.java:446)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.getReportSource(JRFillSubreport.java:420)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluateReportSource(JRFillSubreport.java:369)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluateSubreport(JRFillSubreport.java:507)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluate(JRFillSubreport.java:361)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:283)
+	at net.sf.jasperreports.engine.fill.JRFillBand.evaluate(JRFillBand.java:530)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillColumnBand(JRVerticalFiller.java:2614)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillDetail(JRVerticalFiller.java:837)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReportStart(JRVerticalFiller.java:276)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReport(JRVerticalFiller.java:119)
+	at net.sf.jasperreports.engine.fill.JRBaseFiller.fill(JRBaseFiller.java:625)
+	at net.sf.jasperreports.engine.fill.BaseFillHandle$ReportFill.run(BaseFillHandle.java:141)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: net.sf.jasperreports.engine.JRException: Error loading object from InputStream.
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:229)
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:209)
+	at net.sf.jasperreports.repo.SerializedObjectPersistenceService.load(SerializedObjectPersistenceService.java:62)
+	... 21 more
+Caused by: java.io.InvalidClassException: net.sf.jasperreports.engine.base.JRBaseReport; incompatible types for field columnCount
+	at java.base/java.io.ObjectStreamClass.matchFields(Unknown Source)
+	at java.base/java.io.ObjectStreamClass.getReflector(Unknown Source)
+	at java.base/java.io.ObjectStreamClass.initNonProxy(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readNonProxyDesc(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readClassDesc(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readNonProxyDesc(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readClassDesc(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readObject0(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readObject(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readObject(Unknown Source)
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:225)
+	... 23 more
+
+!ENTRY com.jaspersoft.studio 4 0 2026-09-04 14:36:24.434
+!MESSAGE Problem occurred when trying to load the resource: C:\Users\CG08449\JaspersoftWorkspace6\MyReports\bper\subreport\richiedentiTemplate.jasper
+!STACK 0
+net.sf.jasperreports.engine.JRRuntimeException: net.sf.jasperreports.engine.JRException: Error loading object from InputStream.
+	at net.sf.jasperreports.repo.SerializedObjectPersistenceService.load(SerializedObjectPersistenceService.java:66)
+	at net.sf.jasperreports.repo.SerializedReportPersistenceService.load(SerializedReportPersistenceService.java:46)
+	at net.sf.jasperreports.repo.DefaultRepositoryService.getResource(DefaultRepositoryService.java:176)
+	at com.jaspersoft.studio.utils.jasper.JSSFileRepositoryService.doGetResource(JSSFileRepositoryService.java:86)
+	at com.jaspersoft.studio.utils.jasper.JSSFileRepositoryService.getResource(JSSFileRepositoryService.java:76)
+	at net.sf.jasperreports.repo.RepositoryUtil.getResourceFromLocation(RepositoryUtil.java:149)
+	at net.sf.jasperreports.repo.RepositoryUtil.getReport(RepositoryUtil.java:117)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.loadReport(JRFillSubreport.java:481)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.loadReportSource(JRFillSubreport.java:446)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.getReportSource(JRFillSubreport.java:420)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluateReportSource(JRFillSubreport.java:369)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluateSubreport(JRFillSubreport.java:507)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluate(JRFillSubreport.java:361)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:283)
+	at net.sf.jasperreports.engine.fill.JRFillFrame.evaluate(JRFillFrame.java:175)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:283)
+	at net.sf.jasperreports.engine.fill.JRFillBand.evaluate(JRFillBand.java:530)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillColumnBand(JRVerticalFiller.java:2614)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillDetail(JRVerticalFiller.java:837)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReportStart(JRVerticalFiller.java:276)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReport(JRVerticalFiller.java:119)
+	at net.sf.jasperreports.engine.fill.JRBaseFiller.fill(JRBaseFiller.java:625)
+	at net.sf.jasperreports.engine.fill.BaseFillHandle$ReportFill.run(BaseFillHandle.java:141)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: net.sf.jasperreports.engine.JRException: Error loading object from InputStream.
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:229)
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:209)
+	at net.sf.jasperreports.repo.SerializedObjectPersistenceService.load(SerializedObjectPersistenceService.java:62)
+	... 23 more
+Caused by: java.io.InvalidClassException: net.sf.jasperreports.engine.base.JRBaseReport; incompatible types for field columnCount
+	at java.base/java.io.ObjectStreamClass.matchFields(Unknown Source)
+	at java.base/java.io.ObjectStreamClass.getReflector(Unknown Source)
+	at java.base/java.io.ObjectStreamClass.initNonProxy(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readNonProxyDesc(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readClassDesc(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readNonProxyDesc(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readClassDesc(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readObject0(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readObject(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readObject(Unknown Source)
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:225)
+	... 25 more
+
+!ENTRY com.jaspersoft.studio 4 0 2026-09-04 14:36:24.769
+!MESSAGE Problem occurred when trying to load the resource: C:\Users\CG08449\JaspersoftWorkspace6\MyReports\bper\subreport\esitoValutazioneMain.jasper
+!STACK 0
+net.sf.jasperreports.engine.JRRuntimeException: net.sf.jasperreports.engine.JRException: Error loading object from InputStream.
+	at net.sf.jasperreports.repo.SerializedObjectPersistenceService.load(SerializedObjectPersistenceService.java:66)
+	at net.sf.jasperreports.repo.SerializedReportPersistenceService.load(SerializedReportPersistenceService.java:46)
+	at net.sf.jasperreports.repo.DefaultRepositoryService.getResource(DefaultRepositoryService.java:176)
+	at com.jaspersoft.studio.utils.jasper.JSSFileRepositoryService.doGetResource(JSSFileRepositoryService.java:86)
+	at com.jaspersoft.studio.utils.jasper.JSSFileRepositoryService.getResource(JSSFileRepositoryService.java:76)
+	at net.sf.jasperreports.repo.RepositoryUtil.getResourceFromLocation(RepositoryUtil.java:149)
+	at net.sf.jasperreports.repo.RepositoryUtil.getReport(RepositoryUtil.java:117)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.loadReport(JRFillSubreport.java:481)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.loadReportSource(JRFillSubreport.java:446)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.getReportSource(JRFillSubreport.java:420)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluateReportSource(JRFillSubreport.java:369)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluateSubreport(JRFillSubreport.java:507)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluate(JRFillSubreport.java:361)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:283)
+	at net.sf.jasperreports.engine.fill.JRFillBand.evaluate(JRFillBand.java:530)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillColumnBand(JRVerticalFiller.java:2614)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillDetail(JRVerticalFiller.java:837)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReportStart(JRVerticalFiller.java:276)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReport(JRVerticalFiller.java:119)
+	at net.sf.jasperreports.engine.fill.JRBaseFiller.fill(JRBaseFiller.java:625)
+	at net.sf.jasperreports.engine.fill.BaseFillHandle$ReportFill.run(BaseFillHandle.java:141)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: net.sf.jasperreports.engine.JRException: Error loading object from InputStream.
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:229)
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:209)
+	at net.sf.jasperreports.repo.SerializedObjectPersistenceService.load(SerializedObjectPersistenceService.java:62)
+	... 21 more
+Caused by: java.io.InvalidClassException: net.sf.jasperreports.engine.base.JRBaseReport; incompatible types for field columnCount
+	at java.base/java.io.ObjectStreamClass.matchFields(Unknown Source)
+	at java.base/java.io.ObjectStreamClass.getReflector(Unknown Source)
+	at java.base/java.io.ObjectStreamClass.initNonProxy(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readNonProxyDesc(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readClassDesc(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readNonProxyDesc(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readClassDesc(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readObject0(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readObject(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readObject(Unknown Source)
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:225)
+	... 23 more
+
+!ENTRY com.jaspersoft.studio 4 0 2026-09-04 14:36:30.543
+!MESSAGE Problem occurred when trying to load the resource: C:\Users\CG08449\JaspersoftWorkspace6\MyReports\bper\subreport\caratteristicheLimitiIncarico.jasper
+!STACK 0
+net.sf.jasperreports.engine.JRRuntimeException: net.sf.jasperreports.engine.JRException: Error loading object from InputStream.
+	at net.sf.jasperreports.repo.SerializedObjectPersistenceService.load(SerializedObjectPersistenceService.java:66)
+	at net.sf.jasperreports.repo.SerializedReportPersistenceService.load(SerializedReportPersistenceService.java:46)
+	at net.sf.jasperreports.repo.DefaultRepositoryService.getResource(DefaultRepositoryService.java:176)
+	at com.jaspersoft.studio.utils.jasper.JSSFileRepositoryService.doGetResource(JSSFileRepositoryService.java:86)
+	at com.jaspersoft.studio.utils.jasper.JSSFileRepositoryService.getResource(JSSFileRepositoryService.java:76)
+	at net.sf.jasperreports.repo.RepositoryUtil.getResourceFromLocation(RepositoryUtil.java:149)
+	at net.sf.jasperreports.repo.RepositoryUtil.getReport(RepositoryUtil.java:117)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.loadReport(JRFillSubreport.java:481)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.loadReportSource(JRFillSubreport.java:446)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.getReportSource(JRFillSubreport.java:420)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluateReportSource(JRFillSubreport.java:369)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluateSubreport(JRFillSubreport.java:507)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluate(JRFillSubreport.java:361)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:283)
+	at net.sf.jasperreports.engine.fill.JRFillFrame.evaluate(JRFillFrame.java:175)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:283)
+	at net.sf.jasperreports.engine.fill.JRFillFrame.evaluate(JRFillFrame.java:175)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:283)
+	at net.sf.jasperreports.engine.fill.JRFillBand.evaluate(JRFillBand.java:530)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillColumnBand(JRVerticalFiller.java:2614)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillDetail(JRVerticalFiller.java:837)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReportStart(JRVerticalFiller.java:276)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReport(JRVerticalFiller.java:119)
+	at net.sf.jasperreports.engine.fill.JRBaseFiller.fill(JRBaseFiller.java:625)
+	at net.sf.jasperreports.engine.fill.BaseReportFiller.fill(BaseReportFiller.java:435)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.fillSubreport(JRFillSubreport.java:831)
+	at net.sf.jasperreports.engine.fill.JRSubreportRunnable.run(JRSubreportRunnable.java:61)
+	at net.sf.jasperreports.engine.fill.AbstractThreadSubreportRunner.run(AbstractThreadSubreportRunner.java:221)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: net.sf.jasperreports.engine.JRException: Error loading object from InputStream.
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:229)
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:209)
+	at net.sf.jasperreports.repo.SerializedObjectPersistenceService.load(SerializedObjectPersistenceService.java:62)
+	... 30 more
+Caused by: java.io.InvalidClassException: net.sf.jasperreports.engine.base.JRBaseReport; incompatible types for field columnCount
+	at java.base/java.io.ObjectStreamClass.matchFields(Unknown Source)
+	at java.base/java.io.ObjectStreamClass.getReflector(Unknown Source)
+	at java.base/java.io.ObjectStreamClass.initNonProxy(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readNonProxyDesc(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readClassDesc(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readNonProxyDesc(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readClassDesc(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readObject0(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readObject(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readObject(Unknown Source)
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:225)
+	... 32 more
+
+!ENTRY com.jaspersoft.studio 4 0 2026-09-04 14:36:37.315
+!MESSAGE Problem occurred when trying to load the resource: C:\Users\CG08449\JaspersoftWorkspace6\MyReports\bper\subreport\dettaglioDatoImmobiliare.jasper
+!STACK 0
+net.sf.jasperreports.engine.JRRuntimeException: net.sf.jasperreports.engine.JRException: Error loading object from InputStream.
+	at net.sf.jasperreports.repo.SerializedObjectPersistenceService.load(SerializedObjectPersistenceService.java:66)
+	at net.sf.jasperreports.repo.SerializedReportPersistenceService.load(SerializedReportPersistenceService.java:46)
+	at net.sf.jasperreports.repo.DefaultRepositoryService.getResource(DefaultRepositoryService.java:176)
+	at com.jaspersoft.studio.utils.jasper.JSSFileRepositoryService.doGetResource(JSSFileRepositoryService.java:86)
+	at com.jaspersoft.studio.utils.jasper.JSSFileRepositoryService.getResource(JSSFileRepositoryService.java:76)
+	at net.sf.jasperreports.repo.RepositoryUtil.getResourceFromLocation(RepositoryUtil.java:149)
+	at net.sf.jasperreports.repo.RepositoryUtil.getReport(RepositoryUtil.java:117)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.loadReport(JRFillSubreport.java:481)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.loadReportSource(JRFillSubreport.java:446)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.getReportSource(JRFillSubreport.java:420)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluateReportSource(JRFillSubreport.java:369)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluateSubreport(JRFillSubreport.java:507)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluate(JRFillSubreport.java:361)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:283)
+	at net.sf.jasperreports.engine.fill.JRFillFrame.evaluate(JRFillFrame.java:175)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:283)
+	at net.sf.jasperreports.engine.fill.JRFillBand.evaluate(JRFillBand.java:530)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillColumnBand(JRVerticalFiller.java:2614)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillDetail(JRVerticalFiller.java:837)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReportStart(JRVerticalFiller.java:276)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReport(JRVerticalFiller.java:119)
+	at net.sf.jasperreports.engine.fill.JRBaseFiller.fill(JRBaseFiller.java:625)
+	at net.sf.jasperreports.engine.fill.BaseFillHandle$ReportFill.run(BaseFillHandle.java:141)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: net.sf.jasperreports.engine.JRException: Error loading object from InputStream.
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:229)
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:209)
+	at net.sf.jasperreports.repo.SerializedObjectPersistenceService.load(SerializedObjectPersistenceService.java:62)
+	... 23 more
+Caused by: java.io.InvalidClassException: net.sf.jasperreports.engine.base.JRBaseReport; incompatible types for field columnCount
+	at java.base/java.io.ObjectStreamClass.matchFields(Unknown Source)
+	at java.base/java.io.ObjectStreamClass.getReflector(Unknown Source)
+	at java.base/java.io.ObjectStreamClass.initNonProxy(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readNonProxyDesc(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readClassDesc(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readNonProxyDesc(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readClassDesc(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readObject0(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readObject(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readObject(Unknown Source)
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:225)
+	... 25 more
+
+!ENTRY com.jaspersoft.studio 4 0 2026-09-04 14:36:42.450
+!MESSAGE Problem occurred when trying to load the resource: C:\Users\CG08449\JaspersoftWorkspace6\MyReports\bper\subreport\rischiFisici.jasper
+!STACK 0
+net.sf.jasperreports.engine.JRRuntimeException: net.sf.jasperreports.engine.JRException: Error loading object from InputStream.
+	at net.sf.jasperreports.repo.SerializedObjectPersistenceService.load(SerializedObjectPersistenceService.java:66)
+	at net.sf.jasperreports.repo.SerializedReportPersistenceService.load(SerializedReportPersistenceService.java:46)
+	at net.sf.jasperreports.repo.DefaultRepositoryService.getResource(DefaultRepositoryService.java:176)
+	at com.jaspersoft.studio.utils.jasper.JSSFileRepositoryService.doGetResource(JSSFileRepositoryService.java:86)
+	at com.jaspersoft.studio.utils.jasper.JSSFileRepositoryService.getResource(JSSFileRepositoryService.java:76)
+	at net.sf.jasperreports.repo.RepositoryUtil.getResourceFromLocation(RepositoryUtil.java:149)
+	at net.sf.jasperreports.repo.RepositoryUtil.getReport(RepositoryUtil.java:117)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.loadReport(JRFillSubreport.java:481)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.loadReportSource(JRFillSubreport.java:446)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.getReportSource(JRFillSubreport.java:420)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluateReportSource(JRFillSubreport.java:369)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluateSubreport(JRFillSubreport.java:507)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluate(JRFillSubreport.java:361)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:283)
+	at net.sf.jasperreports.engine.fill.JRFillBand.evaluate(JRFillBand.java:530)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillColumnBand(JRVerticalFiller.java:2614)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillDetail(JRVerticalFiller.java:837)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReportStart(JRVerticalFiller.java:276)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReport(JRVerticalFiller.java:119)
+	at net.sf.jasperreports.engine.fill.JRBaseFiller.fill(JRBaseFiller.java:625)
+	at net.sf.jasperreports.engine.fill.BaseFillHandle$ReportFill.run(BaseFillHandle.java:141)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: net.sf.jasperreports.engine.JRException: Error loading object from InputStream.
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:229)
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:209)
+	at net.sf.jasperreports.repo.SerializedObjectPersistenceService.load(SerializedObjectPersistenceService.java:62)
+	... 21 more
+Caused by: java.io.InvalidClassException: net.sf.jasperreports.engine.base.JRBaseReport; incompatible types for field columnCount
+	at java.base/java.io.ObjectStreamClass.matchFields(Unknown Source)
+	at java.base/java.io.ObjectStreamClass.getReflector(Unknown Source)
+	at java.base/java.io.ObjectStreamClass.initNonProxy(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readNonProxyDesc(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readClassDesc(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readNonProxyDesc(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readClassDesc(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readObject0(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readObject(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readObject(Unknown Source)
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:225)
+	... 23 more
+
+!ENTRY com.jaspersoft.studio 4 0 2026-09-04 14:37:30.851
+!MESSAGE Problem occurred when trying to load the resource: C:\Users\CG08449\JaspersoftWorkspace6\MyReports\bper\subreport\unitaImmobiliareTemplate.jasper
+!STACK 0
+net.sf.jasperreports.engine.JRRuntimeException: net.sf.jasperreports.engine.JRException: Error loading object from InputStream.
+	at net.sf.jasperreports.repo.SerializedObjectPersistenceService.load(SerializedObjectPersistenceService.java:66)
+	at net.sf.jasperreports.repo.SerializedReportPersistenceService.load(SerializedReportPersistenceService.java:46)
+	at net.sf.jasperreports.repo.DefaultRepositoryService.getResource(DefaultRepositoryService.java:176)
+	at com.jaspersoft.studio.utils.jasper.JSSFileRepositoryService.doGetResource(JSSFileRepositoryService.java:86)
+	at com.jaspersoft.studio.utils.jasper.JSSFileRepositoryService.getResource(JSSFileRepositoryService.java:76)
+	at net.sf.jasperreports.repo.RepositoryUtil.getResourceFromLocation(RepositoryUtil.java:149)
+	at net.sf.jasperreports.repo.RepositoryUtil.getReport(RepositoryUtil.java:117)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.loadReport(JRFillSubreport.java:481)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.loadReportSource(JRFillSubreport.java:446)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.getReportSource(JRFillSubreport.java:420)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluateReportSource(JRFillSubreport.java:369)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluateSubreport(JRFillSubreport.java:507)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluate(JRFillSubreport.java:361)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:283)
+	at net.sf.jasperreports.engine.fill.JRFillBand.evaluate(JRFillBand.java:530)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillColumnBand(JRVerticalFiller.java:2614)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillDetail(JRVerticalFiller.java:837)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReportStart(JRVerticalFiller.java:276)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReport(JRVerticalFiller.java:119)
+	at net.sf.jasperreports.engine.fill.JRBaseFiller.fill(JRBaseFiller.java:625)
+	at net.sf.jasperreports.engine.fill.BaseFillHandle$ReportFill.run(BaseFillHandle.java:141)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: net.sf.jasperreports.engine.JRException: Error loading object from InputStream.
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:229)
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:209)
+	at net.sf.jasperreports.repo.SerializedObjectPersistenceService.load(SerializedObjectPersistenceService.java:62)
+	... 21 more
+Caused by: java.io.InvalidClassException: net.sf.jasperreports.engine.base.JRBaseReport; incompatible types for field columnCount
+	at java.base/java.io.ObjectStreamClass.matchFields(Unknown Source)
+	at java.base/java.io.ObjectStreamClass.getReflector(Unknown Source)
+	at java.base/java.io.ObjectStreamClass.initNonProxy(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readNonProxyDesc(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readClassDesc(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readNonProxyDesc(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readClassDesc(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readObject0(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readObject(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readObject(Unknown Source)
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:225)
+	... 23 more
+
+!ENTRY com.jaspersoft.studio 4 0 2026-09-04 14:37:56.193
+!MESSAGE Problem occurred when trying to load the resource: C:\Users\CG08449\JaspersoftWorkspace6\MyReports\bper\subreport\unitaDiStimaTemplate.jasper
+!STACK 0
+net.sf.jasperreports.engine.JRRuntimeException: net.sf.jasperreports.engine.JRException: Error loading object from InputStream.
+	at net.sf.jasperreports.repo.SerializedObjectPersistenceService.load(SerializedObjectPersistenceService.java:66)
+	at net.sf.jasperreports.repo.SerializedReportPersistenceService.load(SerializedReportPersistenceService.java:46)
+	at net.sf.jasperreports.repo.DefaultRepositoryService.getResource(DefaultRepositoryService.java:176)
+	at com.jaspersoft.studio.utils.jasper.JSSFileRepositoryService.doGetResource(JSSFileRepositoryService.java:86)
+	at com.jaspersoft.studio.utils.jasper.JSSFileRepositoryService.getResource(JSSFileRepositoryService.java:76)
+	at net.sf.jasperreports.repo.RepositoryUtil.getResourceFromLocation(RepositoryUtil.java:149)
+	at net.sf.jasperreports.repo.RepositoryUtil.getReport(RepositoryUtil.java:117)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.loadReport(JRFillSubreport.java:481)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.loadReportSource(JRFillSubreport.java:446)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.getReportSource(JRFillSubreport.java:420)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluateReportSource(JRFillSubreport.java:369)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluateSubreport(JRFillSubreport.java:507)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluate(JRFillSubreport.java:361)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:283)
+	at net.sf.jasperreports.engine.fill.JRFillFrame.evaluate(JRFillFrame.java:175)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:283)
+	at net.sf.jasperreports.engine.fill.JRFillBand.evaluate(JRFillBand.java:530)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillColumnBand(JRVerticalFiller.java:2614)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillDetail(JRVerticalFiller.java:837)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReportStart(JRVerticalFiller.java:276)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReport(JRVerticalFiller.java:119)
+	at net.sf.jasperreports.engine.fill.JRBaseFiller.fill(JRBaseFiller.java:625)
+	at net.sf.jasperreports.engine.fill.BaseFillHandle$ReportFill.run(BaseFillHandle.java:141)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: net.sf.jasperreports.engine.JRException: Error loading object from InputStream.
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:229)
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:209)
+	at net.sf.jasperreports.repo.SerializedObjectPersistenceService.load(SerializedObjectPersistenceService.java:62)
+	... 23 more
+Caused by: java.io.InvalidClassException: net.sf.jasperreports.engine.base.JRBaseReport; incompatible types for field columnCount
+	at java.base/java.io.ObjectStreamClass.matchFields(Unknown Source)
+	at java.base/java.io.ObjectStreamClass.getReflector(Unknown Source)
+	at java.base/java.io.ObjectStreamClass.initNonProxy(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readNonProxyDesc(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readClassDesc(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readNonProxyDesc(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readClassDesc(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readObject0(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readObject(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readObject(Unknown Source)
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:225)
+	... 25 more
+
+!ENTRY com.jaspersoft.studio 4 0 2026-09-04 14:42:54.606
+!MESSAGE Problem occurred when trying to load the resource: C:\Users\CG08449\JaspersoftWorkspace6\MyReports\bper\subreport\valoreAssicurabileTemplate.jasper
+!STACK 0
+net.sf.jasperreports.engine.JRRuntimeException: net.sf.jasperreports.engine.JRException: Error loading object from InputStream.
+	at net.sf.jasperreports.repo.SerializedObjectPersistenceService.load(SerializedObjectPersistenceService.java:66)
+	at net.sf.jasperreports.repo.SerializedReportPersistenceService.load(SerializedReportPersistenceService.java:46)
+	at net.sf.jasperreports.repo.DefaultRepositoryService.getResource(DefaultRepositoryService.java:176)
+	at com.jaspersoft.studio.utils.jasper.JSSFileRepositoryService.doGetResource(JSSFileRepositoryService.java:86)
+	at com.jaspersoft.studio.utils.jasper.JSSFileRepositoryService.getResource(JSSFileRepositoryService.java:76)
+	at net.sf.jasperreports.repo.RepositoryUtil.getResourceFromLocation(RepositoryUtil.java:149)
+	at net.sf.jasperreports.repo.RepositoryUtil.getReport(RepositoryUtil.java:117)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.loadReport(JRFillSubreport.java:481)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.loadReportSource(JRFillSubreport.java:446)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.getReportSource(JRFillSubreport.java:420)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluateReportSource(JRFillSubreport.java:369)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluateSubreport(JRFillSubreport.java:507)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluate(JRFillSubreport.java:361)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:283)
+	at net.sf.jasperreports.engine.fill.JRFillFrame.evaluate(JRFillFrame.java:175)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:283)
+	at net.sf.jasperreports.engine.fill.JRFillBand.evaluate(JRFillBand.java:530)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillColumnBand(JRVerticalFiller.java:2614)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillDetail(JRVerticalFiller.java:837)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReportStart(JRVerticalFiller.java:276)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReport(JRVerticalFiller.java:119)
+	at net.sf.jasperreports.engine.fill.JRBaseFiller.fill(JRBaseFiller.java:625)
+	at net.sf.jasperreports.engine.fill.BaseFillHandle$ReportFill.run(BaseFillHandle.java:141)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: net.sf.jasperreports.engine.JRException: Error loading object from InputStream.
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:229)
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:209)
+	at net.sf.jasperreports.repo.SerializedObjectPersistenceService.load(SerializedObjectPersistenceService.java:62)
+	... 23 more
+Caused by: java.io.InvalidClassException: net.sf.jasperreports.engine.base.JRBaseReport; incompatible types for field columnCount
+	at java.base/java.io.ObjectStreamClass.matchFields(Unknown Source)
+	at java.base/java.io.ObjectStreamClass.getReflector(Unknown Source)
+	at java.base/java.io.ObjectStreamClass.initNonProxy(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readNonProxyDesc(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readClassDesc(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readNonProxyDesc(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readClassDesc(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readObject0(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readObject(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readObject(Unknown Source)
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:225)
+	... 25 more
+
+!ENTRY com.jaspersoft.studio 4 0 2026-09-04 14:43:26.693
+!MESSAGE Problem occurred when trying to load the resource: C:\Users\CG08449\JaspersoftWorkspace6\MyReports\bper\subreport\valoreCauzionaleProntoRealizzoPVTemplate.jasper
+!STACK 0
+net.sf.jasperreports.engine.JRRuntimeException: net.sf.jasperreports.engine.JRException: Error loading object from InputStream.
+	at net.sf.jasperreports.repo.SerializedObjectPersistenceService.load(SerializedObjectPersistenceService.java:66)
+	at net.sf.jasperreports.repo.SerializedReportPersistenceService.load(SerializedReportPersistenceService.java:46)
+	at net.sf.jasperreports.repo.DefaultRepositoryService.getResource(DefaultRepositoryService.java:176)
+	at com.jaspersoft.studio.utils.jasper.JSSFileRepositoryService.doGetResource(JSSFileRepositoryService.java:86)
+	at com.jaspersoft.studio.utils.jasper.JSSFileRepositoryService.getResource(JSSFileRepositoryService.java:76)
+	at net.sf.jasperreports.repo.RepositoryUtil.getResourceFromLocation(RepositoryUtil.java:149)
+	at net.sf.jasperreports.repo.RepositoryUtil.getReport(RepositoryUtil.java:117)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.loadReport(JRFillSubreport.java:481)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.loadReportSource(JRFillSubreport.java:446)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.getReportSource(JRFillSubreport.java:420)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluateReportSource(JRFillSubreport.java:369)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluateSubreport(JRFillSubreport.java:507)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluate(JRFillSubreport.java:361)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:283)
+	at net.sf.jasperreports.engine.fill.JRFillBand.evaluate(JRFillBand.java:530)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillColumnBand(JRVerticalFiller.java:2614)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillDetail(JRVerticalFiller.java:837)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReportStart(JRVerticalFiller.java:276)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReport(JRVerticalFiller.java:119)
+	at net.sf.jasperreports.engine.fill.JRBaseFiller.fill(JRBaseFiller.java:625)
+	at net.sf.jasperreports.engine.fill.BaseFillHandle$ReportFill.run(BaseFillHandle.java:141)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: net.sf.jasperreports.engine.JRException: Error loading object from InputStream.
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:229)
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:209)
+	at net.sf.jasperreports.repo.SerializedObjectPersistenceService.load(SerializedObjectPersistenceService.java:62)
+	... 21 more
+Caused by: java.io.InvalidClassException: net.sf.jasperreports.engine.base.JRBaseReport; incompatible types for field columnCount
+	at java.base/java.io.ObjectStreamClass.matchFields(Unknown Source)
+	at java.base/java.io.ObjectStreamClass.getReflector(Unknown Source)
+	at java.base/java.io.ObjectStreamClass.initNonProxy(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readNonProxyDesc(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readClassDesc(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readNonProxyDesc(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readClassDesc(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readObject0(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readObject(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readObject(Unknown Source)
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:225)
+	... 23 more
+
+!ENTRY com.jaspersoft.studio 4 0 2026-09-04 14:43:53.365
+!MESSAGE Problem occurred when trying to load the resource: C:\Users\CG08449\JaspersoftWorkspace6\MyReports\bper\subreport\allegatiTemplate.jasper
+!STACK 0
+net.sf.jasperreports.engine.JRRuntimeException: net.sf.jasperreports.engine.JRException: Error loading object from InputStream.
+	at net.sf.jasperreports.repo.SerializedObjectPersistenceService.load(SerializedObjectPersistenceService.java:66)
+	at net.sf.jasperreports.repo.SerializedReportPersistenceService.load(SerializedReportPersistenceService.java:46)
+	at net.sf.jasperreports.repo.DefaultRepositoryService.getResource(DefaultRepositoryService.java:176)
+	at com.jaspersoft.studio.utils.jasper.JSSFileRepositoryService.doGetResource(JSSFileRepositoryService.java:86)
+	at com.jaspersoft.studio.utils.jasper.JSSFileRepositoryService.getResource(JSSFileRepositoryService.java:76)
+	at net.sf.jasperreports.repo.RepositoryUtil.getResourceFromLocation(RepositoryUtil.java:149)
+	at net.sf.jasperreports.repo.RepositoryUtil.getReport(RepositoryUtil.java:117)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.loadReport(JRFillSubreport.java:481)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.loadReportSource(JRFillSubreport.java:446)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.getReportSource(JRFillSubreport.java:420)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluateReportSource(JRFillSubreport.java:369)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluateSubreport(JRFillSubreport.java:507)
+	at net.sf.jasperreports.engine.fill.JRFillSubreport.evaluate(JRFillSubreport.java:361)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:283)
+	at net.sf.jasperreports.engine.fill.JRFillFrame.evaluate(JRFillFrame.java:175)
+	at net.sf.jasperreports.engine.fill.JRFillElementContainer.evaluate(JRFillElementContainer.java:283)
+	at net.sf.jasperreports.engine.fill.JRFillBand.evaluate(JRFillBand.java:530)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillColumnBand(JRVerticalFiller.java:2614)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillDetail(JRVerticalFiller.java:837)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReportStart(JRVerticalFiller.java:276)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReport(JRVerticalFiller.java:119)
+	at net.sf.jasperreports.engine.fill.JRBaseFiller.fill(JRBaseFiller.java:625)
+	at net.sf.jasperreports.engine.fill.BaseFillHandle$ReportFill.run(BaseFillHandle.java:141)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: net.sf.jasperreports.engine.JRException: Error loading object from InputStream.
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:229)
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:209)
+	at net.sf.jasperreports.repo.SerializedObjectPersistenceService.load(SerializedObjectPersistenceService.java:62)
+	... 23 more
+Caused by: java.io.InvalidClassException: net.sf.jasperreports.engine.base.JRBaseReport; incompatible types for field columnCount
+	at java.base/java.io.ObjectStreamClass.matchFields(Unknown Source)
+	at java.base/java.io.ObjectStreamClass.getReflector(Unknown Source)
+	at java.base/java.io.ObjectStreamClass.initNonProxy(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readNonProxyDesc(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readClassDesc(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readNonProxyDesc(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readClassDesc(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readObject0(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readObject(Unknown Source)
+	at java.base/java.io.ObjectInputStream.readObject(Unknown Source)
+	at net.sf.jasperreports.engine.util.JRLoader.loadObject(JRLoader.java:225)
+	... 25 more
+
+!ENTRY org.eclipse.core.resources 2 10035 2026-09-04 15:50:35.361
+!MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2026-09-08 09:42:48.711 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_EN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data @noDefault
+
+!ENTRY org.eclipse.core.resources 2 10035 2026-09-08 09:43:02.518
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.jaspersoft.studio 1 0 2026-09-08 09:43:23.796
+!MESSAGE Starting JaspersoftStudio bundle - Version: 7.0.0.final
+
+!ENTRY org.eclipse.egit.ui 2 0 2026-09-08 09:43:48.709
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\CG08449'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2026-09-08 09:44:11.753
+!MESSAGE No repository found at https://jaspersoft.github.io/jaspersoftstudio/rcp-updates/e4/.
+
+!ENTRY org.eclipse.core.resources 2 10035 2026-09-08 13:08:22.349
+!MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2026-09-08 13:50:31.463 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_EN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data @noDefault
+
+!ENTRY org.eclipse.core.resources 2 10035 2026-09-08 13:50:46.379
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.jaspersoft.studio 1 0 2026-09-08 13:51:10.068
+!MESSAGE Starting JaspersoftStudio bundle - Version: 7.0.0.final
+
+!ENTRY org.eclipse.egit.ui 2 0 2026-09-08 13:51:43.406
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\CG08449'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2026-09-08 13:52:07.197
+!MESSAGE No repository found at https://jaspersoft.github.io/jaspersoftstudio/rcp-updates/e4/.
+!SESSION 2026-09-09 08:12:06.545 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_EN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data @noDefault
+
+!ENTRY org.eclipse.core.resources 2 10035 2026-09-09 08:12:18.946
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.jaspersoft.studio 1 0 2026-09-09 08:12:42.474
+!MESSAGE Starting JaspersoftStudio bundle - Version: 7.0.0.final
+
+!ENTRY org.eclipse.egit.ui 2 0 2026-09-09 08:13:12.978
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\CG08449'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2026-09-09 08:13:36.170
+!MESSAGE No repository found at https://jaspersoft.github.io/jaspersoftstudio/rcp-updates/e4/.

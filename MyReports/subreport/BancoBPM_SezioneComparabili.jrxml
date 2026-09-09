@@ -1,0 +1,3775 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.0.final using JasperReports Library version 6.3.0  -->
+<!-- 2025-11-24T13:10:38 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="170c5b6d-6a79-4601-801c-974412c4fe64">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<subDataset name="valutazioneDataset" uuid="eda02073-9de8-44cc-9d9a-b52c27271219">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="valutazioneDettaglios" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.bancopopolare.data.ValutazioneDettaglio">
+			<fieldDescription><![CDATA[_THIS]]></fieldDescription>
+		</field>
+	</subDataset>
+	<parameter name="data" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.bancobpm.data.BancoBPMPdfData"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="530">
+			<textField>
+				<reportElement mode="Opaque" x="0" y="4" width="555" height="24" backcolor="#BDD7EE" uuid="a42a4ef2-be8c-4a0f-9db6-d3ed9a8c0da1"/>
+				<box>
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Market Comparison Approach (MCA)"]]></textFieldExpression>
+			</textField>
+			<frame>
+				<reportElement positionType="Float" x="1" y="28" width="554" height="495" isRemoveLineWhenBlank="true" uuid="0edc447b-ed0f-4af9-ae4c-8b8a8e091527"/>
+				<staticText>
+					<reportElement x="0" y="29" width="89" height="14" uuid="8bcbff66-3046-49a4-aebf-9806d4b66614">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Comune]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="141" width="89" height="14" uuid="d822abf4-b0b5-4d8b-8bdd-e429e2e7c4af">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Data (mesi) (n)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="15" width="89" height="14" uuid="9bf22e8b-7931-4306-901b-d43f0a97578c">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Provincia]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="127" width="89" height="14" uuid="91c7afb3-e041-448c-adef-8414f3c6bb6d">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Fonte]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="43" width="89" height="14" uuid="313ba5e2-02a1-497a-bf2f-1e050be6d3a6">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Frazione/Località]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="99" width="89" height="14" uuid="e3471cf4-6eca-416a-9a60-df508c45715c">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Zona]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="57" width="89" height="14" uuid="f70a90e6-9fb1-4317-a6ae-54d98bc04118">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Indirizzo]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="85" width="89" height="14" uuid="e0dfaeba-292a-4e52-8a40-228621133547">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Longitudine]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="113" width="89" height="14" uuid="2f4e87f7-aa38-41df-9a9b-5e23c8af8bfa">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Origine del dato]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="71" width="89" height="14" uuid="18b4539f-59a7-421b-b9c0-d692a935db62">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Latitudine]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="0" y="389" width="89" height="14" uuid="6a841bbc-d17e-4463-8493-9341cfd6bd6b">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Funzionalità]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="0" y="319" width="89" height="14" uuid="a6b24134-f366-4271-bcb4-11311a0f3eea">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Livello piano (n)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="0" y="263" width="89" height="14" uuid="007495d0-1666-455e-8bcb-3b0c4e553213">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Stato manutenz. unità imm.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="0" y="473" width="89" height="14" uuid="25f5bce7-e838-4c51-8f69-9df0d31e13f5">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Prezzo scontato]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="0" y="221" width="89" height="14" uuid="114dd91b-ef15-415f-8b15-9ae5d43e6d99">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Anno di costr./ristruttur.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="0" y="235" width="89" height="14" uuid="2e2020a7-4357-4873-add7-c111f889c152">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Qualità tipologica]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="0" y="417" width="89" height="14" uuid="36c904e3-2c52-46ff-96f1-03ef1b9de512">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Box/posto auto coperto (n)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="0" y="431" width="89" height="14" uuid="d197bbec-0c50-4682-a93f-575c6c00b465">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Sup.commerciale  (mq)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="0" y="333" width="89" height="14" uuid="c25cb8a9-9e39-44e6-a09e-0180696baab2">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Ascensore]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="0" y="445" width="89" height="14" uuid="f2f6a67e-6f13-414d-bac4-1c381549ce32">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Prezzo richiesto]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="0" y="403" width="89" height="14" uuid="da943aae-52be-49dc-8ed9-9680ba151a2a">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Panoramicità]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="0" y="277" width="89" height="14" uuid="5dea2421-95c2-42fb-81f9-a5803b9beff2">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Dotazione imp.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="0" y="459" width="89" height="14" uuid="8759fa0f-9ba7-435a-8fc8-11a1d3199205">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Sconto (eventuale)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="0" y="207" width="89" height="14" uuid="50f9a862-ebd7-4654-bd22-85069d67f20a">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Disponibilità]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="0" y="249" width="89" height="14" uuid="f5f4d62b-e57f-4240-914c-b0f7c482b0e6">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Stato manutenz. fabbricato]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="0" y="375" width="89" height="14" uuid="a5e3f8f4-e0cd-44b2-beba-b69d3524d173">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Luminosità]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="0" y="305" width="89" height="14" uuid="afc89fc7-d251-4764-9cf7-6567352e3c9e">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[N° servizi igienici]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="0" y="361" width="89" height="14" uuid="9f01bac1-735d-4423-ab5a-33ce31a9c906">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Esposizione]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="0" y="291" width="89" height="14" uuid="fc2e0d25-f7de-42d5-8b57-ed41d930d49e">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Livello finiture]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="0" y="155" width="89" height="52" uuid="ec6a53b6-bc81-47ef-917b-f8d449216cdc">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Descrizione"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="437" y="1" width="116" height="14" uuid="714560fc-d840-4947-998d-4b6b0a3b7475">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Immobile da stimare]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="321" y="1" width="116" height="14" uuid="ca1cfe7d-190f-433c-9cbf-f8999bd17ada">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Comparabile 3]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="205" y="1" width="116" height="14" uuid="8bbebeb9-bf1a-475b-8d36-0309c2abcfbe">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Comparabile 2]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="89" y="1" width="116" height="14" uuid="f3cf90b3-6a22-4767-be79-9dacb1c6571c">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Comparabile 1]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="89" y="15" width="116" height="14" uuid="1c31d543-0493-4f6d-a3de-412d2443d6f3"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getProvincia()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="205" y="15" width="116" height="14" uuid="e4bd8e68-44d9-48c0-b296-153fb180bbf8"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getProvincia()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="321" y="15" width="116" height="14" uuid="39f2f946-016d-4c3b-b3e0-3f709ae19576"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getProvincia()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="437" y="15" width="116" height="14" uuid="69a7cb18-4035-4c91-8e19-a8bf53093cee"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getSoggetto().getProvincia()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="321" y="29" width="116" height="14" uuid="f65c4c1f-ef1d-44f0-bf25-54dc7c196cab"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getComune()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="205" y="29" width="116" height="14" uuid="67a58227-021c-4a98-aa5e-d3a32ba5d3df"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getComune()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="89" y="29" width="116" height="14" uuid="433771f1-db21-4e40-bfbc-6d2add9c198d"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getComune()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="437" y="29" width="116" height="14" uuid="682f23b6-e85c-4d2d-ad47-9bddb351752d"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getSoggetto().getComune()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="321" y="43" width="116" height="14" uuid="b65dd889-7e52-492c-b1e0-c079394bee49"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getFrazione()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="205" y="43" width="116" height="14" uuid="91bb00bd-590a-4067-a507-dc7788361893"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getFrazione()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="89" y="43" width="116" height="14" uuid="bdf67c8d-781a-4e5c-84e6-bcdb91654366"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getFrazione()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="437" y="43" width="116" height="14" uuid="7e89ab46-8402-42e9-b4bb-b3a0dc82ad99"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getSoggetto().getFrazione()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="321" y="57" width="116" height="14" uuid="a44694fe-863f-473e-b479-6c50c1eabf5b"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getIndirizzo()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="205" y="57" width="116" height="14" uuid="45381fbd-2e35-47a3-9b46-2fca0f725db9"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getIndirizzo()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="89" y="57" width="116" height="14" uuid="612912ba-10e5-4ff3-b93e-ccc7ba45e493"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getIndirizzo()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="437" y="57" width="116" height="14" uuid="e54b6b6a-915e-49f5-9326-d8fb80071a7a"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getSoggetto().getIndirizzo()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="89" y="71" width="116" height="14" uuid="8b572502-ff56-46ab-a922-79f3aca29443"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getLatitudine()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="205" y="71" width="116" height="14" uuid="edf12756-f8e5-4607-a182-bb975d747bd9"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getLatitudine()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="321" y="71" width="116" height="14" uuid="a74e219a-3921-4bfc-b222-e64056d8096e"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getLatitudine()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="437" y="71" width="116" height="14" uuid="75ed60f7-7263-416e-82b0-3fab2a7c3f79"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getSoggetto().getLatitudine()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="89" y="85" width="116" height="14" uuid="f2c0648d-c950-42aa-9aff-8d4fa715d09b"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getLongitudine()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="205" y="85" width="116" height="14" uuid="da588e8a-126a-4729-8e98-5a4e2a8b01c2"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getLongitudine()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="321" y="85" width="116" height="14" uuid="1f9e4db6-e44c-49a1-b10b-1d1508301529"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getLongitudine()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="437" y="85" width="116" height="14" uuid="51e9a311-f38d-40a1-8569-a581299921e0"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getSoggetto().getLongitudine()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="89" y="99" width="116" height="14" uuid="6eb4da52-7afe-40bc-a6a6-258e9a7d2024"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getZona()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="205" y="99" width="116" height="14" uuid="66b3bcef-81b3-47e5-9a2d-22c993d4fe30"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getZona()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="321" y="99" width="116" height="14" uuid="026310b8-415e-4bb9-a758-dcedfa96e1e5"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getZona()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="437" y="99" width="116" height="14" uuid="6b804fe9-2322-47c1-bba4-c7e2d1e4fa72"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="89" y="113" width="116" height="14" uuid="b91d32e6-7cf7-49f8-963e-ee2786f63d27"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getOrigineDelDato()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="205" y="113" width="116" height="14" uuid="810bef42-9e8a-4a1b-98ab-147df5928c26"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getOrigineDelDato()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="321" y="113" width="116" height="14" uuid="31f9d23e-a550-434c-ab45-a97d52a7be39"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getOrigineDelDato()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="437" y="113" width="116" height="14" uuid="4616c824-0ace-49b0-a9f8-2a798d8a6a2c"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="89" y="127" width="116" height="14" uuid="38325533-01ff-41d5-b34a-a39ca9b5a5ec"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getFonte()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="205" y="127" width="116" height="14" uuid="802730ea-569a-44f9-84bb-2c0d3597321e"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getFonte()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="321" y="127" width="116" height="14" uuid="debd50a7-2193-407c-bcff-bd804a5acba9"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getFonte()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="437" y="127" width="116" height="14" uuid="c7308f4d-9751-4d66-a212-a338a5bca693"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="89" y="141" width="116" height="14" uuid="5e3c940a-2786-41b9-a140-643b4c8962d7"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getMesi()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="205" y="141" width="116" height="14" uuid="f2d0cbb3-41f5-4a2b-b239-b20f0b87a945"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getMesi()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="321" y="141" width="116" height="14" uuid="668cb137-027d-4f18-b62f-b90344ec70f0"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getMesi()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="437" y="141" width="116" height="14" uuid="164cc188-3468-48cd-8faf-557fb4fe1770"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="89" y="155" width="116" height="52" uuid="e113248f-7fd1-4d7a-b06b-e95c022eeab9"/>
+					<box padding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getDescrizione()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="205" y="155" width="116" height="52" uuid="532b3354-9c31-44ad-8742-f9dd82f1b9ee"/>
+					<box padding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getDescrizione()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="321" y="155" width="116" height="52" uuid="b46d4fe0-250a-493d-87c3-1c0f201f5117"/>
+					<box padding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getDescrizione()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="437" y="155" width="116" height="52" uuid="e6daaa96-1748-4b4a-be0b-6d4667321929"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="89" y="207" width="116" height="14" uuid="536c1279-950c-4b51-b887-84fb4bb013f2"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getDisponibilita()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="205" y="207" width="116" height="14" uuid="2bcdbb69-8c52-4295-bbf1-f318cec9dd16"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getDisponibilita()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="321" y="207" width="116" height="14" uuid="211fcdc4-077d-4938-885a-92e6573e87c3"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getDisponibilita()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="437" y="207" width="116" height="14" uuid="e5f9599b-205a-4e2f-b149-535f7e421219"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getSoggetto().getDisponibilita()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="89" y="221" width="116" height="14" uuid="339d544f-d433-46d0-ae9f-315e87718b65"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getAnnoCostruzione()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="205" y="221" width="116" height="14" uuid="7622f465-b968-40b0-8617-7923b5b3f5f5"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getAnnoCostruzione()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="321" y="221" width="116" height="14" uuid="e94e0d76-a7c2-4314-9f09-af34611c8786"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getAnnoCostruzione()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="437" y="221" width="116" height="14" uuid="44a1aaed-9b40-4d03-b905-291f56515546"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getSoggetto().getAnnoCostruzione()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="89" y="235" width="116" height="14" uuid="4dccd1f9-32e5-4ef1-90f2-8f7f1e341944"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getQualitaTipologica()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="204" y="235" width="116" height="14" uuid="3c345eac-e1e1-4aec-adba-0e516f1a19c2"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getQualitaTipologica()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="321" y="235" width="116" height="14" uuid="8ee27c50-72d2-4352-b97e-619de07a44c6"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getQualitaTipologica()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="437" y="235" width="116" height="14" uuid="89d109b5-23f3-41da-ad03-f0719040f2db"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getSoggetto().getQualitaTipologica()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="89" y="249" width="116" height="14" uuid="fa39e3ed-a182-4106-b5ec-36da4d6790dc"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getStatoManutenzioneFabbricato()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="205" y="249" width="116" height="14" uuid="64094c86-cd6e-4bd7-a1fe-14f176e45ae8"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getStatoManutenzioneFabbricato()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="321" y="249" width="116" height="14" uuid="87237952-8ea3-432d-a224-45caa2c7cd50"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getStatoManutenzioneFabbricato()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="437" y="249" width="116" height="14" uuid="67a2d65a-0c6a-4587-925f-93ebd267cf38"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getSoggetto().getStatoManutenzioneFabbricato()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="89" y="263" width="116" height="14" uuid="3f1dec77-6dbc-4c9c-be06-a0e1cae86f75"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getStatoManutenzioneUnitaImm()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="205" y="263" width="116" height="14" uuid="2481601d-175f-4f56-992b-38a0708dd5e4"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getStatoManutenzioneUnitaImm()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="321" y="263" width="116" height="14" uuid="c177d117-7458-4eef-926e-55d792aabc56"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getStatoManutenzioneUnitaImm()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="437" y="263" width="116" height="14" uuid="367c8133-5a61-449b-a924-9e52bacacbe5"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getSoggetto().getStatoManutenzioneUnitaImm()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="89" y="277" width="116" height="14" uuid="2862e8c1-f396-48d5-9534-d3c4543e6355"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getDotazioneImpiantistica()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="205" y="277" width="116" height="14" uuid="3e78ca8e-2926-477b-a926-7e596dbb18a7"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getDotazioneImpiantistica()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="321" y="277" width="116" height="14" uuid="9139a952-bf02-45a8-afad-cee1a6c6fc20"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getDotazioneImpiantistica()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="437" y="277" width="116" height="14" uuid="0afc97fb-f8ab-4135-a342-7ba115617432"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getSoggetto().getDotazioneImpiantistica()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="89" y="291" width="116" height="14" uuid="5ebdc48e-1c02-44be-b93b-e4c55d4688e6"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getLivelloFiniture()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="205" y="291" width="116" height="14" uuid="3142ddc1-4fc3-461f-b0c8-847af4dbe335"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getLivelloFiniture()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="321" y="291" width="116" height="14" uuid="f26e15c6-7315-4457-b711-40662ee98f44"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getLivelloFiniture()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="437" y="291" width="116" height="14" uuid="20ccfcb1-cf98-4642-9353-cbdea3d2b79e"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getSoggetto().getLivelloFiniture()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="89" y="305" width="116" height="14" uuid="88c53894-80d4-4821-aa53-150cbf88e758"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getServiziIgienici()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="205" y="305" width="116" height="14" uuid="ed498638-15d5-4b26-a730-57a3bb1aa866"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getServiziIgienici()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="321" y="305" width="116" height="14" uuid="80c2d889-933f-4dd7-9c96-e61286c283f6"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getServiziIgienici()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="437" y="305" width="116" height="14" uuid="dd9795b3-7656-4b89-806a-e2e45634368c"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getSoggetto().getServiziIgienici()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="89" y="319" width="116" height="14" uuid="86bdadcc-e338-4c02-80bf-014c978db36a"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getLivelloPiano()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="205" y="319" width="116" height="14" uuid="a3fa3e59-71ed-4c92-88de-d1b236266d79"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getLivelloPiano()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="321" y="319" width="116" height="14" uuid="9f993413-f895-4df5-a17d-06fd2f16a8f1"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getLivelloPiano()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="437" y="319" width="116" height="14" uuid="c97be6a1-202c-407a-ab84-4ffb80a32a2c"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getSoggetto().getLivelloPiano()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="89" y="333" width="116" height="14" uuid="8dfc5414-f609-4656-a78c-7d285904003c"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getAscensore()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="205" y="333" width="116" height="14" uuid="5484c4ee-11ff-499f-b364-51ad9557f4fd"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getAscensore()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="321" y="333" width="116" height="14" uuid="ab822916-2d10-46bf-a5a4-9fdeb7960977"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getAscensore()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="437" y="333" width="116" height="14" uuid="f649b589-42b5-4d7b-a89f-726ba0c58453"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getSoggetto().getAscensore()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="89" y="361" width="116" height="14" uuid="c5919f9d-f516-464c-bd63-005504052b14"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getEsposizione()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="205" y="361" width="116" height="14" uuid="0f235a58-8e5a-4169-a488-2463cab427ac"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getEsposizione()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="321" y="361" width="116" height="14" uuid="afe0b6f9-d973-4e5a-a29f-11427e71b016"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getEsposizione()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="437" y="361" width="116" height="14" uuid="c9735cf7-bd86-4bbf-8fc4-54e67de8467c"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getSoggetto().getEsposizione()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="89" y="375" width="116" height="14" uuid="f0798272-63b8-48ab-a2f8-35b6140216ad"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getLuminosita()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="205" y="375" width="116" height="14" uuid="011a0d51-7cbd-412b-8b11-d5710d82e1e4"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getLuminosita()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="321" y="375" width="116" height="14" uuid="eea2be72-9120-4857-aac8-fd1fed855fa0"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getLuminosita()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="437" y="375" width="116" height="14" uuid="2965a8f4-ee5d-4ca8-91b5-3e4178b1ab40"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getSoggetto().getLuminosita()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="89" y="389" width="116" height="14" uuid="6aa08749-3dc2-4bfa-98d3-8d08cdf96e48"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getFunzionalita()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="205" y="389" width="116" height="14" uuid="ba18ee45-d276-4553-bbd4-136582194c34"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getFunzionalita()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="321" y="389" width="116" height="14" uuid="b24dc5cb-401b-4f53-90b4-0929568e5c57"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getFunzionalita()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="437" y="389" width="116" height="14" uuid="0d421aa3-71e3-4325-802c-e4800b109ed5"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getSoggetto().getFunzionalita()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="89" y="403" width="116" height="14" uuid="9cb10e0f-f5a3-4494-9a7f-5e3bc1a54ea1"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getPanoramicita()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="205" y="403" width="116" height="14" uuid="73a0cc98-6d8c-4ad6-8ce4-5e062e157b05"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getPanoramicita()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="321" y="403" width="116" height="14" uuid="82818475-1328-4872-a7cf-d012774e45da"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getPanoramicita()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="437" y="403" width="116" height="14" uuid="08f7f4b6-6fb9-454a-93d9-29638e3c5207"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getSoggetto().getPanoramicita()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="89" y="417" width="116" height="14" uuid="aca4527a-e589-4998-a21b-a7b8d28a12d0"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getNumeroBoxPostoAutoCoperto()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="205" y="417" width="116" height="14" uuid="f5e171ca-2254-40b3-a430-656f991b80ad"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getNumeroBoxPostoAutoCoperto()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="321" y="417" width="116" height="14" uuid="63e2e493-966f-4e52-8950-f2c36d7b6a1b"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getNumeroBoxPostoAutoCoperto()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="437" y="417" width="116" height="14" uuid="5ab865bf-5072-488f-ba47-95e8c13a579f"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getSoggetto().getNumeroBoxPostoAutoCoperto()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="89" y="431" width="116" height="14" uuid="4b78eafd-9251-4a88-9f32-a09af5aa0bac"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getSupCmmerciale()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="205" y="431" width="116" height="14" uuid="9440b01c-2426-40ff-82da-7e0016e97a6b"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getSupCmmerciale()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="321" y="431" width="116" height="14" uuid="c4b35fe2-a263-46ba-9584-046edfe32820"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getSupCmmerciale()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="437" y="431" width="116" height="14" uuid="1e1bcfe4-c105-491f-ab70-4f9801114de4"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getSoggetto().getSupCmmerciale()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="89" y="445" width="116" height="14" uuid="83581907-6436-47f1-89b0-b9752c854dea"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getPrezzoRichiesto()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="205" y="445" width="116" height="14" uuid="bd7d67e3-8204-4872-8a0e-a073af14ad76"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getPrezzoRichiesto()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="321" y="445" width="116" height="14" uuid="91adc3bf-692b-4cf8-84b6-e02f8462512b"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getPrezzoRichiesto()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="437" y="445" width="116" height="14" uuid="e6e66173-9a64-49a7-9cc5-bd71afd937c7"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="89" y="459" width="116" height="14" uuid="ea1b5319-825e-4009-b52f-bef411113c2b"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getSconto()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="205" y="459" width="116" height="14" uuid="12b8e0bb-bd6e-4485-a870-d817cca92eeb"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getSconto()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="321" y="459" width="116" height="14" uuid="6921019e-72f6-4ea1-a798-f12a8c38e8b0"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getSconto()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="437" y="459" width="116" height="14" uuid="fd5939d7-57dd-4126-97be-6f056a4c96c6"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="89" y="473" width="116" height="14" uuid="73d3abad-cc3a-499b-818a-d904a0fcb343"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getPrezzoScontato()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="205" y="473" width="116" height="14" uuid="ef6f5319-25f0-47af-9f46-3c54f01ee71e"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getPrezzoScontato()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="321" y="473" width="116" height="14" uuid="da657631-484a-4fe0-803d-1e4a6635bc00"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getPrezzoScontato()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="437" y="473" width="116" height="14" uuid="f1ba847e-d76a-417f-b99b-fdc7730bff86"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<frame>
+					<reportElement positionType="Float" x="0" y="347" width="553" height="14" isRemoveLineWhenBlank="true" uuid="cef00ff4-4629-4f08-8819-9f729f760d71"/>
+					<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+						<reportElement positionType="Float" x="0" y="0" width="89" height="14" isRemoveLineWhenBlank="true" uuid="22dc2286-8754-4d1b-94f9-69c12821a19f">
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						</reportElement>
+						<box leftPadding="1">
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Left" verticalAlignment="Middle">
+							<font fontName="BancoPopolareFont" size="9"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Classe energetica"]]></textFieldExpression>
+					</textField>
+					<textField isBlankWhenNull="true">
+						<reportElement x="89" y="0" width="116" height="14" uuid="b5a6c04a-bd6d-4ffa-b17e-3da56892c4a7"/>
+						<box>
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Center">
+							<font fontName="BancoPopolareFont" size="9"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getEfficienzaEnergetica()]]></textFieldExpression>
+					</textField>
+					<textField isBlankWhenNull="true">
+						<reportElement x="205" y="0" width="116" height="14" uuid="7863bb1a-743b-4d93-8b9d-40d6016b4984"/>
+						<box>
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Center">
+							<font fontName="BancoPopolareFont" size="9"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getEfficienzaEnergetica()]]></textFieldExpression>
+					</textField>
+					<textField isBlankWhenNull="true">
+						<reportElement x="321" y="0" width="116" height="14" uuid="8570fedd-5ab4-465d-a7cb-722ccf6a6671"/>
+						<box>
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Center">
+							<font fontName="BancoPopolareFont" size="9"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getEfficienzaEnergetica()]]></textFieldExpression>
+					</textField>
+					<textField isBlankWhenNull="true">
+						<reportElement x="437" y="0" width="116" height="14" uuid="9bd1a67e-b532-4906-ae48-7387c14db337"/>
+						<box>
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Center">
+							<font fontName="BancoPopolareFont" size="9"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{data}.getMca().getSoggetto().getEfficienzaEnergetica()]]></textFieldExpression>
+					</textField>
+				</frame>
+			</frame>
+		</band>
+		<band height="609">
+			<frame>
+				<reportElement positionType="Float" x="0" y="0" width="554" height="160" uuid="41161d20-c8ed-416d-bb85-17a9016611f8"/>
+				<textField isBlankWhenNull="false">
+					<reportElement x="0" y="0" width="554" height="20" uuid="db87a7b9-7860-48a2-9a75-535943e0a268">
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["TABELLA DEI DATI"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="90" y="20" width="116" height="14" uuid="baff12f7-3bb4-4aab-aa5d-59c04a78dcd3">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Comparabile 1]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="206" y="20" width="116" height="14" uuid="9bd5d8d3-4039-489d-b0b6-c746a008dd8a">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Comparabile 2]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="322" y="20" width="116" height="14" uuid="a141bbad-4d87-48a4-8604-ca9a7dc8d5a7">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Comparabile 3]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="438" y="20" width="116" height="14" uuid="d6d203fd-5f28-4e33-988d-0360f225fb0d">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Immobile da stimare]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="438" y="34" width="116" height="14" uuid="e7105daf-2470-4115-a1b4-40843aa0d3e9"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="322" y="34" width="116" height="14" uuid="7f262c2a-39d7-4936-b79d-935e365079c8"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getTabellaDeiDati().getPrezzo()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="206" y="34" width="116" height="14" uuid="6e787d2e-c5a2-4d64-aa9d-17cb3289fc6b"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getTabellaDeiDati().getPrezzo()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="90" y="34" width="116" height="14" uuid="70cb1825-12c7-4ba7-849b-9552b283b0b9"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getTabellaDeiDati().getPrezzo()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="90" y="48" width="116" height="14" uuid="52f8a4d3-5bc4-41fe-b325-1f276621d3ee"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getTabellaDeiDati().getMesi()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="90" y="90" width="116" height="14" uuid="5301b0b5-5896-4132-ad3d-297736ffa4dc"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getTabellaDeiDati().getServiziIgienici()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="438" y="48" width="116" height="14" uuid="6052c6f6-de66-40e4-8cb1-56bc22847f4a"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="322" y="76" width="116" height="14" uuid="3ca70274-e1cf-487f-9701-f9e3c81c1fd1"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getTabellaDeiDati().getDotazioneImpiantistica()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="322" y="48" width="116" height="14" uuid="6bfc8287-7b6a-41ab-9019-02e0a6481542"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getTabellaDeiDati().getMesi()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="90" y="76" width="116" height="14" uuid="78abe85d-e541-4519-8570-180164397046"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getTabellaDeiDati().getDotazioneImpiantistica()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="438" y="62" width="116" height="14" uuid="380de78e-ebde-46f1-973b-3344116683de"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="206" y="48" width="116" height="14" uuid="0489db4b-2948-41e4-8cba-f98df97ec920"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getTabellaDeiDati().getMesi()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="206" y="76" width="116" height="14" uuid="0845a84e-1974-4f74-81c4-6295704f5e4c"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getTabellaDeiDati().getDotazioneImpiantistica()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="206" y="90" width="116" height="14" uuid="dab2dd79-da56-4006-b846-17622aeab71a"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getTabellaDeiDati().getServiziIgienici()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="206" y="62" width="116" height="14" uuid="85aa99f2-819b-4719-be7e-07cfd00f61c4"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getTabellaDeiDati().getSupComm()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="90" y="62" width="116" height="14" uuid="973f7d9c-d090-4b21-b189-66b0e84122a7"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getTabellaDeiDati().getSupComm()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="438" y="76" width="116" height="14" uuid="182e8c79-375b-437d-947e-381e40303fbd"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getSoggetto().getTabellaDeiDati().getDotazioneImpiantistica()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="438" y="90" width="116" height="14" uuid="24383170-fb8c-4fd2-935c-ef9839f70834"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getSoggetto().getTabellaDeiDati().getServiziIgienici()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="322" y="90" width="116" height="14" uuid="2870232b-9f9c-4a7d-8340-8ecfc876555e"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getTabellaDeiDati().getServiziIgienici()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="322" y="62" width="116" height="14" uuid="812b5eed-3353-4624-abb2-ca79f5de38e6"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getTabellaDeiDati().getSupComm()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="90" y="132" width="116" height="14" uuid="1b321e66-05c9-4ac0-b5ad-3ad93d45ac13"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getTabellaDeiDati().getStatoManutenz()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="206" y="104" width="116" height="14" uuid="86e256a9-3e59-4bb3-8954-5b9d87066b4f"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getTabellaDeiDati().getAscensore()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="206" y="146" width="116" height="14" uuid="a54d5553-da03-4102-8fc1-c20277dff919"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getTabellaDeiDati().getBoxPostoAutoCoperto()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="90" y="118" width="116" height="14" uuid="167ef34f-9a42-4f28-9618-df02bc5242da"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getTabellaDeiDati().getLivelloPiano()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="322" y="132" width="116" height="14" uuid="a0543ec8-fa87-4370-b10b-26bbf23beb9f"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getTabellaDeiDati().getStatoManutenz()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="322" y="146" width="116" height="14" uuid="cd375ed1-14b3-4267-a44b-ae60b78c0696"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getTabellaDeiDati().getBoxPostoAutoCoperto()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="322" y="104" width="116" height="14" uuid="f54bbb90-93df-4ec6-a922-dff6b26507eb"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getTabellaDeiDati().getAscensore()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="206" y="132" width="116" height="14" uuid="4b0424eb-0f21-4be8-b090-c9197f3407a3"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getTabellaDeiDati().getStatoManutenz()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="90" y="146" width="116" height="14" uuid="9c21d864-204e-4022-8dcb-db5d4d93e1ad"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getTabellaDeiDati().getBoxPostoAutoCoperto()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="206" y="118" width="116" height="14" uuid="cad47bd7-6d5e-4a1a-9ca0-3a8d572757ee"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getTabellaDeiDati().getLivelloPiano()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="322" y="118" width="116" height="14" uuid="3e385d16-508f-49ac-88f4-c3f4601beec5"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getTabellaDeiDati().getLivelloPiano()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="90" y="104" width="116" height="14" uuid="66f9cac7-8bad-4be2-b785-83ef49e7a928"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getTabellaDeiDati().getAscensore()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="438" y="146" width="116" height="14" uuid="7ba3ba74-c4dd-4e8e-b285-ccb9283c538f"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getSoggetto().getTabellaDeiDati().getBoxPostoAutoCoperto()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="438" y="132" width="116" height="14" uuid="194e29b2-d8b7-4952-937a-79cf71db2872"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getSoggetto().getTabellaDeiDati().getStatoManutenz()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="438" y="104" width="116" height="14" uuid="5ad447c5-edce-469f-9e87-2e26759a85ce"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getSoggetto().getTabellaDeiDati().getAscensore()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="438" y="118" width="116" height="14" uuid="52893d5a-4aca-42bc-8804-4e3fbb367de7"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getSoggetto().getTabellaDeiDati().getLivelloPiano()]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="1" y="62" width="89" height="14" uuid="ecd33415-5ccc-4857-b7f2-d516e1466df3">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Sup. comm. (mqe.)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="1" y="146" width="89" height="14" uuid="7e1825a7-2c27-43c8-b9ca-252a4c91dd61">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Box/posto auto coperto (n)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="1" y="34" width="89" height="14" uuid="f238dcfd-079e-4a5b-a585-22adc33e9a1c">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Prezzo (€)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="1" y="48" width="89" height="14" uuid="895ad815-0059-4859-b3ee-62b7051bf565">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Data (mesi) (n)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="1" y="118" width="89" height="14" uuid="d030eb4d-4b62-4649-96b5-bfe13f2c1721">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Livello Piano (n)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="1" y="104" width="89" height="14" uuid="134322d7-e995-46eb-a9f3-b4d9d74ac37f">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Ascensore (0-1)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="1" y="90" width="89" height="14" uuid="68e998c1-ae8e-41e0-8d74-45bf3a38858c">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Servizi igienici (n)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="1" y="132" width="89" height="14" uuid="a275d0ba-42ae-42cb-99dc-e24a46bdde38">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Stato manutenz. (n)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="1" y="76" width="89" height="14" uuid="12651a3d-60b6-42f4-a174-b506f5e90668">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Dotazione impiantistica (n)]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="1" y="164" width="554" height="14" uuid="eb4c31dc-d086-483e-bc70-3f627fc8fdb8"/>
+				<staticText>
+					<reportElement x="0" y="0" width="89" height="14" uuid="4857de20-2de8-409c-a1ca-4cb0db341e69">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Prezzo marginale sup. com.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="89" y="0" width="85" height="14" uuid="9a6e797b-3617-4eb5-80cd-e5afb805bc80">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Minimo]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" x="174" y="0" width="80" height="14" uuid="0cad3643-70e7-445a-978e-61faeaf5de36">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+				</textField>
+				<staticText>
+					<reportElement x="279" y="0" width="90" height="14" uuid="d5d06f42-89e0-45ff-9cfa-54797f023c30">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Data]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="369" y="0" width="85" height="14" uuid="df6561dc-c406-4429-918f-72021aeb7e95">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Riv. annua]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" x="454" y="0" width="100" height="14" uuid="a1d115e2-9fbe-4c96-bc95-e6db2ebb3dca">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getDatiStatistici().getRivalutazioneAnnua()]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="1" y="192" width="254" height="42" uuid="f7be65fe-0651-4dc2-a3eb-49a02b2218a8"/>
+				<staticText>
+					<reportElement x="0" y="0" width="89" height="42" uuid="cb468303-7da7-4e50-b824-283b0957e996">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Servizi Igienici]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="89" y="0" width="85" height="14" uuid="939e574f-d9ba-4688-b8fc-40f9c272bd43">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Costo (C)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="89" y="14" width="85" height="14" uuid="fd17e052-f853-439f-8b1a-457d7a687b86">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Vita utile (n)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="89" y="28" width="85" height="14" uuid="70e47093-f426-40b0-a112-5ce17d0a24c7">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Vetustà (t)]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" x="174" y="28" width="80" height="14" uuid="f7179139-d13c-446b-8779-06532a925eff"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getDatiStatistici().getVetustaServiziIgienici()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" x="174" y="14" width="80" height="14" uuid="f556497c-1959-4c08-bc20-bb231ff52237"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getDatiStatistici().getVitaUtileServiziIgienici()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" x="174" y="0" width="80" height="14" uuid="fe0b69d9-1450-43be-b457-db6ed9cfff00"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getDatiStatistici().getCostoServiziIgienici()]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="280" y="192" width="275" height="42" uuid="b2f5d600-8cb2-4a3d-b9e3-46bb496ce413"/>
+				<staticText>
+					<reportElement x="0" y="0" width="90" height="42" uuid="e4fdedf2-8eae-4d17-af7c-d23f07d85490">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Data]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="90" y="14" width="85" height="14" uuid="5a4c4210-d231-4d52-9ccf-b372fa6f4921">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Vita utile (n)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="90" y="0" width="85" height="14" uuid="52e8133a-7a22-4776-bdad-594e790cc475">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Costo (C)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="90" y="28" width="85" height="14" uuid="1621ad98-10d0-493d-bff9-0630b0bf8d0b">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Vetustà (t)]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" x="175" y="28" width="100" height="14" uuid="ff648c10-f8ec-457e-8abd-a7d3a102737d">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getDatiStatistici().getVetustaDotazioneImpiantistica()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" x="175" y="14" width="100" height="14" uuid="bbadc094-f36f-40da-bf5a-702d35b54cf2">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getDatiStatistici().getVitaUtileDotazioneImpiantistica()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" x="175" y="0" width="100" height="14" uuid="8b742e09-a680-4898-8bf7-e7d717bc4d7c">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getDatiStatistici().getCostoDotazioneImpiantistica()]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="1" y="248" width="554" height="14" uuid="ed59b05b-8b6c-45df-9af3-677e1368f0ed"/>
+				<staticText>
+					<reportElement x="0" y="0" width="89" height="14" uuid="97ac3731-ad46-4b75-874e-785be1f1cc1b">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Livello piano]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="89" y="0" width="85" height="14" uuid="b66044de-6e4e-4bce-94fa-59720803952a">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Coeff. piano]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" x="174" y="0" width="80" height="14" uuid="8d3ecafd-f0ff-47a7-9d1b-f5c23f962f00"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getDatiStatistici().getCoefficientePiano()]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="279" y="0" width="175" height="14" uuid="6949531f-bd81-4d65-ab16-84ec62412d24">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[ Ascensore dell'immobile da valutare]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" x="454" y="0" width="100" height="14" uuid="7c65b983-ce63-43c9-992e-d83ed8b4120d">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getSoggetto().getTabellaDeiDati().getAscensore()]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="1" y="276" width="554" height="14" uuid="b5134865-460e-40bf-be49-7c086a5220d2"/>
+				<staticText>
+					<reportElement x="0" y="0" width="89" height="14" uuid="4b1553b6-40bf-4122-ba90-3d69c830efa7">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Stato manutenzione]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="89" y="0" width="85" height="14" uuid="d99a9846-976b-4319-9589-bdf70552d957">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Costo al mq. x liv.]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" x="174" y="0" width="80" height="14" uuid="8f3f809a-f1af-4677-a95e-cb45e24da8a3"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getDatiStatistici().getCostoManutenzioneAlMq()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" x="454" y="0" width="100" height="14" uuid="6a40619c-6906-47d7-827d-6722d0d4ec33">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getDatiStatistici().getValoreBoxPostoAuto()]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="369" y="0" width="85" height="14" uuid="6e04a04f-2a96-4f3f-8b87-29d6ca7f9a30">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Valore]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="279" y="0" width="90" height="14" uuid="6ebdfb41-9742-49a5-a36d-e1bc3bb332fe">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Box / Posto auto]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="298" width="554" height="132" uuid="eadb9092-3c8a-4599-8674-88d07ae1fffa"/>
+				<textField isBlankWhenNull="false">
+					<reportElement x="0" y="0" width="554" height="20" uuid="c77bbfea-7699-4427-a1a1-a6410ad15399">
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["ANALISI DEI PREZZI MARGINALI"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="206" y="118" width="116" height="14" uuid="1b10df8c-92d4-4f06-8b98-66e750d3bb35"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getAnalisiPrezziMarginali().getBoxPostoAutoCoperto()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="322" y="118" width="116" height="14" uuid="6f0bb716-f2d8-45fc-887b-0e413313c898"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getAnalisiPrezziMarginali().getBoxPostoAutoCoperto()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="90" y="118" width="116" height="14" uuid="caaaf712-7346-4e75-8b10-9dbcde080804"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getAnalisiPrezziMarginali().getBoxPostoAutoCoperto()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="322" y="48" width="116" height="14" uuid="3981550f-4499-4f86-9379-0588906989df"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getAnalisiPrezziMarginali().getSupComm()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="206" y="48" width="116" height="14" uuid="e9a7f67f-9ec1-4ed5-82ea-8c3948e91b49"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getAnalisiPrezziMarginali().getSupComm()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="90" y="48" width="116" height="14" uuid="cc017a75-6e0e-439c-8c8d-94feb85a9ed5"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getAnalisiPrezziMarginali().getSupComm()]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="90" y="20" width="116" height="14" uuid="6f986e2b-3e45-4b36-89db-d14b2bf16478">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Comparabile 1]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="322" y="20" width="116" height="14" uuid="226351fa-201e-4f84-8263-cb9ad05c9397">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Comparabile 3]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="206" y="20" width="116" height="14" uuid="0b4fe7f0-0af2-4948-b885-02b3f686f15e">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Comparabile 2]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="206" y="90" width="116" height="14" uuid="0a0db8c9-6906-4931-9b7e-0ad098643474"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getAnalisiPrezziMarginali().getLivelloPiano()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="322" y="90" width="116" height="14" uuid="b2e67311-5eff-4609-a22d-7d64a399135b"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getAnalisiPrezziMarginali().getLivelloPiano()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="90" y="90" width="116" height="14" uuid="e8bb052e-0bd8-42de-bce3-ec2f2c5f3b7a"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getAnalisiPrezziMarginali().getLivelloPiano()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="206" y="104" width="116" height="14" uuid="382fbc3c-c0e7-4878-97bf-58f8c342cc39"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getAnalisiPrezziMarginali().getStatoManutenzione()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="322" y="104" width="116" height="14" uuid="1f8fa58c-3741-45e2-9051-27d995f072ee"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getAnalisiPrezziMarginali().getStatoManutenzione()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="90" y="104" width="116" height="14" uuid="a2b94cdf-1c4f-4799-92ad-78de7a61cc24"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getAnalisiPrezziMarginali().getStatoManutenzione()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="206" y="34" width="116" height="14" uuid="215198ae-8caa-4d7c-add1-fba203ece855"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getAnalisiPrezziMarginali().getMesi()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="322" y="34" width="116" height="14" uuid="65392e6c-3f22-44a2-afa7-5d73ac039940"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getAnalisiPrezziMarginali().getMesi()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="90" y="34" width="116" height="14" uuid="343946c6-5e2f-472f-8831-97d7a982bc58"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getAnalisiPrezziMarginali().getMesi()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="322" y="62" width="116" height="14" uuid="c88d71a0-cf87-45fb-bef2-31c236af9df2"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getAnalisiPrezziMarginali().getDotazioneImpiantistica()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="90" y="62" width="116" height="14" uuid="6a1a0272-85d9-4770-a573-30507207eaf3"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getAnalisiPrezziMarginali().getDotazioneImpiantistica()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="206" y="76" width="116" height="14" uuid="4c3bfd0a-50f3-4385-8329-71693d8c859c"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getAnalisiPrezziMarginali().getServiziIgienici()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="322" y="76" width="116" height="14" uuid="eb05bf0b-ae7b-4521-8c95-8855a9c90e8f"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getAnalisiPrezziMarginali().getServiziIgienici()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="90" y="76" width="116" height="14" uuid="8a59777f-25ae-4f2f-8673-90065f8c2e07"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getAnalisiPrezziMarginali().getServiziIgienici()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="206" y="62" width="116" height="14" uuid="08311dc9-3a7e-4de5-8b3e-50b31fe300d7"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getAnalisiPrezziMarginali().getDotazioneImpiantistica()]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="1" y="62" width="89" height="14" uuid="2c311167-ae8b-4ea4-8a48-2acbd15dff5c">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Dotazione impiantistica (n)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="1" y="48" width="89" height="14" uuid="994ba301-e4e5-4bbf-8cd1-b76291578f83">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Sup. comm.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="1" y="104" width="89" height="14" uuid="9f057071-6563-4ca5-8169-19a84ea08966">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Stato manutenz. (n)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="1" y="76" width="89" height="14" uuid="524e0824-0b3b-4afb-9aac-a4279dcc2bbf">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Servizi igienici (n)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="1" y="118" width="89" height="14" uuid="c5b71ae7-1d5e-401e-90fc-8a18e0f6eb6d">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Box/posto auto coperto (n)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="1" y="34" width="89" height="14" uuid="de84371a-5c37-4b82-a46f-33e32814b290">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Data (mesi) (n)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="1" y="90" width="89" height="14" uuid="620512d3-d03c-4b90-9885-b13644ba6317">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Livello Piano (n)]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="434" width="554" height="133" uuid="1e9db9e0-4154-450e-a388-1049522f7c75"/>
+				<textField isBlankWhenNull="false">
+					<reportElement x="0" y="0" width="554" height="20" uuid="00f7cbcc-b385-4587-ba76-77cb0a546d5e">
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["AGGIUSTAMENTI"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="90" y="21" width="116" height="14" uuid="cdc246a9-69fb-407d-860b-f4242bf33be3">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Comparabile 1]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="206" y="21" width="116" height="14" uuid="a0d8a1c1-ff24-4fd1-8cf5-6629ba2584f6">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Comparabile 2]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="322" y="21" width="116" height="14" uuid="d6bae8cf-2a35-4d87-a21c-261e2ed05d99">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<text><![CDATA[Comparabile 3]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="206" y="49" width="116" height="14" uuid="83cb5a52-37f7-4b20-bab6-7eef53f90d57"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getAggiustamenti().getSupComm()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="206" y="35" width="116" height="14" uuid="4ba842ab-d805-4f28-9a5e-fc1ca5f58766"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getAggiustamenti().getMesi()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="206" y="63" width="116" height="14" uuid="711b53ba-c786-4fd7-89ea-ae50ac20f756"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getAggiustamenti().getDotazioneImpiantistica()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="206" y="91" width="116" height="14" uuid="7086bf8c-443c-4509-905f-8fc7ee206058"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getAggiustamenti().getLivelloPiano()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="322" y="105" width="116" height="14" uuid="9f0db45a-e02d-4344-88a0-c39e87f165ac"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getAggiustamenti().getStatoManutenzione()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="90" y="105" width="116" height="14" uuid="d50249ed-c8e3-43fb-8ef2-7658abc33993"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getAggiustamenti().getStatoManutenzione()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="90" y="63" width="116" height="14" uuid="19aace51-c743-420f-80a8-6de643c39b8f"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getAggiustamenti().getDotazioneImpiantistica()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="322" y="49" width="116" height="14" uuid="81a77b6f-7af9-4d6d-b4a8-0151fffd731f"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getAggiustamenti().getSupComm()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="322" y="35" width="116" height="14" uuid="72fb4594-bca9-4ce0-8b87-e2dcf889a1d4"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getAggiustamenti().getMesi()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="90" y="77" width="116" height="14" uuid="b098dc26-72d0-4493-aa88-ec143fb6f154"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getAggiustamenti().getServiziIgienici()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="206" y="105" width="116" height="14" uuid="26bfcf26-d1b4-43fb-b9f9-0221ff7c7faf"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getAggiustamenti().getStatoManutenzione()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="206" y="77" width="116" height="14" uuid="8d786150-245a-41c0-9c0c-4c8cb2566921"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getAggiustamenti().getServiziIgienici()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="90" y="49" width="116" height="14" uuid="ce630620-8a6c-4d68-8e65-26eec77ae8ad"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getAggiustamenti().getSupComm()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="90" y="91" width="116" height="14" uuid="321affca-4b14-4dc0-afe8-1e68f069fbd6"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getAggiustamenti().getLivelloPiano()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="322" y="91" width="116" height="14" uuid="87237d64-e312-4fba-9ff2-b0ab764f9847"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getAggiustamenti().getLivelloPiano()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="322" y="63" width="116" height="14" uuid="6b2920ab-b0c5-4158-96ae-1cbb5e42074c"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getAggiustamenti().getDotazioneImpiantistica()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="322" y="77" width="116" height="14" uuid="18d4186b-9fa5-4ed6-8dd1-de5aa29aafff"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getAggiustamenti().getServiziIgienici()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="90" y="35" width="116" height="14" uuid="000798e1-57d6-483f-bf1e-6296c9a056be"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getAggiustamenti().getMesi()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="90" y="119" width="116" height="14" uuid="2464a96d-52bf-438c-b891-94f15f4d88cb"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getAggiustamenti().getBoxPostoAutoCoperto()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="322" y="119" width="116" height="14" uuid="09618a3f-ec49-4b10-8cb1-fdd07208e30c"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getAggiustamenti().getBoxPostoAutoCoperto()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="206" y="119" width="116" height="14" uuid="7e8cdf2b-e6cf-41a2-aa18-21577689b7c0"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getAggiustamenti().getBoxPostoAutoCoperto()]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="1" y="49" width="89" height="14" uuid="e8e9b537-719e-4078-bbbe-e166e715b402">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Sup. comm.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="1" y="35" width="89" height="14" uuid="866bb7df-aa5f-4da0-bd22-12de1982c6ae">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Data (mesi) (n)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="1" y="63" width="89" height="14" uuid="b84ce07e-fe21-411a-bbad-301301613841">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Dotazione impiantistica (n)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="1" y="77" width="89" height="14" uuid="81436265-02a9-4765-abd6-800add426507">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Servizi igienici (n)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="1" y="105" width="89" height="14" uuid="ad5ee1e3-742a-4739-b30b-804086b119bc">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Stato manutenz. (n)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="1" y="91" width="89" height="14" uuid="f8fccbcc-9440-4e65-a364-7385e14a9314">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Livello Piano (n)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="1" y="119" width="89" height="14" uuid="fe0ebe0e-aff3-4cb0-bf75-3bbea3339aa5">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Box/posto auto coperto (n)]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="1" y="581" width="437" height="28" uuid="ddf3d4f7-8434-406e-b8ed-3e224989e03b"/>
+				<staticText>
+					<reportElement x="0" y="0" width="89" height="14" uuid="b3f7450c-2cb3-498a-9e62-f2583adf5975">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle" markup="none">
+						<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Prezzi aggiustati finali]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="89" y="0" width="116" height="14" uuid="e705a38b-4293-4c74-96bd-9e154dbc010e"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getAggiustamenti().getPrezzoAggiustatoFinale()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="205" y="0" width="116" height="14" uuid="3fdbf732-f007-45f7-ad52-5c62e97488ae"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getAggiustamenti().getPrezzoAggiustatoFinale()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="321" y="0" width="116" height="14" uuid="b7d6d7bd-75d0-4bd0-b806-8bae6528dc96"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getAggiustamenti().getPrezzoAggiustatoFinale()]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="0" y="14" width="89" height="14" uuid="a6e9ba39-4bd8-48d0-b2c8-c30e9e466479">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Peso dei comparabili]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="89" y="14" width="116" height="14" uuid="27fe3b71-b9ae-4970-8a75-a3b8d3a810f1"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(0).getAggiustamenti().getPeso()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="205" y="14" width="116" height="14" uuid="c8b7d0df-88ab-4741-be2b-fc24cdaa9cb6"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(1).getAggiustamenti().getPeso()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="321" y="14" width="116" height="14" uuid="75e4e267-d7dd-4011-958e-016a9dcf4b73"/>
+					<box>
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMca().getMcaComparables().get(2).getAggiustamenti().getPeso()]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+</jasperReport>

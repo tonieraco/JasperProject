@@ -1,0 +1,1707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.0.final using JasperReports Library version 6.3.0  -->
+<!-- 2026-06-10T09:10:12 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="BancoPopolare" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8066f63a-371e-4f7a-aa01-f4ee31a91e2b">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<subDataset name="lottoImmobiliareDataset" uuid="08c48812-be82-4560-bd02-a1b5dacade32">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="dettaglioStimaLottoImmobiliares" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.bper.data.DettaglioStimaLottoImmobiliare">
+			<fieldDescription><![CDATA[_THIS]]></fieldDescription>
+		</field>
+	</subDataset>
+	<subDataset name="convenzioni" uuid="294b32b2-e24d-4035-b060-3740ddc083f0">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="convenzione" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.bper.data.BPERConvenzione">
+			<fieldDescription><![CDATA[_THIS]]></fieldDescription>
+		</field>
+	</subDataset>
+	<subDataset name="lineeVuote" uuid="a9961c0f-0bb6-46a1-b326-2ad2911f6604">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+	</subDataset>
+	<parameter name="data" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.bper.data.BPERPdfMainCollection"/>
+	<field name="descrizioneIscrizioneIpotecaria" class="java.lang.String">
+		<fieldDescription><![CDATA[descrizioneIscrizioneIpotecaria]]></fieldDescription>
+	</field>
+	<field name="assunzioniCondizioniRelativeStima" class="java.lang.String">
+		<fieldDescription><![CDATA[assunzioniCondizioniRelativeStima]]></fieldDescription>
+	</field>
+	<field name="richiedentes" class="java.util.Collection">
+		<fieldDescription><![CDATA[richiedentes]]></fieldDescription>
+	</field>
+	<field name="listCadastralData" class="java.util.Collection">
+		<fieldDescription><![CDATA[listCadastralData]]></fieldDescription>
+	</field>
+	<field name="unitaImmobiliares" class="java.util.Collection">
+		<fieldDescription><![CDATA[unitaImmobiliares]]></fieldDescription>
+	</field>
+	<field name="unitaDiStimas" class="java.util.Collection">
+		<fieldDescription><![CDATA[unitaDiStimas]]></fieldDescription>
+	</field>
+	<field name="valoreAssicurabiles" class="java.util.Collection">
+		<fieldDescription><![CDATA[valoreAssicurabiles]]></fieldDescription>
+	</field>
+	<field name="allegatos" class="java.util.Collection">
+		<fieldDescription><![CDATA[allegatos]]></fieldDescription>
+	</field>
+	<field name="convenzioneEdiliza" class="java.lang.String">
+		<fieldDescription><![CDATA[convenzioneEdiliza]]></fieldDescription>
+	</field>
+	<field name="conformitaUrbanistica" class="java.lang.String">
+		<fieldDescription><![CDATA[conformitaUrbanistica]]></fieldDescription>
+	</field>
+	<field name="statoLuoghiConforme" class="java.lang.String">
+		<fieldDescription><![CDATA[statoLuoghiConforme]]></fieldDescription>
+	</field>
+	<field name="attoProvenienzaConforme" class="java.lang.String">
+		<fieldDescription><![CDATA[attoProvenienzaConforme]]></fieldDescription>
+	</field>
+	<field name="totaleLottoImmobiliare" class="java.lang.String">
+		<fieldDescription><![CDATA[totaleLottoImmobiliare]]></fieldDescription>
+	</field>
+	<field name="totaleValoreDecurtato" class="java.lang.String">
+		<fieldDescription><![CDATA[totaleValoreDecurtato]]></fieldDescription>
+	</field>
+	<field name="totaleValoreDiStimaDelLotto" class="java.lang.String">
+		<fieldDescription><![CDATA[totaleValoreDiStimaDelLotto]]></fieldDescription>
+	</field>
+	<field name="dettaglioStimaLottoImmobiliares" class="java.util.Collection"/>
+	<field name="convenzioni" class="java.util.Collection">
+		<fieldDescription><![CDATA[convenzioni]]></fieldDescription>
+	</field>
+	<field name="assenzaConvenzioni" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[assenzaConvenzioni]]></fieldDescription>
+	</field>
+	<field name="lineeVuote" class="java.util.Collection">
+		<fieldDescription><![CDATA[lineeVuote]]></fieldDescription>
+	</field>
+	<field name="spaziatoreConvenzioniVisibile" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[spaziatoreConvenzioniVisibile]]></fieldDescription>
+	</field>
+	<field name="unicaConvenzione" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[unicaConvenzione]]></fieldDescription>
+	</field>
+	<title>
+		<band height="46">
+			<image>
+				<reportElement x="0" y="1" width="555" height="36" uuid="ccab9b52-0efb-4037-9373-8d774eba849e"/>
+				<imageExpression><![CDATA["headerCapitoli.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="470" y="3" width="70" height="12" forecolor="#ADADAD" uuid="3145d8c0-e5a3-4ba6-b946-5ee47590eea4">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Helvetica_BNL" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["REAL ESTATE"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="353" y="18" width="202" height="20" uuid="f77777d2-3da3-4d5a-8630-54364130ee35">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Helvetica_BNL" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["VALUTAZIONE IMMOBILIARE"]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="85">
+			<subreport>
+				<reportElement positionType="Float" x="0" y="0" width="555" height="13" isRemoveLineWhenBlank="true" uuid="db58ca3f-bbea-469c-a5c6-6bf6e7d8f188">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<subreportParameter name="data">
+					<subreportParameterExpression><![CDATA[$P{data}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource()]]></dataSourceExpression>
+				<subreportExpression><![CDATA["./subreport/frasiTutela.jasper"]]></subreportExpression>
+			</subreport>
+			<frame>
+				<reportElement positionType="Float" x="0" y="20" width="555" height="65" uuid="a2587ad6-7c4b-4879-a62d-dc998f31c9e6"/>
+				<staticText>
+					<reportElement x="0" y="0" width="110" height="14" uuid="d34f6e2b-2509-4da4-bfba-1fb372bfeabd">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Data richiesta]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="224" y="0" width="110" height="14" uuid="6d39454b-a9e7-427e-a199-647a258b74ec">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Codice Fornitore]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="444" y="0" width="110" height="14" uuid="af95300e-9334-4df4-bd30-0fc83c18a47f">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Codice Istituto]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="0" y="14" width="110" height="14" uuid="59376513-3336-4eae-945e-0d88ec8d8797"/>
+					<box>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getDataRichiesta()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="444" y="14" width="110" height="14" uuid="271176e5-94d4-4302-a91e-edf18407ed34">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getCodiceIstituto()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="224" y="14" width="110" height="14" uuid="7693f584-6604-4c14-a52e-e7df09ef209d">
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getCodiceFornitore()]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="224" y="37" width="110" height="14" uuid="11f6b8a7-32d1-4c1a-9fba-e1cc85e0f0d5">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Tipo di valutazione]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="0" y="51" width="555" height="14" uuid="da3852f1-c6a3-41b6-871d-8ed54baa7088">
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					</reportElement>
+					<box leftPadding="0">
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getTipoValutazione()]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+		<band height="236" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="328" y="2" width="222" height="18" forecolor="#A6A6A6" uuid="251ab45c-d835-4585-ac0c-ac2750537ca0">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<box leftPadding="0">
+					<topPen lineWidth="0.2" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<leftPen lineWidth="0.2" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<bottomPen lineWidth="0.2" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<rightPen lineWidth="0.2" lineStyle="Solid" lineColor="#A6A6A6"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="11" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Anagrafica Perizie]]></text>
+			</staticText>
+			<frame>
+				<reportElement x="0" y="20" width="555" height="178" uuid="20edfea6-1863-4b4d-8fbd-d4dff39cbbd0">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.2" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<bottomPen lineWidth="0.2" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<rightPen lineWidth="0.2" lineStyle="Solid" lineColor="#A6A6A6"/>
+				</box>
+				<staticText>
+					<reportElement x="4" y="0" width="116" height="14" forecolor="#000000" uuid="2a5aca29-ad0f-44fa-9456-044f74e65dbd">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Richiedenti]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="4" y="14" width="112" height="14" uuid="4ce88d0c-940f-4c12-91fe-36bac16fb200">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8"/>
+					</textElement>
+					<text><![CDATA[Nome]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="116" y="14" width="116" height="14" uuid="b2c465b6-18e4-472f-a52d-8936fbcc74d8">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8"/>
+					</textElement>
+					<text><![CDATA[Cognome]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="232" y="14" width="100" height="14" uuid="8492935b-72a0-41df-a068-7007bcc5feb8">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8"/>
+					</textElement>
+					<text><![CDATA[Telefono]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="332" y="14" width="93" height="14" uuid="b9275e93-9214-44ac-ae88-6c79f675dd08">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8"/>
+					</textElement>
+					<text><![CDATA[Cellulare]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="425" y="14" width="126" height="14" uuid="e9fa901f-a404-46e9-9db8-a37417051152">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8"/>
+					</textElement>
+					<text><![CDATA[Email]]></text>
+				</staticText>
+				<subreport>
+					<reportElement x="4" y="28" width="547" height="30" uuid="f06c1493-85e5-45ea-a234-0988b50d2abc">
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					</reportElement>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{richiedentes})]]></dataSourceExpression>
+					<subreportExpression><![CDATA["subreport/richiedentiTemplate.jasper"]]></subreportExpression>
+				</subreport>
+				<staticText>
+					<reportElement positionType="Float" x="4" y="61" width="98" height="14" forecolor="#000000" uuid="33921f29-84d6-4220-9583-31a20cd17b5a">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Istituto]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="232" y="75" width="317" height="14" uuid="e963aa11-2e1f-459c-96da-560053202be3">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8"/>
+					</textElement>
+					<text><![CDATA[Filiale]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" x="4" y="89" width="228" height="14" uuid="29bb42bf-6d3a-46a8-bb9d-c8c977404c75">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="2">
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getDenominazioneIstituto()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" x="232" y="89" width="317" height="14" uuid="9dc0e0f7-be0b-47ec-ab22-07710266d593"/>
+					<box leftPadding="2">
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getFiliale()]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement positionType="Float" x="4" y="75" width="228" height="14" uuid="fb1ae02a-2595-4fe2-8ece-2736d53116bd">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8"/>
+					</textElement>
+					<text><![CDATA[Denominazione]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="4" y="110" width="98" height="14" forecolor="#000000" uuid="b1cd13af-8b2c-4ba8-af9e-d75800688595">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Perito]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="4" y="124" width="126" height="14" uuid="f707c3fb-957a-4fd1-9eaa-0dd6c428586e">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8"/>
+					</textElement>
+					<text><![CDATA[Nome]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="130" y="124" width="140" height="14" uuid="e5d3ac1f-0087-4a48-8e1e-1091db9a28ae">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8"/>
+					</textElement>
+					<text><![CDATA[Cognome]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="270" y="124" width="164" height="14" uuid="ba6e7f6c-adf3-4dd5-8563-675adc4440a6">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8"/>
+					</textElement>
+					<text><![CDATA[Iscrizione all'Albo]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="434" y="124" width="115" height="14" uuid="ab09bfed-98ad-4d7e-bf5a-13cfbb107bd9">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8"/>
+					</textElement>
+					<text><![CDATA[Certificato CCSB01]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" x="4" y="138" width="126" height="14" uuid="5230f443-561a-463f-835f-c1d8b3dcdfbf"/>
+					<box leftPadding="2">
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getNomePerito()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" x="130" y="138" width="140" height="14" uuid="9ca057e7-467e-42e9-b8af-8477201c814f"/>
+					<box leftPadding="2">
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getCognomePerito()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" x="434" y="138" width="115" height="14" uuid="14238389-2976-4889-8a5c-888656691994">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="2">
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getCertificatoPerito()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" x="270" y="138" width="164" height="14" uuid="cc3f022f-eb66-4b3f-8858-c45e82536f86">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="2">
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getIscrizioneAlboPerito()]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement positionType="Float" x="4" y="160" width="81" height="14" uuid="a64c01b1-745b-4f9f-a27a-743c6a7cc475">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8"/>
+					</textElement>
+					<text><![CDATA[Data Sopralluogo]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="209" y="160" width="52" height="14" uuid="020bcd29-af35-448e-85fa-e91276664752">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8"/>
+					</textElement>
+					<text><![CDATA[Data Stima]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="369" y="160" width="100" height="14" uuid="1886249b-dcea-45a3-b0c7-73f957c02927">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8"/>
+					</textElement>
+					<text><![CDATA[Data Evasione Perizia]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" x="469" y="160" width="80" height="14" uuid="6f10fa28-7536-46ee-a6b1-f7dcfb7646e4">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="2">
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getDataEvasione()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" x="85" y="160" width="80" height="14" uuid="11424071-afda-4cb4-a56a-e9082b430824">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="2">
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getDataSopralluogo()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" x="261" y="160" width="80" height="14" uuid="987fd416-3fa6-4df8-b9be-db7912ea2e24">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="2">
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getDataStima()]]></textFieldExpression>
+				</textField>
+			</frame>
+			<staticText>
+				<reportElement mode="Opaque" x="550" y="10" width="5" height="10" forecolor="#006699" uuid="12c08c56-4bd4-4e30-a940-227436829c32">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box leftPadding="8">
+					<topPen lineWidth="0.2" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<leftPen lineWidth="0.2" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<rightPen lineWidth="0.2" lineStyle="Solid" lineColor="#A6A6A6"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="10" width="328" height="10" forecolor="#006699" uuid="761ad108-968a-49c4-a784-01f5ba38c64c">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box leftPadding="8">
+					<topPen lineWidth="0.2" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<leftPen lineWidth="0.2" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<rightPen lineWidth="0.2" lineStyle="Solid" lineColor="#A6A6A6"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+		</band>
+		<band height="35" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<break>
+				<reportElement x="0" y="1" width="100" height="1" uuid="c58c2137-817b-4a83-9c97-50a433a4a61e">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+			</break>
+			<subreport>
+				<reportElement x="0" y="5" width="555" height="30" uuid="cb7de8f6-31ba-4695-a9db-7e22d8dc6b68">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<subreportParameter name="data">
+					<subreportParameterExpression><![CDATA[$P{data}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource()]]></dataSourceExpression>
+				<subreportExpression><![CDATA["subreport/esitoValutazioneMain.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="150" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<staticText>
+				<reportElement mode="Opaque" x="328" y="28" width="222" height="18" forecolor="#A6A6A6" uuid="fccbe59a-4817-432d-81a7-0fe37eab0078">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<box leftPadding="2">
+					<topPen lineWidth="0.2" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<leftPen lineWidth="0.2" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<bottomPen lineWidth="0.2" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<rightPen lineWidth="0.2" lineStyle="Solid" lineColor="#A6A6A6"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="11" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Dettaglio Dato Immobiliare]]></text>
+			</staticText>
+			<break>
+				<reportElement x="0" y="8" width="100" height="1" uuid="2e068ad6-09f7-41d5-8cb3-bc0729583c33"/>
+			</break>
+			<frame>
+				<reportElement x="0" y="46" width="555" height="98" uuid="654e7022-1cd5-4996-9032-7f9d3d3adfe2">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0" lineColor="#A6A6A6"/>
+					<bottomPen lineWidth="0.0" lineColor="#A6A6A6"/>
+					<rightPen lineWidth="0.0" lineColor="#A6A6A6"/>
+				</box>
+				<subreport>
+					<reportElement x="4" y="46" width="546" height="30" uuid="f06c1493-85e5-45ea-a234-0988b50d2abc">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{listCadastralData})]]></dataSourceExpression>
+					<subreportExpression><![CDATA["subreport/dettaglioDatoImmobiliare.jasper"]]></subreportExpression>
+				</subreport>
+				<frame>
+					<reportElement x="4" y="7" width="546" height="28" uuid="d2245a62-60c8-48a2-b0ed-0ecfe39ff8ea"/>
+					<textField>
+						<reportElement x="0" y="0" width="80" height="39" uuid="379c0787-b84e-4434-a915-d91980424563">
+							<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+							<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+							<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+							<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="BancoPopolareFont" size="8"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Unità di stima"]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement x="80" y="0" width="166" height="14" uuid="9d866554-506e-4c64-9560-9609da2305ed">
+							<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+							<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+							<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+							<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="BancoPopolareFont" size="8"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{data}.isTavolare() && !$P{data}.isDoppioRegimeCatastale() ? "Dato tavolare" : "Dato catastale"]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement x="246" y="0" width="300" height="14" uuid="2126de9e-27a0-4e29-ba33-131dbac1a800"/>
+						<box>
+							<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+							<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+							<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+							<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="BancoPopolareFont" size="8"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Ripartizione Valori"]]></textFieldExpression>
+					</textField>
+					<staticText>
+						<reportElement x="80" y="14" width="62" height="25" uuid="43caf8cb-6404-4067-8216-7a6a95be4b93">
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+							<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+							<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+							<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="BancoPopolareFont" size="7"/>
+						</textElement>
+						<text><![CDATA[Destinazione]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="142" y="14" width="20" height="25" uuid="57bcf341-c0c4-4e6a-bf67-6d028a2e91e2">
+							<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+							<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+							<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+							<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="BancoPopolareFont" size="7"/>
+						</textElement>
+						<text><![CDATA[Cat.]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="162" y="14" width="28" height="25" uuid="587591ee-a618-44f1-9088-a7b5d5897f0b">
+							<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.height" value="px"/>
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+							<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+							<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+							<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="BancoPopolareFont" size="7"/>
+						</textElement>
+						<text><![CDATA[Foglio]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="190" y="14" width="30" height="25" uuid="07fa2af2-3bf8-411b-9f09-06872507061f">
+							<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+							<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+							<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+							<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="BancoPopolareFont" size="7"/>
+						</textElement>
+						<text><![CDATA[P.lla]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="220" y="14" width="26" height="25" uuid="c32935e2-7f2e-4197-8668-f72466a63ba2">
+							<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+							<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+							<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+							<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="BancoPopolareFont" size="7"/>
+						</textElement>
+						<text><![CDATA[Sub.]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="246" y="14" width="60" height="25" uuid="21e8f04d-e295-4e81-a6a4-1b99760d9325">
+							<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+							<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+							<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+							<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="BancoPopolareFont" size="7"/>
+						</textElement>
+						<text><![CDATA[Valore di mercato]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="306" y="14" width="60" height="25" uuid="fd65c324-f08c-4ff6-8771-f1dd6b229681">
+							<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+							<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+							<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+							<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="BancoPopolareFont" size="7"/>
+						</textElement>
+						<text><![CDATA[Valore cauzionale]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="366" y="14" width="60" height="25" uuid="23dc33b0-fe51-41c5-b32e-dd79e89e792a">
+							<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+							<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+							<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+							<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="BancoPopolareFont" size="7"/>
+						</textElement>
+						<text><![CDATA[Valore assicurabile]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="486" y="14" width="60" height="25" uuid="678e77c4-a2d8-4240-b7cf-0a96da5a3421">
+							<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+							<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+							<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+							<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="BancoPopolareFont" size="7"/>
+						</textElement>
+						<text><![CDATA[Valore pronto realizzo]]></text>
+					</staticText>
+					<textField>
+						<reportElement x="426" y="14" width="60" height="25" uuid="1dde7856-825a-4563-865f-567b7c851c81">
+							<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+							<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+							<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+							<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="BancoPopolareFont" size="7"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{data}.isPropertyValueVisibile() ? "Property value" : ""]]></textFieldExpression>
+					</textField>
+				</frame>
+			</frame>
+		</band>
+		<band height="656" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<break>
+				<reportElement x="0" y="4" width="100" height="1" uuid="a746775a-10e5-43ef-8228-3ce534b9f90e">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+			</break>
+			<staticText>
+				<reportElement x="235" y="12" width="314" height="18" forecolor="#A6A6A6" uuid="a3527f7f-28ff-4855-b09d-8599907ea7d5"/>
+				<box>
+					<topPen lineWidth="0.2" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<leftPen lineWidth="0.2" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<bottomPen lineWidth="0.2" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<rightPen lineWidth="0.2" lineStyle="Solid" lineColor="#A6A6A6"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="11" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[IDENTIFICAZIONE LOTTO IMMOBILIARE]]></text>
+			</staticText>
+			<frame>
+				<reportElement positionType="Float" x="4" y="34" width="551" height="28" uuid="fb3d8718-b01e-4b80-88dd-ce379e7aa4ef"/>
+				<textField>
+					<reportElement x="0" y="10" width="81" height="14" uuid="96409771-f591-4674-8451-ad3ed967bf9c">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["UBICAZIONE"]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="101" y="0" width="1" height="28" uuid="39064058-f5d4-4b10-8283-2596cd5fad66">
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+				</line>
+				<textField>
+					<reportElement x="110" y="0" width="54" height="14" uuid="a753fedd-4fac-416d-93ca-a940ef6b37f2">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Comune"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="110" y="14" width="54" height="14" uuid="57571f7e-e8ec-48db-b6ed-b88af9d81687">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Indirizzo"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="164" y="0" width="158" height="14" uuid="b24e563a-fd68-4b17-b6ab-bdf45ff9aa76">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getComune()]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="322" y="0" width="58" height="14" uuid="fcb2ba5b-91db-4e6d-b206-b5467c5e19e5">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["  Provincia"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="164" y="14" width="276" height="14" uuid="5a420eb7-1eb2-484d-8392-c1bdbbbcb45c">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getIndirizzo()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="380" y="0" width="70" height="14" uuid="36487019-4995-40b4-8e59-075e310c00f2">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getProvincia()]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="450" y="0" width="43" height="14" uuid="29c93ee0-4a2e-4c13-ae14-391c22ff4beb">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<box leftPadding="2"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA["  CAP"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="493" y="0" width="57" height="14" uuid="d6f0a219-c3da-4f87-a413-1ae22a7cf42f">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getCap()]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="450" y="14" width="43" height="14" uuid="6c6fd9ac-a1fe-4c15-baa7-f5008478d03c">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA["N. civico"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="493" y="14" width="57" height="14" uuid="d5291747-7700-4ae0-8696-c8f7909029b4">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getNumCivico()]]></textFieldExpression>
+				</textField>
+			</frame>
+			<subreport>
+				<reportElement positionType="Float" x="1" y="68" width="553" height="22" uuid="ec5812b1-16b3-4c47-8e9d-24057ed8b278">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<subreportParameter name="data">
+					<subreportParameterExpression><![CDATA[$P{data}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource()]]></dataSourceExpression>
+				<subreportExpression><![CDATA["subreport/rischiFisici.jasper"]]></subreportExpression>
+			</subreport>
+			<frame>
+				<reportElement positionType="Float" x="104" y="104" width="358" height="552" uuid="43b16999-503f-4b9b-b445-fe5305385c01"/>
+				<image hAlign="Center" vAlign="Middle" onErrorType="Blank">
+					<reportElement positionType="Float" x="0" y="0" width="358" height="267" isRemoveLineWhenBlank="true" uuid="c7d857eb-1a4f-43f6-be09-280e50307624">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<box padding="15" leftPadding="15">
+						<topPen lineWidth="1.0" lineColor="#BABABA"/>
+						<leftPen lineWidth="1.0" lineColor="#BABABA"/>
+						<bottomPen lineWidth="1.0" lineColor="#BABABA"/>
+						<rightPen lineWidth="1.0" lineColor="#BABABA"/>
+					</box>
+					<imageExpression><![CDATA[$P{data}.getCoordinateGeografichePathLeft()]]></imageExpression>
+				</image>
+				<image hAlign="Center" vAlign="Middle" onErrorType="Blank">
+					<reportElement positionType="Float" x="0" y="285" width="358" height="267" isRemoveLineWhenBlank="true" uuid="6899454c-9efe-4590-ba67-67e646f2d9f7">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box padding="15" leftPadding="15">
+						<topPen lineWidth="1.0" lineColor="#BABABA"/>
+						<leftPen lineWidth="1.0" lineColor="#BABABA"/>
+						<bottomPen lineWidth="1.0" lineColor="#BABABA"/>
+						<rightPen lineWidth="1.0" lineColor="#BABABA"/>
+					</box>
+					<imageExpression><![CDATA[$P{data}.getCoordinateGeografichePathRight()]]></imageExpression>
+				</image>
+			</frame>
+		</band>
+		<band height="40">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<subreport>
+				<reportElement positionType="Float" x="0" y="5" width="553" height="30" uuid="d5ef1754-a547-41df-8703-233a7ea62201">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{unitaImmobiliares})]]></dataSourceExpression>
+				<subreportExpression><![CDATA["subreport/unitaImmobiliareTemplate.jasper"]]></subreportExpression>
+			</subreport>
+			<break>
+				<reportElement x="0" y="1" width="100" height="1" uuid="58e74cee-caf5-46b8-830e-fcee6050c9c3">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+			</break>
+		</band>
+		<band height="83" splitType="Stretch">
+			<frame>
+				<reportElement positionType="Float" x="0" y="9" width="553" height="71" uuid="6d7d7228-01a2-4466-88a3-dadf3b429156"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textField>
+					<reportElement mode="Transparent" x="0" y="0" width="550" height="20" forecolor="#008996" backcolor="#FFFFFF" uuid="1448291a-200e-471b-a973-b3cb33b71f71">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="2"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="12" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["2. IDENTIFICAZIONE UNITA' DI STIMA"]]></textFieldExpression>
+				</textField>
+				<subreport>
+					<reportElement x="0" y="20" width="553" height="40" uuid="99e2e86c-fa40-496b-a64b-3e8449e7968b"/>
+					<subreportParameter name="data">
+						<subreportParameterExpression><![CDATA[$P{data}]]></subreportParameterExpression>
+					</subreportParameter>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{unitaDiStimas})]]></dataSourceExpression>
+					<subreportExpression><![CDATA["subreport/unitaDiStimaTemplate.jasper"]]></subreportExpression>
+				</subreport>
+			</frame>
+			<break>
+				<reportElement x="0" y="4" width="100" height="1" uuid="3af035bc-f687-4aa7-97b9-6dd1da7773a1"/>
+			</break>
+		</band>
+		<band height="233">
+			<textField isBlankWhenNull="false">
+				<reportElement x="2" y="42" width="80" height="58" uuid="bff9c4e4-04d9-4a2a-85c7-7422d3753fd6">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["LOTTO IMMOBILIARE"]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="92" y="28" width="1" height="100" uuid="e384b109-21ef-417a-8710-27353d0d6744">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+			</line>
+			<textField>
+				<reportElement x="100" y="35" width="160" height="14" uuid="85bf3128-b9c4-4b7e-b011-b0ff7863618c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Unità di stima"]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement x="100" y="55" width="420" height="30" uuid="e770af67-c303-4507-a4e4-44b8e552343e"/>
+				<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
+					<datasetRun subDataset="lottoImmobiliareDataset" uuid="764c77d5-909e-42a6-a0c1-b04f4af5f414">
+						<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{dettaglioStimaLottoImmobiliares})]]></dataSourceExpression>
+					</datasetRun>
+					<jr:listContents height="30" width="420">
+						<textField>
+							<reportElement x="0" y="0" width="228" height="30" uuid="f548f38c-6600-4223-b2fd-ca996a32d89c">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							</reportElement>
+							<textElement verticalAlignment="Middle">
+								<font fontName="BancoPopolareFont" size="8" isBold="true"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{dettaglioStimaLottoImmobiliares}.getDescUnita()]]></textFieldExpression>
+						</textField>
+						<textField>
+							<reportElement x="229" y="0" width="84" height="30" uuid="57e742b8-ba94-4a22-88fb-a34d199f039e">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+							</reportElement>
+							<box leftPadding="2">
+								<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+								<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+								<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+								<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle">
+								<font fontName="BancoPopolareFont" size="8"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{dettaglioStimaLottoImmobiliares}.getValoreDiMercato()]]></textFieldExpression>
+						</textField>
+						<textField>
+							<reportElement x="313" y="0" width="107" height="30" uuid="e28021cc-dab5-4853-a7a5-bdab5094fcbb">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							</reportElement>
+							<box leftPadding="2">
+								<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+								<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+								<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+								<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle">
+								<font fontName="BancoPopolareFont" size="8"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{dettaglioStimaLottoImmobiliares}.getElementicheModIlValore()]]></textFieldExpression>
+						</textField>
+					</jr:listContents>
+				</jr:list>
+			</componentElement>
+			<textField>
+				<reportElement positionType="Float" x="100" y="87" width="160" height="14" uuid="1dece9ea-bc44-41cd-9d8b-d49d47b3209a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Totale (€)"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="100" y="106" width="228" height="20" uuid="4ee1903c-982e-415a-a1b8-fdcc7b7df2fa"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Valore di stima del lotto (€)"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="329" y="106" width="191" height="20" uuid="4022b29c-601e-48b6-9e91-2392d15b5b67"/>
+				<box leftPadding="3">
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{totaleValoreDiStimaDelLotto}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="329" y="87" width="84" height="14" uuid="486c5c56-aaa2-4fcb-99c3-72363682b292"/>
+				<box leftPadding="3">
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{totaleLottoImmobiliare}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="413" y="87" width="107" height="14" uuid="f4c19025-d6f0-43e4-b65e-e0abca76be56"/>
+				<box leftPadding="3">
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{totaleValoreDecurtato}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="413" y="28" width="107" height="26" uuid="3a25fd3b-9673-48e6-bec8-030c7d0c4837">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Elementi che modificano il valore di mercato (€)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="329" y="28" width="84" height="26" uuid="4ea936b6-ef15-4d29-8b09-f9f8d38f66dd">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Valore di mercato (€)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="328" y="2" width="222" height="18" forecolor="#A6A6A6" uuid="7744f139-a51d-44ef-a9c5-4d9d4fe5392c">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<box leftPadding="0">
+					<topPen lineWidth="0.2" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<leftPen lineWidth="0.2" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<bottomPen lineWidth="0.2" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<rightPen lineWidth="0.2" lineStyle="Solid" lineColor="#A6A6A6"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="11" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[STIMA LOTTO IMMOBILIARE]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="false">
+				<reportElement positionType="Float" x="0" y="213" width="554" height="20" isRemoveLineWhenBlank="true" uuid="223e6906-cd46-46be-85d5-3a81ea378a8e"/>
+				<box padding="3">
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#CACACA"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#CACACA"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#CACACA"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#CACACA"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{data}.getLottoImmobiliareNote()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="0" y="192" width="228" height="20" uuid="fcc6f9b4-5dd3-49e7-af9e-7de82f9815bc"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Note"]]></textFieldExpression>
+			</textField>
+			<frame>
+				<reportElement positionType="Float" x="0" y="140" width="555" height="42" isRemoveLineWhenBlank="true" uuid="d8fea633-19d4-46d1-b5a6-82f9f0e3c3fb">
+					<printWhenExpression><![CDATA[$F{assenzaConvenzioni} != true && $F{unicaConvenzione} != true]]></printWhenExpression>
+				</reportElement>
+				<frame>
+					<reportElement stretchType="RelativeToTallestObject" x="2" y="11" width="80" height="20" uuid="da9648b6-88b8-48f8-b922-bc76862bc6fe"/>
+					<box>
+						<topPen lineWidth="0.0"/>
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.0"/>
+						<rightPen lineWidth="0.0"/>
+					</box>
+					<textField isBlankWhenNull="false">
+						<reportElement positionType="Float" x="0" y="13" width="80" height="20" uuid="606cd5d6-8a04-431c-90bc-6d0d42a98ef7">
+							<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+						</reportElement>
+						<textElement verticalAlignment="Middle">
+							<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+						</textElement>
+						<textFieldExpression><![CDATA["CONVENZIONI"]]></textFieldExpression>
+					</textField>
+					<componentElement>
+						<reportElement x="0" y="-10" width="80" height="23" isRemoveLineWhenBlank="true" uuid="4997d131-1d06-4e82-9803-d3a338bfb04b">
+							<printWhenExpression><![CDATA[$F{spaziatoreConvenzioniVisibile} == true]]></printWhenExpression>
+						</reportElement>
+						<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
+							<datasetRun subDataset="lineeVuote" uuid="4b3987f0-dda4-47df-8bcd-2401dece8e21">
+								<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{lineeVuote})]]></dataSourceExpression>
+							</datasetRun>
+							<jr:listContents height="23" width="80">
+								<textField>
+									<reportElement x="0" y="0" width="80" height="23" uuid="f2585a71-89af-427f-8028-cc9ca8223139">
+										<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+									</reportElement>
+									<textElement verticalAlignment="Middle">
+										<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+									</textElement>
+									<textFieldExpression><![CDATA[""]]></textFieldExpression>
+								</textField>
+							</jr:listContents>
+						</jr:list>
+					</componentElement>
+				</frame>
+				<frame>
+					<reportElement x="92" y="0" width="408" height="46" uuid="49c4f61c-94d7-4a0f-8c1d-ed073d9c9cbc">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<box>
+						<leftPen lineWidth="1.0"/>
+					</box>
+					<componentElement>
+						<reportElement x="7" y="0" width="326" height="50" uuid="247b0137-22ed-4e38-a973-d48e29cb5feb"/>
+						<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
+							<datasetRun subDataset="convenzioni" uuid="5b23072c-3d79-4d2a-b7f6-7d1a3ec7714c">
+								<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{convenzioni})]]></dataSourceExpression>
+							</datasetRun>
+							<jr:listContents height="50" width="326">
+								<textField>
+									<reportElement x="0" y="0" width="320" height="14" uuid="26e72448-2b00-44b8-8cb7-580223c72798">
+										<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									</reportElement>
+									<textElement verticalAlignment="Middle">
+										<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$F{convenzione}.getConvenzione()]]></textFieldExpression>
+								</textField>
+								<textField>
+									<reportElement x="0" y="14" width="320" height="14" uuid="fcf96f6b-6137-4187-b85b-9caf5d4e5756">
+										<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									</reportElement>
+									<textElement verticalAlignment="Middle">
+										<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$F{convenzione}.getDataScadenzaConvenzione()]]></textFieldExpression>
+								</textField>
+								<textField>
+									<reportElement x="0" y="28" width="320" height="14" uuid="c71881cd-5415-4e1e-92c8-7a4836be7c45">
+										<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									</reportElement>
+									<textElement verticalAlignment="Middle">
+										<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$F{convenzione}.getImporto()]]></textFieldExpression>
+								</textField>
+							</jr:listContents>
+						</jr:list>
+					</componentElement>
+				</frame>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="141" width="500" height="24" isRemoveLineWhenBlank="true" uuid="1a9a4fc4-0de6-4cc4-9801-9011cbd0ee0e">
+					<printWhenExpression><![CDATA[$F{assenzaConvenzioni} == true && $F{unicaConvenzione} == false]]></printWhenExpression>
+				</reportElement>
+				<frame>
+					<reportElement stretchType="RelativeToTallestObject" x="2" y="2" width="80" height="20" uuid="b4c6d6c9-617c-40fa-9bf5-b8c759a6ecf1"/>
+					<box>
+						<topPen lineWidth="0.0"/>
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.0"/>
+						<rightPen lineWidth="0.0"/>
+					</box>
+					<textField isBlankWhenNull="false">
+						<reportElement positionType="Float" x="0" y="0" width="80" height="20" uuid="eaf7378c-91ac-44e3-8999-83aa3d9f5814">
+							<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+						</reportElement>
+						<textElement verticalAlignment="Middle">
+							<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+						</textElement>
+						<textFieldExpression><![CDATA["CONVENZIONI"]]></textFieldExpression>
+					</textField>
+				</frame>
+				<frame>
+					<reportElement x="92" y="0" width="408" height="24" uuid="435a1c91-9240-4fde-9bb3-37d90bf780ae">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<box>
+						<leftPen lineWidth="1.0"/>
+					</box>
+					<textField>
+						<reportElement x="7" y="5" width="320" height="14" uuid="1c6737e6-7d5f-4234-9ead-7f30966b02a9">
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						</reportElement>
+						<textElement verticalAlignment="Middle">
+							<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Assenti"]]></textFieldExpression>
+					</textField>
+				</frame>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="141" width="500" height="46" isRemoveLineWhenBlank="true" uuid="e2b26dd9-4352-4903-bff1-b657536e328c">
+					<printWhenExpression><![CDATA[$F{assenzaConvenzioni} == false && $F{unicaConvenzione} == true]]></printWhenExpression>
+				</reportElement>
+				<frame>
+					<reportElement stretchType="RelativeToTallestObject" x="2" y="12" width="80" height="20" uuid="bf6ba180-80ff-4696-bf49-acdb381c6c03"/>
+					<box>
+						<topPen lineWidth="0.0"/>
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.0"/>
+						<rightPen lineWidth="0.0"/>
+					</box>
+					<textField isBlankWhenNull="false">
+						<reportElement positionType="Float" x="0" y="0" width="80" height="20" uuid="3c4ae8cd-3b35-4e38-82f9-03d5f228e5b8">
+							<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+						</reportElement>
+						<textElement verticalAlignment="Middle">
+							<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+						</textElement>
+						<textFieldExpression><![CDATA["CONVENZIONI"]]></textFieldExpression>
+					</textField>
+				</frame>
+				<frame>
+					<reportElement x="92" y="0" width="408" height="46" uuid="67f772b1-f736-49d3-b3eb-e209d966ad2c">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<box>
+						<leftPen lineWidth="1.0"/>
+					</box>
+					<componentElement>
+						<reportElement x="7" y="0" width="326" height="42" uuid="530dfadf-6866-4571-829f-d21f16a04f59"/>
+						<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
+							<datasetRun subDataset="convenzioni" uuid="c31289b4-be04-49d3-8618-e460b8584c4d">
+								<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{convenzioni})]]></dataSourceExpression>
+							</datasetRun>
+							<jr:listContents height="42" width="326">
+								<textField>
+									<reportElement x="0" y="0" width="320" height="14" uuid="53dc412c-8c5b-4fe6-b70e-df8ece7799de">
+										<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									</reportElement>
+									<textElement verticalAlignment="Middle">
+										<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$F{convenzione}.getConvenzione()]]></textFieldExpression>
+								</textField>
+								<textField>
+									<reportElement x="0" y="14" width="320" height="14" uuid="7be73132-dba4-40f2-9189-38e342e7b5c8">
+										<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									</reportElement>
+									<textElement verticalAlignment="Middle">
+										<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$F{convenzione}.getDataScadenzaConvenzione()]]></textFieldExpression>
+								</textField>
+								<textField>
+									<reportElement x="0" y="28" width="320" height="14" uuid="70bc1fec-026d-48dc-9aac-32c1c50b022f">
+										<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									</reportElement>
+									<textElement verticalAlignment="Middle">
+										<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$F{convenzione}.getImporto()]]></textFieldExpression>
+								</textField>
+							</jr:listContents>
+						</jr:list>
+					</componentElement>
+				</frame>
+			</frame>
+		</band>
+		<band height="75">
+			<break>
+				<reportElement x="0" y="4" width="99" height="1" uuid="cf608800-9f12-4468-a108-9f59a3c6aacd">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+			</break>
+			<frame>
+				<reportElement positionType="Float" x="0" y="9" width="555" height="57" uuid="a84dd008-ac04-48cb-b473-81f32821b2f2"/>
+				<textField>
+					<reportElement mode="Transparent" x="0" y="0" width="550" height="20" forecolor="#008996" backcolor="#FFFFFF" uuid="00927875-035c-40e6-86d5-9f0cf5493af8">
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="2"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="12" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["3. VALORE ASSICURABILE/ COSTO DI RICOSTRUZIONE A NUOVO"]]></textFieldExpression>
+				</textField>
+				<subreport>
+					<reportElement x="0" y="21" width="555" height="36" uuid="397d1fb4-2cd6-41a1-800a-398b848254ce"/>
+					<subreportParameter name="data">
+						<subreportParameterExpression><![CDATA[$P{data}]]></subreportParameterExpression>
+					</subreportParameter>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{valoreAssicurabiles})]]></dataSourceExpression>
+					<subreportExpression><![CDATA["subreport/valoreAssicurabileTemplate.jasper"]]></subreportExpression>
+				</subreport>
+			</frame>
+		</band>
+		<band height="57">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Transparent" x="0" y="0" width="550" height="20" isRemoveLineWhenBlank="true" forecolor="#008996" backcolor="#FFFFFF" uuid="ec5c41ae-bd7b-4ffd-82ea-a3bb8bc4b22a">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box leftPadding="2"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{data}.getTitoloSezioneValoriCauzionaleProntoRealizzoPV()]]></textFieldExpression>
+			</textField>
+			<subreport>
+				<reportElement positionType="Float" x="0" y="21" width="555" height="36" uuid="5424c46e-9e7b-4fb6-9172-ef9948aa85e1"/>
+				<subreportParameter name="data">
+					<subreportParameterExpression><![CDATA[$P{data}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{valoreAssicurabiles})]]></dataSourceExpression>
+				<subreportExpression><![CDATA["subreport/valoreCauzionaleProntoRealizzoPVTemplate.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="154">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<break>
+				<reportElement x="0" y="5" width="100" height="1" uuid="075d1b10-6592-4a69-a334-2ca7daaaa9c2"/>
+			</break>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="18" width="328" height="10" forecolor="#006699" uuid="8532f058-4d28-4c9a-ae15-18d47e5aaafb">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box leftPadding="8">
+					<topPen lineWidth="0.2" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<leftPen lineWidth="0.2" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<rightPen lineWidth="0.2" lineStyle="Solid" lineColor="#A6A6A6"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<frame>
+				<reportElement positionType="Float" x="0" y="28" width="555" height="45" isPrintWhenDetailOverflows="true" uuid="9769c5e7-3055-41a0-bcd1-5d010750e820"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+				</box>
+				<subreport>
+					<reportElement x="4" y="2" width="526" height="40" uuid="a076c7a6-555a-4e2b-8680-cfb5f068938e">
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{allegatos})]]></dataSourceExpression>
+					<subreportExpression><![CDATA["subreport/allegatiTemplate.jasper"]]></subreportExpression>
+				</subreport>
+			</frame>
+			<staticText>
+				<reportElement mode="Opaque" x="550" y="18" width="5" height="10" forecolor="#006699" uuid="08de39af-3cf4-4bf9-8de0-8093d8aa74ed">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box leftPadding="8">
+					<topPen lineWidth="0.2" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<leftPen lineWidth="0.2" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<rightPen lineWidth="0.2" lineStyle="Solid" lineColor="#A6A6A6"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="328" y="10" width="222" height="18" forecolor="#A6A6A6" uuid="a2a46940-0b19-434f-8f47-9e8a66f0d318"/>
+				<box>
+					<topPen lineWidth="0.2" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<leftPen lineWidth="0.2" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<bottomPen lineWidth="0.2" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<rightPen lineWidth="0.2" lineStyle="Solid" lineColor="#A6A6A6"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="11" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA["ALLEGATI"]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="53">
+			<textField>
+				<reportElement mode="Opaque" x="505" y="42" width="49" height="10" forecolor="#FFFFFF" backcolor="#969696" uuid="dd2c1614-7127-4d3e-8168-5d2f152fe9cc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="42" width="100" height="10" forecolor="#A3A2A2" uuid="02078d0e-ca7c-4b5b-939c-d50c5e72f4ed"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA["© Cerved"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="42" width="40" height="10" forecolor="#A3A2A2" uuid="f6a7aed5-cf77-4bf1-b5c3-84cb47249f3a"/>
+				<box rightPadding="5"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Codice: "]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="140" y="42" width="68" height="10" forecolor="#A3A2A2" uuid="8bb33627-f62e-4006-a1e2-835d63347783"/>
+				<box>
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#C9C9C9"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C9C9C9"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#C9C9C9"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#C9C9C9"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{data}.getCodiceFornitore()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="230" y="42" width="50" height="10" forecolor="#A3A2A2" uuid="ea2055f4-9141-452f-ba2b-5143f2c140dd"/>
+				<box rightPadding="5"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Codice Ente: "]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Master" isBlankWhenNull="true">
+				<reportElement x="280" y="42" width="199" height="10" forecolor="#A3A2A2" uuid="0b2445f7-d4df-4192-8c70-ca3853264f18"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#C9C9C9"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#C9C9C9"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#C9C9C9"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#C9C9C9"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{data}.getCodiceIstituto()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="1" width="554" height="16" forecolor="#A3A2A2" uuid="aadc1ece-02a3-4b8c-b5a0-6efcd195112e">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER} == 1]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Il presente Rapporto Estimativo è stato redatto secondo le indicazioni delle 'Linee guida per la valutazione degli immobili in garanzia delle esposizioni creditizie' dell'Associazione Bancaria Italiana"]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

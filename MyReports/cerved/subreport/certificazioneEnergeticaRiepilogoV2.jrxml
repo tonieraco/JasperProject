@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.0.final using JasperReports Library version 6.3.0  -->
+<!-- 2022-11-21T12:42:02 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="dettaglioDatoImmobiliare" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="3b156187-ed97-4a76-8f1c-f187db37170c">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<subDataset name="datasetClassificazioneEnergetica" uuid="696f2602-c115-4a44-b6a5-8a75420d5356">
+		<field name="dettaglio" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.cerved.data.CervedPdfConsistenzaClasseEnergeticaDettaglio">
+			<fieldDescription><![CDATA[_THIS]]></fieldDescription>
+		</field>
+	</subDataset>
+	<parameter name="data" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.cerved.data.CervedPdfRiepilogo"/>
+	<parameter name="etichettaChiaveCatastale" class="java.lang.String"/>
+	<field name="dettaglios" class="java.util.Collection"/>
+	<field name="lotto" class="java.lang.String">
+		<fieldDescription><![CDATA[lotto]]></fieldDescription>
+	</field>
+	<field name="chiaveCatastale" class="java.lang.String">
+		<fieldDescription><![CDATA[chiaveCatastale]]></fieldDescription>
+	</field>
+	<detail>
+		<band height="42" splitType="Stretch">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="0" y="0" width="525" height="14" forecolor="#FFFFFF" backcolor="#879C3F" uuid="97045005-c1bb-43e2-a153-22a54ada9351">
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box leftPadding="5">
+					<topPen lineWidth="1.0" lineColor="#C9CDD3"/>
+					<leftPen lineWidth="1.0" lineColor="#C9CDD3"/>
+					<bottomPen lineWidth="1.0" lineColor="#C9CDD3"/>
+					<rightPen lineWidth="1.0" lineColor="#C9CDD3"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Classe Energetica"]]></textFieldExpression>
+			</textField>
+			<frame>
+				<reportElement positionType="Float" x="0" y="14" width="525" height="13" uuid="40d6d5e5-b3c6-4423-a26b-d8176b8154b8">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement key="" positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="0" y="0" width="26" height="13" forecolor="#000000" backcolor="#EDEDED" uuid="4ffd9e5d-19d5-4044-99ff-5c935a7dc5bc">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Lotto"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement key="" positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="26" y="0" width="94" height="13" forecolor="#000000" backcolor="#EDEDED" uuid="ec8cf892-6b4d-4a79-bcc4-4c967af94956">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getEtichettaChiaveCatastale() != "" ? $P{data}.getEtichettaChiaveCatastale()  : $P{etichettaChiaveCatastale}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement key="" positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="120" y="0" width="63" height="13" forecolor="#000000" backcolor="#EDEDED" uuid="221f4eb4-9b84-419c-ae8c-9dda16dc11d0">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Fonte"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement key="" positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="183" y="0" width="60" height="13" forecolor="#000000" backcolor="#EDEDED" uuid="4a203e18-22ea-4622-be05-866d1d59e6a1">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Classe Energetica"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement key="" positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="243" y="0" width="90" height="13" forecolor="#000000" backcolor="#EDEDED" uuid="b123f3f5-41b7-484b-9617-1ae68abbaa07">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Consumo annuo(kWh/mq anno)"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement key="" positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="333" y="0" width="72" height="13" forecolor="#000000" backcolor="#EDEDED" uuid="566ecf12-c790-4936-990b-961f8679da46">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Emissione Co2(kg/m2 anno)"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement key="" positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="405" y="0" width="60" height="13" forecolor="#000000" backcolor="#EDEDED" uuid="11e01e5e-509e-4747-84c1-321f7263dcd7">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Data certificazione"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement key="" positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="465" y="0" width="60" height="13" forecolor="#000000" backcolor="#EDEDED" uuid="8b8659c2-0930-4d97-99ce-d832e67d840a">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Data scadenza"]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="1" y="27" width="525" height="15" uuid="0cc6a601-5f96-4b9a-b77d-342fd4846f40">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="-1" y="0" width="26" height="15" backcolor="#EDEDED" uuid="959ca162-644e-4fe1-b89c-1df63c546825">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial_BNL" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{lotto}]]></textFieldExpression>
+				</textField>
+				<componentElement>
+					<reportElement positionType="Float" x="25" y="0" width="499" height="15" backcolor="#EDEDED" uuid="ec1bb153-9218-4cc0-8a95-bf9798ee4f62">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+						<property name="net.sf.jasperreports.export.headertoolbar.table.name" value=""/>
+					</reportElement>
+					<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
+						<datasetRun subDataset="datasetClassificazioneEnergetica" uuid="56654384-cc20-46fe-8422-19b377caba34">
+							<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{dettaglios})]]></dataSourceExpression>
+						</datasetRun>
+						<jr:listContents height="15" width="499">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="94" height="15" backcolor="#EDEDED" uuid="2ae27f97-8475-49c3-ae9b-dffcbb9d1ddf">
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box leftPadding="2">
+									<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial_BNL" size="8" isBold="false"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{dettaglio}.getDatiCatastali()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="94" y="0" width="63" height="15" isRemoveLineWhenBlank="true" backcolor="#EDEDED" uuid="09c2c679-a62b-4d9f-aa18-6a5da4d56f74">
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box leftPadding="2" bottomPadding="1">
+									<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial_BNL" size="8" isBold="false"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{dettaglio}.getFonteCertificazione()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="157" y="0" width="60" height="15" backcolor="#EDEDED" uuid="7d0ebafb-dd2b-4dea-a376-3324e4c111d1">
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box leftPadding="2">
+									<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial_BNL" size="8" isBold="false"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{dettaglio}.getClasseEnergetica()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="217" y="0" width="90" height="15" backcolor="#EDEDED" uuid="7c5c9458-d33f-4d6d-b793-180250acfbaa">
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+								</reportElement>
+								<box leftPadding="2">
+									<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial_BNL" size="8" isBold="false"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{dettaglio}.getConsumoAnnuo()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="307" y="0" width="72" height="15" backcolor="#EDEDED" uuid="cf0516f2-ae81-4c2e-9074-258308cf8329">
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+								</reportElement>
+								<box leftPadding="2">
+									<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial_BNL" size="8" isBold="false"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{dettaglio}.getEmissioneAnnuaCo2()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="379" y="0" width="60" height="15" backcolor="#EDEDED" uuid="12c6a423-4674-419d-b2a6-ba6614bb8d1b">
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+								</reportElement>
+								<box leftPadding="2">
+									<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial_BNL" size="8" isBold="false"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{dettaglio}.getDataCertificazione()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="439" y="0" width="60" height="15" backcolor="#EDEDED" uuid="fbae81da-830d-4c5d-b74e-57300f1c9f93">
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+								</reportElement>
+								<box leftPadding="2">
+									<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial_BNL" size="8" isBold="false"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{dettaglio}.getDataScadenzaCertificazione()]]></textFieldExpression>
+							</textField>
+						</jr:listContents>
+					</jr:list>
+				</componentElement>
+			</frame>
+		</band>
+	</detail>
+</jasperReport>

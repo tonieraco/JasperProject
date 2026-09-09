@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.0.final using JasperReports Library version 6.3.0  -->
+<!-- 2017-06-15T10:53:44 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="unitaImmobiliare" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="bef2aa2b-fc9f-4b32-8f5d-6ba8a1306075">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<subDataset name="archittettonicheDataset" uuid="1d9c428f-79b3-4bf1-ac81-c864345e1537">
+		<field name="archittettoniches" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.cerved.data.DettaglioCaratteristiche">
+			<fieldDescription><![CDATA[_THIS]]></fieldDescription>
+		</field>
+	</subDataset>
+	<subDataset name="costruttiveDataset" uuid="1d9c428f-79b3-4bf1-ac81-c864345e1537">
+		<field name="costruttives" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.cerved.data.DettaglioCaratteristiche">
+			<fieldDescription><![CDATA[_THIS]]></fieldDescription>
+		</field>
+	</subDataset>
+	<subDataset name="dimensionaliDataset" uuid="1d9c428f-79b3-4bf1-ac81-c864345e1537">
+		<field name="dimensionalis" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.cerved.data.DettaglioCaratteristiche">
+			<fieldDescription><![CDATA[_THIS]]></fieldDescription>
+		</field>
+	</subDataset>
+	<subDataset name="condominialiDataset" uuid="1d9c428f-79b3-4bf1-ac81-c864345e1537">
+		<field name="condominialis" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.cerved.data.DettaglioCaratteristiche">
+			<fieldDescription><![CDATA[_THIS]]></fieldDescription>
+		</field>
+	</subDataset>
+	<parameter name="unitaImmobiliare" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.cerved.data.CervedPdfUnitaImmobiliare"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="116" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<frame>
+				<reportElement positionType="Float" x="0" y="90" width="534" height="26" isRemoveLineWhenBlank="true" uuid="c42f8ea0-004c-49cb-839c-2c6735397165">
+					<printWhenExpression><![CDATA[$P{unitaImmobiliare}.isCondominialiVisibile() == true]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<bottomPen lineWidth="1.0" lineColor="#CACACA"/>
+				</box>
+				<textField isBlankWhenNull="true">
+					<reportElement x="0" y="0" width="440" height="13" isRemoveLineWhenBlank="true" uuid="d4345639-f0fd-4f50-849a-b47b4a21c028"/>
+					<box leftPadding="5">
+						<topPen lineWidth="0.0"/>
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.0"/>
+						<rightPen lineWidth="0.0"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="styled">
+						<font fontName="Arial_BNL" size="8" isBold="false" isItalic="true"/>
+						<paragraph lineSpacing="1_1_2" lineSpacingSize="1.0"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Servizi dell'unità immobiliare"]]></textFieldExpression>
+				</textField>
+				<componentElement>
+					<reportElement x="0" y="13" width="534" height="13" isRemoveLineWhenBlank="true" uuid="0f6a5fe1-c425-4b3e-bf01-84918656c0d8">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
+						<datasetRun subDataset="condominialiDataset" uuid="fca90060-43b0-4eaa-9b87-0b6cec172474">
+							<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{unitaImmobiliare}.getCondominialis())]]></dataSourceExpression>
+						</datasetRun>
+						<jr:listContents height="13" width="534">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement positionType="Float" x="0" y="0" width="255" height="13" isRemoveLineWhenBlank="true" uuid="b9c17a57-9a61-49cd-a4bb-65f8f7c226ae">
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box leftPadding="13">
+									<topPen lineWidth="0.0"/>
+									<leftPen lineWidth="0.0"/>
+									<bottomPen lineWidth="0.0"/>
+									<rightPen lineWidth="0.0"/>
+								</box>
+								<textElement verticalAlignment="Middle" markup="styled">
+									<font fontName="Arial_BNL" size="8" isBold="false"/>
+									<paragraph lineSpacing="1_1_2" lineSpacingSize="1.0"/>
+								</textElement>
+								<textFieldExpression><![CDATA["<style isBold=\"true\">" + $F{condominialis}.getDescrizioneLeft() + " </style>" + $F{condominialis}.getValoreLeft()]]></textFieldExpression>
+							</textField>
+							<textField isBlankWhenNull="true">
+								<reportElement positionType="Float" x="267" y="0" width="267" height="13" isRemoveLineWhenBlank="true" uuid="361f61a1-2b1a-4c36-af52-4e6a6f630c3f">
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box leftPadding="5">
+									<topPen lineWidth="0.0"/>
+									<leftPen lineWidth="0.0"/>
+									<bottomPen lineWidth="0.0"/>
+									<rightPen lineWidth="0.0"/>
+								</box>
+								<textElement verticalAlignment="Middle" markup="styled">
+									<font fontName="Arial_BNL" size="8" isBold="false"/>
+									<paragraph lineSpacing="1_1_2" lineSpacingSize="1.0"/>
+								</textElement>
+								<textFieldExpression><![CDATA["<style isBold=\"true\">" + $F{condominialis}.getDescrizioneRight() + " </style>" + $F{condominialis}.getValoreRight()]]></textFieldExpression>
+							</textField>
+						</jr:listContents>
+					</jr:list>
+				</componentElement>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="60" width="534" height="26" isRemoveLineWhenBlank="true" uuid="4b3f87c6-df20-481e-8c46-e5977e7811d6">
+					<printWhenExpression><![CDATA[$P{unitaImmobiliare}.isDimensionaliVisibile() == true]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<bottomPen lineWidth="1.0" lineColor="#CACACA"/>
+				</box>
+				<textField isBlankWhenNull="true">
+					<reportElement x="0" y="0" width="440" height="13" isRemoveLineWhenBlank="true" uuid="707ac637-6078-429c-9c3e-9074e57f1b1a"/>
+					<box leftPadding="5">
+						<topPen lineWidth="0.0"/>
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.0"/>
+						<rightPen lineWidth="0.0"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="styled">
+						<font fontName="Arial_BNL" size="8" isBold="false" isItalic="true"/>
+						<paragraph lineSpacing="1_1_2" lineSpacingSize="1.0"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Dati dimensionali"]]></textFieldExpression>
+				</textField>
+				<componentElement>
+					<reportElement x="0" y="13" width="534" height="13" isRemoveLineWhenBlank="true" uuid="5d6f0810-cb8a-4a0c-8fda-4eb8794bffec">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
+						<datasetRun subDataset="dimensionaliDataset" uuid="f82d94a7-24b4-4965-8483-d596f6dda97d">
+							<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{unitaImmobiliare}.getDimensionalis())]]></dataSourceExpression>
+						</datasetRun>
+						<jr:listContents height="13" width="534">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement positionType="Float" x="0" y="0" width="255" height="13" isRemoveLineWhenBlank="true" uuid="da6155bc-5f0a-4b40-b864-87d89b34fe04">
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box leftPadding="13">
+									<topPen lineWidth="0.0"/>
+									<leftPen lineWidth="0.0"/>
+									<bottomPen lineWidth="0.0"/>
+									<rightPen lineWidth="0.0"/>
+								</box>
+								<textElement verticalAlignment="Middle" markup="styled">
+									<font fontName="Arial_BNL" size="8" isBold="false"/>
+									<paragraph lineSpacing="1_1_2" lineSpacingSize="1.0"/>
+								</textElement>
+								<textFieldExpression><![CDATA["<style isBold=\"true\">" + $F{dimensionalis}.getDescrizioneLeft() + " </style>" + $F{dimensionalis}.getValoreLeft()]]></textFieldExpression>
+							</textField>
+							<textField isBlankWhenNull="true">
+								<reportElement positionType="Float" x="267" y="0" width="267" height="13" isRemoveLineWhenBlank="true" uuid="3f141ffb-c9f1-412e-a323-db29170ba2b1">
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box leftPadding="5">
+									<topPen lineWidth="0.0"/>
+									<leftPen lineWidth="0.0"/>
+									<bottomPen lineWidth="0.0"/>
+									<rightPen lineWidth="0.0"/>
+								</box>
+								<textElement verticalAlignment="Middle" markup="styled">
+									<font fontName="Arial_BNL" size="8" isBold="false"/>
+									<paragraph lineSpacing="1_1_2" lineSpacingSize="1.0"/>
+								</textElement>
+								<textFieldExpression><![CDATA["<style isBold=\"true\">" + $F{dimensionalis}.getDescrizioneRight() + " </style>" + $F{dimensionalis}.getValoreRight()]]></textFieldExpression>
+							</textField>
+						</jr:listContents>
+					</jr:list>
+				</componentElement>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="30" width="534" height="26" isRemoveLineWhenBlank="true" uuid="a4ee1f45-8a84-4f05-b0de-e2908f1344d1">
+					<printWhenExpression><![CDATA[$P{unitaImmobiliare}.isCostruttiveVisibile() == true]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<bottomPen lineWidth="1.0" lineColor="#CACACA"/>
+				</box>
+				<textField isBlankWhenNull="true">
+					<reportElement x="0" y="0" width="440" height="13" isRemoveLineWhenBlank="true" uuid="7a9a2fc5-0781-4a81-a1cc-cee9131bef99"/>
+					<box leftPadding="5">
+						<topPen lineWidth="0.0"/>
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.0"/>
+						<rightPen lineWidth="0.0"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="styled">
+						<font fontName="Arial_BNL" size="8" isBold="false" isItalic="true"/>
+						<paragraph lineSpacing="1_1_2" lineSpacingSize="1.0"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Caratteristiche costruttive"]]></textFieldExpression>
+				</textField>
+				<componentElement>
+					<reportElement x="0" y="13" width="534" height="13" isRemoveLineWhenBlank="true" uuid="cb48cc65-751d-46d3-a31b-0231294ca544">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
+						<datasetRun subDataset="costruttiveDataset" uuid="9ca1b28d-0846-4dba-8427-4a58522b2108">
+							<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{unitaImmobiliare}.getCostruttives())]]></dataSourceExpression>
+						</datasetRun>
+						<jr:listContents height="13" width="534">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement positionType="Float" x="0" y="0" width="255" height="13" isRemoveLineWhenBlank="true" uuid="2ba4f7f3-da06-49ce-afcb-5b3f35756002">
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box leftPadding="13">
+									<topPen lineWidth="0.0"/>
+									<leftPen lineWidth="0.0"/>
+									<bottomPen lineWidth="0.0"/>
+									<rightPen lineWidth="0.0"/>
+								</box>
+								<textElement verticalAlignment="Middle" markup="styled">
+									<font fontName="Arial_BNL" size="8" isBold="false"/>
+									<paragraph lineSpacing="1_1_2" lineSpacingSize="1.0"/>
+								</textElement>
+								<textFieldExpression><![CDATA["<style isBold=\"true\">" + $F{costruttives}.getDescrizioneLeft() + " </style>" + $F{costruttives}.getValoreLeft()]]></textFieldExpression>
+							</textField>
+							<textField isBlankWhenNull="true">
+								<reportElement positionType="Float" x="267" y="0" width="267" height="13" isRemoveLineWhenBlank="true" uuid="c72f70ab-ed80-4c9d-ab80-d52aae5857e6">
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box leftPadding="5">
+									<topPen lineWidth="0.0"/>
+									<leftPen lineWidth="0.0"/>
+									<bottomPen lineWidth="0.0"/>
+									<rightPen lineWidth="0.0"/>
+								</box>
+								<textElement verticalAlignment="Middle" markup="styled">
+									<font fontName="Arial_BNL" size="8" isBold="false"/>
+									<paragraph lineSpacing="1_1_2" lineSpacingSize="1.0"/>
+								</textElement>
+								<textFieldExpression><![CDATA["<style isBold=\"true\">" + $F{costruttives}.getDescrizioneRight() + " </style>" + $F{costruttives}.getValoreRight()]]></textFieldExpression>
+							</textField>
+						</jr:listContents>
+					</jr:list>
+				</componentElement>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="0" width="534" height="26" isRemoveLineWhenBlank="true" uuid="94397501-51c6-4f00-857e-b28fd99bd1d6">
+					<printWhenExpression><![CDATA[$P{unitaImmobiliare}.isArchittettonicheVisibile() == true]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<bottomPen lineWidth="1.0" lineColor="#CACACA"/>
+				</box>
+				<textField isBlankWhenNull="true">
+					<reportElement x="0" y="0" width="440" height="13" isRemoveLineWhenBlank="true" uuid="30c95383-eb23-4135-9e6b-a2be7383a377"/>
+					<box leftPadding="5">
+						<topPen lineWidth="0.0"/>
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.0"/>
+						<rightPen lineWidth="0.0"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="styled">
+						<font fontName="Arial_BNL" size="8" isBold="false" isItalic="true"/>
+						<paragraph lineSpacing="1_1_2" lineSpacingSize="1.0"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Caratteristiche architettoniche"]]></textFieldExpression>
+				</textField>
+				<componentElement>
+					<reportElement x="0" y="13" width="534" height="13" isRemoveLineWhenBlank="true" uuid="ef529e58-4edf-4efb-a47e-cc0a3d2367dd">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
+						<datasetRun subDataset="archittettonicheDataset" uuid="7e9fbf31-8345-4980-93ff-82286917df43">
+							<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{unitaImmobiliare}.getArchittettoniches())]]></dataSourceExpression>
+						</datasetRun>
+						<jr:listContents height="13" width="534">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement positionType="Float" x="0" y="0" width="255" height="13" isRemoveLineWhenBlank="true" uuid="996877c7-ca1f-4d02-ace1-f8915a89df20">
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box leftPadding="13">
+									<topPen lineWidth="0.0"/>
+									<leftPen lineWidth="0.0"/>
+									<bottomPen lineWidth="0.0"/>
+									<rightPen lineWidth="0.0"/>
+								</box>
+								<textElement verticalAlignment="Middle" markup="styled">
+									<font fontName="Arial_BNL" size="8" isBold="false"/>
+									<paragraph lineSpacing="1_1_2" lineSpacingSize="1.0"/>
+								</textElement>
+								<textFieldExpression><![CDATA["<style isBold=\"true\">" + $F{archittettoniches}.getDescrizioneLeft() + " </style>" + $F{archittettoniches}.getValoreLeft()]]></textFieldExpression>
+							</textField>
+							<textField isBlankWhenNull="true">
+								<reportElement positionType="Float" x="267" y="0" width="267" height="13" isRemoveLineWhenBlank="true" uuid="bb269343-7ead-4b7c-8ec6-cffce113545c">
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box leftPadding="5">
+									<topPen lineWidth="0.0"/>
+									<leftPen lineWidth="0.0"/>
+									<bottomPen lineWidth="0.0"/>
+									<rightPen lineWidth="0.0"/>
+								</box>
+								<textElement verticalAlignment="Middle" markup="styled">
+									<font fontName="Arial_BNL" size="8" isBold="false"/>
+									<paragraph lineSpacing="1_1_2" lineSpacingSize="1.0"/>
+								</textElement>
+								<textFieldExpression><![CDATA["<style isBold=\"true\">" + $F{archittettoniches}.getDescrizioneRight() + " </style>" + $F{archittettoniches}.getValoreRight()]]></textFieldExpression>
+							</textField>
+						</jr:listContents>
+					</jr:list>
+				</componentElement>
+			</frame>
+		</band>
+	</detail>
+</jasperReport>

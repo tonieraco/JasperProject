@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.0.final using JasperReports Library version 6.3.0  -->
+<!-- 2024-05-22T14:55:29 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="dettaglioDatoImmobiliare" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="3b156187-ed97-4a76-8f1c-f187db37170c">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="data" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.cerved.data.CervedPdfRiepilogo"/>
+	<detail>
+		<band height="223" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<frame>
+				<reportElement positionType="Float" x="0" y="2" width="525" height="221" uuid="38384357-3579-4731-9ccc-fd166cce0917"/>
+				<frame>
+					<reportElement positionType="Float" x="250" y="0" width="275" height="216" uuid="556be8cc-176b-48b6-9a38-3f8c9f893d92"/>
+					<textField>
+						<reportElement mode="Opaque" x="0" y="0" width="275" height="14" forecolor="#FFFFFF" backcolor="#879C3F" uuid="daebb9e8-e08b-4517-927f-578601c984ac">
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+						</reportElement>
+						<box leftPadding="2" rightPadding="0">
+							<topPen lineWidth="1.0" lineColor="#C9CDD3"/>
+							<leftPen lineWidth="0.0" lineColor="#C9CDD3"/>
+							<bottomPen lineWidth="1.0" lineColor="#C9CDD3"/>
+							<rightPen lineWidth="0.0" lineColor="#C9CDD3"/>
+						</box>
+						<textElement verticalAlignment="Middle">
+							<font fontName="Arial_BNL" size="9" isBold="true"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Coordinate Geografiche"]]></textFieldExpression>
+					</textField>
+					<image hAlign="Center" vAlign="Middle" onErrorType="Blank">
+						<reportElement x="0" y="27" width="275" height="189" isRemoveLineWhenBlank="true" uuid="c4d2f7a5-03f6-45b9-b19d-5934de66ac4d">
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+						</reportElement>
+						<box padding="15" leftPadding="15">
+							<topPen lineWidth="1.0" lineColor="#BABABA"/>
+							<leftPen lineWidth="1.0" lineColor="#BABABA"/>
+							<bottomPen lineWidth="1.0" lineColor="#BABABA"/>
+							<rightPen lineWidth="1.0" lineColor="#BABABA"/>
+						</box>
+						<imageExpression><![CDATA[$P{data}.getCoordinateGeografichePath()]]></imageExpression>
+					</image>
+					<textField isBlankWhenNull="true">
+						<reportElement key="" mode="Transparent" x="0" y="14" width="275" height="13" forecolor="#000000" backcolor="rgba(135, 156, 63, 0.0)" uuid="52ec8cbb-649a-4d47-840e-09ccbae5d3bf">
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+						</reportElement>
+						<box leftPadding="3">
+							<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						</box>
+						<textElement textAlignment="Right" verticalAlignment="Middle">
+							<font fontName="Arial" size="8" isItalic="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{data}.getCoordinate()]]></textFieldExpression>
+					</textField>
+				</frame>
+				<frame>
+					<reportElement positionType="Float" x="0" y="0" width="230" height="216" uuid="94d44143-7aaf-4359-88fe-809056386605"/>
+					<textField>
+						<reportElement mode="Opaque" x="0" y="0" width="230" height="14" forecolor="#FFFFFF" backcolor="#879C3F" uuid="3ae0c74c-fef9-4976-95a3-46c86e8ed22a">
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+						</reportElement>
+						<box leftPadding="2" rightPadding="0">
+							<topPen lineWidth="1.0" lineColor="#C9CDD3"/>
+							<leftPen lineWidth="0.0" lineColor="#C9CDD3"/>
+							<bottomPen lineWidth="1.0" lineColor="#C9CDD3"/>
+							<rightPen lineWidth="0.0" lineColor="#C9CDD3"/>
+						</box>
+						<textElement verticalAlignment="Middle">
+							<font fontName="Arial_BNL" size="9" isBold="true"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Facciata Principale"]]></textFieldExpression>
+					</textField>
+					<image hAlign="Center" vAlign="Middle" onErrorType="Blank">
+						<reportElement x="0" y="14" width="230" height="202" isRemoveLineWhenBlank="true" uuid="06ec808a-74cf-473e-b002-56d2a9dc4fb6">
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+						</reportElement>
+						<box padding="15" topPadding="15" leftPadding="15" bottomPadding="15" rightPadding="15">
+							<topPen lineWidth="1.0" lineColor="#BABABA"/>
+							<leftPen lineWidth="1.0" lineColor="#BABABA"/>
+							<bottomPen lineWidth="1.0" lineColor="#BABABA"/>
+							<rightPen lineWidth="1.0" lineColor="#BABABA"/>
+						</box>
+						<imageExpression><![CDATA[$P{data}.getFacciataPrincipalePath()]]></imageExpression>
+					</image>
+				</frame>
+			</frame>
+		</band>
+	</detail>
+</jasperReport>

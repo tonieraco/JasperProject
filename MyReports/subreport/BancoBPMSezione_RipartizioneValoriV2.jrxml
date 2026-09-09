@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 7.0.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2026-07-17T14:45:04 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="802" pageHeight="555" orientation="Landscape" columnWidth="762" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="170c5b6d-6a79-4601-801c-974412c4fe64">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<subDataset name="riepilogoValutazioneSuperficieDataset" uuid="60eb1064-36cf-47d6-9fee-1992be22e944">
+		<field name="riepilogoValutazioneSuperficies" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.bancobpm.data.BancoBPMPdfDataRiepilogoValutazioneSuperficie">
+			<fieldDescription><![CDATA[_THIS]]></fieldDescription>
+		</field>
+	</subDataset>
+	<subDataset name="riepilogoValutazioneCatastaleDataset" uuid="905790fa-588f-446c-83d3-e15fb06709c9">
+		<field name="riepilogoValutazioneCatastales" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.bancobpm.data.BancoBPMPdfDataRiepilogoValutazioneCatastale">
+			<fieldDescription><![CDATA[_THIS]]></fieldDescription>
+		</field>
+	</subDataset>
+	<parameter name="data" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.bancobpm.data.BancoBPMPdfData"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="141">
+			<textField>
+				<reportElement mode="Opaque" x="0" y="24" width="20" height="74" backcolor="#DDEBF7" uuid="819354c1-287f-493a-a3b8-5464f09f1d07"/>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="7" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["N"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="0" y="0" width="760" height="24" backcolor="#BDD7EE" uuid="e6874413-46c5-4c6f-b87e-e37bbc71c5c3"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["RIEPILOGO DELLA VALUTAZIONE"]]></textFieldExpression>
+			</textField>
+			<frame>
+				<reportElement positionType="Float" x="20" y="68" width="740" height="30" uuid="372f3301-649e-41b8-acb1-a085ca111d4f"/>
+				<textField>
+					<reportElement stretchType="RelativeToTallestObject" mode="Opaque" x="182" y="0" width="28" height="30" backcolor="#DDEBF7" uuid="17ae7408-9b0d-40fe-b8bd-f646a10a65d0"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="7" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Cat."]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="154" y="0" width="28" height="30" backcolor="#DDEBF7" uuid="336879dd-3aad-4403-b306-c41a87a80db9">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="7" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[" Sub."]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement stretchType="RelativeToTallestObject" mode="Opaque" x="118" y="0" width="36" height="30" backcolor="#DDEBF7" uuid="025ae806-87a1-46b7-861d-bee2d5c47054">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="7" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Mapp."]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement stretchType="RelativeToTallestObject" mode="Opaque" x="90" y="0" width="28" height="30" backcolor="#DDEBF7" uuid="9c08f537-e87b-41cc-bee5-6112717a2259">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="7" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Fg."]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement stretchType="RelativeToTallestObject" mode="Opaque" x="350" y="0" width="53" height="30" backcolor="#DDEBF7" uuid="f70ed865-f470-47f9-9124-2807e13b07be">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="7" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Superficie Commerciale"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement stretchType="RelativeToTallestObject" mode="Opaque" x="527" y="0" width="71" height="30" backcolor="#DDEBF7" uuid="b15f3405-e851-4a08-9946-dfe02adc2738">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="7" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Valore Assicurativo (Euro)"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement stretchType="RelativeToTallestObject" mode="Opaque" x="403" y="0" width="53" height="30" backcolor="#DDEBF7" uuid="7b4cb713-e581-4469-aa38-029bbc4cec89">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="7" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Superficie Assicurabile"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement stretchType="RelativeToTallestObject" mode="Opaque" x="456" y="0" width="71" height="30" backcolor="#DDEBF7" uuid="f57c4d88-632e-43b7-afcc-107db59fbd94">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="7" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Valore di Mercato (Euro)"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement stretchType="RelativeToTallestObject" mode="Opaque" x="598" y="0" width="71" height="30" backcolor="#DDEBF7" uuid="01e19e98-a171-4ca7-9d02-3c822f47f095">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="7" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Property Value"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement stretchType="RelativeToTallestObject" mode="Opaque" x="0" y="0" width="90" height="30" backcolor="#DDEBF7" uuid="4b9d3a13-5fdf-4bdd-a8d4-24150d4c471f"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="7" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["TIPOLOGIA IMMOBILIARE"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement stretchType="RelativeToTallestObject" mode="Opaque" x="280" y="0" width="70" height="30" backcolor="#DDEBF7" uuid="9b7dcb01-0275-4dd9-af88-2f0f0f4c8a5d"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="7" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Utilizzo prevalente del terreno"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement stretchType="RelativeToTallestObject" mode="Opaque" x="210" y="0" width="70" height="30" backcolor="#DDEBF7" uuid="bc8f38c8-5b1e-41f9-b911-52f6a068db47"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="7" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Qualità riscontrata"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement stretchType="RelativeToTallestObject" mode="Opaque" x="669" y="0" width="71" height="30" backcolor="#DDEBF7" uuid="cd35fce6-f8fc-498f-a0dd-bf5cab116d4e">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="7" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getRiepilogoValutazione().getValoreLabel()]]></textFieldExpression>
+				</textField>
+			</frame>
+			<componentElement>
+				<reportElement positionType="Float" x="0" y="98" width="760" height="22" backcolor="#EDEDED" uuid="0d697ac5-7c18-45de-9f3b-b6bc07e6935c">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="net.sf.jasperreports.export.headertoolbar.table.name" value=""/>
+				</reportElement>
+				<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
+					<datasetRun subDataset="riepilogoValutazioneCatastaleDataset" uuid="e603eb0b-e508-4f69-a4a2-60dded047b15">
+						<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{data}.getRiepilogoValutazione().getRiepilogoValutazioneCatastales())]]></dataSourceExpression>
+					</datasetRun>
+					<jr:listContents height="22" width="760">
+						<frame>
+							<reportElement positionType="Float" x="0" y="0" width="760" height="22" uuid="fa85c879-ef97-4b71-b011-ace65902a6d8">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							</reportElement>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="20" height="22" forecolor="#000000" uuid="1a2632ea-aa90-456c-a03b-652117e75ee4"/>
+								<box leftPadding="2">
+									<pen lineWidth="0.5" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{riepilogoValutazioneCatastales}.getNum()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToTallestObject" x="20" y="0" width="90" height="22" forecolor="#000000" uuid="fe45347a-f747-4b5b-b28f-acaa7957fc72"/>
+								<box leftPadding="2">
+									<pen lineWidth="0.5" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{riepilogoValutazioneCatastales}.getTipologiaImmobiliare()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToTallestObject" x="110" y="0" width="28" height="22" forecolor="#000000" uuid="48b5f022-083e-45c9-b783-8a31cdec9548"/>
+								<box leftPadding="2">
+									<pen lineWidth="0.5" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{riepilogoValutazioneCatastales}.getFoglio()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToTallestObject" x="138" y="0" width="36" height="22" forecolor="#000000" uuid="22ccfb8a-104c-4df0-ad3e-595993779ef4">
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box leftPadding="2">
+									<pen lineWidth="0.5" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{riepilogoValutazioneCatastales}.getParticella()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToTallestObject" x="174" y="0" width="28" height="22" forecolor="#000000" uuid="9b746c1f-5025-4f80-841a-68557a400c26">
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box leftPadding="2">
+									<pen lineWidth="0.5" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{riepilogoValutazioneCatastales}.getSub()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToTallestObject" x="202" y="0" width="28" height="22" forecolor="#000000" uuid="9d66f2ab-183a-48b1-ba85-8968bd0425d1">
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box leftPadding="2">
+									<pen lineWidth="0.5" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{riepilogoValutazioneCatastales}.getCatCatastale()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToTallestObject" x="370" y="0" width="53" height="22" forecolor="#000000" uuid="b64e04b4-6d21-49fd-92c0-5ef8e28f7473"/>
+								<box leftPadding="0" rightPadding="2">
+									<pen lineWidth="0.5" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Right" verticalAlignment="Middle">
+									<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{riepilogoValutazioneCatastales}.getSuperficieCommerciale()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToTallestObject" x="423" y="0" width="53" height="22" forecolor="#000000" uuid="3c5b1dc9-03ec-4fca-aa64-2bb16f1ec6f5"/>
+								<box leftPadding="0" rightPadding="2">
+									<pen lineWidth="0.5" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Right" verticalAlignment="Middle">
+									<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{riepilogoValutazioneCatastales}.getSuperficieAssicurabile()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToTallestObject" x="476" y="0" width="71" height="22" forecolor="#000000" uuid="78c46762-0664-4826-9f7f-0bba7d49b7f2">
+									<property name="com.jaspersoft.studio.unit.width" value="px"/>
+								</reportElement>
+								<box leftPadding="0" rightPadding="2">
+									<pen lineWidth="0.5" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Right" verticalAlignment="Middle">
+									<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{riepilogoValutazioneCatastales}.getValoreDiMercato()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToTallestObject" x="547" y="0" width="71" height="22" forecolor="#000000" uuid="17b61654-1662-4769-8d2b-3e81f7bf23bc">
+									<property name="com.jaspersoft.studio.unit.width" value="px"/>
+								</reportElement>
+								<box leftPadding="0" rightPadding="2">
+									<pen lineWidth="0.5" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Right" verticalAlignment="Middle">
+									<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{riepilogoValutazioneCatastales}.getValoreAssicurativo()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToTallestObject" x="618" y="0" width="71" height="22" forecolor="#000000" uuid="5aab8aa5-1f5b-412f-942b-0ba0b7e54bcb">
+									<property name="com.jaspersoft.studio.unit.width" value="px"/>
+								</reportElement>
+								<box leftPadding="0" rightPadding="2">
+									<pen lineWidth="0.5" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Right" verticalAlignment="Middle">
+									<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{riepilogoValutazioneCatastales}.getPropertyValue()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToTallestObject" x="230" y="0" width="70" height="22" forecolor="#000000" uuid="e73dade4-9e2a-44c8-b6b4-00628fa34ee5">
+									<property name="com.jaspersoft.studio.unit.width" value="px"/>
+								</reportElement>
+								<box leftPadding="0" rightPadding="2">
+									<pen lineWidth="0.5" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Right" verticalAlignment="Middle">
+									<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{riepilogoValutazioneCatastales}.getQualitaRiscontrata()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToTallestObject" x="300" y="0" width="70" height="22" forecolor="#000000" uuid="ad5579c7-2f80-4b10-8eb9-6179a2bd3e1e">
+									<property name="com.jaspersoft.studio.unit.width" value="px"/>
+								</reportElement>
+								<box leftPadding="0" rightPadding="2">
+									<pen lineWidth="0.5" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Right" verticalAlignment="Middle">
+									<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{riepilogoValutazioneCatastales}.getUtilizzoPrevalenteDelTerreno()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToTallestObject" x="689" y="0" width="71" height="22" forecolor="#000000" uuid="f59543a3-da6c-4be1-8472-1458dd25346f">
+									<property name="com.jaspersoft.studio.unit.width" value="px"/>
+								</reportElement>
+								<box leftPadding="0" rightPadding="2">
+									<pen lineWidth="0.5" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Right" verticalAlignment="Middle">
+									<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{riepilogoValutazioneCatastales}.getValoreAggiuntivo()]]></textFieldExpression>
+							</textField>
+						</frame>
+					</jr:listContents>
+				</jr:list>
+			</componentElement>
+			<frame>
+				<reportElement positionType="Float" x="0" y="120" width="760" height="20" uuid="32f019bf-e4bf-4033-8d84-28922b40f896"/>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Opaque" x="0" y="0" width="370" height="20" backcolor="#DDEBF7" uuid="13a336eb-992c-47d9-9993-8812597b8fc2"/>
+					<box padding="5">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="7" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["TOTALE"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement mode="Opaque" x="370" y="0" width="53" height="20" backcolor="#DDEBF7" uuid="2f3cc9b1-24f5-43d3-b953-8565562555da"/>
+					<box rightPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getRiepilogoValutazione().getTotaleSuperficieCommerciale()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement mode="Opaque" x="423" y="0" width="53" height="20" backcolor="#DDEBF7" uuid="faeb8c92-b285-4b74-948a-97698bad16e7">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box rightPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getRiepilogoValutazione().getTotaleSuperficieAssicurabile()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement mode="Opaque" x="476" y="0" width="71" height="20" backcolor="#DDEBF7" uuid="aaad8cce-5fbf-46e6-a47f-8511bc83078e">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<box rightPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getRiepilogoValutazione().getTotaleValoreMercato()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement mode="Opaque" x="547" y="0" width="71" height="20" backcolor="#DDEBF7" uuid="908bd9b2-ac63-4557-9849-8c66eab141b0">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<box rightPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getRiepilogoValutazione().getTotaleValoreAssicurativo()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement mode="Opaque" x="618" y="0" width="71" height="20" backcolor="#DDEBF7" uuid="049b14ab-f7cf-4737-8af5-463899d2d653">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<box rightPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getPropertyValue()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement mode="Opaque" x="689" y="0" width="71" height="20" backcolor="#DDEBF7" uuid="bbbdf2fe-28b3-4030-b359-b4cfe7938a67">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<box rightPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getRiepilogoValutazione().getTotaleValoreLabel()]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="20" y="24" width="740" height="44" uuid="c6c02289-2870-408c-89ff-7e11e59f7330"/>
+				<textField>
+					<reportElement mode="Opaque" x="0" y="0" width="90" height="44" backcolor="#DDEBF7" uuid="503552fd-8441-4705-813c-1fb473368184"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="7" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="90" y="0" width="120" height="44" backcolor="#DDEBF7" uuid="d79c37bb-7fb1-4925-b997-2caeabdf57fa">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="7" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Identificativi Catastali"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="210" y="0" width="140" height="44" backcolor="#DDEBF7" uuid="b2fc76e4-1945-45e3-9155-07ab6f05269b"/>
+					<box>
+						<pen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="7" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Terreni Agricol"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="350" y="0" width="106" height="44" backcolor="#DDEBF7" uuid="34bcc0e4-aee5-4a2c-adca-9b561b3dde97"/>
+					<box>
+						<pen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="7" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Superfici"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="456" y="0" width="284" height="16" backcolor="#DDEBF7" uuid="06985178-0a7e-4dde-8b25-e74854f33f98"/>
+					<box>
+						<pen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="7" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Ripartizione dei Valori"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="456" y="16" width="71" height="28" backcolor="#DDEBF7" uuid="07ca89f1-ff07-4de1-91f4-a71cba73789a">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="7" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Valore Unitario di Riferimento"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement mode="Opaque" x="527" y="16" width="71" height="28" backcolor="#FFFFCC" uuid="d628b8f2-73fe-4659-815f-953e028376cc">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<box rightPadding="2">
+						<pen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="7" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getRiepilogoValutazione().getValoreUnitarioRiferimento()]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="598" y="16" width="71" height="28" backcolor="#DDEBF7" uuid="54263c62-87bf-4944-93db-aaf88c45ad7c">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="7" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Costo di Ricostruzione Unitario"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement mode="Opaque" x="669" y="16" width="71" height="28" backcolor="#FFFFCC" uuid="66dbbc90-ee52-47c4-b452-b56d878dfdcb"/>
+					<box rightPadding="2">
+						<pen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="7" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getRiepilogoValutazione().getCostoRicostruzioneUnitario()]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+</jasperReport>

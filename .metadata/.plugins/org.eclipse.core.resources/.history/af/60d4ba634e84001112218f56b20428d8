@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 7.0.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2026-07-20T17:19:24 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="170c5b6d-6a79-4601-801c-974412c4fe64">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="data" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.bancobpm.data.BancoBPMPdfData"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="190">
+			<frame>
+				<reportElement positionType="Float" x="0" y="1" width="555" height="20" uuid="1126efc9-3088-48eb-901d-c180a6f3f4ea"/>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="115" height="20" forecolor="#003365" uuid="962b670c-d705-4ede-a477-a8032ee1b3cd"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Titolo abilitativo"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="115" y="0" width="145" height="20" forecolor="#000000" uuid="4a8d859f-058c-4b49-8beb-2be4ad53f5c3"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getTitoliAbilitativiTitolo()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="322" y="0" width="88" height="20" forecolor="#000000" uuid="f655946f-6f1a-4177-aa20-2a5a5f766ce6"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getTitoliAbilitativiNumero()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="260" y="0" width="62" height="20" forecolor="#003365" uuid="7ba7c457-9772-45a7-ba73-70d87f7c7dfc"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["n."]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="472" y="0" width="83" height="20" forecolor="#000000" uuid="7da09743-3e02-423b-90a1-2b57df23bbf2"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getTitoliAbilitativiDel()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="410" y="0" width="62" height="20" forecolor="#003365" uuid="2fd9a75a-6eb7-4124-bf8e-3fd66629524a"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["del"]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="41" width="555" height="20" uuid="0cf77e71-f6bc-4532-aaa1-19e5eaa02da0"/>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="0" y="0" width="115" height="20" forecolor="#003365" backcolor="#FFFFCC" uuid="09547beb-309b-4365-ba46-72579c8ed65b"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Note"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="115" y="0" width="440" height="20" forecolor="#003365" backcolor="#FFFFCC" uuid="646fcb3b-edfb-409b-ae5c-50f3cf2d1894"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getTitoliAbilitativiNote()]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="61" width="555" height="20" uuid="94089bc1-cccd-4428-bc27-cc75339dd5e4"/>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="115" height="20" forecolor="#003365" uuid="76449a52-fd30-4643-8dd5-17f38b115cce"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Data Inizio Lavori"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="115" y="0" width="145" height="20" forecolor="#000000" uuid="02d45139-96f0-4de5-88bb-930e93dccd78"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getTitoliAbilitativiDataInizioLavori()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="322" y="0" width="233" height="20" forecolor="#000000" uuid="8f16ecf0-d154-464d-84ae-fb6acd0594d5"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getTitoliAbilitativiTermineValiditaTitolo()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="260" y="0" width="62" height="20" forecolor="#003365" uuid="a8fefa36-0a7f-4856-bacd-5c8e77617671"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Termine di Validità del titolo abilitativo"]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="81" width="555" height="20" uuid="8f948d56-1527-4839-b547-a6a30100fa19"/>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="115" height="20" forecolor="#003365" uuid="e64d1d0c-e13e-4feb-8502-0793cb98d1f9"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Data presunta ultimazione Lavori"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="115" y="0" width="145" height="20" forecolor="#000000" uuid="e6e9de54-2227-4fb8-8ce5-73c19947b480"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getTitoliAbilitativiDataPresuntaFineLavori()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="322" y="0" width="233" height="20" forecolor="#000000" backcolor="#FFFFCC" uuid="15b61cfb-7e84-4ee4-a68c-c23a04433f16"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getTitoliAbilitativiNote()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="260" y="0" width="62" height="20" forecolor="#003365" uuid="827d5728-981d-47bf-98ea-98ebabf3e3eb"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Note"]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="105" width="555" height="20" uuid="6d474180-4d12-4f5d-a144-d8ebe33803fd"/>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="0" y="0" width="500" height="20" forecolor="#003365" backcolor="#FFFFCC" uuid="98c85db7-501f-4146-9046-62bf97354ca1"/>
+					<box padding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["OPERE REALIZZATE CONFORMI AL PROGETTO APPROVATO"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="500" y="0" width="55" height="20" forecolor="#000000" uuid="42081fac-2e51-4644-ae25-1dd746eefc94"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getTitoliAbilitativiOpereConformi()]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="125" width="555" height="20" uuid="6f54d2cf-fd9e-452a-9eb6-071d53298210"/>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="0" y="0" width="115" height="20" forecolor="#003365" backcolor="#FFFFCC" uuid="362a1052-a198-46e0-878d-c26f59e850cb"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Note"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="115" y="0" width="440" height="20" forecolor="#003365" backcolor="#FFFFCC" uuid="00a11333-a7f4-4db4-9255-32e2a1ffe70e"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getTitoliAbilitativiOpereConformiNote()]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="150" width="555" height="20" uuid="fd79c717-1991-415f-aab0-477da83602dd"/>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="0" y="0" width="500" height="20" forecolor="#003365" backcolor="#FFFFCC" uuid="293957d4-79a5-4461-ab1a-fc1a377ca6d4"/>
+					<box padding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["IL PROGETTO APPROVATO COINCIDE SOSTANZIALMENTE CON IL PROGETTO UTILIZZATO PER LA REDAZIONE DELLA PERIZIA D'IMPIANTO"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="500" y="0" width="55" height="20" forecolor="#000000" uuid="8d49b74f-06b1-4b9c-92c4-f5b35e673664"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getTitoliAbilitativiProgettoCoincideConPeriziaImpianto()]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="170" width="555" height="20" uuid="47f5eb55-6584-447c-b0e7-d3ea15eb1156"/>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="0" y="0" width="115" height="20" forecolor="#003365" backcolor="#FFFFCC" uuid="bb01c335-293c-47e6-bd5d-b65db318f514"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Note"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="115" y="0" width="440" height="20" forecolor="#003365" backcolor="#FFFFCC" uuid="aae55d11-3400-47a0-b59e-28a486f82cd7"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getTitoliAbilitativiProgettoCoincideConPeriziaImpiantoNote()]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement x="0" y="21" width="555" height="20" uuid="29a2d250-b162-4ebd-80b7-402cf10af2a5"/>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="115" height="20" forecolor="#003365" uuid="5b3d70c8-e3b3-4eac-a9f1-b84da54466fc"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Specifiche per la SCIA"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="115" y="0" width="440" height="20" forecolor="#000000" uuid="6b40a6b9-c8ca-49ec-be56-3d8ec73a963c"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getSpecificheSCIA()]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+</jasperReport>

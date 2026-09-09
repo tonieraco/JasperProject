@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.0.final using JasperReports Library version 6.3.0  -->
+<!-- 2024-02-16T07:56:22 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="allegatiTemplate" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="94c6156b-62ab-41aa-a6c3-095c98a1f4df">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="data" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.bper.data.BPERPdfMainCollection"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="rischioFrana" class="java.lang.String">
+		<fieldDescription><![CDATA[rischioFrana]]></fieldDescription>
+	</field>
+	<field name="rischioAlluvionale" class="java.lang.String">
+		<fieldDescription><![CDATA[rischioAlluvionale]]></fieldDescription>
+	</field>
+	<field name="rischioVulcanico" class="java.lang.String">
+		<fieldDescription><![CDATA[rischioVulcanico]]></fieldDescription>
+	</field>
+	<field name="rischioSismico" class="java.lang.String">
+		<fieldDescription><![CDATA[rischioSismico]]></fieldDescription>
+	</field>
+	<field name="indiceRischioFisico" class="java.lang.String">
+		<fieldDescription><![CDATA[indiceRischioFisico]]></fieldDescription>
+	</field>
+	<detail>
+		<band height="55" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<frame>
+				<reportElement positionType="Float" x="0" y="1" width="553" height="54" isRemoveLineWhenBlank="true" uuid="39dc05f0-f51a-42cf-a286-a90f42c1c1fa">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<textField>
+					<reportElement x="0" y="-1" width="553" height="16" isRemoveLineWhenBlank="true" uuid="df80278c-0fe1-4523-8bea-b0522dabf0e2">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Rischi fisici"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="110" y="15" width="111" height="15" isRemoveLineWhenBlank="true" uuid="33e770f1-4379-4899-ac20-661053d8da41">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Rischio alluvionale"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="221" y="15" width="111" height="15" isRemoveLineWhenBlank="true" uuid="a072c74e-8518-4d69-9331-5e4e7f32ff3a">
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Rischio sismico"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="332" y="15" width="111" height="15" isRemoveLineWhenBlank="true" uuid="a294ff3f-9ca5-4a43-984a-9a26fc672b78">
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Rischio vulcanico"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="443" y="15" width="110" height="15" isRemoveLineWhenBlank="true" uuid="b0ffcc6d-f45d-4ebd-a97a-a7668f451ebc">
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Indice rischio fisico"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement key="" positionType="Float" mode="Transparent" x="0" y="46" width="553" height="8" forecolor="#000000" backcolor="rgba(135, 156, 63, 0.0)" uuid="c75159a3-eb17-4c1b-a15b-d8e04ea36068">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box bottomPadding="2">
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Justified" verticalAlignment="Top" markup="styled">
+						<font fontName="Arial" size="6" isItalic="true"/>
+						<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+					</textElement>
+					<textFieldExpression><![CDATA["fonte: Cerved, ISPRA, ISTAT"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="0" y="15" width="110" height="15" isRemoveLineWhenBlank="true" uuid="fdb573b3-728a-4338-bfd7-ad960c671b01">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Rischio frana"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Transparent" x="0" y="30" width="110" height="16" uuid="4a9c880a-88fb-44c9-85e5-5b7dac9a5558">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getRischioFrana()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Transparent" x="110" y="30" width="111" height="16" uuid="2ed3e907-9d37-423c-b54b-f6f2802cfd9c">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getRischioAlluvionale()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Transparent" x="221" y="30" width="111" height="16" uuid="5abf0bd6-8190-496d-aed7-82e0e67c2116">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getRischioSismico()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Transparent" x="332" y="30" width="111" height="16" uuid="132e8ecf-9d36-4301-918d-29822187c1a6">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getRischioVulcanico()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Transparent" x="443" y="30" width="110" height="16" uuid="074daaeb-5696-4cb3-a223-aa0a6282e1de">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1">
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getIndiceRischioFisico()]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+</jasperReport>

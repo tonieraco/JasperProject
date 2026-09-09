@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.1.final utlizzo versione della libreria JasperReports5.2.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="170c5b6d-6a79-4601-801c-974412c4fe64">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<subDataset name="omiDataset" uuid="1d9c428f-79b3-4bf1-ac81-c864345e1537">
+		<field name="valoriOMIs" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.bancobpm.data.BancoBPMPdfDataValoriOMI">
+			<fieldDescription><![CDATA[_THIS]]></fieldDescription>
+		</field>
+	</subDataset>
+	<parameter name="data" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.bancobpm.data.BancoBPMPdfData"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="151">
+			<frame>
+				<reportElement positionType="Float" x="1" y="1" width="554" height="90" isRemoveLineWhenBlank="true" uuid="0edc447b-ed0f-4af9-ae4c-8b8a8e091527"/>
+				<textField>
+					<reportElement key="" positionType="Float" mode="Opaque" x="0" y="15" width="154" height="15" forecolor="#000000" backcolor="#FFFFFF" uuid="9a41bbc0-aebb-455e-8b35-4346d895c831">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<box leftPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Comune"]]></textFieldExpression>
+				</textField>
+				<componentElement>
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="60" width="554" height="15" uuid="99b8fc86-2445-4045-819f-58d369f8a4ee">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
+						<datasetRun subDataset="omiDataset" uuid="f0d9730b-f25c-4a90-b160-bf22b07a97d8">
+							<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{data}.getValoriOMIs())]]></dataSourceExpression>
+						</datasetRun>
+						<jr:listContents height="15" width="554">
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="0" y="0" width="154" height="15" backcolor="#FFFFCC" uuid="bec4e7a1-c77a-4429-9ee5-b8f30cf224a8">
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+								</reportElement>
+								<box leftPadding="2">
+									<topPen lineWidth="1.0" lineColor="#C9CDD3"/>
+									<leftPen lineWidth="1.0" lineColor="#C9CDD3"/>
+									<bottomPen lineWidth="1.0" lineColor="#C9CDD3"/>
+									<rightPen lineWidth="1.0" lineColor="#C9CDD3"/>
+								</box>
+								<textElement verticalAlignment="Middle">
+									<font fontName="BancoPopolareFont" size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{valoriOMIs}.getTipologia()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="154" y="0" width="104" height="15" backcolor="#FFFFCC" uuid="de69e066-6ba2-4e77-8d70-3b51f6e8dfb0">
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box leftPadding="2">
+									<topPen lineWidth="1.0" lineColor="#C9CDD3"/>
+									<leftPen lineWidth="1.0" lineColor="#C9CDD3"/>
+									<bottomPen lineWidth="1.0" lineColor="#C9CDD3"/>
+									<rightPen lineWidth="1.0" lineColor="#C9CDD3"/>
+								</box>
+								<textElement verticalAlignment="Middle">
+									<font fontName="BancoPopolareFont" size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{valoriOMIs}.getStato()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="318" y="0" width="60" height="15" backcolor="#FFFFCC" uuid="f36c1782-7d7b-4865-888b-64fac00970b6">
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+								</reportElement>
+								<box leftPadding="2">
+									<topPen lineWidth="1.0" lineColor="#C9CDD3"/>
+									<leftPen lineWidth="1.0" lineColor="#C9CDD3"/>
+									<bottomPen lineWidth="1.0" lineColor="#C9CDD3"/>
+									<rightPen lineWidth="1.0" lineColor="#C9CDD3"/>
+								</box>
+								<textElement verticalAlignment="Middle">
+									<font fontName="BancoPopolareFont" size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{valoriOMIs}.getValoreMaxVenduto()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="258" y="0" width="60" height="15" backcolor="#FFFFCC" uuid="9cf5c148-b09e-4d6d-90d8-8d8458141706">
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box leftPadding="2">
+									<topPen lineWidth="1.0" lineColor="#C9CDD3"/>
+									<leftPen lineWidth="1.0" lineColor="#C9CDD3"/>
+									<bottomPen lineWidth="1.0" lineColor="#C9CDD3"/>
+									<rightPen lineWidth="1.0" lineColor="#C9CDD3"/>
+								</box>
+								<textElement verticalAlignment="Middle">
+									<font fontName="BancoPopolareFont" size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{valoriOMIs}.getValoreMinVenduto()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="378" y="0" width="28" height="15" backcolor="#FFFFCC" uuid="8b50fa61-bacb-47a8-9788-1e5377f1076e">
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+								</reportElement>
+								<box leftPadding="2">
+									<topPen lineWidth="1.0" lineColor="#C9CDD3"/>
+									<leftPen lineWidth="1.0" lineColor="#C9CDD3"/>
+									<bottomPen lineWidth="1.0" lineColor="#C9CDD3"/>
+									<rightPen lineWidth="1.0" lineColor="#C9CDD3"/>
+								</box>
+								<textElement verticalAlignment="Middle">
+									<font fontName="BancoPopolareFont" size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{valoriOMIs}.getTipoSuperficieVendita()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="406" y="0" width="60" height="15" backcolor="#FFFFCC" uuid="5110f7e0-53c4-4af8-9f1c-49f811c8876e">
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+								</reportElement>
+								<box leftPadding="2">
+									<topPen lineWidth="1.0" lineColor="#C9CDD3"/>
+									<leftPen lineWidth="1.0" lineColor="#C9CDD3"/>
+									<bottomPen lineWidth="1.0" lineColor="#C9CDD3"/>
+									<rightPen lineWidth="1.0" lineColor="#C9CDD3"/>
+								</box>
+								<textElement verticalAlignment="Middle">
+									<font fontName="BancoPopolareFont" size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{valoriOMIs}.getValoreMinLocazione()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="466" y="0" width="60" height="15" backcolor="#FFFFCC" uuid="0d94dcbf-0a52-4ac5-91a8-531ef2f33537">
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box leftPadding="2">
+									<topPen lineWidth="1.0" lineColor="#C9CDD3"/>
+									<leftPen lineWidth="1.0" lineColor="#C9CDD3"/>
+									<bottomPen lineWidth="1.0" lineColor="#C9CDD3"/>
+									<rightPen lineWidth="1.0" lineColor="#C9CDD3"/>
+								</box>
+								<textElement verticalAlignment="Middle">
+									<font fontName="BancoPopolareFont" size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{valoriOMIs}.getValoreMaxLocazione()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="526" y="0" width="28" height="15" backcolor="#FFFFCC" uuid="a46e4800-119f-4fff-a4b0-0eb027931420">
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+								</reportElement>
+								<box leftPadding="2">
+									<topPen lineWidth="1.0" lineColor="#C9CDD3"/>
+									<leftPen lineWidth="1.0" lineColor="#C9CDD3"/>
+									<bottomPen lineWidth="1.0" lineColor="#C9CDD3"/>
+									<rightPen lineWidth="1.0" lineColor="#C9CDD3"/>
+								</box>
+								<textElement verticalAlignment="Middle">
+									<font fontName="BancoPopolareFont" size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{valoriOMIs}.getTipoSuperficieLocazione()]]></textFieldExpression>
+							</textField>
+						</jr:listContents>
+					</jr:list>
+				</componentElement>
+				<textField>
+					<reportElement key="" positionType="Float" mode="Opaque" x="154" y="15" width="150" height="15" forecolor="#000000" backcolor="#FFFFCC" uuid="96792cba-dfb5-433e-81d5-c2ea74c12c81">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<box leftPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getValoriOMIComune()]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement key="" positionType="Float" mode="Transparent" x="0" y="0" width="154" height="15" forecolor="#000000" backcolor="#FFFFFF" uuid="3016abab-8622-4c21-973f-af6d5ee2cfc6">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Listino di riferimento"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement key="" positionType="Float" mode="Transparent" x="154" y="0" width="75" height="15" forecolor="#000000" backcolor="#FFFFFF" uuid="4778d59b-132d-4d72-8d32-1546b06f20c9"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA["ANNO"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement key="" positionType="Float" mode="Opaque" x="229" y="0" width="75" height="15" forecolor="#000000" backcolor="#FFFFCC" uuid="5bc710c6-eb60-49b6-ac96-a2bd4712e152"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getValoriOMIAnno()]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement key="" positionType="Float" mode="Transparent" x="304" y="0" width="132" height="15" forecolor="#000000" backcolor="#FFFFFF" uuid="24db79ae-30f7-4e29-b985-b4a724bf99f4">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Semestre"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement key="" positionType="Float" mode="Opaque" x="436" y="0" width="118" height="15" forecolor="#000000" backcolor="#FFFFCC" uuid="e8edd1db-803f-4484-b057-c94d4b1886c2">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getValoriOMISemestre()]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement key="" positionType="Float" mode="Transparent" x="304" y="15" width="132" height="15" forecolor="#000000" backcolor="#FFFFFF" uuid="6e4267cd-3029-461d-a831-8b0305fd4547">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Fascia OMI"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement key="" positionType="Float" mode="Opaque" x="436" y="15" width="118" height="15" forecolor="#000000" backcolor="#FFFFCC" uuid="bdf642ed-2cdb-41b5-be58-88503545e119">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getValoriOMIFascia()]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement key="" positionType="Float" mode="Opaque" x="0" y="30" width="154" height="30" forecolor="#000000" backcolor="#D9D9D9" uuid="e716395b-b9fb-49e1-af10-76d80741affd"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA["TIPOLOGIA"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement key="" positionType="Float" mode="Opaque" x="154" y="30" width="104" height="30" forecolor="#000000" backcolor="#D9D9D9" uuid="366d631e-ef0d-4f56-805d-08767fa9fb15">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA["STATO CONSERVATIVO"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement key="" positionType="Float" mode="Opaque" x="258" y="30" width="120" height="15" forecolor="#000000" backcolor="#D9D9D9" uuid="46f7563c-1398-4b0d-9b40-430765faaa45">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<box leftPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Valore di mercato (€/mq)"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement key="" positionType="Float" mode="Opaque" x="258" y="45" width="60" height="15" forecolor="#000000" backcolor="#D9D9D9" uuid="f40df729-c140-4a88-ac10-59cb58347b39">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA["MIN"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement key="" positionType="Float" mode="Opaque" x="318" y="45" width="60" height="15" forecolor="#000000" backcolor="#D9D9D9" uuid="cddaaf9e-77ce-444a-a668-35877f66504d">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA["MAX"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement key="" positionType="Float" mode="Opaque" x="378" y="30" width="28" height="30" forecolor="#000000" backcolor="#D9D9D9" uuid="4c8a13ae-da0f-4309-b9c7-0274bde4d5e5">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA["SUP."]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement key="" positionType="Float" mode="Opaque" x="406" y="30" width="120" height="15" forecolor="#000000" backcolor="#D9D9D9" uuid="5a121302-05de-4704-bd35-f6bf2153db1f">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<box leftPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Valore di locazione (€/mq x mese)"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement key="" positionType="Float" mode="Opaque" x="526" y="30" width="28" height="30" forecolor="#000000" backcolor="#D9D9D9" uuid="801c0abc-060c-487d-bf38-5130c8d44d62">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA["SUP."]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement key="" positionType="Float" mode="Opaque" x="406" y="45" width="60" height="15" forecolor="#000000" backcolor="#D9D9D9" uuid="eeddb6e8-2564-45e6-a978-db985f79cbe0">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA["MIN"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement key="" positionType="Float" mode="Opaque" x="466" y="45" width="60" height="15" forecolor="#000000" backcolor="#D9D9D9" uuid="487aa692-05ac-439c-8b90-d6ecc7e65a95">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA["MAX"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement key="" positionType="Float" mode="Transparent" x="-1" y="75" width="555" height="75" isRemoveLineWhenBlank="true" forecolor="#000000" backcolor="#FFFFFF" uuid="5f2ab176-d33f-47a5-a6eb-09b90c0ecc1c">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+					</reportElement>
+					<box topPadding="2" leftPadding="2" bottomPadding="2" rightPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Justified" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="true"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA["<style isBold=\"true\">" + "NOTA BENE: " + "</style>" + "Le quotazioni individuano un intervallo di valori, minimo e massimo, per unità di superficie riferite ad unità immobiliari ordinarie classificate in una determinata tipologia edilizia e situate in un ambito territoriale omogeneo: la zona OMI. I valori minimi e massimi rappresentano l'ordinarietà e pertanto non sono incluse nell'intervallo quotazioni riferite ad immobili di particolare pregio o degrado o che comunque presentano caratteristiche non ordinarie per la tipologia edilizia della zona OMI di appartenenza. Pertanto l'utilizzo delle quotazioni OMI nell'ambito del processo estimale non può che condurre ad indicazioni di valori di larga massima. "]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+</jasperReport>

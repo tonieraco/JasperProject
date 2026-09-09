@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.0.final using JasperReports Library version 6.3.0  -->
+<!-- 2022-11-11T16:02:41 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="identificazioneCatastale" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="5ee26eb9-f757-4341-8336-5e55b055589e">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<subDataset name="porzioneDataset" uuid="0eb88b46-6187-42de-9a24-465ddeef61b8">
+		<field name="porzione" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.cerved.data.CervedPdfPorzione">
+			<fieldDescription><![CDATA[_THIS]]></fieldDescription>
+		</field>
+	</subDataset>
+	<parameter name="data" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.cerved.data.CervedPdfMainCollection"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="60" splitType="Stretch">
+			<textField>
+				<reportElement positionType="Float" mode="Opaque" x="0" y="2" width="525" height="14" forecolor="#FFFFFF" backcolor="#879C3F" uuid="170faa1c-07e0-4e1b-aaa3-88720636e0ef">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<box leftPadding="1" rightPadding="1">
+					<topPen lineWidth="1.0" lineColor="#C9CDD3"/>
+					<leftPen lineWidth="0.0" lineColor="#C9CDD3"/>
+					<bottomPen lineWidth="1.0" lineColor="#C9CDD3"/>
+					<rightPen lineWidth="0.0" lineColor="#C9CDD3"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial_BNL" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Valorizzazione delle singole porzioni"]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement positionType="Float" x="0" y="23" width="525" height="37" uuid="78e63511-267e-4c65-a349-b37c3084ed81">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
+					<datasetRun subDataset="porzioneDataset" uuid="ada74a82-985c-4183-b169-6782d67c842c">
+						<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{data}.getPorzione())]]></dataSourceExpression>
+					</datasetRun>
+					<jr:listContents height="37" width="525">
+						<textField>
+							<reportElement mode="Opaque" x="0" y="0" width="525" height="14" forecolor="#FFFFFF" backcolor="#879C3F" uuid="d3be2de8-3ad4-4277-b9c2-457bf9d9e7da">
+								<property name="com.jaspersoft.studio.unit.width" value="mm"/>
+								<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+							</reportElement>
+							<box leftPadding="5">
+								<topPen lineWidth="1.0" lineColor="#BABABA"/>
+								<leftPen lineWidth="0.0" lineColor="#BABABA"/>
+								<bottomPen lineWidth="1.0" lineColor="#BABABA"/>
+								<rightPen lineWidth="0.0" lineColor="#BABABA"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle">
+								<font fontName="Arial_BNL" size="8" isBold="true" isItalic="false"/>
+							</textElement>
+							<textFieldExpression><![CDATA["Valore della Porzione " + $F{porzione}.getNumPorzione()]]></textFieldExpression>
+						</textField>
+						<textField>
+							<reportElement mode="Opaque" x="0" y="14" width="56" height="11" backcolor="#E0E0E0" uuid="cb68c6b0-942b-4296-a0c7-130d45bd3586">
+								<property name="com.jaspersoft.studio.unit.width" value="mm"/>
+							</reportElement>
+							<box>
+								<topPen lineWidth="1.0" lineColor="#BABABA"/>
+								<leftPen lineWidth="1.0" lineColor="#BABABA"/>
+								<bottomPen lineWidth="1.0" lineColor="#BABABA"/>
+								<rightPen lineWidth="1.0" lineColor="#BABABA"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle">
+								<font fontName="Arial_BNL" size="8" isBold="true" isItalic="true"/>
+							</textElement>
+							<textFieldExpression><![CDATA["Catasto"]]></textFieldExpression>
+						</textField>
+						<textField isBlankWhenNull="true">
+							<reportElement key="" mode="Transparent" x="56" y="14" width="54" height="11" forecolor="#000000" backcolor="rgba(135, 156, 63, 0.0)" uuid="f36016fd-a84f-4c8d-ae7f-a9e006b41e89">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+							</reportElement>
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle">
+								<font fontName="Arial_BNL" size="8" isItalic="false"/>
+								<paragraph lineSpacing="Single"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{porzione}.getCatasto()]]></textFieldExpression>
+						</textField>
+						<textField>
+							<reportElement mode="Opaque" x="110" y="14" width="46" height="11" backcolor="#E0E0E0" uuid="34d6e4b4-4d3f-4e7e-8471-421383393ffe">
+								<property name="com.jaspersoft.studio.unit.width" value="mm"/>
+								<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+							</reportElement>
+							<box>
+								<topPen lineWidth="1.0" lineColor="#BABABA"/>
+								<leftPen lineWidth="1.0" lineColor="#BABABA"/>
+								<bottomPen lineWidth="1.0" lineColor="#BABABA"/>
+								<rightPen lineWidth="1.0" lineColor="#BABABA"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle">
+								<font fontName="Arial_BNL" size="8" isBold="true" isItalic="true"/>
+							</textElement>
+							<textFieldExpression><![CDATA["Foglio"]]></textFieldExpression>
+						</textField>
+						<textField isBlankWhenNull="true">
+							<reportElement key="" mode="Transparent" x="156" y="14" width="56" height="11" forecolor="#000000" backcolor="rgba(135, 156, 63, 0.0)" uuid="9589d3aa-c078-4f58-8288-3dc714cb9805">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+							</reportElement>
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle">
+								<font fontName="Arial_BNL" size="8" isItalic="false"/>
+								<paragraph lineSpacing="Single"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{porzione}.getFoglio()]]></textFieldExpression>
+						</textField>
+						<textField>
+							<reportElement mode="Opaque" x="212" y="14" width="56" height="11" backcolor="#E0E0E0" uuid="a9007f0f-6bea-493f-aa76-7aefcfb19824">
+								<property name="com.jaspersoft.studio.unit.width" value="mm"/>
+								<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+							</reportElement>
+							<box>
+								<topPen lineWidth="1.0" lineColor="#BABABA"/>
+								<leftPen lineWidth="1.0" lineColor="#BABABA"/>
+								<bottomPen lineWidth="1.0" lineColor="#BABABA"/>
+								<rightPen lineWidth="1.0" lineColor="#BABABA"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle">
+								<font fontName="Arial_BNL" size="8" isBold="true" isItalic="true"/>
+							</textElement>
+							<textFieldExpression><![CDATA["Particella"]]></textFieldExpression>
+						</textField>
+						<textField isBlankWhenNull="true">
+							<reportElement key="" mode="Transparent" x="268" y="14" width="56" height="11" forecolor="#000000" backcolor="rgba(135, 156, 63, 0.0)" uuid="5cd22e1c-c94f-4190-9dee-21b99b31e6d9">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+							</reportElement>
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle">
+								<font fontName="Arial_BNL" size="8" isItalic="false"/>
+								<paragraph lineSpacing="Single"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{porzione}.getParticella()]]></textFieldExpression>
+						</textField>
+						<textField>
+							<reportElement mode="Opaque" x="324" y="14" width="56" height="11" backcolor="#E0E0E0" uuid="9f184caa-b0d4-4d1c-a841-3ee68a93e375">
+								<property name="com.jaspersoft.studio.unit.width" value="mm"/>
+								<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+							</reportElement>
+							<box>
+								<topPen lineWidth="1.0" lineColor="#BABABA"/>
+								<leftPen lineWidth="1.0" lineColor="#BABABA"/>
+								<bottomPen lineWidth="1.0" lineColor="#BABABA"/>
+								<rightPen lineWidth="1.0" lineColor="#BABABA"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle">
+								<font fontName="Arial_BNL" size="8" isBold="true" isItalic="true"/>
+							</textElement>
+							<textFieldExpression><![CDATA["Subalterno"]]></textFieldExpression>
+						</textField>
+						<textField isBlankWhenNull="true">
+							<reportElement key="" mode="Transparent" x="380" y="14" width="56" height="11" forecolor="#000000" backcolor="rgba(135, 156, 63, 0.0)" uuid="3f9adf4a-6850-4342-8f62-aeeaa3fb1cf7">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+							</reportElement>
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle">
+								<font fontName="Arial_BNL" size="8" isItalic="false"/>
+								<paragraph lineSpacing="Single"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{porzione}.getSubalterno()]]></textFieldExpression>
+						</textField>
+						<textField>
+							<reportElement mode="Opaque" x="436" y="14" width="56" height="11" backcolor="#E0E0E0" uuid="826f1ed0-d278-437e-8577-2f9d5f73744c">
+								<property name="com.jaspersoft.studio.unit.width" value="mm"/>
+								<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+							</reportElement>
+							<box>
+								<topPen lineWidth="1.0" lineColor="#BABABA"/>
+								<leftPen lineWidth="1.0" lineColor="#BABABA"/>
+								<bottomPen lineWidth="1.0" lineColor="#BABABA"/>
+								<rightPen lineWidth="1.0" lineColor="#BABABA"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle">
+								<font fontName="Arial_BNL" size="8" isBold="true" isItalic="true"/>
+							</textElement>
+							<textFieldExpression><![CDATA["Categoria"]]></textFieldExpression>
+						</textField>
+						<textField isBlankWhenNull="true">
+							<reportElement key="" mode="Transparent" x="492" y="14" width="33" height="11" forecolor="#000000" backcolor="rgba(135, 156, 63, 0.0)" uuid="1efa18c4-2f03-4415-8c54-9820b2ffbfb5">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+							</reportElement>
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle">
+								<font fontName="Arial_BNL" size="8" isItalic="false"/>
+								<paragraph lineSpacing="Single"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{porzione}.getCategoria()]]></textFieldExpression>
+						</textField>
+						<frame>
+							<reportElement positionType="Float" mode="Transparent" x="0" y="25" width="525" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF" uuid="2d5221e2-6f33-4e30-ac04-67da2779abd1">
+								<printWhenExpression><![CDATA[$F{porzione}.getValoreVenditaForzataVisibile().equals("1") == true]]></printWhenExpression>
+							</reportElement>
+							<textField isBlankWhenNull="true">
+								<reportElement key="" mode="Transparent" x="0" y="0" width="240" height="12" forecolor="#000000" backcolor="rgba(255, 255, 255, 0.0)" uuid="679ed1ea-c8c3-4460-9c0e-fd117580b09f">
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+									<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+								</reportElement>
+								<box leftPadding="2">
+									<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Left" verticalAlignment="Middle">
+									<font fontName="Arial_BNL" size="8" isBold="true" isItalic="false"/>
+									<paragraph lineSpacing="Single"/>
+								</textElement>
+								<textFieldExpression><![CDATA["Valore di Vendita Forzata:"]]></textFieldExpression>
+							</textField>
+							<textField isBlankWhenNull="true">
+								<reportElement key="" mode="Transparent" x="240" y="0" width="284" height="12" forecolor="#000000" backcolor="rgba(255, 255, 255, 0.0)" uuid="2ce91db5-1702-4c16-a945-e706d583d734">
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+								</reportElement>
+								<box leftPadding="0" rightPadding="170">
+									<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Right" verticalAlignment="Middle">
+									<font fontName="Arial_BNL" size="8" isItalic="false"/>
+									<paragraph lineSpacing="Single"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{porzione}.getValoreVenditaForzata()]]></textFieldExpression>
+							</textField>
+						</frame>
+					</jr:listContents>
+				</jr:list>
+			</componentElement>
+			<break>
+				<reportElement x="0" y="0" width="100" height="1" uuid="e456366d-c1df-4014-a067-e851ed8b8c09"/>
+			</break>
+		</band>
+	</detail>
+</jasperReport>

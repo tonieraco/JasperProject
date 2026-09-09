@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.0.final using JasperReports Library version 6.3.0  -->
+<!-- 2024-02-15T09:16:01 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="valoreAssicurabileTemplate" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="174ea122-d5c3-439e-b0d7-a37f00b3988e">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<subDataset name="datasetSuperficieSecondaria" uuid="ee0eaf0f-94bf-4d44-b059-e87340521cf4">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="superficieSecondarias" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.bper.data.SuperficieSecondaria">
+			<fieldDescription><![CDATA[_THIS]]></fieldDescription>
+		</field>
+	</subDataset>
+	<parameter name="data" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.bper.data.BPERPdfMainCollection"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="titoloParagrafo" class="java.lang.String">
+		<fieldDescription><![CDATA[titoloParagrafo]]></fieldDescription>
+	</field>
+	<field name="areaGeografica" class="java.lang.String">
+		<fieldDescription><![CDATA[areaGeografica]]></fieldDescription>
+	</field>
+	<field name="tipologiaImmobiliare" class="java.lang.String">
+		<fieldDescription><![CDATA[tipologiaImmobiliare]]></fieldDescription>
+	</field>
+	<field name="tipologiaEdilizia" class="java.lang.String">
+		<fieldDescription><![CDATA[tipologiaEdilizia]]></fieldDescription>
+	</field>
+	<field name="tipologiaResidenze" class="java.lang.String">
+		<fieldDescription><![CDATA[tipologiaResidenze]]></fieldDescription>
+	</field>
+	<field name="accessoCantiere" class="java.lang.String">
+		<fieldDescription><![CDATA[accessoCantiere]]></fieldDescription>
+	</field>
+	<field name="qualitaFiniture" class="java.lang.String">
+		<fieldDescription><![CDATA[qualitaFiniture]]></fieldDescription>
+	</field>
+	<field name="impiantoCantiere" class="java.lang.String">
+		<fieldDescription><![CDATA[impiantoCantiere]]></fieldDescription>
+	</field>
+	<field name="costoUnitario" class="java.lang.String">
+		<fieldDescription><![CDATA[costoUnitario]]></fieldDescription>
+	</field>
+	<field name="superficieSecondarias" class="java.util.Collection"/>
+	<field name="superficieTotale" class="java.lang.String">
+		<fieldDescription><![CDATA[superficieTotale]]></fieldDescription>
+	</field>
+	<field name="costoTotale" class="java.lang.String">
+		<fieldDescription><![CDATA[costoTotale]]></fieldDescription>
+	</field>
+	<field name="costoStimato" class="java.lang.String">
+		<fieldDescription><![CDATA[costoStimato]]></fieldDescription>
+	</field>
+	<field name="costoFinale" class="java.lang.String">
+		<fieldDescription><![CDATA[costoFinale]]></fieldDescription>
+	</field>
+	<field name="superficiePrincipale" class="java.lang.String">
+		<fieldDescription><![CDATA[superficiePrincipale]]></fieldDescription>
+	</field>
+	<field name="titoloParagrafoValoreProntoRealizzo" class="java.lang.String">
+		<fieldDescription><![CDATA[titoloParagrafoValoreProntoRealizzo]]></fieldDescription>
+	</field>
+	<field name="valoreProntoRealizzo" class="java.lang.String">
+		<fieldDescription><![CDATA[valoreProntoRealizzo]]></fieldDescription>
+	</field>
+	<field name="commentoValoreVenditaForzata" class="java.lang.String">
+		<fieldDescription><![CDATA[commentoValoreVenditaForzata]]></fieldDescription>
+	</field>
+	<field name="titoloParagrafoValoreCauzionale" class="java.lang.String">
+		<fieldDescription><![CDATA[titoloParagrafoValoreCauzionale]]></fieldDescription>
+	</field>
+	<field name="valoreCauzionale" class="java.lang.String">
+		<fieldDescription><![CDATA[valoreCauzionale]]></fieldDescription>
+	</field>
+	<field name="commentoValoreCauzionale" class="java.lang.String">
+		<fieldDescription><![CDATA[commentoValoreCauzionale]]></fieldDescription>
+	</field>
+	<detail>
+		<band height="272" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<textField>
+				<reportElement x="0" y="0" width="520" height="14" uuid="8471a126-bd47-43c4-b3f5-bd7c995ed058">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{titoloParagrafo}]]></textFieldExpression>
+			</textField>
+			<frame>
+				<reportElement x="2" y="20" width="553" height="56" uuid="01aa9d97-1630-4c30-b141-4efef1dd7086"/>
+				<textField>
+					<reportElement x="0" y="0" width="88" height="14" uuid="1ccb7156-ea73-4d8d-a3af-88e9b5b50a26">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Area Geografica"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement mode="Transparent" x="110" y="0" width="140" height="14" uuid="e74a5f4f-9954-4cf3-8234-dd1952c581c3">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<box leftPadding="2">
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{areaGeografica}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="0" y="14" width="88" height="14" uuid="b54bc9a9-d198-460e-9d31-18f134a79a17">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Tipologia immobiliare"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement mode="Transparent" x="110" y="14" width="140" height="14" uuid="edc5ac16-c9ce-4c75-a825-42fc790f1123">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<box leftPadding="2">
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{tipologiaImmobiliare}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="0" y="28" width="88" height="14" uuid="ff9d3aab-ee8e-4fe3-8b63-c4c44c7a9c5c">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Tipologia edilizia"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement mode="Transparent" x="110" y="28" width="140" height="14" uuid="ad1e624a-3011-4640-b878-69b5c3bc4535">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<box leftPadding="2">
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{tipologiaEdilizia}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="0" y="42" width="88" height="14" uuid="7527b934-5417-422e-b4ca-c13c1c855458">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Tipologia residenze"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement mode="Transparent" x="110" y="42" width="140" height="14" uuid="e211f97a-10b6-4080-b0c6-47d64e2501a0">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="2">
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{tipologiaResidenze}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="311" y="0" width="88" height="14" uuid="9bf1a57c-c266-4590-9dc2-eed91affac87">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Accesso cantiere"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement mode="Transparent" x="412" y="0" width="140" height="14" uuid="8d6d18c0-516c-441e-93b4-ce9a032dd0aa">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<box leftPadding="2">
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{accessoCantiere}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="311" y="14" width="88" height="14" uuid="9729b738-b0a3-465d-b28b-be7e8a891940">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Qualità finiture"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement mode="Transparent" x="412" y="14" width="140" height="14" uuid="f4b023b0-adbb-4ae8-bfce-bc8904c6ae32">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<box leftPadding="2">
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{qualitaFiniture}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="311" y="28" width="88" height="14" uuid="28886bad-a5fb-4596-aea6-8ed25e1c0f2c">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Impianto cantiere"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement mode="Transparent" x="412" y="28" width="140" height="14" uuid="f6ac6cec-71e8-44cb-9ae2-b6f265f7b81b">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<box leftPadding="2">
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{impiantoCantiere}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="311" y="42" width="88" height="14" uuid="f830e70f-4f63-4c4f-adfb-31b959780caa">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Costo unitario (€/mq)"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement mode="Transparent" x="412" y="42" width="140" height="14" uuid="432e6476-2bbb-45cf-a30e-d45202f4ad57">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<box leftPadding="2">
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{costoUnitario}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<textField>
+				<reportElement x="0" y="90" width="88" height="14" uuid="83070541-effe-4c26-afb2-5d716bbd69bb">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Superficie Principale"]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="101" y="90" width="1" height="14" uuid="eace1dc6-f457-49f0-a771-03d13a46f660">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+			</line>
+			<textField>
+				<reportElement x="103" y="90" width="177" height="14" uuid="7d299a24-f2bf-45f6-af41-c8d2cd14d044">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Totale Superficie Principale (SEL in mq)"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="280" y="90" width="117" height="14" uuid="3c0452f8-e0e7-4d25-b080-cac5065bd3af">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<box leftPadding="1">
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{superficiePrincipale}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement x="109" y="132" width="130" height="14" uuid="cd4f0ead-a0bb-456f-b16d-7ac82aa55ae0">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
+					<datasetRun subDataset="datasetSuperficieSecondaria" uuid="4d6c7abb-e20c-4588-a2aa-bfa933960354">
+						<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{superficieSecondarias})]]></dataSourceExpression>
+					</datasetRun>
+					<jr:listContents height="14" width="130">
+						<textField>
+							<reportElement x="0" y="0" width="130" height="14" uuid="f14c39c0-7982-4505-b4ba-a3273cdc3493">
+								<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+							</reportElement>
+							<box leftPadding="1">
+								<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+								<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+								<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+								<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle">
+								<font fontName="BancoPopolareFont" size="8"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{superficieSecondarias}.getDescrizione()]]></textFieldExpression>
+						</textField>
+					</jr:listContents>
+				</jr:list>
+			</componentElement>
+			<componentElement>
+				<reportElement x="239" y="132" width="130" height="14" uuid="8dfcbacf-7968-41e4-8b6d-5e902ee77ea6">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
+					<datasetRun subDataset="datasetSuperficieSecondaria" uuid="99273e6e-2cbc-4600-a1a5-6bf1add2af74">
+						<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{superficieSecondarias})]]></dataSourceExpression>
+					</datasetRun>
+					<jr:listContents height="14" width="130">
+						<textField>
+							<reportElement x="0" y="0" width="130" height="14" uuid="bc61be50-eb13-4d16-bc92-3436109bde04">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+							</reportElement>
+							<box>
+								<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+								<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+								<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+								<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle">
+								<font fontName="BancoPopolareFont" size="8"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{superficieSecondarias}.getMisura()]]></textFieldExpression>
+						</textField>
+					</jr:listContents>
+				</jr:list>
+			</componentElement>
+			<textField>
+				<reportElement x="0" y="118" width="88" height="50" uuid="6e3d3365-b99e-4023-89fa-7a0654df5e75">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["SUPERFICI SECONDARIE ANNESSE E COLLEGATE"]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="100" y="118" width="1" height="50" uuid="6eba02e9-0370-430c-bbe9-a7d27b7b0354">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+			</line>
+			<textField>
+				<reportElement x="109" y="118" width="130" height="14" uuid="a74c703c-c9e3-4be7-9135-8c59d15d4f4c">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Descrizione"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="239" y="118" width="130" height="14" uuid="1770ba7a-d9cf-4748-b040-d0e1b97c8636">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Misura (SEL mq)"]]></textFieldExpression>
+			</textField>
+			<frame>
+				<reportElement positionType="Float" x="0" y="180" width="197" height="30" uuid="fdf12d7c-0db0-4961-9681-aa6889e087ab"/>
+				<textField>
+					<reportElement positionType="Float" x="0" y="0" width="88" height="30" uuid="21dc2d5e-0f69-451e-bc81-b6237197ec97">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["SUPERFICIE TOTALE (MQ)"]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="101" y="0" width="1" height="30" uuid="3d9eac17-c8a2-4a6c-93e9-30b4134bddd0">
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					</reportElement>
+				</line>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" x="109" y="8" width="88" height="14" uuid="022c5d50-8178-4b06-9481-1cfe79ecf29b">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					</reportElement>
+					<box rightPadding="3">
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{superficieTotale}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="217" width="197" height="14" uuid="805494be-594c-49a1-8f66-43325c68ac98"/>
+				<textField>
+					<reportElement positionType="Float" x="0" y="0" width="100" height="14" uuid="e713161b-5af9-4ed6-9a01-06f10bf6546f">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["COSTO TOTALE (€)"]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="101" y="0" width="1" height="14" uuid="acffbdd9-e3e4-483d-8766-89a30f3f01c4">
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+				</line>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" x="109" y="0" width="88" height="14" uuid="2922e266-7545-43a5-a328-818566baa0d6">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					</reportElement>
+					<box rightPadding="3">
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{costoTotale}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="237" width="479" height="14" uuid="70b06924-8e01-44f8-b811-2a9c922ada0b"/>
+				<textField>
+					<reportElement positionType="Float" x="0" y="0" width="100" height="14" uuid="8c45c992-5fb3-404c-9d55-3dc5c088547f">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["COSTO STIMATO (€)"]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="101" y="0" width="1" height="14" uuid="179155c7-b3c2-4af7-bceb-0e4cf18de72f">
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+				</line>
+				<textField>
+					<reportElement positionType="Float" x="109" y="0" width="260" height="14" uuid="b031edbb-e108-49ee-ad04-9c14092e7aa5">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Costo Totale di Costruzione arrotondato al 1.000 (€)"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" x="370" y="0" width="109" height="14" uuid="8a168af4-d4c8-4cf4-8168-10b5e651adc7">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					</reportElement>
+					<box leftPadding="1" rightPadding="3">
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{costoStimato}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="258" width="197" height="14" uuid="fafcbd8c-b441-491f-ba9a-0216795280e7"/>
+				<line>
+					<reportElement x="101" y="0" width="1" height="14" uuid="561bbd5e-7192-4c1c-b10e-778a3f220980">
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+				</line>
+				<textField>
+					<reportElement positionType="Float" x="0" y="0" width="100" height="14" uuid="a3757d0a-0953-4af0-bbef-167b9cfb4734">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["COSTO FINALE (€)"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" x="109" y="0" width="88" height="14" uuid="494d56c5-d115-4b80-8e89-5a1bc17dd4cf">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					</reportElement>
+					<box rightPadding="3">
+						<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#A6A6A6"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{costoFinale}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+</jasperReport>

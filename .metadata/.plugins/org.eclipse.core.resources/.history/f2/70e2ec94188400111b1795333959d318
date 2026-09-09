@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 7.0.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2026-07-20T10:54:03 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="170c5b6d-6a79-4601-801c-974412c4fe64">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="data" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.bancobpm.data.BancoBPMPdfData"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="281">
+			<frame>
+				<reportElement positionType="Float" x="0" y="0" width="555" height="170" uuid="ab5f4e26-9ce3-42c5-940f-5ad4a2ac8273">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textField>
+					<reportElement key="" mode="Opaque" x="0" y="0" width="135" height="20" forecolor="#003365" backcolor="#DEEBF6" uuid="666890be-9c6d-4243-b622-02393f4569ec">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA["PARAMETRI"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement key="" mode="Transparent" x="0" y="20" width="135" height="15" forecolor="#003365" backcolor="#DEEBF6" uuid="d3fb7f00-6431-412e-8cf2-8cc0697bd70c">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Tipo di contratto"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement key="" mode="Transparent" x="0" y="35" width="135" height="15" forecolor="#003365" backcolor="#DEEBF6" uuid="90f5dbeb-eb88-4d38-9ff9-8468137201ec">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Destinazione"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement key="" mode="Transparent" x="0" y="50" width="135" height="45" forecolor="#003365" backcolor="#DEEBF6" uuid="28ad82ce-7323-4eeb-82e2-1bfdb5d05454">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Tipologia immobiliare"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement key="" mode="Transparent" x="0" y="95" width="135" height="15" forecolor="#003365" backcolor="#DEEBF6" uuid="cb8c5a85-a43e-4bac-b993-0d4fc233ecd9">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Tipologia edilizia"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement key="" mode="Transparent" x="0" y="110" width="135" height="15" forecolor="#003365" backcolor="#DEEBF6" uuid="e996023f-574d-438f-b6f9-fa0c1951d844">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Dimensioni"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement key="" mode="Transparent" x="0" y="125" width="135" height="15" forecolor="#003365" backcolor="#DEEBF6" uuid="9fda1f2a-35a3-4abf-b91f-7044e2fd1935">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Forma di mercato"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement key="" mode="Transparent" x="0" y="140" width="135" height="15" forecolor="#003365" backcolor="#DEEBF6" uuid="242aa352-3fab-4463-ae24-d2c269e1f464">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Livello di prezzo"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement key="" mode="Transparent" x="0" y="155" width="135" height="15" forecolor="#003365" backcolor="#DEEBF6" uuid="11d1bd7b-b48b-46a8-b2f5-ad01964ee409">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Fase del mercato immobiliare"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="415" y="0" width="140" height="20" backcolor="#DEEBF6" uuid="3f303501-7665-497f-bdff-389ce10b872a">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getIndaginiDiMercato().get(2).getTitolo()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="275" y="0" width="140" height="20" backcolor="#DEEBF6" uuid="fc2bdcc3-7308-4b99-86ba-9902af7c5da8">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getIndaginiDiMercato().get(1).getTitolo()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="135" y="0" width="140" height="20" backcolor="#DEEBF6" uuid="56237ea9-3656-4342-a1e1-9262707bd7b8">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getIndaginiDiMercato().get(0).getTitolo()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Opaque" x="135" y="20" width="140" height="15" uuid="418d355f-3d98-4be6-9e13-767e951d5253">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getIndaginiDiMercato().get(0).getTipoDiContratto()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Opaque" x="275" y="20" width="140" height="15" uuid="25c367df-8c49-4cee-b811-d5b1eca8864e">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getIndaginiDiMercato().get(1).getTipoDiContratto()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Opaque" x="415" y="20" width="140" height="15" uuid="88703666-3fda-4f90-b1bc-0c340329a6ff">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getIndaginiDiMercato().get(2).getTipoDiContratto()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Opaque" x="135" y="35" width="140" height="15" uuid="f9be429b-cfee-4bd0-8d26-da6c802897a5">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getIndaginiDiMercato().get(0).getDestinazione()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Opaque" x="275" y="35" width="140" height="15" uuid="3ab17258-2ee9-46e7-b31e-1a90b329cedf">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getIndaginiDiMercato().get(1).getDestinazione()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Opaque" x="415" y="35" width="140" height="15" uuid="c7c52d98-9c98-4269-9aad-261f4cce87ea">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getIndaginiDiMercato().get(2).getDestinazione()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Opaque" x="135" y="50" width="140" height="15" uuid="346f1495-a401-4b3d-8a1a-4d67e9a2fd7b">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getIndaginiDiMercato().get(0).getMacroTipologiaImmobiliare()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Opaque" x="275" y="50" width="140" height="15" uuid="a84edd50-9dc6-45b3-9e9b-ef6d9940a8ef">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getIndaginiDiMercato().get(1).getMacroTipologiaImmobiliare()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Opaque" x="415" y="50" width="140" height="15" uuid="6720fb8d-f0f4-49b5-81ce-e6604ca5a1d9">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getIndaginiDiMercato().get(2).getMacroTipologiaImmobiliare()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Opaque" x="135" y="65" width="140" height="15" uuid="4153820c-95ed-40bc-ab68-7587da36aa67">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getIndaginiDiMercato().get(0).getTipologiaImmobiliare()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Opaque" x="275" y="65" width="140" height="15" uuid="f0c1d5f5-18ba-4a14-b04e-8e13aa634c98">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getIndaginiDiMercato().get(1).getTipologiaImmobiliare()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Opaque" x="415" y="65" width="140" height="15" uuid="00974b4e-46a9-4ced-98cb-57252a8414be">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getIndaginiDiMercato().get(2).getTipologiaImmobiliare()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Opaque" x="135" y="80" width="140" height="15" uuid="da964159-9ec6-442e-96f3-03bd1d0ff726">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getIndaginiDiMercato().get(0).getStatoTipologiaImmobiliare()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Opaque" x="275" y="80" width="140" height="15" uuid="71d2b3ee-1ac1-4a1f-9715-c262049dfa23">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getIndaginiDiMercato().get(1).getStatoTipologiaImmobiliare()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Opaque" x="415" y="80" width="140" height="15" uuid="ecd2907f-445f-4a51-b3b7-28da596a69be">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getIndaginiDiMercato().get(2).getStatoTipologiaImmobiliare()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Opaque" x="135" y="95" width="140" height="15" uuid="1244854a-9c9b-40b6-b32f-742d02db997b">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getIndaginiDiMercato().get(0).getTipologiaEdilizia()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Opaque" x="275" y="95" width="140" height="15" uuid="3b4aefb5-1dd0-41b5-9f9c-1e926a7f5c3d">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getIndaginiDiMercato().get(1).getTipologiaEdilizia()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Opaque" x="415" y="95" width="140" height="15" uuid="ce61dab3-57f9-46b8-b7d3-39e5403c4766">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getIndaginiDiMercato().get(2).getTipologiaEdilizia()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Opaque" x="135" y="110" width="140" height="15" uuid="391474bd-37eb-4814-a345-3ad190b680ad">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getIndaginiDiMercato().get(0).getDimensioni()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Opaque" x="275" y="110" width="140" height="15" uuid="a328ef2c-1366-455f-ab5f-d63f691149fa">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getIndaginiDiMercato().get(1).getDimensioni()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Opaque" x="415" y="110" width="140" height="15" uuid="52683271-8ce9-4d35-9570-83d156b240a2">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getIndaginiDiMercato().get(2).getDimensioni()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Opaque" x="135" y="125" width="140" height="15" uuid="748df7be-9384-4795-88f3-bfedae5e79c6">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getIndaginiDiMercato().get(0).getFormaDiMercato()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Opaque" x="275" y="125" width="140" height="15" uuid="2517622f-fbe2-404a-b989-18f825fe5f8b">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getIndaginiDiMercato().get(1).getFormaDiMercato()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Opaque" x="415" y="125" width="140" height="15" uuid="dd53ce2a-3107-461b-aee9-666ec8377f11">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getIndaginiDiMercato().get(2).getFormaDiMercato()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Opaque" x="135" y="140" width="140" height="15" uuid="cbd3024d-3234-4c0a-b159-1d599f7fb215">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getIndaginiDiMercato().get(0).getLivelloDiPrezzo()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Opaque" x="275" y="140" width="140" height="15" uuid="dec214e5-5cf5-485c-aa94-a58a345e5065">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getIndaginiDiMercato().get(1).getLivelloDiPrezzo()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Opaque" x="415" y="140" width="140" height="15" uuid="e1285ade-446d-4c84-886a-7295427baeed">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getIndaginiDiMercato().get(2).getLivelloDiPrezzo()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Opaque" x="135" y="155" width="140" height="15" uuid="dc6cab0d-180d-47f6-bfd6-de74f9821deb">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getIndaginiDiMercato().get(0).getFaseDelMercatoImmobiliare()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Opaque" x="275" y="155" width="140" height="15" uuid="330050e6-8995-4d17-9797-37728f521816">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getIndaginiDiMercato().get(1).getFaseDelMercatoImmobiliare()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Opaque" x="415" y="155" width="140" height="15" uuid="da9b1aca-3d31-46be-9666-fe6372616918">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getIndaginiDiMercato().get(2).getFaseDelMercatoImmobiliare()]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="176" width="555" height="50" uuid="c989cb05-dcf5-42b1-a782-3a5527f5bc44"/>
+				<textField>
+					<reportElement key="" mode="Opaque" x="0" y="0" width="275" height="20" forecolor="#003365" backcolor="#DEEBF6" uuid="4fa2d740-c1ff-4901-9c2f-d824ce03b09a">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA["PESO DEI COMPARABILI"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement key="" mode="Opaque" x="275" y="0" width="280" height="20" forecolor="#003365" backcolor="#DEEBF6" uuid="1ad6068b-2457-430c-89ca-20981a59db96">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA["DIVERGENZA %"]]></textFieldExpression>
+				</textField>
+				<frame>
+					<reportElement x="0" y="20" width="555" height="45" uuid="624f680d-12c7-4e53-9473-f06df5c1bc84"/>
+					<frame>
+						<reportElement x="0" y="0" width="275" height="45" uuid="a8eff086-d866-4512-b990-2af26fa97c7f"/>
+						<textField>
+							<reportElement key="" mode="Transparent" x="0" y="0" width="93" height="15" forecolor="#003365" backcolor="#DEEBF6" uuid="e2d5d445-1d77-4372-83e1-ec1ed32527d8">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							</reportElement>
+							<box>
+								<pen lineWidth="0.5" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle">
+								<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+								<paragraph lineSpacing="Single"/>
+							</textElement>
+							<textFieldExpression><![CDATA["COMP 1"]]></textFieldExpression>
+						</textField>
+						<textField>
+							<reportElement key="" mode="Transparent" x="93" y="0" width="91" height="15" forecolor="#003365" backcolor="#DEEBF6" uuid="0ab48a7d-eb66-486b-844b-c7159642d92e">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							</reportElement>
+							<box>
+								<pen lineWidth="0.5" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle">
+								<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+								<paragraph lineSpacing="Single"/>
+							</textElement>
+							<textFieldExpression><![CDATA["COMP 2"]]></textFieldExpression>
+						</textField>
+						<textField>
+							<reportElement key="" mode="Transparent" x="184" y="0" width="91" height="15" forecolor="#003365" backcolor="#DEEBF6" uuid="fcfbd354-91c6-4cc5-9a65-a61e6ef02aec">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							</reportElement>
+							<box>
+								<pen lineWidth="0.5" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle">
+								<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+								<paragraph lineSpacing="Single"/>
+							</textElement>
+							<textFieldExpression><![CDATA["COMP 3"]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+							<reportElement positionType="Float" mode="Opaque" x="0" y="15" width="93" height="15" uuid="72c75398-07f3-4bd6-84a4-95c6c594ed74">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							</reportElement>
+							<box>
+								<pen lineWidth="0.5"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+								<font fontName="BancoPopolareFont" size="9"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$P{data}.getFonteComp1()]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+							<reportElement positionType="Float" mode="Opaque" x="93" y="15" width="91" height="15" uuid="09f8e119-3121-4876-bc4b-2a247c66377a">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							</reportElement>
+							<box>
+								<pen lineWidth="0.5"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+								<font fontName="BancoPopolareFont" size="9"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$P{data}.getFonteComp2()]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+							<reportElement positionType="Float" mode="Opaque" x="184" y="15" width="91" height="15" uuid="85cac294-7708-4725-a5de-063ae689e351">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							</reportElement>
+							<box>
+								<pen lineWidth="0.5"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+								<font fontName="BancoPopolareFont" size="9"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$P{data}.getFonteComp3()]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+							<reportElement positionType="Float" mode="Opaque" x="0" y="30" width="93" height="15" uuid="b93779fe-b8b5-4ff3-b4fc-41652deea8b4">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							</reportElement>
+							<box>
+								<pen lineWidth="0.5"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+								<font fontName="BancoPopolareFont" size="9"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$P{data}.getPesoComp1()]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+							<reportElement positionType="Float" mode="Opaque" x="93" y="30" width="91" height="15" uuid="82f45000-bb26-423a-bb6a-7f245461218f">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							</reportElement>
+							<box>
+								<pen lineWidth="0.5"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+								<font fontName="BancoPopolareFont" size="9"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$P{data}.getPesoComp2()]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+							<reportElement positionType="Float" mode="Opaque" x="184" y="30" width="91" height="15" uuid="3b6bb157-2872-4747-a925-bb56e97ce41d">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							</reportElement>
+							<box>
+								<pen lineWidth="0.5"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+								<font fontName="BancoPopolareFont" size="9"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$P{data}.getPesoComp3()]]></textFieldExpression>
+						</textField>
+					</frame>
+					<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+						<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="275" y="0" width="280" height="45" uuid="0c3efe82-4e0f-4aeb-9796-219a620ed698">
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						</reportElement>
+						<box>
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+							<font fontName="BancoPopolareFont" size="9"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{data}.getDivergenzaPerc()]]></textFieldExpression>
+					</textField>
+				</frame>
+			</frame>
+		</band>
+	</detail>
+</jasperReport>

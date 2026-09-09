@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.0.final using JasperReports Library version 6.3.0  -->
+<!-- 2025-09-23T16:08:17 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="identificazioneCatastale" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="5ee26eb9-f757-4341-8336-5e55b055589e">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<subDataset name="catastaliDataset" uuid="1d9c428f-79b3-4bf1-ac81-c864345e1537">
+		<field name="catastali" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.cerved.data.CervedPdfCatastaleTavolare">
+			<fieldDescription><![CDATA[_THIS]]></fieldDescription>
+		</field>
+	</subDataset>
+	<parameter name="data" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.cerved.data.CervedPdfMainCollection"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="52" splitType="Stretch">
+			<textField>
+				<reportElement key="" positionType="Float" mode="Transparent" x="0" y="0" width="260" height="13" forecolor="#000000" backcolor="rgba(135, 156, 63, 0.0)" uuid="806275f5-cf06-4c59-9708-93504c53eae0">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial_BNL" size="8" isItalic="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Ufficio Tavolare: " + $P{data}.getUfficioTavolare()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="" positionType="Float" mode="Opaque" x="0" y="26" width="30" height="16" forecolor="#000000" backcolor="#EDEDED" uuid="5acce4d0-2304-4b33-bba8-a725c5538438">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial_BNL" size="6" isBold="true" isItalic="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["N."]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="" positionType="Float" mode="Opaque" x="30" y="26" width="40" height="16" forecolor="#000000" backcolor="#EDEDED" uuid="77da15fc-2cc3-47de-8eca-6057e8cfc75b">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial_BNL" size="6" isBold="true" isItalic="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Categoria"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="" positionType="Float" mode="Opaque" x="70" y="26" width="54" height="16" forecolor="#000000" backcolor="#EDEDED" uuid="6d9d09cb-caf1-4dfd-aa42-bb50dd58d607">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial_BNL" size="6" isBold="true" isItalic="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["P.F."]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="" positionType="Float" mode="Opaque" x="164" y="26" width="40" height="16" forecolor="#000000" backcolor="#EDEDED" uuid="e531fd97-e772-4dda-83aa-a6a558ce744b">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial_BNL" size="6" isBold="true" isItalic="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Partita"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="" positionType="Float" mode="Opaque" x="204" y="26" width="80" height="16" forecolor="#000000" backcolor="#EDEDED" uuid="0151f332-e5dd-498a-b832-0ecfaa9fd49c">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial_BNL" size="6" isBold="true" isItalic="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Coltura"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="" positionType="Float" mode="Opaque" x="124" y="26" width="40" height="16" forecolor="#000000" backcolor="#EDEDED" uuid="a0c6e071-44b9-4d18-9f6f-175090fb60c1">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial_BNL" size="6" isBold="true" isItalic="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Foglio"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="" positionType="Float" mode="Opaque" x="454" y="26" width="71" height="16" forecolor="#000000" backcolor="#EDEDED" uuid="96b7d8c6-30a0-46fc-be1a-567765c6f9e7">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial_BNL" size="6" isBold="true" isItalic="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Reddito Agr."]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="" positionType="Float" mode="Opaque" x="324" y="26" width="60" height="16" forecolor="#000000" backcolor="#EDEDED" uuid="2604662d-5c83-4ad5-b9c5-b07ada2ac885">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial_BNL" size="6" isBold="true" isItalic="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Superficie (mq)"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="" positionType="Float" mode="Opaque" x="384" y="26" width="70" height="16" forecolor="#000000" backcolor="#EDEDED" uuid="9adb0e64-6bdb-4de3-b122-fb3f9b34ffd9">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial_BNL" size="6" isBold="true" isItalic="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Reddito Dom."]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement x="0" y="42" width="525" height="10" uuid="dce6fd96-126f-4d08-9c92-e78997e321a7">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
+					<datasetRun subDataset="catastaliDataset" uuid="2e5cc52d-28e3-4127-b762-e16deca98abf">
+						<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{data}.getCatastaleTavolareTerreno())]]></dataSourceExpression>
+					</datasetRun>
+					<jr:listContents height="10" width="525">
+						<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+							<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="30" height="10" uuid="c41d222c-120d-4e5b-84fa-32390190a7eb">
+								<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							</reportElement>
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+								<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+								<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+								<font fontName="Arial_BNL" size="6"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{catastali}.getNum()]]></textFieldExpression>
+						</textField>
+						<frame>
+							<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="30" y="0" width="495" height="10" isRemoveLineWhenBlank="true" uuid="4cfb1ed2-752d-43e0-87b5-5c056ead422c"/>
+							<frame>
+								<reportElement positionType="Float" x="0" y="0" width="495" height="10" isRemoveLineWhenBlank="true" uuid="8e3ac6ec-66f1-492a-a6ec-ffe5559718cd"/>
+								<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+									<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="40" height="10" uuid="fb1cbb2b-d1dd-4744-a290-3cc2cb2a30d6">
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+										<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+									</reportElement>
+									<box>
+										<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+										<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+										<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+										<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+									</box>
+									<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+										<font fontName="Arial_BNL" size="6"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$F{catastali}.getCategoria()]]></textFieldExpression>
+								</textField>
+								<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+									<reportElement stretchType="RelativeToTallestObject" x="40" y="0" width="54" height="10" uuid="09e8dba7-710f-4c8d-8c84-d07367da13d8">
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+										<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+									</reportElement>
+									<box>
+										<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+										<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+										<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+										<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+									</box>
+									<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+										<font fontName="Arial_BNL" size="6"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$F{catastali}.getParticellaFondiaria()]]></textFieldExpression>
+								</textField>
+								<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+									<reportElement stretchType="RelativeToTallestObject" x="94" y="0" width="40" height="10" uuid="45e9dba5-b729-4a44-b72e-60d3c32dbee5">
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+										<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+									</reportElement>
+									<box>
+										<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+										<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+										<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+										<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+									</box>
+									<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+										<font fontName="Arial_BNL" size="6"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$F{catastali}.getFoglio()]]></textFieldExpression>
+								</textField>
+								<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+									<reportElement stretchType="RelativeToTallestObject" x="134" y="0" width="40" height="10" uuid="eb7eebff-616b-43ad-b788-8bd5bc669a83">
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+										<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+									</reportElement>
+									<box>
+										<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+										<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+										<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+										<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+									</box>
+									<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+										<font fontName="Arial_BNL" size="6"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$F{catastali}.getPartitaTavolare()]]></textFieldExpression>
+								</textField>
+								<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+									<reportElement stretchType="RelativeToTallestObject" x="174" y="0" width="80" height="10" uuid="9ab91b80-01ef-4ef8-b165-8f537d39a524">
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+										<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+									</reportElement>
+									<box>
+										<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+										<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+										<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+										<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+									</box>
+									<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+										<font fontName="Arial_BNL" size="6"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$F{catastali}.getColtura()]]></textFieldExpression>
+								</textField>
+								<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+									<reportElement stretchType="RelativeToTallestObject" x="254" y="0" width="40" height="10" uuid="0e7ec380-ab23-42dc-9d52-ab7d41c69acb">
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+										<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+									</reportElement>
+									<box>
+										<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+										<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+										<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+										<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+									</box>
+									<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+										<font fontName="Arial_BNL" size="6"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$F{catastali}.getClasse()]]></textFieldExpression>
+								</textField>
+								<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+									<reportElement stretchType="RelativeToTallestObject" x="294" y="0" width="60" height="10" uuid="e2bb5a21-98a6-49ff-934b-fd488e8ef5bc">
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+										<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+									</reportElement>
+									<box>
+										<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+										<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+										<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+										<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+									</box>
+									<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+										<font fontName="Arial_BNL" size="6"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$F{catastali}.getSuperficie()]]></textFieldExpression>
+								</textField>
+								<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+									<reportElement stretchType="RelativeToTallestObject" x="424" y="0" width="71" height="10" uuid="8276f7b6-e8ec-4669-8b4e-aff0122d1633">
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+										<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+									</reportElement>
+									<box>
+										<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+										<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+										<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+										<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+									</box>
+									<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+										<font fontName="Arial_BNL" size="6"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$F{catastali}.getRedditoAgricolo()]]></textFieldExpression>
+								</textField>
+								<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+									<reportElement stretchType="RelativeToTallestObject" x="354" y="0" width="70" height="10" uuid="1133a059-eb73-4497-a8b5-6b96ae497531">
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+										<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+									</reportElement>
+									<box>
+										<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+										<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+										<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+										<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+									</box>
+									<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+										<font fontName="Arial_BNL" size="6"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$F{catastali}.getRedditoDominicale()]]></textFieldExpression>
+								</textField>
+							</frame>
+							<frame>
+								<reportElement positionType="Float" x="0" y="10" width="495" height="10" isRemoveLineWhenBlank="true" uuid="b06d703f-16b1-4e9d-b23b-e00571b26627">
+									<printWhenExpression><![CDATA[$F{catastali}.isNoteVisibile() == true]]></printWhenExpression>
+								</reportElement>
+								<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+									<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="495" height="10" isRemoveLineWhenBlank="true" uuid="a7d3c36a-0a3c-473f-9f43-f2a94807c70b">
+										<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+										<property name="com.jaspersoft.studio.unit.width" value="px"/>
+										<printWhenExpression><![CDATA[$F{catastali}.isNoteVisibile() == true]]></printWhenExpression>
+									</reportElement>
+									<box leftPadding="3" rightPadding="3">
+										<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+										<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+										<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+										<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+									</box>
+									<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+										<font fontName="Arial_BNL" size="6"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$F{catastali}.getNote()]]></textFieldExpression>
+								</textField>
+							</frame>
+						</frame>
+					</jr:listContents>
+				</jr:list>
+			</componentElement>
+			<textField>
+				<reportElement key="" positionType="Float" mode="Opaque" x="284" y="26" width="40" height="16" forecolor="#000000" backcolor="#EDEDED" uuid="ec3b623e-bef1-44ae-a005-ec0c5309cb5a">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial_BNL" size="6" isBold="true" isItalic="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Classe"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="" positionType="Float" mode="Transparent" x="0" y="13" width="525" height="13" forecolor="#000000" backcolor="rgba(135, 156, 63, 0.0)" uuid="610ce757-07bc-4b0b-83ad-a2bd9d4fddcc">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial_BNL" size="8" isItalic="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Comune Catastale: " + $P{data}.getComuneTavolare()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="" positionType="Float" mode="Transparent" x="260" y="0" width="265" height="13" forecolor="#000000" backcolor="rgba(135, 156, 63, 0.0)" uuid="b9e883e4-4e98-4263-9126-24a7046bb97e">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial_BNL" size="8" isItalic="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Comune Amm.: " + $P{data}.getComuneAmm()]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

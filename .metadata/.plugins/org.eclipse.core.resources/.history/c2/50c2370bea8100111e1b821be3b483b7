@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 7.0.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2026-07-17T16:15:43 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="170c5b6d-6a79-4601-801c-974412c4fe64">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<subDataset name="identificazioneCatastaleDataset" uuid="d6b6abb8-9500-4616-9e0d-14bfab38d722">
+		<field name="identificazioneCatastales" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.bancopopolare.data.IntestazioneCatastale">
+			<fieldDescription><![CDATA[_THIS]]></fieldDescription>
+		</field>
+	</subDataset>
+	<subDataset name="catastoTerrenoDataset" uuid="d6b6abb8-9500-4616-9e0d-14bfab38d722">
+		<field name="catastoTerrenos" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.bancobpm.data.BancoBPMPdfDataCatastoTerreno">
+			<fieldDescription><![CDATA[_THIS]]></fieldDescription>
+		</field>
+	</subDataset>
+	<subDataset name="catastoFabbricatoDataset" uuid="d6b6abb8-9500-4616-9e0d-14bfab38d722">
+		<field name="catastoFabbricatos" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.bancobpm.data.BancoBPMPdfDataCatastoFabbricato">
+			<fieldDescription><![CDATA[_THIS]]></fieldDescription>
+		</field>
+	</subDataset>
+	<subDataset name="catastoOriginarioDataset" uuid="ce728fa5-a3b7-40aa-95d4-6bda82b8b22c">
+		<field name="catastoOriginarios" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.bancobpm.data.BancoBPMPdfDataCatastoOriginario">
+			<fieldDescription><![CDATA[_THIS]]></fieldDescription>
+		</field>
+	</subDataset>
+	<parameter name="data" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.bancobpm.data.BancoBPMPdfData"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="120">
+			<frame>
+				<reportElement positionType="Float" x="0" y="2" width="555" height="118" uuid="1c038776-e9fa-4e00-a061-0b39287f1802"/>
+				<frame>
+					<reportElement positionType="Float" x="0" y="0" width="555" height="118" uuid="b718608e-1ba2-40c2-a22f-57c940a68741"/>
+					<textField>
+						<reportElement mode="Opaque" x="0" y="0" width="40" height="48" backcolor="#DDEBF7" uuid="25e6986a-508f-4583-8e78-b2d95902763a"/>
+						<box>
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+						</textElement>
+						<textFieldExpression><![CDATA["N"]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement mode="Opaque" x="40" y="0" width="329" height="16" backcolor="#DDEBF7" uuid="66d3d84e-13d8-4893-8ac5-ffd2aaf0518a"/>
+						<box>
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+						</textElement>
+						<textFieldExpression><![CDATA["DATI IDENTIFICATIVI"]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement mode="Opaque" x="40" y="16" width="90" height="32" backcolor="#DDEBF7" uuid="c876350e-c509-439c-a77c-c5aec8622970"/>
+						<box>
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Catasto"]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement mode="Opaque" x="130" y="16" width="54" height="32" backcolor="#DDEBF7" uuid="435eb5b9-5af5-48e7-bbe8-5d9b15fa31a1"/>
+						<box>
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Foglio"]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement mode="Opaque" x="184" y="16" width="66" height="32" backcolor="#DDEBF7" uuid="2a840a3a-9126-47ad-91a9-4f37d698c65b"/>
+						<box>
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Particella"]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement mode="Opaque" x="250" y="16" width="50" height="32" backcolor="#DDEBF7" uuid="a665a4b6-e1b2-48a0-98e3-efceabfc524e"/>
+						<box>
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Sub."]]></textFieldExpression>
+					</textField>
+					<componentElement>
+						<reportElement positionType="Float" x="0" y="48" width="368" height="20" backcolor="#EDEDED" uuid="4013a5e4-e8e1-4bac-899e-b4f87cc95da4">
+							<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							<property name="net.sf.jasperreports.export.headertoolbar.table.name" value=""/>
+						</reportElement>
+						<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
+							<datasetRun subDataset="catastoOriginarioDataset" uuid="d530749f-3426-49b0-af2e-3ffd5791065a">
+								<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{data}.getCatastoOriginarios())]]></dataSourceExpression>
+							</datasetRun>
+							<jr:listContents height="20" width="368">
+								<frame>
+									<reportElement positionType="Float" x="0" y="0" width="300" height="20" uuid="568c9187-f4df-4eeb-8960-f2048ebb3504">
+										<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+									</reportElement>
+									<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+										<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="40" height="20" forecolor="#000000" uuid="5798e144-a52d-44a1-86de-83b19fe20563"/>
+										<box leftPadding="2">
+											<pen lineWidth="0.5" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+										</textElement>
+										<textFieldExpression><![CDATA[$F{catastoOriginarios}.getNum()]]></textFieldExpression>
+									</textField>
+									<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+										<reportElement stretchType="RelativeToTallestObject" x="40" y="0" width="90" height="20" forecolor="#000000" uuid="499cb8f4-98d1-4fe0-b72d-13e606244e0e">
+											<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+										</reportElement>
+										<box leftPadding="2">
+											<pen lineWidth="0.5" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+										</textElement>
+										<textFieldExpression><![CDATA[$F{catastoOriginarios}.getCatasto()]]></textFieldExpression>
+									</textField>
+									<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+										<reportElement stretchType="RelativeToTallestObject" x="130" y="0" width="54" height="20" forecolor="#000000" uuid="485f66c1-98ee-4327-beff-dad5ee655d8a"/>
+										<box leftPadding="2">
+											<pen lineWidth="0.5" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+										</textElement>
+										<textFieldExpression><![CDATA[$F{catastoOriginarios}.getFoglio()]]></textFieldExpression>
+									</textField>
+									<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+										<reportElement stretchType="RelativeToTallestObject" x="184" y="0" width="66" height="20" forecolor="#000000" uuid="5d319965-367d-4061-b991-b4531005b443">
+											<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+										</reportElement>
+										<box leftPadding="2">
+											<pen lineWidth="0.5" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+										</textElement>
+										<textFieldExpression><![CDATA[$F{catastoOriginarios}.getParticella()]]></textFieldExpression>
+									</textField>
+									<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+										<reportElement stretchType="RelativeToTallestObject" x="250" y="0" width="50" height="20" forecolor="#000000" uuid="77c9ea1c-002a-4254-a819-7ef491564f58">
+											<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+										</reportElement>
+										<box leftPadding="2">
+											<pen lineWidth="0.5" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+										</textElement>
+										<textFieldExpression><![CDATA[$F{catastoOriginarios}.getSub()]]></textFieldExpression>
+									</textField>
+									<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+										<reportElement stretchType="RelativeToTallestObject" x="300" y="0" width="68" height="20" forecolor="#000000" uuid="878fae15-470b-4f68-9b30-cbcf5be165a7">
+											<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+										</reportElement>
+										<box leftPadding="2">
+											<pen lineWidth="0.5" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+										</textElement>
+										<textFieldExpression><![CDATA[$F{catastoOriginarios}.getCategoria()]]></textFieldExpression>
+									</textField>
+								</frame>
+							</jr:listContents>
+						</jr:list>
+					</componentElement>
+					<frame>
+						<reportElement positionType="Float" x="0" y="78" width="555" height="20" uuid="96861735-b4ca-467a-b8b2-f7d495457f58"/>
+						<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+							<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="500" y="0" width="55" height="20" forecolor="#000000" uuid="fe81f675-ba60-42de-b8d4-93c9bb482326"/>
+							<box leftPadding="2">
+								<pen lineWidth="0.5" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle">
+								<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$P{data}.getImmobileSuAreaIdentificataCatastalmenteFlag()]]></textFieldExpression>
+						</textField>
+						<textField>
+							<reportElement positionType="Float" mode="Transparent" x="0" y="0" width="500" height="20" backcolor="#DDEBF7" uuid="91379d1d-2433-44d1-bd96-8b1594066aed"/>
+							<box>
+								<pen lineWidth="0.5"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle">
+								<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+							</textElement>
+							<textFieldExpression><![CDATA["L'immobile ricade sull'area identificata catastalmente"]]></textFieldExpression>
+						</textField>
+					</frame>
+					<frame>
+						<reportElement positionType="Float" x="0" y="98" width="555" height="20" uuid="34f3f38e-8e9d-4929-a176-76dcaec19e2b"/>
+						<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+							<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="0" y="0" width="80" height="20" backcolor="#DDEBF7" uuid="6da4e586-0376-4c15-b860-2deec11163a9"/>
+							<box>
+								<pen lineWidth="0.5"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle">
+								<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+							</textElement>
+							<textFieldExpression><![CDATA["Note"]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+							<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="80" y="0" width="475" height="20" backcolor="#DDEBF7" uuid="bae5d501-bb4d-47c8-8032-26d2cd5573e3"/>
+							<box>
+								<pen lineWidth="0.5"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle">
+								<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$P{data}.getImmobileSuAreaIdentificataCatastalmenteNote()]]></textFieldExpression>
+						</textField>
+					</frame>
+					<textField>
+						<reportElement mode="Opaque" x="300" y="16" width="69" height="32" backcolor="#DDEBF7" uuid="fae4d0b8-3d7d-4659-b033-e98bd357ad9b"/>
+						<box>
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Sub."]]></textFieldExpression>
+					</textField>
+				</frame>
+			</frame>
+		</band>
+	</detail>
+</jasperReport>

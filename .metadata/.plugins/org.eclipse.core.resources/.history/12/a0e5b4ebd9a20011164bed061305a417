@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 7.0.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2026-08-28T14:13:47 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="170c5b6d-6a79-4601-801c-974412c4fe64">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<subDataset name="clientiDataset" uuid="d6b6abb8-9500-4616-9e0d-14bfab38d722">
+		<field name="clientes" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.bancobpm.data.BancoBPMPdfDataCliente">
+			<fieldDescription><![CDATA[_THIS]]></fieldDescription>
+		</field>
+	</subDataset>
+	<subDataset name="identificazioneCatastaleDataset" uuid="d6b6abb8-9500-4616-9e0d-14bfab38d722">
+		<field name="identificazioneCatastales" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.bancobpm.data.BancoBPMPdfDataIdentificazioneCatastale">
+			<fieldDescription><![CDATA[_THIS]]></fieldDescription>
+		</field>
+	</subDataset>
+	<subDataset name="catastoTerrenoDataset" uuid="d6b6abb8-9500-4616-9e0d-14bfab38d722">
+		<field name="catastoTerrenos" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.bancobpm.data.BancoBPMPdfDataCatastoTerreno">
+			<fieldDescription><![CDATA[_THIS]]></fieldDescription>
+		</field>
+	</subDataset>
+	<subDataset name="catastoFabbricatoDataset" uuid="d6b6abb8-9500-4616-9e0d-14bfab38d722">
+		<field name="catastoFabbricatos" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.bancobpm.data.BancoBPMPdfDataCatastoFabbricato">
+			<fieldDescription><![CDATA[_THIS]]></fieldDescription>
+		</field>
+	</subDataset>
+	<parameter name="data" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.bancobpm.data.BancoBPMPdfData"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="437" y="0" width="118" height="14" isRemoveLineWhenBlank="true" forecolor="#B0B0B0" uuid="87fa4d7b-6e9e-4b0f-9b19-4313162910f2"/>
+				<box>
+					<topPen lineColor="#DEDEDE"/>
+					<leftPen lineColor="#DEDEDE"/>
+					<bottomPen lineWidth="1.0" lineColor="#DEDEDE"/>
+					<rightPen lineColor="#DEDEDE"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle" markup="none">
+					<font fontName="BancoPopolareFont" size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Pagina " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="91" splitType="Stretch">
+			<textField>
+				<reportElement mode="Opaque" x="0" y="40" width="320" height="50" backcolor="#BDD7EE" uuid="f9b5a9e8-37bb-45f2-82d4-7bd405b7b18e"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="BancoPopolareFont" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA["RAPPORTO DI VALUTAZIONE"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="350" y="40" width="205" height="50" backcolor="#DDEBF7" uuid="6d712c9a-4400-4079-a215-efbc44f417a7"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{data}.getId()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="320" y="40" width="30" height="50" backcolor="#DDEBF7" uuid="0e4a3f69-0cd5-486b-a1f8-b58ccd13ed4a"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA["ID"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="60" width="320" height="30" uuid="86fc4750-89c4-4c9d-bacf-b5d077813d4a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["IMMOBILI IN COSTRUZIONE / RISTRUTTURAZIONE"]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="0" y="0" width="80" height="40" uuid="107f8889-255f-4f42-99d9-6f4eebaba31c"/>
+				<imageExpression><![CDATA["data/BancoBPM_logo.PNG"]]></imageExpression>
+			</image>
+			<image scaleImage="RetainShape" vAlign="Middle">
+				<reportElement x="475" y="0" width="80" height="40" uuid="65396d5f-6a6e-43f3-ae5b-e1c6d9db0c96"/>
+				<imageExpression><![CDATA["data/Cerved_Logo.png"]]></imageExpression>
+			</image>
+		</band>
+		<band height="35">
+			<break>
+				<reportElement x="0" y="34" width="98" height="1" uuid="cb5212bb-1730-4d6b-9fbe-4ca2741f0296"/>
+			</break>
+			<subreport>
+				<reportElement x="0" y="0" width="555" height="30" isRemoveLineWhenBlank="true" uuid="3a75bf89-8ab3-488d-b416-6463ad1f37ef">
+					<printWhenExpression><![CDATA[$P{data}.isCorporate() == false]]></printWhenExpression>
+				</reportElement>
+				<subreportParameter name="data">
+					<subreportParameterExpression><![CDATA[$P{data}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource()]]></dataSourceExpression>
+				<subreportExpression><![CDATA["subreport/BancoBPMSezioneInizialeTRNR_sub.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement x="0" y="0" width="555" height="30" uuid="2aa648aa-a12b-4fa2-932b-a90a6734342a">
+					<printWhenExpression><![CDATA[$P{data}.isCorporate() == true]]></printWhenExpression>
+				</reportElement>
+				<subreportParameter name="data">
+					<subreportParameterExpression><![CDATA[$P{data}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource()]]></dataSourceExpression>
+				<subreportExpression><![CDATA["subreport/BancoBPMSezioneInizialeCOR_sub.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="433">
+			<frame>
+				<reportElement positionType="Float" x="0" y="0" width="555" height="43" uuid="cd1e1b4a-d13b-4f6c-a086-bca8cc473b39"/>
+				<textField>
+					<reportElement mode="Opaque" x="0" y="0" width="80" height="24" backcolor="#BDD7EE" uuid="9358e5cc-082e-4b6d-8ce2-debb3b20180d"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Sezione A"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="80" y="0" width="475" height="24" backcolor="#BDD7EE" uuid="b7c7d662-acc6-4b28-8ea5-a4dac84ca79f"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["IDENTIFICAZIONE CATASTALE"]]></textFieldExpression>
+				</textField>
+				<subreport>
+					<reportElement positionType="Float" x="0" y="28" width="555" height="15" uuid="c4d4570d-ffb9-4542-98bd-0ce44e8fcc20">
+						<printWhenExpression><![CDATA[$P{data}.isCorporate() == false]]></printWhenExpression>
+					</reportElement>
+					<subreportParameter name="data">
+						<subreportParameterExpression><![CDATA[$P{data}]]></subreportParameterExpression>
+					</subreportParameter>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource()]]></dataSourceExpression>
+					<subreportExpression><![CDATA["subreport/BancoBPM_IdentificazioneCatastale.jasper"]]></subreportExpression>
+				</subreport>
+				<subreport>
+					<reportElement positionType="Float" x="0" y="28" width="555" height="15" uuid="325759f9-2261-4d37-b8b9-5a66b995be67">
+						<printWhenExpression><![CDATA[$P{data}.isCorporate() == true]]></printWhenExpression>
+					</reportElement>
+					<subreportParameter name="data">
+						<subreportParameterExpression><![CDATA[$P{data}]]></subreportParameterExpression>
+					</subreportParameter>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource()]]></dataSourceExpression>
+					<subreportExpression><![CDATA["subreport/BancoBPM_IdentificazioneCatastaleCOR.jasper"]]></subreportExpression>
+				</subreport>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="49" width="555" height="43" uuid="1ddbb190-eb59-418e-9ccf-76a8a31a4cee"/>
+				<textField>
+					<reportElement mode="Opaque" x="0" y="0" width="80" height="24" backcolor="#BDD7EE" uuid="df8c6eb5-6efb-42e7-bcc1-b0da8adca4ab"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Sezione B"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement positionType="Float" mode="Opaque" x="80" y="0" width="475" height="24" backcolor="#BDD7EE" uuid="1b9cd151-f997-48f2-bb37-cd3bee9eef7f">
+						<printWhenExpression><![CDATA[$P{data}.isCorporate() == false]]></printWhenExpression>
+					</reportElement>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["DESCRIZIONE DELL'IMMOBILE E STATO D'USO"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement positionType="Float" mode="Opaque" x="80" y="0" width="475" height="24" backcolor="#BDD7EE" uuid="f53a79e3-b202-4bcc-9aa2-0e2bbdcba892">
+						<printWhenExpression><![CDATA[$P{data}.isCorporate() == true]]></printWhenExpression>
+					</reportElement>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["DESCRIZIONE DELL'IMMOBILE ANTE E POST OPERAM"]]></textFieldExpression>
+				</textField>
+				<subreport>
+					<reportElement positionType="Float" x="0" y="28" width="555" height="15" uuid="9818f38c-938c-4227-948c-da18d4debf28"/>
+					<subreportParameter name="data">
+						<subreportParameterExpression><![CDATA[$P{data}]]></subreportParameterExpression>
+					</subreportParameter>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource()]]></dataSourceExpression>
+					<subreportExpression><![CDATA["subreport/BancoBPM_DescrizioneImmobileStatoDuso.jasper"]]></subreportExpression>
+				</subreport>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="99" width="555" height="43" uuid="34e540e8-55c7-44c5-be96-993052cf4e3c"/>
+				<textField>
+					<reportElement mode="Opaque" x="0" y="0" width="80" height="24" backcolor="#BDD7EE" uuid="67ca72fd-77f0-4573-bc1a-e5f79b1e8009"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Sezione C"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="80" y="0" width="475" height="24" backcolor="#BDD7EE" uuid="7c883ab1-d29b-489c-8df6-0ac68faeb7e2"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["TITOLARITA'"]]></textFieldExpression>
+				</textField>
+				<subreport>
+					<reportElement positionType="Float" x="0" y="28" width="555" height="15" uuid="71eab1bb-f40c-457a-afe9-b7d25d5210e5"/>
+					<subreportParameter name="data">
+						<subreportParameterExpression><![CDATA[$P{data}]]></subreportParameterExpression>
+					</subreportParameter>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource()]]></dataSourceExpression>
+					<subreportExpression><![CDATA["subreport/BancoBPM_Titolarita.jasper"]]></subreportExpression>
+				</subreport>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="149" width="555" height="43" uuid="87bfa9cb-d73b-44e2-9f5b-50fe119b3222"/>
+				<textField>
+					<reportElement mode="Opaque" x="0" y="0" width="80" height="24" backcolor="#BDD7EE" uuid="8d5a710c-151b-4517-8e61-4bfe024b4d16"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Sezione D"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="80" y="0" width="475" height="24" backcolor="#BDD7EE" uuid="9c22e8e4-075a-4406-b1ab-b4bfa8698745"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["LEGITTIMITA' URBANISTICA ED EDILIZIA DELL'INTERVENTO\n(Riferimento a immobili esistenti)"]]></textFieldExpression>
+				</textField>
+				<subreport>
+					<reportElement positionType="Float" x="0" y="28" width="555" height="15" uuid="1408fdaa-7718-404c-aba3-61db2c8526c5">
+						<printWhenExpression><![CDATA[$P{data}.isCorporate() == false]]></printWhenExpression>
+					</reportElement>
+					<subreportParameter name="data">
+						<subreportParameterExpression><![CDATA[$P{data}]]></subreportParameterExpression>
+					</subreportParameter>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource()]]></dataSourceExpression>
+					<subreportExpression><![CDATA["subreport/BancoBPM_SAL_LegittimitaUrbanistica.jasper"]]></subreportExpression>
+				</subreport>
+				<subreport>
+					<reportElement positionType="Float" x="0" y="28" width="555" height="15" uuid="f217630f-5806-446e-9749-bbe469fdbe08">
+						<printWhenExpression><![CDATA[$P{data}.isCorporate() == true]]></printWhenExpression>
+					</reportElement>
+					<subreportParameter name="data">
+						<subreportParameterExpression><![CDATA[$P{data}]]></subreportParameterExpression>
+					</subreportParameter>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource()]]></dataSourceExpression>
+					<subreportExpression><![CDATA["subreport/BancoBPM_SAL_LegittimitaUrbanisticaCOR.jasper"]]></subreportExpression>
+				</subreport>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="198" width="555" height="43" uuid="693e8db5-421f-4f90-86b2-0859578e35c4"/>
+				<textField>
+					<reportElement mode="Opaque" x="0" y="0" width="80" height="24" backcolor="#BDD7EE" uuid="1aead569-8191-4157-8ed7-fa8445907a13"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Sezione E"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="80" y="0" width="475" height="24" backcolor="#BDD7EE" uuid="09464e26-3391-4c9f-aec3-1ef918f90e19"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["CARATTERISTICHE DELL'IMMOBILE IN PROGETTO"]]></textFieldExpression>
+				</textField>
+				<subreport>
+					<reportElement positionType="Float" x="0" y="28" width="555" height="15" uuid="e0f1ae4a-662a-4c8f-9105-a4dd9e59eb84">
+						<printWhenExpression><![CDATA[$P{data}.isCorporate() == false]]></printWhenExpression>
+					</reportElement>
+					<subreportParameter name="data">
+						<subreportParameterExpression><![CDATA[$P{data}]]></subreportParameterExpression>
+					</subreportParameter>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource()]]></dataSourceExpression>
+					<subreportExpression><![CDATA["subreport/BancoBPM_SAL_CaratteristicheImmobile.jasper"]]></subreportExpression>
+				</subreport>
+				<subreport>
+					<reportElement positionType="Float" x="0" y="28" width="555" height="15" uuid="4d755fec-2374-454a-8de6-0c5419f68c79">
+						<printWhenExpression><![CDATA[$P{data}.isCorporate() == true]]></printWhenExpression>
+					</reportElement>
+					<subreportParameter name="data">
+						<subreportParameterExpression><![CDATA[$P{data}]]></subreportParameterExpression>
+					</subreportParameter>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource()]]></dataSourceExpression>
+					<subreportExpression><![CDATA["subreport/BancoBPM_SAL_DescrizioneImmobile.jasper"]]></subreportExpression>
+				</subreport>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="247" width="555" height="43" uuid="a2fdbd18-c10b-49a6-9715-8ce66082bd0d"/>
+				<textField>
+					<reportElement mode="Opaque" x="0" y="0" width="80" height="24" backcolor="#BDD7EE" uuid="b1e34146-0f8b-4790-a978-a8eef389d70c"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Sezione F"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="80" y="0" width="475" height="24" backcolor="#BDD7EE" uuid="c94d64d9-55c6-4eff-a1e5-cc60cad1aab5"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["INDIVIDUAZIONE DEL SEGMENTO DI MERCATO"]]></textFieldExpression>
+				</textField>
+				<subreport>
+					<reportElement positionType="Float" x="0" y="28" width="555" height="15" uuid="45e94e69-b132-474f-8257-d2d711a78523">
+						<printWhenExpression><![CDATA[$P{data}.isCorporate() == false]]></printWhenExpression>
+					</reportElement>
+					<subreportParameter name="data">
+						<subreportParameterExpression><![CDATA[$P{data}]]></subreportParameterExpression>
+					</subreportParameter>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource()]]></dataSourceExpression>
+					<subreportExpression><![CDATA["subreport/BancoBPM_IndaginiDiMercato.jasper"]]></subreportExpression>
+				</subreport>
+				<subreport>
+					<reportElement positionType="Float" x="0" y="28" width="555" height="15" uuid="67b20138-4e53-4912-ae9b-dc43cb975ef9">
+						<printWhenExpression><![CDATA[$P{data}.isCorporate() == true]]></printWhenExpression>
+					</reportElement>
+					<subreportParameter name="data">
+						<subreportParameterExpression><![CDATA[$P{data}]]></subreportParameterExpression>
+					</subreportParameter>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource()]]></dataSourceExpression>
+					<subreportExpression><![CDATA["subreport/BancoBPM_IndaginiDiMercatoCOR.jasper"]]></subreportExpression>
+				</subreport>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="296" width="555" height="39" uuid="63357782-b2e5-45da-95c0-f802d94946c4"/>
+				<textField>
+					<reportElement mode="Opaque" x="0" y="0" width="555" height="24" backcolor="#BDD7EE" uuid="67f5ba3b-edc4-45e8-9f5b-81c44d91f113"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["ANALISI DEL MERCATO IMMOBILIARE"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Opaque" x="0" y="24" width="554" height="15" uuid="d0a91a84-3aa5-4f2e-ad85-f08026676da7">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box topPadding="2" leftPadding="2" bottomPadding="2" rightPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getAnalisiMercatoImmobiliareNote()]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="340" width="555" height="43" uuid="452b1b58-40b2-420f-8640-2a78d109963f"/>
+				<textField>
+					<reportElement mode="Opaque" x="0" y="0" width="80" height="24" backcolor="#BDD7EE" uuid="5c65314c-5918-477e-a188-1f1826effcc9"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="80" y="0" width="475" height="24" backcolor="#BDD7EE" uuid="9c484bbb-38d4-4ac3-8f07-c37ecee5d50f"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["RILEVAZIONE DEI VALORI O.M.I. (Dati Agenzia delle Entrate)"]]></textFieldExpression>
+				</textField>
+				<subreport>
+					<reportElement positionType="Float" x="0" y="28" width="555" height="15" uuid="c8a144de-a241-479d-b1fd-9a6916e70a9f"/>
+					<subreportParameter name="data">
+						<subreportParameterExpression><![CDATA[$P{data}]]></subreportParameterExpression>
+					</subreportParameter>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource()]]></dataSourceExpression>
+					<subreportExpression><![CDATA["subreport/BancoBPM_ValoriOMI.jasper"]]></subreportExpression>
+				</subreport>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="390" width="555" height="43" uuid="896aa562-e719-4b29-bbed-50155053d61c"/>
+				<textField>
+					<reportElement mode="Opaque" x="0" y="0" width="80" height="24" backcolor="#BDD7EE" uuid="d75eda09-378c-4c7b-9d85-b0db46408674"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="80" y="0" width="475" height="24" backcolor="#BDD7EE" uuid="4b90adfc-97c3-46c9-8f05-7c3ab1e3c6cb"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["VAM - Valori Agricoli Medi"]]></textFieldExpression>
+				</textField>
+				<subreport>
+					<reportElement positionType="Float" x="0" y="28" width="555" height="15" uuid="eb91e905-6e48-41fb-8b26-8d73051eefd3"/>
+					<subreportParameter name="data">
+						<subreportParameterExpression><![CDATA[$P{data}]]></subreportParameterExpression>
+					</subreportParameter>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource()]]></dataSourceExpression>
+					<subreportExpression><![CDATA["subreport/BancoBPM_ValoriVAM.jasper"]]></subreportExpression>
+				</subreport>
+			</frame>
+		</band>
+		<band height="252">
+			<frame>
+				<reportElement positionType="Float" x="0" y="160" width="555" height="43" uuid="28043f78-227e-4633-aa22-0ce2941b5c02"/>
+				<textField>
+					<reportElement mode="Opaque" x="0" y="0" width="80" height="24" backcolor="#BDD7EE" uuid="b738063d-78d1-4fb4-ba47-dee216fe242a"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getEtichettaSezioneValutazione() != "" ? ("Sezione " + $P{data}.getEtichettaSezioneValutazione())  : "Sezione G"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="80" y="0" width="475" height="24" backcolor="#BDD7EE" uuid="5d8b170d-f8bb-4b97-9dc3-e932d5621c47"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["VALUTAZIONE"]]></textFieldExpression>
+				</textField>
+				<subreport>
+					<reportElement positionType="Float" x="0" y="28" width="555" height="15" uuid="0d4e085e-2593-4812-8cae-24a401ccea24"/>
+					<subreportParameter name="data">
+						<subreportParameterExpression><![CDATA[$P{data}]]></subreportParameterExpression>
+					</subreportParameter>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource()]]></dataSourceExpression>
+					<subreportExpression><![CDATA["subreport/BancoBPM_SAL_DeterminazioneDeiValori.jasper"]]></subreportExpression>
+				</subreport>
+			</frame>
+			<frame>
+				<reportElement x="0" y="6" width="555" height="43" uuid="e58d5264-d0d7-4eba-80a9-ef3856315077"/>
+				<textField>
+					<reportElement mode="Opaque" x="0" y="0" width="80" height="24" backcolor="#BDD7EE" uuid="1ef82b59-de04-4e1d-b7f4-b28042a22496"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Sezione G"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="80" y="0" width="475" height="24" backcolor="#BDD7EE" uuid="d2b39027-a6ca-4422-a8f6-23c734db1070"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["GIUDIZIO DI COMMERCIABILITA' DEL BENE"]]></textFieldExpression>
+				</textField>
+				<subreport>
+					<reportElement positionType="Float" x="0" y="28" width="555" height="15" uuid="8ad98236-a4e4-48c5-9eb9-2b98e97825bd"/>
+					<subreportParameter name="data">
+						<subreportParameterExpression><![CDATA[$P{data}]]></subreportParameterExpression>
+					</subreportParameter>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource()]]></dataSourceExpression>
+					<subreportExpression><![CDATA["subreport/BancoBPM_GiudizioCommerciabilita.jasper"]]></subreportExpression>
+				</subreport>
+			</frame>
+			<frame>
+				<reportElement x="0" y="55" width="555" height="43" uuid="4dc171ef-07ad-4e20-a09f-8e63e7b2ff74"/>
+				<textField>
+					<reportElement mode="Opaque" x="0" y="0" width="80" height="24" backcolor="#BDD7EE" uuid="2d0e0c96-27c4-4552-bf1a-2b2218410313"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Sezione H"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="80" y="0" width="475" height="24" backcolor="#BDD7EE" uuid="e1e502e7-3981-403e-af90-98df8dd6ac0f"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["SCELTA DEL METODO DI STIMA"]]></textFieldExpression>
+				</textField>
+				<subreport>
+					<reportElement positionType="Float" x="0" y="28" width="555" height="15" uuid="f43c35f4-bca4-40cc-b254-70adfdaf0e84"/>
+					<subreportParameter name="data">
+						<subreportParameterExpression><![CDATA[$P{data}]]></subreportParameterExpression>
+					</subreportParameter>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource()]]></dataSourceExpression>
+					<subreportExpression><![CDATA["subreport/BancoBPM_SAL_SceltaMetodoStima.jasper"]]></subreportExpression>
+				</subreport>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="104" width="555" height="43" uuid="acec7f93-c9dd-4e53-b4b0-738d19f964a9"/>
+				<textField>
+					<reportElement mode="Opaque" x="0" y="0" width="80" height="24" backcolor="#BDD7EE" uuid="fb7684f1-a7db-4663-bd1a-e797f7691b59"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getEtichettaSezioneLimitiEAssunzioni() != "" ? ("Sezione " + $P{data}.getEtichettaSezioneLimitiEAssunzioni())  : "Sezione F"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="80" y="0" width="475" height="24" backcolor="#BDD7EE" uuid="02f918c5-33f5-4406-8a68-b1a3f4b7c91a">
+						<printWhenExpression><![CDATA[$P{data}.isCorporate() == false]]></printWhenExpression>
+					</reportElement>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["LIMITI ED ASSUNZIONI"]]></textFieldExpression>
+				</textField>
+				<subreport>
+					<reportElement positionType="Float" x="0" y="28" width="555" height="15" uuid="6499ceed-3c50-4044-ae87-ab067ab511e6">
+						<printWhenExpression><![CDATA[$P{data}.isCorporate() == false]]></printWhenExpression>
+					</reportElement>
+					<subreportParameter name="data">
+						<subreportParameterExpression><![CDATA[$P{data}]]></subreportParameterExpression>
+					</subreportParameter>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource()]]></dataSourceExpression>
+					<subreportExpression><![CDATA["subreport/BancoBPM_LimitiAssunzioni.jasper"]]></subreportExpression>
+				</subreport>
+				<textField>
+					<reportElement positionType="Float" mode="Opaque" x="80" y="0" width="475" height="24" backcolor="#BDD7EE" uuid="aff76701-83c0-4135-ba3d-f883dbbd0ff6">
+						<printWhenExpression><![CDATA[$P{data}.isCorporate() == true]]></printWhenExpression>
+					</reportElement>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["LIMITI ED ASSUNZIONI - KEY DRIVERS"]]></textFieldExpression>
+				</textField>
+				<subreport>
+					<reportElement positionType="Float" x="0" y="28" width="555" height="15" uuid="93fb804e-93f4-43f1-bfaf-55e17323264d">
+						<printWhenExpression><![CDATA[$P{data}.isCorporate() == true]]></printWhenExpression>
+					</reportElement>
+					<subreportParameter name="data">
+						<subreportParameterExpression><![CDATA[$P{data}]]></subreportParameterExpression>
+					</subreportParameter>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource()]]></dataSourceExpression>
+					<subreportExpression><![CDATA["subreport/BancoBPM_LimitiAssunzioniCOR.jasper"]]></subreportExpression>
+				</subreport>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="209" width="555" height="43" uuid="f2f2b321-291e-48bf-a653-d812d663f34a"/>
+				<textField>
+					<reportElement mode="Opaque" x="0" y="0" width="80" height="24" backcolor="#BDD7EE" uuid="9c084da4-9c33-4bd3-af06-ec5c3987b6bb"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Sezione " + $P{data}.getEtichettaSezioneDocumenzioneAllegata()]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="80" y="0" width="475" height="24" backcolor="#BDD7EE" uuid="816e9043-4be0-4b89-aaed-39a60db23e0d"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["DOCUMENTAZIONE ALLEGATA"]]></textFieldExpression>
+				</textField>
+				<subreport>
+					<reportElement positionType="Float" x="0" y="28" width="555" height="15" uuid="6c1e2750-0ee1-48f3-811f-46541650b158"/>
+					<subreportParameter name="data">
+						<subreportParameterExpression><![CDATA[$P{data}]]></subreportParameterExpression>
+					</subreportParameter>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource()]]></dataSourceExpression>
+					<subreportExpression><![CDATA["subreport/BancoBPM_DocumentazioneAllegata.jasper"]]></subreportExpression>
+				</subreport>
+			</frame>
+		</band>
+		<band height="18">
+			<break>
+				<reportElement x="0" y="2" width="98" height="1" uuid="8cd5c5f7-d542-4ec4-962f-196fed824416"/>
+			</break>
+			<subreport>
+				<reportElement positionType="Float" x="0" y="3" width="555" height="15" uuid="b992d3e9-bea7-4ad7-b546-6b8e4c99c098"/>
+				<subreportParameter name="data">
+					<subreportParameterExpression><![CDATA[$P{data}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource()]]></dataSourceExpression>
+				<subreportExpression><![CDATA["subreport/BancoBPM_Tabella_SAL_EdilizioV3.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="13" splitType="Stretch"/>
+	</pageFooter>
+</jasperReport>

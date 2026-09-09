@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.4.0.final using JasperReports Library version 6.4.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="vincoli" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="882daf1d-d499-443f-b225-c70b8a4a9b12">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="vincoli" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.cerved.data.CervedPdfVincoli"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="130" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="" positionType="Float" mode="Transparent" x="0" y="13" width="525" height="13" forecolor="#000000" backcolor="rgba(135, 156, 63, 0.0)" uuid="7853b9ad-4e2d-4952-94dd-b2acfdc00b01">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<box topPadding="2" bottomPadding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isItalic="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<style isItalic=\"true\">Vincolo storico - artistico: </style>" + $P{vincoli}.getVincoloStoricoArtistico()
++($P{vincoli}.isVincoloStoricoArtisticoNoteVisibile() == true ? ("\n<style isItalic=\"true\">Note: </style>" + $P{vincoli}.getVincoloStoricoArtisticoNote()) : "")]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="" positionType="Float" mode="Transparent" x="0" y="39" width="525" height="13" forecolor="#000000" backcolor="rgba(135, 156, 63, 0.0)" uuid="1fcd0ea9-deae-4cee-a5bf-e37e8e986bdf">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<box topPadding="2" bottomPadding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isItalic="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<style isItalic=\"true\">Servitù attiva: </style>" + $P{vincoli}.getServituAttiva()
++($P{vincoli}.isServituAttivaNoteVisibile() == true ? ("\n<style isItalic=\"true\">Note: </style>" + $P{vincoli}.getServituAttivaNote()) : "")]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="" positionType="Float" mode="Transparent" x="0" y="26" width="525" height="13" forecolor="#000000" backcolor="rgba(135, 156, 63, 0.0)" uuid="3fdbb5f7-958c-4409-9c67-f644fc216604">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<box topPadding="2" bottomPadding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isItalic="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<style isItalic=\"true\">Vincolo paesaggistico: </style>" + $P{vincoli}.getVincoloPaesaggistico()
++($P{vincoli}.isVincoloPaesaggisticoNoteVisibile() == true ? ("\n<style isItalic=\"true\">Note: </style>" + $P{vincoli}.getVincoloPaesaggisticoNote()) : "")]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="" positionType="Float" mode="Transparent" x="0" y="65" width="525" height="13" forecolor="#000000" backcolor="rgba(135, 156, 63, 0.0)" uuid="097587a0-2eaa-4214-8b5a-27a52dc804af">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<box topPadding="2" bottomPadding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isItalic="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<style isItalic=\"true\">Servitù apparente: </style>" + $P{vincoli}.getServituApparente()
++($P{vincoli}.isServituApparenteNoteVisibile() == true ? ("\n<style isItalic=\"true\">Note: </style>" + $P{vincoli}.getServituApparenteNote()) : "")]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="" positionType="Float" mode="Transparent" x="0" y="52" width="525" height="13" forecolor="#000000" backcolor="rgba(135, 156, 63, 0.0)" uuid="5848766c-8b61-494f-b476-1a1a8d7d0335">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<box topPadding="2" bottomPadding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isItalic="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<style isItalic=\"true\">Servitù passiva: </style>" + $P{vincoli}.getServituPassiva()
++($P{vincoli}.isServituPassivaNoteVisibile() == true ? ("\n<style isItalic=\"true\">Note: </style>" + $P{vincoli}.getServituPassivaNote()) : "")]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="" positionType="Float" mode="Transparent" x="0" y="91" width="525" height="13" forecolor="#000000" backcolor="rgba(135, 156, 63, 0.0)" uuid="47d2d95e-598b-407b-9d5d-93d02e1b3c43">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<box topPadding="2" bottomPadding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isItalic="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<style isItalic=\"true\">Diritto di superficie: </style>" +$P{vincoli}.getDirittoDiSuperficie()
++($P{vincoli}.isDirittoDiSuperficieNoteVisibile() == true ? ("\n<style isItalic=\"true\">Note: </style>" + $P{vincoli}.getDirittoDiSuperficieNote()) : "")]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="" positionType="Float" mode="Transparent" x="0" y="104" width="525" height="13" forecolor="#000000" backcolor="rgba(135, 156, 63, 0.0)" uuid="aa02dcd3-9623-4c21-b54d-c6a99ea76732">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<box topPadding="2" bottomPadding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isItalic="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<style isItalic=\"true\">Usufrutto: </style>" + $P{vincoli}.getUsufrutto()
++($P{vincoli}.isUsufruttoNoteVisibile() == true ? ("\n<style isItalic=\"true\">Note: </style>" + $P{vincoli}.getUsufruttoNote()) : "")]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="false">
+				<reportElement key="" positionType="Float" mode="Transparent" x="0" y="117" width="525" height="13" isRemoveLineWhenBlank="true" forecolor="#000000" backcolor="rgba(135, 156, 63, 0.0)" uuid="88d142a0-b205-435b-8dfd-b8ac432bbddd">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<box topPadding="2" bottomPadding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isItalic="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($P{vincoli}.isNoteGeneraliVincoliVisibile() == true ? ("<style isItalic=\"true\">Note generali: </style>"+ $P{vincoli}.getNoteGeneraliVincoli()) : "")]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="" mode="Transparent" x="0" y="0" width="525" height="13" forecolor="#000000" backcolor="rgba(135, 156, 63, 0.0)" uuid="44b675ff-0129-480a-8fe0-28e9d19bf4d2">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<box topPadding="2" bottomPadding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isItalic="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<style isItalic=\"true\">Vincolo urbanistico: </style>" + $P{vincoli}.getVincoloUrbanistico() 
++($P{vincoli}.isVincoloUrbanisticoNoteVisibile() == true ? ("\n<style isItalic=\"true\">Note: </style>" + $P{vincoli}.getVincoloUrbanisticoNote()) : "")]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="" positionType="Float" mode="Transparent" x="0" y="78" width="525" height="13" forecolor="#000000" backcolor="rgba(135, 156, 63, 0.0)" uuid="d4699cfc-9801-4ece-bba9-9184b2aa565c">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<box topPadding="2" bottomPadding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isItalic="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<style isItalic=\"true\">Edilizia convenzionata: </style>" +$P{vincoli}.getEdiliziaConvenzionata()
++($P{vincoli}.isEdiliziaConvenzionataNoteVisibile() == true ? ("\n<style isItalic=\"true\">Note: </style>" + $P{vincoli}.getEdiliziaConvenzionataNote()) : "")]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

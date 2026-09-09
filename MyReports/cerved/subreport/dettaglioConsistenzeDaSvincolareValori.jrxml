@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.0.final using JasperReports Library version 6.3.0  -->
+<!-- 2020-02-19T16:07:13 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="dettaglioDatoImmobiliare" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="3b156187-ed97-4a76-8f1c-f187db37170c">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<subDataset name="datasetDettaglio" uuid="696f2602-c115-4a44-b6a5-8a75420d5356">
+		<field name="dettaglio" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.cerved.data.CervedPdfConsistenzaConValoriDettaglio">
+			<fieldDescription><![CDATA[_THIS]]></fieldDescription>
+		</field>
+	</subDataset>
+	<field name="consistenzeDaSvincolareConValori" class="java.util.Collection"/>
+	<field name="headerAndFooterCerved" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[headerAndFooterCerved]]></fieldDescription>
+	</field>
+	<field name="lotto" class="java.lang.String"/>
+	<field name="consistenzeValoriFull" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[headerAndFooterCerved]]></fieldDescription>
+	</field>
+	<field name="presenzaConsistenzeDaSvincolareConValori" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[headerAndFooterCerved]]></fieldDescription>
+	</field>
+	<field name="presenzaConsistenzeRimasteInGaranziaConValori" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[headerAndFooterCerved]]></fieldDescription>
+	</field>
+	<field name="consistenzeRimasteInGaranziaConValori" class="java.util.Collection"/>
+	<detail>
+		<band height="147" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<frame>
+				<reportElement positionType="Float" x="0" y="0" width="525" height="67" isRemoveLineWhenBlank="true" uuid="e4f7b054-794b-42ee-8df9-a41313314b4e">
+					<printWhenExpression><![CDATA[$F{presenzaConsistenzeDaSvincolareConValori} == true]]></printWhenExpression>
+				</reportElement>
+				<textField>
+					<reportElement mode="Opaque" x="0" y="0" width="525" height="14" forecolor="#FFFFFF" backcolor="#879C3F" uuid="b9f129e6-b35d-499d-b624-2e469c85995f">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+					</reportElement>
+					<box leftPadding="5">
+						<topPen lineWidth="1.0" lineColor="#C9CDD3"/>
+						<leftPen lineWidth="1.0" lineColor="#C9CDD3"/>
+						<bottomPen lineWidth="1.0" lineColor="#C9CDD3"/>
+						<rightPen lineWidth="1.0" lineColor="#C9CDD3"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Consistenze e Valori da svincolare"]]></textFieldExpression>
+				</textField>
+				<frame>
+					<reportElement x="0" y="14" width="525" height="28" isRemoveLineWhenBlank="true" uuid="d1690b6e-218e-47f2-ba8f-4697451d5fc9">
+						<printWhenExpression><![CDATA[$F{headerAndFooterCerved} == true && $F{consistenzeValoriFull} == false]]></printWhenExpression>
+					</reportElement>
+					<textField>
+						<reportElement key="" mode="Opaque" x="0" y="0" width="26" height="28" forecolor="#000000" backcolor="#EDEDED" uuid="c37ff539-7e7c-4ab1-b73f-51df64e03c3e">
+							<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Lotto"]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement key="" mode="Opaque" x="26" y="0" width="120" height="28" forecolor="#000000" backcolor="#EDEDED" uuid="5c233ae7-a085-409b-81f9-f733214be378">
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Identificativi catastali"]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement key="" mode="Opaque" x="146" y="0" width="124" height="28" forecolor="#000000" backcolor="#EDEDED" uuid="309724fb-8e73-46ce-a616-d669519d0dbe">
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Destinazione"]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement key="" mode="Opaque" x="270" y="0" width="50" height="28" forecolor="#000000" backcolor="#EDEDED" uuid="0c7664d9-1c2d-45b3-b61b-fcd92d7e01a5">
+							<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Top">
+							<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Sup. commerciale (mq)"]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement key="" mode="Opaque" x="320" y="0" width="67" height="28" forecolor="#000000" backcolor="#EDEDED" uuid="da4eabfe-3dd1-495b-859b-b76182235495">
+							<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Valore di Mercato (€)"]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement key="" mode="Opaque" x="387" y="0" width="70" height="28" forecolor="#000000" backcolor="#EDEDED" uuid="7cad7537-8f1d-4ae3-aff7-d1be8ab56c3a">
+							<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Valore di Credito Ipotecario (€)"]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement key="" mode="Opaque" x="457" y="0" width="68" height="28" forecolor="#000000" backcolor="#EDEDED" uuid="af9838ee-a7ca-4bd0-91b3-59b60c05ed9b">
+							<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Valore Assicurabile (€)"]]></textFieldExpression>
+					</textField>
+				</frame>
+				<subreport>
+					<reportElement x="0" y="42" width="525" height="25" isRemoveLineWhenBlank="true" uuid="4f613b0b-a939-430c-b065-c87c0429901e">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<printWhenExpression><![CDATA[$F{headerAndFooterCerved} == true && $F{consistenzeValoriFull} == false]]></printWhenExpression>
+					</reportElement>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{consistenzeDaSvincolareConValori})]]></dataSourceExpression>
+					<subreportExpression><![CDATA["dettaglioConsistenzeValoriV2.jasper"]]></subreportExpression>
+				</subreport>
+				<frame>
+					<reportElement x="0" y="14" width="525" height="28" isRemoveLineWhenBlank="true" uuid="da1b2105-91b6-4e4e-aa40-7a2e86ea14d5">
+						<printWhenExpression><![CDATA[$F{headerAndFooterCerved} == false]]></printWhenExpression>
+					</reportElement>
+					<textField>
+						<reportElement key="" mode="Opaque" x="0" y="0" width="26" height="28" forecolor="#000000" backcolor="#EDEDED" uuid="d8bd903b-77b4-4910-8b92-bdc42a53dae7">
+							<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Lotto"]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement key="" mode="Opaque" x="26" y="0" width="120" height="28" forecolor="#000000" backcolor="#EDEDED" uuid="b1cda47c-8d9f-4916-ba27-4e9f0e2942ad">
+							<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Identificativi catastali"]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement key="" mode="Opaque" x="146" y="0" width="124" height="28" forecolor="#000000" backcolor="#EDEDED" uuid="70e40982-eaf5-480f-88d6-6cce3fa57ff1">
+							<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Destinazione"]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement key="" mode="Opaque" x="270" y="0" width="100" height="28" forecolor="#000000" backcolor="#EDEDED" uuid="4868aff0-8f4d-460e-81dc-09057db01372">
+							<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Sup. commerciale (mq)"]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement key="" mode="Opaque" x="370" y="0" width="155" height="28" forecolor="#000000" backcolor="#EDEDED" uuid="8405d396-234a-4f1a-9352-855eec33d077">
+							<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Valore di Mercato (€)"]]></textFieldExpression>
+					</textField>
+				</frame>
+				<subreport>
+					<reportElement x="0" y="42" width="525" height="25" isRemoveLineWhenBlank="true" uuid="04637147-751c-4c9d-b810-7c62a09b58ea">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<printWhenExpression><![CDATA[$F{headerAndFooterCerved} == false]]></printWhenExpression>
+					</reportElement>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{consistenzeDaSvincolareConValori})]]></dataSourceExpression>
+					<subreportExpression><![CDATA["dettaglioConsistenzeDaSvincolareValoriAvalon.jasper"]]></subreportExpression>
+				</subreport>
+				<frame>
+					<reportElement x="0" y="14" width="525" height="28" isRemoveLineWhenBlank="true" uuid="3520f54e-fd81-4b90-b76f-1c47d1032236">
+						<printWhenExpression><![CDATA[$F{headerAndFooterCerved} == true && $F{consistenzeValoriFull} == true]]></printWhenExpression>
+					</reportElement>
+					<textField>
+						<reportElement key="" mode="Opaque" x="0" y="0" width="26" height="28" forecolor="#000000" backcolor="#EDEDED" uuid="381d4018-e2a0-47c6-a239-30d1655b55e6">
+							<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="Arial" size="7" isBold="true" isItalic="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Lotto"]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement key="" mode="Opaque" x="26" y="0" width="104" height="28" forecolor="#000000" backcolor="#EDEDED" uuid="3ce1b06d-0278-4101-9805-ab2db2018bd5">
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="Arial" size="7" isBold="true" isItalic="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Identificativi catastali"]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement key="" mode="Opaque" x="130" y="0" width="80" height="28" forecolor="#000000" backcolor="#EDEDED" uuid="4f3ca7d6-80c1-43cc-98fc-aa2888cff72d">
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="Arial" size="7" isBold="true" isItalic="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Destinazione"]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement key="" mode="Opaque" x="210" y="0" width="50" height="28" forecolor="#000000" backcolor="#EDEDED" uuid="73b733b5-9bbe-4b6e-a038-44e6a96bfed8">
+							<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Top">
+							<font fontName="Arial" size="7" isBold="true" isItalic="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Sup. commerciale (mq)"]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement key="" mode="Opaque" x="260" y="0" width="68" height="28" forecolor="#000000" backcolor="#EDEDED" uuid="8ce5352a-c620-4239-a784-7d5edcee5653">
+							<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+							<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="Arial" size="7" isBold="true" isItalic="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Valore di Mercato (€)"]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement key="" mode="Opaque" x="328" y="0" width="70" height="28" forecolor="#000000" backcolor="#EDEDED" uuid="323596df-184b-47a2-96b8-ffe6d00fa2a0">
+							<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="Arial" size="7" isBold="true" isItalic="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Valore di Credito Ipotecario (€)"]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement key="" mode="Opaque" x="398" y="0" width="62" height="28" forecolor="#000000" backcolor="#EDEDED" uuid="83c836df-80dd-4da9-b40b-c822f78ab511">
+							<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="Arial" size="7" isBold="true" isItalic="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Valore Assicurabile (€)"]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement key="" mode="Opaque" x="460" y="0" width="65" height="28" forecolor="#000000" backcolor="#EDEDED" uuid="82c9f45e-1707-4f42-84f3-cfca9b192616">
+							<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+						</reportElement>
+						<box topPadding="2" leftPadding="0" bottomPadding="0" rightPadding="0">
+							<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="Arial" size="7" isBold="true" isItalic="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Valore di vendita forzata (€)"]]></textFieldExpression>
+					</textField>
+				</frame>
+				<subreport>
+					<reportElement x="0" y="42" width="525" height="25" isRemoveLineWhenBlank="true" uuid="97a623f0-a61b-4e4a-954d-d0be60b43dc5">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<printWhenExpression><![CDATA[$F{headerAndFooterCerved} == true && $F{consistenzeValoriFull} == true]]></printWhenExpression>
+					</reportElement>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{consistenzeDaSvincolareConValori})]]></dataSourceExpression>
+					<subreportExpression><![CDATA["dettaglioConsistenzeDaSvnicolareValoriFull.jasper"]]></subreportExpression>
+				</subreport>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="74" width="525" height="67" isRemoveLineWhenBlank="true" uuid="3424aecf-70c8-4bfa-950c-4807762027c2">
+					<printWhenExpression><![CDATA[$F{presenzaConsistenzeRimasteInGaranziaConValori} == true]]></printWhenExpression>
+				</reportElement>
+				<textField>
+					<reportElement mode="Opaque" x="0" y="0" width="525" height="14" forecolor="#FFFFFF" backcolor="#879C3F" uuid="a357de01-793b-4aac-aa16-7791e20d28c7">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+					</reportElement>
+					<box leftPadding="5">
+						<topPen lineWidth="1.0" lineColor="#C9CDD3"/>
+						<leftPen lineWidth="1.0" lineColor="#C9CDD3"/>
+						<bottomPen lineWidth="1.0" lineColor="#C9CDD3"/>
+						<rightPen lineWidth="1.0" lineColor="#C9CDD3"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Consistenze e Valori immobili rimasti in garanzia"]]></textFieldExpression>
+				</textField>
+				<frame>
+					<reportElement x="0" y="14" width="525" height="28" isRemoveLineWhenBlank="true" uuid="f0ab29d0-dc39-46c4-a1d8-69b713302dd9">
+						<printWhenExpression><![CDATA[$F{headerAndFooterCerved} == true && $F{consistenzeValoriFull} == false]]></printWhenExpression>
+					</reportElement>
+					<textField>
+						<reportElement key="" mode="Opaque" x="0" y="0" width="26" height="28" forecolor="#000000" backcolor="#EDEDED" uuid="7bafc69a-e672-4f18-b9f0-a3855f24a024">
+							<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Lotto"]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement key="" mode="Opaque" x="26" y="0" width="120" height="28" forecolor="#000000" backcolor="#EDEDED" uuid="447816de-3bb0-460a-8838-bd833cdc2eea">
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Identificativi catastali"]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement key="" mode="Opaque" x="146" y="0" width="124" height="28" forecolor="#000000" backcolor="#EDEDED" uuid="dc402ef8-1d63-496f-a4d5-1021b5cb0e1a">
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Destinazione"]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement key="" mode="Opaque" x="270" y="0" width="50" height="28" forecolor="#000000" backcolor="#EDEDED" uuid="64740732-e520-4d79-bdd3-50a05ee325fb">
+							<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Top">
+							<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Sup. commerciale (mq)"]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement key="" mode="Opaque" x="320" y="0" width="67" height="28" forecolor="#000000" backcolor="#EDEDED" uuid="260f73e5-cfcf-4d3c-b6ba-5bdf09a1d266">
+							<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Valore di Mercato (€)"]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement key="" mode="Opaque" x="387" y="0" width="70" height="28" forecolor="#000000" backcolor="#EDEDED" uuid="601f7c14-2262-4f1e-a382-bcc46acf6c2d">
+							<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Valore di Credito Ipotecario (€)"]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement key="" mode="Opaque" x="457" y="0" width="68" height="28" forecolor="#000000" backcolor="#EDEDED" uuid="e5af5baf-704e-4a64-bf09-afb5e2035371">
+							<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Valore Assicurabile (€)"]]></textFieldExpression>
+					</textField>
+				</frame>
+				<subreport>
+					<reportElement x="0" y="42" width="525" height="25" isRemoveLineWhenBlank="true" uuid="a97a3535-8ffe-4c75-bcdc-aef62a1c6853">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<printWhenExpression><![CDATA[$F{headerAndFooterCerved} == true && $F{consistenzeValoriFull} == false]]></printWhenExpression>
+					</reportElement>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{consistenzeRimasteInGaranziaConValori})]]></dataSourceExpression>
+					<subreportExpression><![CDATA["dettaglioConsistenzeValoriV2.jasper"]]></subreportExpression>
+				</subreport>
+				<frame>
+					<reportElement x="0" y="14" width="525" height="28" isRemoveLineWhenBlank="true" uuid="98ea94f5-8d60-433c-994c-e6ec0385e0ca">
+						<printWhenExpression><![CDATA[$F{headerAndFooterCerved} == false]]></printWhenExpression>
+					</reportElement>
+					<textField>
+						<reportElement key="" mode="Opaque" x="0" y="0" width="26" height="28" forecolor="#000000" backcolor="#EDEDED" uuid="f493a776-2ae7-4334-a782-583b639265ee">
+							<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Lotto"]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement key="" mode="Opaque" x="26" y="0" width="120" height="28" forecolor="#000000" backcolor="#EDEDED" uuid="05fe97f5-257e-4fba-9093-40e28a495542">
+							<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Identificativi catastali"]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement key="" mode="Opaque" x="146" y="0" width="124" height="28" forecolor="#000000" backcolor="#EDEDED" uuid="b72953d7-1f9f-467e-9ada-46310d45d1dd">
+							<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Destinazione"]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement key="" mode="Opaque" x="270" y="0" width="100" height="28" forecolor="#000000" backcolor="#EDEDED" uuid="f1ede34d-e14d-4884-b842-33378ced693d">
+							<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Sup. commerciale (mq)"]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement key="" mode="Opaque" x="370" y="0" width="155" height="28" forecolor="#000000" backcolor="#EDEDED" uuid="ef0c5a25-2995-4e21-bfdc-34de1f69ca19">
+							<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Valore di Mercato (€)"]]></textFieldExpression>
+					</textField>
+				</frame>
+				<subreport>
+					<reportElement x="0" y="42" width="525" height="25" isRemoveLineWhenBlank="true" uuid="f96d5edf-260a-46e3-91c0-305be7a95eaf">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<printWhenExpression><![CDATA[$F{headerAndFooterCerved} == false]]></printWhenExpression>
+					</reportElement>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{consistenzeRimasteInGaranziaConValori})]]></dataSourceExpression>
+					<subreportExpression><![CDATA["dettaglioConsistenzeDaSvincolareValoriAvalon.jasper"]]></subreportExpression>
+				</subreport>
+				<frame>
+					<reportElement x="0" y="14" width="525" height="28" isRemoveLineWhenBlank="true" uuid="abb47eb8-aa94-4654-936b-7a4d3ea61cb9">
+						<printWhenExpression><![CDATA[$F{headerAndFooterCerved} == true && $F{consistenzeValoriFull} == true]]></printWhenExpression>
+					</reportElement>
+					<textField>
+						<reportElement key="" mode="Opaque" x="0" y="0" width="26" height="28" forecolor="#000000" backcolor="#EDEDED" uuid="67613abf-f430-4a34-b7af-6dad8886289a">
+							<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="Arial" size="7" isBold="true" isItalic="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Lotto"]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement key="" mode="Opaque" x="26" y="0" width="104" height="28" forecolor="#000000" backcolor="#EDEDED" uuid="71d3d506-5595-4a2f-bea0-2453cc0a2fc3">
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="Arial" size="7" isBold="true" isItalic="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Identificativi catastali"]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement key="" mode="Opaque" x="130" y="0" width="80" height="28" forecolor="#000000" backcolor="#EDEDED" uuid="f7260007-55c4-4548-a6b2-dd85ddd8cc97">
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="Arial" size="7" isBold="true" isItalic="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Destinazione"]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement key="" mode="Opaque" x="210" y="0" width="50" height="28" forecolor="#000000" backcolor="#EDEDED" uuid="7045079f-79cd-4ad8-8e30-6545b10d25a3">
+							<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Top">
+							<font fontName="Arial" size="7" isBold="true" isItalic="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Sup. commerciale (mq)"]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement key="" mode="Opaque" x="260" y="0" width="68" height="28" forecolor="#000000" backcolor="#EDEDED" uuid="2b4387a4-cc40-439a-8f90-757db3c5d9f8">
+							<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+							<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="Arial" size="7" isBold="true" isItalic="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Valore di Mercato (€)"]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement key="" mode="Opaque" x="328" y="0" width="70" height="28" forecolor="#000000" backcolor="#EDEDED" uuid="b09c2219-a378-49f7-96a6-074107c68b86">
+							<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="Arial" size="7" isBold="true" isItalic="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Valore di Credito Ipotecario (€)"]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement key="" mode="Opaque" x="398" y="0" width="62" height="28" forecolor="#000000" backcolor="#EDEDED" uuid="4b7a4991-7d56-47c0-81e5-672c0afab94d">
+							<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="Arial" size="7" isBold="true" isItalic="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Valore Assicurabile (€)"]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement key="" mode="Opaque" x="460" y="0" width="65" height="28" forecolor="#000000" backcolor="#EDEDED" uuid="b71ba5f0-e042-48a3-b5cf-34812b0f2c1b">
+							<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+						</reportElement>
+						<box topPadding="2" leftPadding="0" bottomPadding="0" rightPadding="0">
+							<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+							<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="Arial" size="7" isBold="true" isItalic="false"/>
+							<paragraph lineSpacing="Single"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Valore di vendita forzata (€)"]]></textFieldExpression>
+					</textField>
+				</frame>
+				<subreport>
+					<reportElement x="0" y="42" width="525" height="25" isRemoveLineWhenBlank="true" uuid="d8da9407-adb1-4477-8ed1-e7fa0d6f1ca1">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<printWhenExpression><![CDATA[$F{headerAndFooterCerved} == true && $F{consistenzeValoriFull} == true]]></printWhenExpression>
+					</reportElement>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{consistenzeRimasteInGaranziaConValori})]]></dataSourceExpression>
+					<subreportExpression><![CDATA["dettaglioConsistenzeDaSvnicolareValoriFull.jasper"]]></subreportExpression>
+				</subreport>
+			</frame>
+		</band>
+	</detail>
+</jasperReport>

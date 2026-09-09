@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.0.final using JasperReports Library version 6.3.0  -->
+<!-- 2021-04-12T13:42:26 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="CervedElementiComparazione" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="4e841fd9-2393-43fe-beaa-74213041040c">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<subDataset name="omiDataset" uuid="1d9c428f-79b3-4bf1-ac81-c864345e1537">
+		<field name="valoriOMIs" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.cerved.data.CervedPdfValoriOMI">
+			<fieldDescription><![CDATA[_THIS]]></fieldDescription>
+		</field>
+	</subDataset>
+	<parameter name="data" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.cerved.data.CervedPdfMainCollection"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="47" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<textField>
+				<reportElement key="" positionType="Float" mode="Opaque" x="0" y="17" width="160" height="15" forecolor="#000000" backcolor="#C9CDD3" uuid="02f06f86-8d6d-41a2-b238-ef48fb994be0">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box leftPadding="2">
+					<pen lineWidth="0.5" lineColor="#ACAFB5"/>
+					<topPen lineWidth="1.0" lineColor="#ACAFB5"/>
+					<leftPen lineWidth="1.0" lineColor="#ACAFB5"/>
+					<bottomPen lineWidth="1.0" lineColor="#ACAFB5"/>
+					<rightPen lineWidth="1.0" lineColor="#ACAFB5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial_BNL" size="8" isItalic="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Categoria: "+$P{data}.getCategoriaValoriNomisma()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" mode="Opaque" x="0" y="3" width="525" height="14" forecolor="#FFFFFF" backcolor="#879C3F" uuid="ad20afb8-e852-4137-a949-42c382e26ab1">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<box leftPadding="1" rightPadding="1">
+					<topPen lineWidth="1.0" lineColor="#C9CDD3"/>
+					<leftPen lineWidth="0.0" lineColor="#C9CDD3"/>
+					<bottomPen lineWidth="1.0" lineColor="#C9CDD3"/>
+					<rightPen lineWidth="0.0" lineColor="#C9CDD3"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial_BNL" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Valori NOMISMA"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="" positionType="Float" mode="Opaque" x="160" y="17" width="365" height="15" forecolor="#000000" backcolor="#C9CDD3" uuid="76554a98-d687-444e-9745-0af8db867451">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box leftPadding="2">
+					<pen lineWidth="0.5" lineColor="#ACAFB5"/>
+					<topPen lineWidth="1.0" lineColor="#ACAFB5"/>
+					<leftPen lineWidth="1.0" lineColor="#ACAFB5"/>
+					<bottomPen lineWidth="1.0" lineColor="#ACAFB5"/>
+					<rightPen lineWidth="1.0" lineColor="#ACAFB5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial_BNL" size="8" isItalic="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Comune/Zona/Microzona/Codice/Stato:" + $P{data}.getComuneZonaMicrozonaCodiceStatoValoriNomisma()]]></textFieldExpression>
+			</textField>
+			<frame>
+				<reportElement positionType="Float" x="0" y="32" width="525" height="15" uuid="97a48eb7-f3cb-4b77-896d-c3835368c791"/>
+				<textField isStretchWithOverflow="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="100" y="0" width="125" height="15" uuid="a9c5080d-7eb9-4d36-99fc-f34650607157">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<box leftPadding="2">
+						<topPen lineWidth="1.0" lineColor="#C9CDD3"/>
+						<leftPen lineWidth="1.0" lineColor="#C9CDD3"/>
+						<bottomPen lineWidth="1.0" lineColor="#C9CDD3"/>
+						<rightPen lineWidth="1.0" lineColor="#C9CDD3"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial_BNL" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Valore minimo: " + $P{data}.getValoreMinimoNomisma()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="225" y="0" width="125" height="15" uuid="4f2c4ad3-4ae5-45d6-ba6c-56f42791f714">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="2">
+						<topPen lineWidth="1.0" lineColor="#C9CDD3"/>
+						<leftPen lineWidth="1.0" lineColor="#C9CDD3"/>
+						<bottomPen lineWidth="1.0" lineColor="#C9CDD3"/>
+						<rightPen lineWidth="1.0" lineColor="#C9CDD3"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial_BNL" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Valore medio: " + $P{data}.getValoreMedioNomisma()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="350" y="0" width="175" height="15" uuid="6a0c222e-0770-4d7e-b30f-d2eff80bef9f">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<box leftPadding="2">
+						<topPen lineWidth="1.0" lineColor="#C9CDD3"/>
+						<leftPen lineWidth="1.0" lineColor="#C9CDD3"/>
+						<bottomPen lineWidth="1.0" lineColor="#C9CDD3"/>
+						<rightPen lineWidth="1.0" lineColor="#C9CDD3"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial_BNL" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Valore massimo: " + $P{data}.getValoreMassimoNomisma()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="100" height="15" uuid="b90b5b05-832f-4cf3-ad7a-bff7f5285556">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="2">
+						<topPen lineWidth="1.0" lineColor="#C9CDD3"/>
+						<leftPen lineWidth="1.0" lineColor="#C9CDD3"/>
+						<bottomPen lineWidth="1.0" lineColor="#C9CDD3"/>
+						<rightPen lineWidth="1.0" lineColor="#C9CDD3"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial_BNL" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Tipologia: " + $P{data}.getTipologiaValoriNomisma()]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+</jasperReport>

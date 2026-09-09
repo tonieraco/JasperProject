@@ -1,0 +1,973 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 7.0.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2026-07-27T12:59:10 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="BancoPopolare" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8066f63a-371e-4f7a-aa01-f4ee31a91e2b">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<parameter name="data" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.bancobpm.data.BancoBPMFungibilitaData"/>
+	<detail>
+		<band height="422">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement key="" mode="Opaque" x="0" y="0" width="554" height="20" forecolor="#000000" backcolor="#C5D9F1" uuid="0769d72d-a1ad-4073-a361-ddf820c6012d">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box leftPadding="4" bottomPadding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+					<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA["SCORE FUNGIBILITA'"]]></textFieldExpression>
+			</textField>
+			<frame>
+				<reportElement x="240" y="38" width="220" height="8" uuid="b338d058-1a09-449e-8a1e-99b3d56793a2"/>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement key="" positionType="Float" mode="Opaque" x="165" y="0" width="55" height="8" forecolor="#000000" backcolor="#FFFFFF" uuid="407bd4e2-550f-466b-9832-388ff27841f8">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="4" bottomPadding="2">
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.0"/>
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.0"/>
+						<rightPen lineWidth="0.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="Arial" size="7" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+					</textElement>
+					<textFieldExpression><![CDATA["BUONO"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement key="" positionType="Float" mode="Opaque" x="110" y="0" width="55" height="8" forecolor="#000000" backcolor="#FFFFFF" uuid="d614ad06-79c9-46f2-8f29-9cf36651ae46">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="4" bottomPadding="2">
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.0"/>
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.0"/>
+						<rightPen lineWidth="0.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="Arial" size="7" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+					</textElement>
+					<textFieldExpression><![CDATA["SUFFICIENTE"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement key="" positionType="Float" mode="Opaque" x="55" y="0" width="55" height="8" forecolor="#000000" backcolor="#FFFFFF" uuid="a7af438c-95fa-4a9b-b198-21646981ffbc">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="4" bottomPadding="2">
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.0"/>
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.0"/>
+						<rightPen lineWidth="0.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="Arial" size="7" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+					</textElement>
+					<textFieldExpression><![CDATA["MEDIOCRE"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement key="" positionType="Float" mode="Opaque" x="0" y="0" width="55" height="8" forecolor="#000000" backcolor="#FFFFFF" uuid="db7c7774-0060-4929-bb51-846756952b52">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="4" bottomPadding="2">
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.0"/>
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.0"/>
+						<rightPen lineWidth="0.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="Arial" size="7" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+					</textElement>
+					<textFieldExpression><![CDATA["SCARSO"]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement x="0" y="49" width="482" height="22" uuid="69d2883c-9b9e-469f-9bc4-506279637221"/>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement key="" positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="0" y="0" width="240" height="22" forecolor="#000000" backcolor="#DCE6F1" uuid="ee227312-5a0a-4c2c-b6f5-71177798bf57">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<box leftPadding="4" bottomPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Justified" verticalAlignment="Middle" markup="styled">
+						<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Location"]]></textFieldExpression>
+				</textField>
+				<frame>
+					<reportElement x="240" y="0" width="242" height="22" uuid="f4218e4f-da8f-4b85-a7e2-d35e68e8dad4"/>
+					<image hAlign="Center" vAlign="Middle">
+						<reportElement x="55" y="0" width="55" height="22" uuid="fc9f2e7f-ab50-43ed-9778-9a60729c4c93">
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							<printWhenExpression><![CDATA["1".equals($P{data}.getLocationMediocre()) == true]]></printWhenExpression>
+						</reportElement>
+						<box>
+							<topPen lineWidth="0.5"/>
+							<leftPen lineWidth="0.5"/>
+							<bottomPen lineWidth="0.5"/>
+							<rightPen lineWidth="0.5"/>
+						</box>
+						<imageExpression><![CDATA["./checked.png"]]></imageExpression>
+					</image>
+					<image hAlign="Center" vAlign="Middle">
+						<reportElement x="110" y="0" width="55" height="22" uuid="d2ad9c49-391f-4680-b4cd-deaa2ce3df1d">
+							<printWhenExpression><![CDATA["1".equals($P{data}.getLocationSufficiente()) == true]]></printWhenExpression>
+						</reportElement>
+						<box>
+							<topPen lineWidth="0.5"/>
+							<leftPen lineWidth="0.5"/>
+							<bottomPen lineWidth="0.5"/>
+							<rightPen lineWidth="0.5"/>
+						</box>
+						<imageExpression><![CDATA["./checked.png"]]></imageExpression>
+					</image>
+					<image hAlign="Center" vAlign="Middle">
+						<reportElement x="0" y="0" width="55" height="22" uuid="c9ee383e-4000-41b3-8733-81642dede4ea">
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							<printWhenExpression><![CDATA["1".equals($P{data}.getLocationScarso()) == true]]></printWhenExpression>
+						</reportElement>
+						<box>
+							<topPen lineWidth="0.5"/>
+							<leftPen lineWidth="0.5"/>
+							<bottomPen lineWidth="0.5"/>
+							<rightPen lineWidth="0.5"/>
+						</box>
+						<imageExpression><![CDATA["./checked.png"]]></imageExpression>
+					</image>
+					<image hAlign="Center" vAlign="Middle">
+						<reportElement x="165" y="0" width="55" height="22" uuid="2697f002-cb0f-42ac-9b6c-0113551c121d">
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							<printWhenExpression><![CDATA["0".equals($P{data}.getLocationBuono()) == true]]></printWhenExpression>
+						</reportElement>
+						<box>
+							<topPen lineWidth="0.5"/>
+							<leftPen lineWidth="0.5"/>
+							<bottomPen lineWidth="0.5"/>
+							<rightPen lineWidth="0.5"/>
+						</box>
+						<imageExpression><![CDATA["./unchecked.png"]]></imageExpression>
+					</image>
+					<image hAlign="Center" vAlign="Middle">
+						<reportElement x="165" y="0" width="55" height="22" uuid="eed0bd87-832b-4c96-84d9-6cd27ee596bf">
+							<printWhenExpression><![CDATA["1".equals($P{data}.getLocationBuono()) == true]]></printWhenExpression>
+						</reportElement>
+						<box>
+							<topPen lineWidth="0.5"/>
+							<leftPen lineWidth="0.5"/>
+							<bottomPen lineWidth="0.5"/>
+							<rightPen lineWidth="0.5"/>
+						</box>
+						<imageExpression><![CDATA["./checked.png"]]></imageExpression>
+					</image>
+					<image hAlign="Center" vAlign="Middle">
+						<reportElement x="110" y="0" width="55" height="22" uuid="429a08f7-95f3-4250-a408-79a86de56fec">
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							<printWhenExpression><![CDATA["0".equals($P{data}.getLocationSufficiente()) == true]]></printWhenExpression>
+						</reportElement>
+						<box>
+							<topPen lineWidth="0.5"/>
+							<leftPen lineWidth="0.5"/>
+							<bottomPen lineWidth="0.5"/>
+							<rightPen lineWidth="0.5"/>
+						</box>
+						<imageExpression><![CDATA["./unchecked.png"]]></imageExpression>
+					</image>
+					<image hAlign="Center" vAlign="Middle">
+						<reportElement x="55" y="0" width="55" height="22" uuid="bb4ae0f5-f0b7-48ac-9932-175f27548cd1">
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							<printWhenExpression><![CDATA["0".equals($P{data}.getLocationMediocre()) == true]]></printWhenExpression>
+						</reportElement>
+						<box>
+							<topPen lineWidth="0.5"/>
+							<leftPen lineWidth="0.5"/>
+							<bottomPen lineWidth="0.5"/>
+							<rightPen lineWidth="0.5"/>
+						</box>
+						<imageExpression><![CDATA["./unchecked.png"]]></imageExpression>
+					</image>
+					<image hAlign="Center" vAlign="Middle">
+						<reportElement x="0" y="0" width="55" height="22" uuid="5a6b29d0-a155-43db-a95c-2068a8aeb3a9">
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							<printWhenExpression><![CDATA["0".equals($P{data}.getLocationScarso()) == true]]></printWhenExpression>
+						</reportElement>
+						<box>
+							<topPen lineWidth="0.5"/>
+							<leftPen lineWidth="0.5"/>
+							<bottomPen lineWidth="0.5"/>
+							<rightPen lineWidth="0.5"/>
+						</box>
+						<imageExpression><![CDATA["./unchecked.png"]]></imageExpression>
+					</image>
+					<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+						<reportElement key="" positionType="Float" mode="Opaque" x="220" y="0" width="22" height="22" forecolor="#000000" backcolor="#FFFFFF" uuid="1020f483-36fc-4225-bce3-c21a51ca8cc5">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						</reportElement>
+						<box leftPadding="4" bottomPadding="2">
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+							<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+							<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{data}.getLocationScore()]]></textFieldExpression>
+					</textField>
+				</frame>
+			</frame>
+			<frame>
+				<reportElement x="0" y="71" width="482" height="88" uuid="6c10cd76-d7fa-4197-b955-214a34b388d0"/>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement key="" positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="0" y="0" width="100" height="88" forecolor="#000000" backcolor="#DCE6F1" uuid="17ea04d6-6c97-4469-a4b6-c0f0eb88c248">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<box leftPadding="4" bottomPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Justified" verticalAlignment="Middle" markup="styled">
+						<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Tipologia immobiliare"]]></textFieldExpression>
+				</textField>
+				<frame>
+					<reportElement x="100" y="0" width="382" height="88" uuid="5afcb801-34df-49e7-af33-d1b2f5a6a74f"/>
+					<frame>
+						<reportElement positionType="Float" x="0" y="0" width="382" height="22" uuid="72140930-b80b-4239-b7a3-4ccab1fb3be0"/>
+						<frame>
+							<reportElement x="0" y="0" width="382" height="22" uuid="8983bba8-f15e-49ff-9300-bf7505249c9b"/>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement key="" positionType="Float" mode="Opaque" x="0" y="0" width="140" height="22" forecolor="#000000" backcolor="#DCE6F1" uuid="94f09f05-e3e2-4e95-a572-4c35536619b1">
+									<property name="com.jaspersoft.studio.unit.height" value="px"/>
+								</reportElement>
+								<box leftPadding="4" bottomPadding="2">
+									<pen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Justified" verticalAlignment="Middle" markup="styled">
+									<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+									<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+								</textElement>
+								<textFieldExpression><![CDATA["Dimensioni"]]></textFieldExpression>
+							</textField>
+							<image hAlign="Center" vAlign="Middle">
+								<reportElement x="195" y="0" width="55" height="22" uuid="9ef6fb75-2d56-41c4-9395-891f124241bd">
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+									<printWhenExpression><![CDATA["1".equals($P{data}.getDimensioniMediocre()) == true]]></printWhenExpression>
+								</reportElement>
+								<box>
+									<topPen lineWidth="0.5"/>
+									<leftPen lineWidth="0.5"/>
+									<bottomPen lineWidth="0.5"/>
+									<rightPen lineWidth="0.5"/>
+								</box>
+								<imageExpression><![CDATA["./checked.png"]]></imageExpression>
+							</image>
+							<image hAlign="Center" vAlign="Middle">
+								<reportElement x="250" y="0" width="55" height="22" uuid="214b36df-b992-4fc7-ba7a-a2e344dbc866">
+									<printWhenExpression><![CDATA["1".equals($P{data}.getDimensioniSufficiente()) == true]]></printWhenExpression>
+								</reportElement>
+								<box>
+									<topPen lineWidth="0.5"/>
+									<leftPen lineWidth="0.5"/>
+									<bottomPen lineWidth="0.5"/>
+									<rightPen lineWidth="0.5"/>
+								</box>
+								<imageExpression><![CDATA["./checked.png"]]></imageExpression>
+							</image>
+							<image hAlign="Center" vAlign="Middle">
+								<reportElement x="140" y="0" width="55" height="22" uuid="72964418-cd63-480d-be01-eafe6e5d1274">
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+									<printWhenExpression><![CDATA["1".equals($P{data}.getDimensioniScarso()) == true]]></printWhenExpression>
+								</reportElement>
+								<box>
+									<topPen lineWidth="0.5"/>
+									<leftPen lineWidth="0.5"/>
+									<bottomPen lineWidth="0.5"/>
+									<rightPen lineWidth="0.5"/>
+								</box>
+								<imageExpression><![CDATA["./checked.png"]]></imageExpression>
+							</image>
+							<image hAlign="Center" vAlign="Middle">
+								<reportElement x="305" y="0" width="55" height="22" uuid="440f6d9b-78d6-4bc3-b732-a041bda429f9">
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+									<printWhenExpression><![CDATA["0".equals($P{data}.getDimensioniBuono()) == true]]></printWhenExpression>
+								</reportElement>
+								<box>
+									<topPen lineWidth="0.5"/>
+									<leftPen lineWidth="0.5"/>
+									<bottomPen lineWidth="0.5"/>
+									<rightPen lineWidth="0.5"/>
+								</box>
+								<imageExpression><![CDATA["./unchecked.png"]]></imageExpression>
+							</image>
+							<image hAlign="Center" vAlign="Middle">
+								<reportElement x="305" y="0" width="55" height="22" uuid="bd0bfca6-0977-4eb5-8cec-1868e15c01fd">
+									<printWhenExpression><![CDATA["1".equals($P{data}.getDimensioniBuono()) == true]]></printWhenExpression>
+								</reportElement>
+								<box>
+									<topPen lineWidth="0.5"/>
+									<leftPen lineWidth="0.5"/>
+									<bottomPen lineWidth="0.5"/>
+									<rightPen lineWidth="0.5"/>
+								</box>
+								<imageExpression><![CDATA["./checked.png"]]></imageExpression>
+							</image>
+							<image hAlign="Center" vAlign="Middle">
+								<reportElement x="250" y="0" width="55" height="22" uuid="27e2878e-c634-4c0a-b7ec-78ac160109b3">
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+									<printWhenExpression><![CDATA["0".equals($P{data}.getDimensioniSufficiente()) == true]]></printWhenExpression>
+								</reportElement>
+								<box>
+									<topPen lineWidth="0.5"/>
+									<leftPen lineWidth="0.5"/>
+									<bottomPen lineWidth="0.5"/>
+									<rightPen lineWidth="0.5"/>
+								</box>
+								<imageExpression><![CDATA["./unchecked.png"]]></imageExpression>
+							</image>
+							<image hAlign="Center" vAlign="Middle">
+								<reportElement x="195" y="0" width="55" height="22" uuid="702d4c4f-a23e-407a-b6fc-f9cbe3c25005">
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+									<printWhenExpression><![CDATA["0".equals($P{data}.getDimensioniMediocre()) == true]]></printWhenExpression>
+								</reportElement>
+								<box>
+									<topPen lineWidth="0.5"/>
+									<leftPen lineWidth="0.5"/>
+									<bottomPen lineWidth="0.5"/>
+									<rightPen lineWidth="0.5"/>
+								</box>
+								<imageExpression><![CDATA["./unchecked.png"]]></imageExpression>
+							</image>
+							<image hAlign="Center" vAlign="Middle">
+								<reportElement x="140" y="0" width="55" height="22" uuid="73cc107e-fd99-4e2b-a60f-ff47fd01f9db">
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+									<printWhenExpression><![CDATA["0".equals($P{data}.getDimensioniScarso()) == true]]></printWhenExpression>
+								</reportElement>
+								<box>
+									<topPen lineWidth="0.5"/>
+									<leftPen lineWidth="0.5"/>
+									<bottomPen lineWidth="0.5"/>
+									<rightPen lineWidth="0.5"/>
+								</box>
+								<imageExpression><![CDATA["./unchecked.png"]]></imageExpression>
+							</image>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement key="" positionType="Float" mode="Opaque" x="360" y="0" width="22" height="22" forecolor="#000000" backcolor="#FFFFFF" uuid="b1ec9a16-45ca-4344-9838-ec3448c48f2a">
+									<property name="com.jaspersoft.studio.unit.width" value="px"/>
+									<property name="com.jaspersoft.studio.unit.height" value="px"/>
+								</reportElement>
+								<box leftPadding="4" bottomPadding="2">
+									<pen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+									<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+									<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$P{data}.getDimensioniScore()]]></textFieldExpression>
+							</textField>
+						</frame>
+					</frame>
+					<frame>
+						<reportElement positionType="Float" x="0" y="22" width="382" height="22" uuid="89677862-2899-489a-8f56-0a546820eed2"/>
+						<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+							<reportElement key="" positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="0" y="0" width="140" height="22" forecolor="#000000" backcolor="#DCE6F1" uuid="49558b68-e3a9-4d03-972c-1a9be9be4a05">
+								<property name="com.jaspersoft.studio.unit.height" value="px"/>
+							</reportElement>
+							<box leftPadding="4" bottomPadding="2">
+								<pen lineWidth="0.5"/>
+							</box>
+							<textElement textAlignment="Justified" verticalAlignment="Middle" markup="styled">
+								<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+								<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+							</textElement>
+							<textFieldExpression><![CDATA["Livello rimodulazione spazi"]]></textFieldExpression>
+						</textField>
+						<image hAlign="Center" vAlign="Middle">
+							<reportElement x="195" y="0" width="55" height="22" uuid="9e5de00f-9eeb-47e1-b1b6-0c217c0f2881">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								<printWhenExpression><![CDATA["1".equals($P{data}.getRimodulazioneSpaziMediocre()) == true]]></printWhenExpression>
+							</reportElement>
+							<box>
+								<topPen lineWidth="0.5"/>
+								<leftPen lineWidth="0.5"/>
+								<bottomPen lineWidth="0.5"/>
+								<rightPen lineWidth="0.5"/>
+							</box>
+							<imageExpression><![CDATA["./checked.png"]]></imageExpression>
+						</image>
+						<image hAlign="Center" vAlign="Middle">
+							<reportElement x="250" y="0" width="55" height="22" uuid="75ad0cc9-f88e-484c-8958-7f039596a3a7">
+								<printWhenExpression><![CDATA["1".equals($P{data}.getRimodulazioneSpaziSufficiente()) == true]]></printWhenExpression>
+							</reportElement>
+							<box>
+								<topPen lineWidth="0.5"/>
+								<leftPen lineWidth="0.5"/>
+								<bottomPen lineWidth="0.5"/>
+								<rightPen lineWidth="0.5"/>
+							</box>
+							<imageExpression><![CDATA["./checked.png"]]></imageExpression>
+						</image>
+						<image hAlign="Center" vAlign="Middle">
+							<reportElement x="140" y="0" width="55" height="22" uuid="d84f4c8c-320d-4b00-9ed2-bb2cdd6cb279">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								<printWhenExpression><![CDATA["1".equals($P{data}.getRimodulazioneSpaziScarso()) == true]]></printWhenExpression>
+							</reportElement>
+							<box>
+								<topPen lineWidth="0.5"/>
+								<leftPen lineWidth="0.5"/>
+								<bottomPen lineWidth="0.5"/>
+								<rightPen lineWidth="0.5"/>
+							</box>
+							<imageExpression><![CDATA["./checked.png"]]></imageExpression>
+						</image>
+						<image hAlign="Center" vAlign="Middle">
+							<reportElement x="305" y="0" width="55" height="22" uuid="71f4c708-ff94-453e-aa9f-a03bdd9cd582">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								<printWhenExpression><![CDATA["0".equals($P{data}.getRimodulazioneSpaziBuono()) == true]]></printWhenExpression>
+							</reportElement>
+							<box>
+								<topPen lineWidth="0.5"/>
+								<leftPen lineWidth="0.5"/>
+								<bottomPen lineWidth="0.5"/>
+								<rightPen lineWidth="0.5"/>
+							</box>
+							<imageExpression><![CDATA["./unchecked.png"]]></imageExpression>
+						</image>
+						<image hAlign="Center" vAlign="Middle">
+							<reportElement x="305" y="0" width="55" height="22" uuid="87208002-1483-4e1d-80ab-10b2d4388b60">
+								<printWhenExpression><![CDATA["1".equals($P{data}.getRimodulazioneSpaziBuono()) == true]]></printWhenExpression>
+							</reportElement>
+							<box>
+								<topPen lineWidth="0.5"/>
+								<leftPen lineWidth="0.5"/>
+								<bottomPen lineWidth="0.5"/>
+								<rightPen lineWidth="0.5"/>
+							</box>
+							<imageExpression><![CDATA["./checked.png"]]></imageExpression>
+						</image>
+						<image hAlign="Center" vAlign="Middle">
+							<reportElement x="250" y="0" width="55" height="22" uuid="f464ae61-518a-4dda-84d1-090d7d47006d">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								<printWhenExpression><![CDATA["0".equals($P{data}.getRimodulazioneSpaziSufficiente()) == true]]></printWhenExpression>
+							</reportElement>
+							<box>
+								<topPen lineWidth="0.5"/>
+								<leftPen lineWidth="0.5"/>
+								<bottomPen lineWidth="0.5"/>
+								<rightPen lineWidth="0.5"/>
+							</box>
+							<imageExpression><![CDATA["./unchecked.png"]]></imageExpression>
+						</image>
+						<image hAlign="Center" vAlign="Middle">
+							<reportElement x="195" y="0" width="55" height="22" uuid="dd53ec69-8da1-43da-a444-60eef007bbff">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								<printWhenExpression><![CDATA["0".equals($P{data}.getRimodulazioneSpaziMediocre()) == true]]></printWhenExpression>
+							</reportElement>
+							<box>
+								<topPen lineWidth="0.5"/>
+								<leftPen lineWidth="0.5"/>
+								<bottomPen lineWidth="0.5"/>
+								<rightPen lineWidth="0.5"/>
+							</box>
+							<imageExpression><![CDATA["./unchecked.png"]]></imageExpression>
+						</image>
+						<image hAlign="Center" vAlign="Middle">
+							<reportElement x="140" y="0" width="55" height="22" uuid="fc80648f-1a7b-42ba-9837-958efdc7edcd">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								<printWhenExpression><![CDATA["0".equals($P{data}.getRimodulazioneSpaziScarso()) == true]]></printWhenExpression>
+							</reportElement>
+							<box>
+								<topPen lineWidth="0.5"/>
+								<leftPen lineWidth="0.5"/>
+								<bottomPen lineWidth="0.5"/>
+								<rightPen lineWidth="0.5"/>
+							</box>
+							<imageExpression><![CDATA["./unchecked.png"]]></imageExpression>
+						</image>
+						<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+							<reportElement key="" positionType="Float" mode="Opaque" x="360" y="0" width="22" height="22" forecolor="#000000" backcolor="#FFFFFF" uuid="adf1f948-54b1-4c2a-a43b-f1e7f2a22758">
+								<property name="com.jaspersoft.studio.unit.width" value="px"/>
+								<property name="com.jaspersoft.studio.unit.height" value="px"/>
+							</reportElement>
+							<box leftPadding="4" bottomPadding="2">
+								<pen lineWidth="0.5"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+								<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+								<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$P{data}.getRimodulazioneSpaziScore()]]></textFieldExpression>
+						</textField>
+					</frame>
+					<frame>
+						<reportElement positionType="Float" x="0" y="44" width="382" height="22" uuid="ba5c8daa-c173-49d1-ab84-5c8e59837d79"/>
+						<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+							<reportElement key="" positionType="Float" mode="Opaque" x="0" y="0" width="140" height="22" forecolor="#000000" backcolor="#DCE6F1" uuid="2a1142ae-d083-4990-a8d4-e398fbdc05e9">
+								<property name="com.jaspersoft.studio.unit.height" value="px"/>
+							</reportElement>
+							<box leftPadding="4" bottomPadding="2">
+								<pen lineWidth="0.5"/>
+							</box>
+							<textElement textAlignment="Justified" verticalAlignment="Middle" markup="styled">
+								<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+								<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+							</textElement>
+							<textFieldExpression><![CDATA["Condizioni manutentive"]]></textFieldExpression>
+						</textField>
+						<image hAlign="Center" vAlign="Middle">
+							<reportElement x="195" y="0" width="55" height="22" uuid="bbdd148d-f655-40e4-b7fc-ee71a34fd0d8">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								<printWhenExpression><![CDATA["1".equals($P{data}.getCondizioniManutentiveMediocre()) == true]]></printWhenExpression>
+							</reportElement>
+							<box>
+								<topPen lineWidth="0.5"/>
+								<leftPen lineWidth="0.5"/>
+								<bottomPen lineWidth="0.5"/>
+								<rightPen lineWidth="0.5"/>
+							</box>
+							<imageExpression><![CDATA["./checked.png"]]></imageExpression>
+						</image>
+						<image hAlign="Center" vAlign="Middle">
+							<reportElement x="250" y="0" width="55" height="22" uuid="301c6c0a-4b9e-4f33-a0c0-668e52ed8139">
+								<printWhenExpression><![CDATA["1".equals($P{data}.getCondizioniManutentiveSufficiente()) == true]]></printWhenExpression>
+							</reportElement>
+							<box>
+								<topPen lineWidth="0.5"/>
+								<leftPen lineWidth="0.5"/>
+								<bottomPen lineWidth="0.5"/>
+								<rightPen lineWidth="0.5"/>
+							</box>
+							<imageExpression><![CDATA["./checked.png"]]></imageExpression>
+						</image>
+						<image hAlign="Center" vAlign="Middle">
+							<reportElement x="140" y="0" width="55" height="22" uuid="d8fd793b-d983-4e2f-9b74-78c12f984da4">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								<printWhenExpression><![CDATA["1".equals($P{data}.getCondizioniManutentiveScarso()) == true]]></printWhenExpression>
+							</reportElement>
+							<box>
+								<topPen lineWidth="0.5"/>
+								<leftPen lineWidth="0.5"/>
+								<bottomPen lineWidth="0.5"/>
+								<rightPen lineWidth="0.5"/>
+							</box>
+							<imageExpression><![CDATA["./checked.png"]]></imageExpression>
+						</image>
+						<image hAlign="Center" vAlign="Middle">
+							<reportElement x="305" y="0" width="55" height="22" uuid="7745db38-3a0d-488e-b160-d4e0aaf89149">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								<printWhenExpression><![CDATA["0".equals($P{data}.getCondizioniManutentiveBuono()) == true]]></printWhenExpression>
+							</reportElement>
+							<box>
+								<topPen lineWidth="0.5"/>
+								<leftPen lineWidth="0.5"/>
+								<bottomPen lineWidth="0.5"/>
+								<rightPen lineWidth="0.5"/>
+							</box>
+							<imageExpression><![CDATA["./unchecked.png"]]></imageExpression>
+						</image>
+						<image hAlign="Center" vAlign="Middle">
+							<reportElement x="305" y="0" width="55" height="22" uuid="aa97cd53-20c3-427e-94af-c03e2b6336d8">
+								<printWhenExpression><![CDATA["1".equals($P{data}.getCondizioniManutentiveBuono()) == true]]></printWhenExpression>
+							</reportElement>
+							<box>
+								<topPen lineWidth="0.5"/>
+								<leftPen lineWidth="0.5"/>
+								<bottomPen lineWidth="0.5"/>
+								<rightPen lineWidth="0.5"/>
+							</box>
+							<imageExpression><![CDATA["./checked.png"]]></imageExpression>
+						</image>
+						<image hAlign="Center" vAlign="Middle">
+							<reportElement x="250" y="0" width="55" height="22" uuid="e71222e0-7aeb-4317-a970-819626acd506">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								<printWhenExpression><![CDATA["0".equals($P{data}.getCondizioniManutentiveSufficiente()) == true]]></printWhenExpression>
+							</reportElement>
+							<box>
+								<topPen lineWidth="0.5"/>
+								<leftPen lineWidth="0.5"/>
+								<bottomPen lineWidth="0.5"/>
+								<rightPen lineWidth="0.5"/>
+							</box>
+							<imageExpression><![CDATA["./unchecked.png"]]></imageExpression>
+						</image>
+						<image hAlign="Center" vAlign="Middle">
+							<reportElement x="195" y="0" width="55" height="22" uuid="e1d8ff01-088d-4427-ae26-45b27795903e">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								<printWhenExpression><![CDATA["0".equals($P{data}.getCondizioniManutentiveMediocre()) == true]]></printWhenExpression>
+							</reportElement>
+							<box>
+								<topPen lineWidth="0.5"/>
+								<leftPen lineWidth="0.5"/>
+								<bottomPen lineWidth="0.5"/>
+								<rightPen lineWidth="0.5"/>
+							</box>
+							<imageExpression><![CDATA["./unchecked.png"]]></imageExpression>
+						</image>
+						<image hAlign="Center" vAlign="Middle">
+							<reportElement x="140" y="0" width="55" height="22" isPrintInFirstWholeBand="true" uuid="3c23dfeb-a4e8-4d66-8dc3-bdc42cef59cf">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								<printWhenExpression><![CDATA["0".equals($P{data}.getCondizioniManutentiveScarso()) == true]]></printWhenExpression>
+							</reportElement>
+							<box>
+								<topPen lineWidth="0.5"/>
+								<leftPen lineWidth="0.5"/>
+								<bottomPen lineWidth="0.5"/>
+								<rightPen lineWidth="0.5"/>
+							</box>
+							<imageExpression><![CDATA["./unchecked.png"]]></imageExpression>
+						</image>
+						<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+							<reportElement key="" positionType="Float" mode="Opaque" x="360" y="0" width="22" height="22" forecolor="#000000" backcolor="#FFFFFF" uuid="ee03d6ef-0551-4b56-8be7-dc2a97b80891">
+								<property name="com.jaspersoft.studio.unit.width" value="px"/>
+								<property name="com.jaspersoft.studio.unit.height" value="px"/>
+							</reportElement>
+							<box leftPadding="4" bottomPadding="2">
+								<pen lineWidth="0.5"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+								<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+								<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$P{data}.getCondizioniManutentiveScore()]]></textFieldExpression>
+						</textField>
+					</frame>
+					<frame>
+						<reportElement positionType="Float" x="0" y="66" width="382" height="22" uuid="4e62ac90-3252-42fa-bce5-89911e3c6336"/>
+						<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+							<reportElement key="" positionType="Float" mode="Opaque" x="0" y="0" width="140" height="22" forecolor="#000000" backcolor="#DCE6F1" uuid="2ffbbc69-c874-43b0-b83c-61becc2d4d0c">
+								<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+							</reportElement>
+							<box leftPadding="4" bottomPadding="2">
+								<pen lineWidth="0.5"/>
+							</box>
+							<textElement textAlignment="Justified" verticalAlignment="Middle" markup="styled">
+								<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+								<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+							</textElement>
+							<textFieldExpression><![CDATA["Caratteristiche funzionali/tecnologiche"]]></textFieldExpression>
+						</textField>
+						<image hAlign="Center" vAlign="Middle">
+							<reportElement x="195" y="0" width="55" height="22" uuid="380b40d6-03ba-4655-b1d8-6f0f1836a4e1">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								<printWhenExpression><![CDATA["1".equals($P{data}.getCaratteristicheFunzionaliMediocre()) == true]]></printWhenExpression>
+							</reportElement>
+							<box>
+								<topPen lineWidth="0.5"/>
+								<leftPen lineWidth="0.5"/>
+								<bottomPen lineWidth="0.5"/>
+								<rightPen lineWidth="0.5"/>
+							</box>
+							<imageExpression><![CDATA["./checked.png"]]></imageExpression>
+						</image>
+						<image hAlign="Center" vAlign="Middle">
+							<reportElement x="250" y="0" width="55" height="22" uuid="b3e8f1c5-a221-4bd3-b735-c172b0fc24ae">
+								<printWhenExpression><![CDATA["1".equals($P{data}.getCaratteristicheFunzionaliSufficiente()) == true]]></printWhenExpression>
+							</reportElement>
+							<box>
+								<topPen lineWidth="0.5"/>
+								<leftPen lineWidth="0.5"/>
+								<bottomPen lineWidth="0.5"/>
+								<rightPen lineWidth="0.5"/>
+							</box>
+							<imageExpression><![CDATA["./checked.png"]]></imageExpression>
+						</image>
+						<image hAlign="Center" vAlign="Middle">
+							<reportElement x="140" y="0" width="55" height="22" uuid="53023ff6-b1dc-4227-bae9-17a64f0d0367">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								<printWhenExpression><![CDATA["1".equals($P{data}.getCaratteristicheFunzionaliScarso()) == true]]></printWhenExpression>
+							</reportElement>
+							<box>
+								<topPen lineWidth="0.5"/>
+								<leftPen lineWidth="0.5"/>
+								<bottomPen lineWidth="0.5"/>
+								<rightPen lineWidth="0.5"/>
+							</box>
+							<imageExpression><![CDATA["./checked.png"]]></imageExpression>
+						</image>
+						<image hAlign="Center" vAlign="Middle">
+							<reportElement x="305" y="0" width="55" height="22" uuid="54821548-fc4b-49bc-8d4c-12f39e789b89">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								<printWhenExpression><![CDATA["0".equals($P{data}.getCaratteristicheFunzionaliBuono()) == true]]></printWhenExpression>
+							</reportElement>
+							<box>
+								<topPen lineWidth="0.5"/>
+								<leftPen lineWidth="0.5"/>
+								<bottomPen lineWidth="0.5"/>
+								<rightPen lineWidth="0.5"/>
+							</box>
+							<imageExpression><![CDATA["./unchecked.png"]]></imageExpression>
+						</image>
+						<image hAlign="Center" vAlign="Middle">
+							<reportElement x="305" y="0" width="55" height="22" uuid="a1c73e20-b534-4a29-b8b8-9ef23b57c54f">
+								<printWhenExpression><![CDATA["1".equals($P{data}.getCaratteristicheFunzionaliBuono()) == true]]></printWhenExpression>
+							</reportElement>
+							<box>
+								<topPen lineWidth="0.5"/>
+								<leftPen lineWidth="0.5"/>
+								<bottomPen lineWidth="0.5"/>
+								<rightPen lineWidth="0.5"/>
+							</box>
+							<imageExpression><![CDATA["./checked.png"]]></imageExpression>
+						</image>
+						<image hAlign="Center" vAlign="Middle">
+							<reportElement x="250" y="0" width="55" height="22" uuid="023de7a0-389f-44b5-a29f-aeb03d45501e">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								<printWhenExpression><![CDATA["0".equals($P{data}.getCaratteristicheFunzionaliSufficiente()) == true]]></printWhenExpression>
+							</reportElement>
+							<box>
+								<topPen lineWidth="0.5"/>
+								<leftPen lineWidth="0.5"/>
+								<bottomPen lineWidth="0.5"/>
+								<rightPen lineWidth="0.5"/>
+							</box>
+							<imageExpression><![CDATA["./unchecked.png"]]></imageExpression>
+						</image>
+						<image hAlign="Center" vAlign="Middle">
+							<reportElement x="195" y="0" width="55" height="22" uuid="1c7c4281-d33f-414d-95d8-0228b9df9664">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								<printWhenExpression><![CDATA["0".equals($P{data}.getCaratteristicheFunzionaliMediocre()) == true]]></printWhenExpression>
+							</reportElement>
+							<box>
+								<topPen lineWidth="0.5"/>
+								<leftPen lineWidth="0.5"/>
+								<bottomPen lineWidth="0.5"/>
+								<rightPen lineWidth="0.5"/>
+							</box>
+							<imageExpression><![CDATA["./unchecked.png"]]></imageExpression>
+						</image>
+						<image hAlign="Center" vAlign="Middle">
+							<reportElement x="140" y="0" width="55" height="22" uuid="5b7b010d-7ec0-4007-9cc9-559a3dbd2198">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								<printWhenExpression><![CDATA["0".equals($P{data}.getCaratteristicheFunzionaliScarso()) == true]]></printWhenExpression>
+							</reportElement>
+							<box>
+								<topPen lineWidth="0.5"/>
+								<leftPen lineWidth="0.5"/>
+								<bottomPen lineWidth="0.5"/>
+								<rightPen lineWidth="0.5"/>
+							</box>
+							<imageExpression><![CDATA["./unchecked.png"]]></imageExpression>
+						</image>
+						<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+							<reportElement key="" positionType="Float" mode="Opaque" x="360" y="0" width="22" height="22" forecolor="#000000" backcolor="#FFFFFF" uuid="92f385b4-a0d6-4c46-b51f-550445430532">
+								<property name="com.jaspersoft.studio.unit.width" value="px"/>
+								<property name="com.jaspersoft.studio.unit.height" value="px"/>
+							</reportElement>
+							<box leftPadding="4" bottomPadding="2">
+								<pen lineWidth="0.5"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+								<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+								<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$P{data}.getCaratteristicheFunzionaliScore()]]></textFieldExpression>
+						</textField>
+					</frame>
+				</frame>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="169" width="482" height="22" uuid="a210aad1-682d-447a-9d6c-bc6b0a720800"/>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement key="" positionType="Float" mode="Opaque" x="0" y="0" width="240" height="22" forecolor="#000000" backcolor="#DCE6F1" uuid="2de2d892-3ddf-4e95-a83d-aa1e35ac227a">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<box leftPadding="4" bottomPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Justified" verticalAlignment="Middle" markup="styled">
+						<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Evidenza di vincoli che limitano il riutilizzo ad altra funzione"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement key="" positionType="Float" mode="Opaque" x="240" y="0" width="220" height="22" forecolor="#000000" backcolor="#FFFFFF" uuid="3b9af938-10ad-45ee-b77e-6c7e5cca0ddc">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="4" bottomPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getVincoliLimitantiAltreFunzioni()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement key="" positionType="Float" mode="Opaque" x="460" y="0" width="22" height="22" forecolor="#000000" backcolor="#FFFFFF" uuid="82303386-b15f-4550-ae5f-11dddbbe1d1a">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<box leftPadding="4" bottomPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getVincoliLimitantiAltreFunzioniScore()]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement x="349" y="205" width="196" height="22" uuid="acd3450d-0a03-4bea-90d7-889015c0df5a"/>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement key="" positionType="Float" mode="Opaque" x="0" y="0" width="111" height="22" forecolor="#000000" backcolor="#FFFFFF" uuid="0baa28f1-296a-4372-93a8-d9d68edadfe9">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<box leftPadding="4" bottomPadding="2">
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.0"/>
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.0"/>
+						<rightPen lineWidth="0.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="Arial" size="7" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+					</textElement>
+					<textFieldExpression><![CDATA["GIUDIZIO DI FUNGIBILITA'"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement key="" positionType="Float" mode="Opaque" x="133" y="0" width="63" height="22" forecolor="#000000" backcolor="#FFFFFF" uuid="49391550-bdad-4ea8-ba0b-c2b8d64aef11">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<box leftPadding="4" bottomPadding="2">
+						<pen lineWidth="0.5"/>
+						<topPen lineWidth="0.0"/>
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.0"/>
+						<rightPen lineWidth="0.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="Arial" size="7" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getFungibilita()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement key="" positionType="Float" mode="Opaque" x="111" y="0" width="22" height="22" forecolor="#000000" backcolor="#FFFFFF" uuid="2250fe19-eee0-4ec4-97c2-ad2d15cc4bfa">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<box leftPadding="4" bottomPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getFungibilitaScore()]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="240" width="554" height="10" isRemoveLineWhenBlank="true" uuid="917d3947-083f-4747-b359-868d8655a852">
+					<printWhenExpression><![CDATA[$P{data}.isMitigazioneRischi() == true]]></printWhenExpression>
+				</reportElement>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="50" height="70" isRemoveLineWhenBlank="true" forecolor="#003365" uuid="0833da16-022f-4627-b538-ac6b79fdb7cf"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" rotation="Left">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["NOTE ESPLICATIVE:"]]></textFieldExpression>
+				</textField>
+				<frame>
+					<reportElement positionType="Float" x="50" y="0" width="503" height="10" isRemoveLineWhenBlank="true" uuid="84a81b10-5856-4f9a-b7e8-49bcadc4c6b8"/>
+					<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+						<reportElement positionType="Float" x="0" y="0" width="503" height="10" isRemoveLineWhenBlank="true" forecolor="#003365" uuid="196b4d81-c907-4939-ba2d-3b191ef78b30">
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							<printWhenExpression><![CDATA[$P{data}.isPresenzaMitigazioneRischioSismico() == true]]></printWhenExpression>
+						</reportElement>
+						<box topPadding="2" leftPadding="2" bottomPadding="2" rightPadding="2">
+							<pen lineWidth="0.5" lineColor="#000000"/>
+						</box>
+						<textElement textAlignment="Left" verticalAlignment="Middle" markup="html">
+							<font fontName="BancoPopolareFont" size="9"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{data}.isPresenzaLocationNote() ? ("Location: " + $P{data}.getLocationNote()) : ""]]></textFieldExpression>
+					</textField>
+					<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+						<reportElement positionType="Float" x="0" y="10" width="503" height="10" isRemoveLineWhenBlank="true" forecolor="#003365" uuid="2215f9bd-df03-4001-bd30-688c47009597">
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							<printWhenExpression><![CDATA[$P{data}.isPresenzaMitigazioneRischioFrane() == true]]></printWhenExpression>
+						</reportElement>
+						<box topPadding="2" leftPadding="2" bottomPadding="2" rightPadding="2">
+							<pen lineWidth="0.5" lineColor="#000000"/>
+						</box>
+						<textElement textAlignment="Left" verticalAlignment="Middle" markup="html">
+							<font fontName="BancoPopolareFont" size="9"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{data}.isPresenzaDimensioniNote() ? ("Dimensioni: " + $P{data}.getDimensioniNote()) : ""]]></textFieldExpression>
+					</textField>
+					<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+						<reportElement positionType="Float" x="0" y="20" width="503" height="10" isRemoveLineWhenBlank="true" forecolor="#003365" uuid="0add5f7d-a368-4331-a203-9aafcddade10">
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							<printWhenExpression><![CDATA[$P{data}.isPresenzaMitigazioneRischioAlluvionale() == true]]></printWhenExpression>
+						</reportElement>
+						<box topPadding="2" leftPadding="2" bottomPadding="2" rightPadding="2">
+							<pen lineWidth="0.5" lineColor="#000000"/>
+						</box>
+						<textElement textAlignment="Left" verticalAlignment="Middle" markup="html">
+							<font fontName="BancoPopolareFont" size="9"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{data}.isPresenzaRimodulazioneSpaziNote() ? ("Livello rimodulazione spazi: " + $P{data}.getRimodulazioneSpaziNote()) : "Livello rimodulazione spazi:"]]></textFieldExpression>
+					</textField>
+					<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+						<reportElement positionType="Float" x="0" y="30" width="503" height="10" isRemoveLineWhenBlank="true" forecolor="#003365" uuid="97fd53bb-4d1b-4278-a8e6-4d578b492e6f">
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							<printWhenExpression><![CDATA[$P{data}.isPresenzaMitigazioneRischioVulcanico() == true]]></printWhenExpression>
+						</reportElement>
+						<box topPadding="2" leftPadding="2" bottomPadding="2" rightPadding="2">
+							<pen lineWidth="0.5" lineColor="#000000"/>
+						</box>
+						<textElement textAlignment="Left" verticalAlignment="Middle" markup="html">
+							<font fontName="BancoPopolareFont" size="9"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{data}.isPresenzaCondizioniManutentiveNote() ? ("Condizioni manutentive: " + $P{data}.getCondizioniManutentiveNote()) : "Condizioni manutentive: "]]></textFieldExpression>
+					</textField>
+					<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+						<reportElement positionType="Float" x="0" y="40" width="503" height="10" isRemoveLineWhenBlank="true" forecolor="#003365" uuid="12beea5a-b50f-4d62-a0a7-a2200aac0fa1">
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							<printWhenExpression><![CDATA[$P{data}.isPresenzaMitigazioneRischioAltro() == true]]></printWhenExpression>
+						</reportElement>
+						<box topPadding="2" leftPadding="2" bottomPadding="2" rightPadding="2">
+							<pen lineWidth="0.5" lineColor="#000000"/>
+						</box>
+						<textElement textAlignment="Left" verticalAlignment="Middle" markup="html">
+							<font fontName="BancoPopolareFont" size="9"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{data}.isPresenzaMitigazioneRischioAltro() ? ("Altro: " + $P{data}.getNoteMitigazioneRischioAltro()) : ""]]></textFieldExpression>
+					</textField>
+				</frame>
+			</frame>
+		</band>
+	</detail>
+</jasperReport>

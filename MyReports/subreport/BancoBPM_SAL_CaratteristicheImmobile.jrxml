@@ -1,0 +1,1073 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.0.final using JasperReports Library version 6.3.0  -->
+<!-- 2026-07-14T09:11:36 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="170c5b6d-6a79-4601-801c-974412c4fe64">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="data" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.bancobpm.data.BancoBPMPdfData"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="427">
+			<frame>
+				<reportElement positionType="Float" x="0" y="0" width="555" height="20" uuid="1126efc9-3088-48eb-901d-c180a6f3f4ea"/>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="115" height="20" forecolor="#003365" uuid="962b670c-d705-4ede-a477-a8032ee1b3cd"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Data prevista inizio lavori"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="115" y="0" width="183" height="20" forecolor="#000000" uuid="4a8d859f-058c-4b49-8beb-2be4ad53f5c3"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getCaratteristicheProgettoDataPrevistaInizioLavori()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="420" y="0" width="135" height="20" forecolor="#000000" uuid="f655946f-6f1a-4177-aa20-2a5a5f766ce6"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getCaratteristicheProgettoDataPrevistaFineLavori()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="298" y="0" width="122" height="20" forecolor="#003365" uuid="7ba7c457-9772-45a7-ba73-70d87f7c7dfc">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Data prevista fine lavori"]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="20" width="555" height="20" uuid="61fc7874-7e79-4fbc-b174-0bb823de47a4"/>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="115" height="20" forecolor="#003365" uuid="e62914f4-90f6-4622-b823-3e5e07544f31"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Destinazioni d'uso prevalente"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="115" y="0" width="183" height="20" forecolor="#000000" uuid="d7112835-c940-4faa-ae32-0f5246d7917d"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getCaratteristicheProgettoDestinazioniPrevalente()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="420" y="0" width="135" height="20" forecolor="#000000" uuid="1b289025-bcf9-4661-aa24-74388f548c3d"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getCaratteristicheProgettoTipologiaEdiliziaPrevalente()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="298" y="0" width="122" height="20" forecolor="#003365" uuid="d8fbcb70-fef3-4818-b08a-9d871706093a"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Tipologia edilizia prevalente"]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="40" width="555" height="20" uuid="3ddfba2f-d345-4295-8cbd-54694369e6ff"/>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="115" height="20" forecolor="#003365" uuid="7beafefe-8817-4637-9f13-0053f2eb033d"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["N.ro piani entro terra"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="115" y="0" width="183" height="20" forecolor="#000000" uuid="4ec06caa-ad07-41e5-92ce-aaabb494a4b2"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getCaratteristicheProgettoNroPianiET()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="420" y="0" width="135" height="20" forecolor="#000000" uuid="1b601354-8db0-4372-b8ff-2a0816b76f9b"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getCaratteristicheProgettoNroPianiFT()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="298" y="0" width="122" height="20" forecolor="#003365" uuid="b4627789-fe79-4605-96d1-7d3014028703"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["N.ro piani Fuori Terra"]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="60" width="555" height="20" uuid="bd739a38-5446-4f0d-9e97-39f842fba931"/>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="115" height="20" forecolor="#003365" uuid="1f1948c1-777b-4d41-b2ac-fb72d4766a72"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Fondazioni"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="115" y="0" width="183" height="20" forecolor="#000000" uuid="c69bb312-e37c-4c14-ba67-ad078fb97a1e"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getCaratteristicheProgettoFondazioni()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="420" y="0" width="135" height="20" forecolor="#000000" uuid="f9ad7121-8092-4518-aae2-0f1ca230e3a1"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getCaratteristicheProgettoStruttureSolai()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="298" y="0" width="122" height="20" forecolor="#003365" uuid="9e447eee-e738-4e54-959b-0295f3174d64"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Strutture e solai"]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="80" width="555" height="20" uuid="4ff5f86d-49a3-46ba-9591-f4e96e881029"/>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="115" height="20" forecolor="#003365" uuid="67a4ab7b-b7c5-4980-9075-1ea5a5a4dd37"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Copertura"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="115" y="0" width="183" height="20" forecolor="#000000" uuid="abadb7e5-29e5-42cd-95fd-662ef802f248"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getCaratteristicheProgettoCopertura()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="420" y="0" width="135" height="20" forecolor="#000000" uuid="3e15b8a0-122d-4cac-9f47-877e0fe1157c"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getCaratteristicheProgettoProspettiEsterni()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="298" y="0" width="122" height="20" forecolor="#003365" uuid="6eba7a20-2cd2-4bdb-b90e-5f0ba616f344"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Prospetti esterni"]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="100" width="555" height="20" uuid="b5f278f2-8f79-47c4-934d-22d87195dc0b"/>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="115" height="20" forecolor="#003365" uuid="b5812364-716e-43f4-b1cd-eaea5c5f8f0a"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Ascensore"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="115" y="0" width="183" height="20" forecolor="#000000" uuid="4dc54027-7d55-47db-a916-441e1df50eed"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getCaratteristicheProgettoAscensore()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="420" y="0" width="135" height="20" forecolor="#000000" uuid="3cef30be-24cb-4486-9414-f1d0d71272b9"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getCaratteristicheProgettoInfissiEsterniInterni()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="298" y="0" width="122" height="20" forecolor="#003365" uuid="048e369c-83cf-4ddc-a297-31493cee8dde"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Infissi esterni ed interni"]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="120" width="555" height="20" uuid="839c5ee2-3176-400f-ba29-6eeee7a9f4d7"/>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="115" height="20" forecolor="#003365" uuid="ba01f1af-5d85-453e-b34e-6495a18ff6a8"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Pavimenti e rivestimenti"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="115" y="0" width="183" height="20" forecolor="#000000" uuid="e5b3279b-ffe7-4fb0-a658-2f3d117ce268"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getCaratteristicheProgettoPavimenti()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="420" y="0" width="135" height="20" forecolor="#000000" uuid="90122005-0980-4156-a80c-5c782fac516b"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getCaratteristicheProgettoImpiantoIdraulico()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="298" y="0" width="122" height="20" forecolor="#003365" uuid="9f74cd80-0baf-492d-96ab-5c881b047583"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Impianto idraulico"]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="140" width="555" height="20" uuid="51f7279b-1aa4-4d99-9dad-d554cc6c261a"/>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="115" height="20" forecolor="#003365" uuid="80a28c99-d9b1-4d1b-8018-b82934a84d13"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Impianto riscaldamento"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="115" y="0" width="183" height="20" forecolor="#000000" uuid="4b70d7fc-6405-40aa-8ec7-960e6bdaafc0"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getCaratteristicheProgettoImpiantoRiscaldamento()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="420" y="0" width="135" height="20" forecolor="#000000" uuid="e5ab0fbf-bf25-4fce-ac04-f11e71d170d6"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getCaratteristicheProgettoImpiantoElettrico()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="298" y="0" width="122" height="20" forecolor="#003365" uuid="73f846df-ef82-4f40-9ede-96fc9629a617"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Impianto elettrico"]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement key="" positionType="Float" x="0" y="160" width="555" height="20" isRemoveLineWhenBlank="true" uuid="158cb643-33d1-4434-8e3f-13b31810707c"/>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="115" height="20" isRemoveLineWhenBlank="true" forecolor="#003365" uuid="cc40bec8-cf3a-4c81-bb16-3547584f5bd8"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Classe energetica prevista"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="115" y="0" width="54" height="20" forecolor="#000000" uuid="c95b4de4-56b4-416f-9130-66e60743638d"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getCaratteristicheProgettoClasseEnergeticaPrevista()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="169" y="0" width="91" height="20" forecolor="#003365" uuid="a35941d0-30c2-4c64-84b0-0f6cf84dbc3f"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Emissioni CO2 T/anno previste"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="260" y="0" width="90" height="20" forecolor="#000000" uuid="4c083af6-c127-4826-9979-3ffe7155d3ca">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getCaratteristicheProgettoEmissioniPreviste()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="350" y="0" width="120" height="20" forecolor="#003365" uuid="4e7cf8ee-390f-4af1-9411-73b55ba356fa"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Prestazione Energetica kWh/mq anno prevista"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="470" y="0" width="85" height="20" forecolor="#000000" uuid="9c4aa189-3259-493c-97b5-fce4fe764463"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getCaratteristicheProgettoPrestazioneEnergetica()]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="180" width="555" height="20" isRemoveLineWhenBlank="true" uuid="d7d8358e-2b77-4eac-ad7a-a82e4071bc0f">
+					<printWhenExpression><![CDATA[$P{data}.isProgettoFruibilitaVisibile() == true]]></printWhenExpression>
+				</reportElement>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="115" height="20" forecolor="#003365" uuid="ea82cc8f-6874-443c-9fbc-871f79de4e35"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Fruibilità dell'immobile nello stato attuale (as is)"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="115" y="0" width="440" height="20" forecolor="#000000" uuid="db3acbfd-4f4e-462d-ab1d-3144a83d93f2"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getCaratteristicheProgettoFruibilita()]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="203" width="554" height="184" isRemoveLineWhenBlank="true" uuid="22e8d641-1b42-4061-9dd6-2f47a31001f9">
+					<printWhenExpression><![CDATA[$P{data}.isMitigazioneRischi() == false]]></printWhenExpression>
+				</reportElement>
+				<textField>
+					<reportElement positionType="Float" mode="Opaque" x="0" y="0" width="554" height="24" backcolor="#B4C6E7" uuid="df87de5d-4f1f-41f1-87e0-8c9c9d2b213c"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["RISCHI FISICI AI QUALI L'IMMOBILE POTREBBE ESSERE SOGGETTO"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="0" y="24" width="150" height="20" backcolor="#BDD7EE" uuid="d507cc38-2004-485b-91e5-6e6024c4e4e2"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Fattori di Rischio"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="150" y="24" width="140" height="20" backcolor="#BDD7EE" uuid="4005a1ee-d931-487b-8fec-faabd2640857"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Grado di Rischio"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="290" y="24" width="264" height="20" backcolor="#BDD7EE" uuid="5d9c18be-04e7-4eaf-ac21-e5befb2f2e63"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Fonte delle informazioni"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="0" y="44" width="150" height="20" forecolor="#003365" uuid="855063e6-26ee-4a18-b8db-2e41d4be5c98"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Sismico"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="0" y="64" width="150" height="20" forecolor="#003365" uuid="9c22a8e4-69ee-4d98-bec7-dce1053de67a"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Frane"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="0" y="104" width="150" height="20" forecolor="#003365" uuid="78736845-3613-4856-b879-8a1e706acde3"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Vulcanico"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="0" y="84" width="150" height="20" forecolor="#003365" uuid="5cafdf1b-8b3e-4bd9-8178-13e2df49ed35"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Alluvionale"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="0" y="124" width="150" height="20" forecolor="#003365" uuid="1093c4c5-bcd4-450f-ad77-c63c76341a41"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Altro"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="150" y="44" width="140" height="20" forecolor="#003365" uuid="d7a4db9f-a59c-4e10-bda5-38fd2e65d650"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getGradoDiRischioSismico()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="150" y="64" width="140" height="20" forecolor="#003365" uuid="e08336f5-036f-4916-957d-92d257964058"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getGradoDiRischioFrane()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="150" y="84" width="140" height="20" forecolor="#003365" uuid="79490c4c-b148-4a73-bacd-76cbae7f9178"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getGradoDiRischioAlluvionale()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="150" y="104" width="140" height="20" forecolor="#003365" uuid="33d7b7a3-a334-4a03-bca0-75d46b584054"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getGradoDiRischioVulcanico()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="150" y="124" width="140" height="20" forecolor="#003365" uuid="0284d2c2-34cb-48db-af57-e1c1e0a77146"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getGradoDiRischioAltro()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="290" y="44" width="264" height="20" forecolor="#003365" uuid="c342a257-69ce-4bf5-9789-15a00a6b4f71"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getFonteDelleInformazioniSismico()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="290" y="64" width="264" height="20" forecolor="#003365" uuid="d7ac8553-5431-42bd-a611-b65ee19a271c"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getFonteDelleInformazioniFrane()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="290" y="84" width="264" height="20" forecolor="#003365" uuid="7fe44b2f-9310-4754-beb2-1558e977a009"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getFonteDelleInformazioniAlluvionale()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="290" y="104" width="264" height="20" forecolor="#003365" uuid="924e31d7-4540-439c-8e14-dd6b47591431"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getFonteDelleInformazioniVulcanico()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="290" y="124" width="264" height="20" forecolor="#003365" uuid="4ee29a62-7fd0-4b70-80a2-2ae86ee9067c"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getFonteDelleInformazioniAltro()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="0" y="144" width="554" height="20" forecolor="#003365" uuid="9b70cd3a-8f57-4295-ab77-2d08d5566ec5"/>
+					<box topPadding="2" leftPadding="2" bottomPadding="2" rightPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Il tecnico valutatore è chiamato a verificare, in base ad una indagine attinente il medesimo segmento di mercato, l'incidenza delle caratteristiche di resilienza sui prezzi/canoni di mercato. Il perito incaricato, in caso di esposizione massima rispetto alla scala del rischio, deve inoltre riportare in perizia la descrizione di eventuali interventi eseguiti o delle caratteristiche intrinseche e costruttive volte alla mitigazione del rischio, o in alternativa, laddove possibile, la descrizione sintetica delle opere necessarie per la messa in sicurezza del bene."]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="0" y="164" width="554" height="20" forecolor="#003365" uuid="c42cc1c9-e923-4f4b-9f6a-6ed7378de4ed"/>
+					<box topPadding="2" leftPadding="2" bottomPadding="2" rightPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Note del Tecnico: " + $P{data}.getNoteDelTecnico()]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="203" width="554" height="184" isRemoveLineWhenBlank="true" uuid="266d8f27-ce36-4393-a104-0a348ee7977d">
+					<printWhenExpression><![CDATA[$P{data}.isMitigazioneRischi() == true]]></printWhenExpression>
+				</reportElement>
+				<textField>
+					<reportElement positionType="Float" mode="Opaque" x="0" y="0" width="554" height="24" backcolor="#B4C6E7" uuid="7754569c-ac04-4816-91c8-05800e4fd547"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["RISCHI FISICI AI QUALI L'IMMOBILE POTREBBE ESSERE SOGGETTO"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="0" y="24" width="120" height="20" backcolor="#BDD7EE" uuid="0ae6b0ee-6edc-41c6-80aa-720e077d15c3"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Fattori di Rischio"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="120" y="24" width="120" height="20" backcolor="#BDD7EE" uuid="02c11dc8-4b0c-40a9-932a-cfc64f38a298"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Grado di Rischio"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="240" y="24" width="220" height="20" backcolor="#BDD7EE" uuid="6e6b20f5-05c4-4411-afd3-b1e9a6012c28"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Fonte delle informazioni"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="0" y="44" width="120" height="20" forecolor="#003365" uuid="dbd7dcf7-b400-404c-ac43-7e3231db5b49"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Sismico"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="0" y="64" width="120" height="20" forecolor="#003365" uuid="b89f392d-84cb-4339-931d-4bb0ef1b3448"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Frane"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="0" y="104" width="120" height="20" forecolor="#003365" uuid="53a6b83e-3587-404a-ab00-931b61ccf738"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Vulcanico"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="0" y="84" width="120" height="20" forecolor="#003365" uuid="c10d6feb-e67e-497c-a74a-5d970ebfcf2e"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Alluvionale"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="0" y="124" width="120" height="20" forecolor="#003365" uuid="8f6ae517-e0f0-4bfd-b461-b320c0299167"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Altro"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="120" y="44" width="120" height="20" forecolor="#003365" uuid="9cc65318-6f4d-4d6b-bde5-031ca7c8b99e"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getGradoDiRischioSismico()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="120" y="64" width="120" height="20" forecolor="#003365" uuid="8daf5647-339b-44a4-bf43-f15ebc2e9e85"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getGradoDiRischioFrane()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="120" y="84" width="120" height="20" forecolor="#003365" uuid="e94471bd-0dbf-47d9-b401-45c3f7f22703"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getGradoDiRischioAlluvionale()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="120" y="104" width="120" height="20" forecolor="#003365" uuid="8f72ac28-1911-4fe7-9797-9e5810df2781"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getGradoDiRischioVulcanico()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="120" y="124" width="120" height="20" forecolor="#003365" uuid="de804237-1eea-47df-9eb9-323c90420507"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getGradoDiRischioAltro()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="240" y="44" width="220" height="20" forecolor="#003365" uuid="d07f960f-4c7b-4561-9302-2149ee29dbf5"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getFonteDelleInformazioniSismico()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="240" y="64" width="220" height="20" forecolor="#003365" uuid="57a79210-66ae-426c-8843-7f3f144d1473"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getFonteDelleInformazioniFrane()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="240" y="84" width="220" height="20" forecolor="#003365" uuid="86badc0a-957b-4c3c-ac2b-746941af735e"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getFonteDelleInformazioniAlluvionale()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="240" y="104" width="220" height="20" forecolor="#003365" uuid="2d584a71-10fb-4e9e-80e8-fedd233732c6"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getFonteDelleInformazioniVulcanico()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="240" y="124" width="220" height="20" forecolor="#003365" uuid="25b42bc3-4c77-4444-9568-52f3322c911f"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getFonteDelleInformazioniAltro()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="0" y="144" width="554" height="20" forecolor="#003365" uuid="2d927c63-ffb9-45f0-8414-eee29ccba410"/>
+					<box topPadding="2" leftPadding="2" bottomPadding="2" rightPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Il tecnico valutatore è chiamato a verificare, in base ad una indagine attinente il medesimo segmento di mercato, l'incidenza delle caratteristiche di resilienza sui prezzi/canoni di mercato. Il perito incaricato, in caso di esposizione massima rispetto alla scala del rischio, deve inoltre riportare in perizia la descrizione di eventuali interventi eseguiti o delle caratteristiche intrinseche e costruttive volte alla mitigazione del rischio, o in alternativa, laddove possibile, la descrizione sintetica delle opere necessarie per la messa in sicurezza del bene."]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="460" y="24" width="94" height="20" backcolor="#BDD7EE" uuid="36f8f2a3-2122-4abf-816f-702c775ba2a0"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Mitigazione Rischio"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="460" y="44" width="94" height="20" forecolor="#003365" uuid="725b4566-c2bb-4d59-9e85-e7abf6f53c10"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMitigazioneRischioSismico()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="460" y="64" width="94" height="20" forecolor="#003365" uuid="cfa92d30-a634-4241-b797-6b98655ec46b"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMitigazioneRischioFrane()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="460" y="84" width="94" height="20" forecolor="#003365" uuid="39ccf3c2-aecc-4d1d-a568-7eb75f8c60fd"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMitigazioneRischioAlluvionale()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="460" y="104" width="94" height="20" forecolor="#003365" uuid="d985d097-76e3-4ded-a4a1-6b2dc74509ff"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMitigazioneRischioVulcanico()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="460" y="124" width="94" height="20" forecolor="#003365" uuid="0a81bc67-4e01-4e38-81aa-b916049d1303"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMitigazioneRischioAltro()]]></textFieldExpression>
+				</textField>
+				<frame>
+					<reportElement positionType="Float" x="0" y="164" width="554" height="10" isRemoveLineWhenBlank="true" uuid="f2f29eb9-d8c4-49c3-8eea-e28c44b56d8e">
+						<printWhenExpression><![CDATA[$P{data}.isMitigazioneRischi() == true]]></printWhenExpression>
+					</reportElement>
+					<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+						<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="50" height="70" isRemoveLineWhenBlank="true" forecolor="#003365" uuid="b2b0fb8e-786f-48cb-8770-710259d6d0d8"/>
+						<box leftPadding="2">
+							<pen lineWidth="0.5" lineColor="#000000"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle" rotation="Left">
+							<font fontName="BancoPopolareFont" size="9"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Note Mitigazione Rischio:"]]></textFieldExpression>
+					</textField>
+					<frame>
+						<reportElement positionType="Float" x="50" y="0" width="503" height="10" isRemoveLineWhenBlank="true" uuid="15154e3e-5f39-41bf-89a5-b46cd0bf2a58"/>
+						<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+							<reportElement positionType="Float" x="0" y="0" width="503" height="10" isRemoveLineWhenBlank="true" forecolor="#003365" uuid="36704809-f127-4be2-a475-20d1f55d876a">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								<printWhenExpression><![CDATA[$P{data}.isPresenzaMitigazioneRischioSismico() == true]]></printWhenExpression>
+							</reportElement>
+							<box topPadding="2" leftPadding="2" bottomPadding="2" rightPadding="2">
+								<pen lineWidth="0.5" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle" markup="html">
+								<font fontName="BancoPopolareFont" size="9"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$P{data}.isPresenzaMitigazioneRischioSismico() ? ("Sismico: " + $P{data}.getNoteMitigazioneRischioSismico()) : ""]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+							<reportElement positionType="Float" x="0" y="10" width="503" height="10" isRemoveLineWhenBlank="true" forecolor="#003365" uuid="283a6826-1c58-4c73-b177-92767f4107a7">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								<printWhenExpression><![CDATA[$P{data}.isPresenzaMitigazioneRischioFrane() == true]]></printWhenExpression>
+							</reportElement>
+							<box topPadding="2" leftPadding="2" bottomPadding="2" rightPadding="2">
+								<pen lineWidth="0.5" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle" markup="html">
+								<font fontName="BancoPopolareFont" size="9"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$P{data}.isPresenzaMitigazioneRischioFrane() ? ("Frane: " + $P{data}.getNoteMitigazioneRischioFrane()) : ""]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+							<reportElement positionType="Float" x="0" y="20" width="503" height="10" isRemoveLineWhenBlank="true" forecolor="#003365" uuid="4a0c1846-0d9e-4145-bbcf-8576e00c8019">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								<printWhenExpression><![CDATA[$P{data}.isPresenzaMitigazioneRischioAlluvionale() == true]]></printWhenExpression>
+							</reportElement>
+							<box topPadding="2" leftPadding="2" bottomPadding="2" rightPadding="2">
+								<pen lineWidth="0.5" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle" markup="html">
+								<font fontName="BancoPopolareFont" size="9"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$P{data}.isPresenzaMitigazioneRischioAlluvionale() ? ("Alluvione: " + $P{data}.getNoteMitigazioneRischioAlluvionale()) : ""]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+							<reportElement positionType="Float" x="0" y="30" width="503" height="10" isRemoveLineWhenBlank="true" forecolor="#003365" uuid="c89c9464-5b4e-4417-acaf-6db12efde36e">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								<printWhenExpression><![CDATA[$P{data}.isPresenzaMitigazioneRischioVulcanico() == true]]></printWhenExpression>
+							</reportElement>
+							<box topPadding="2" leftPadding="2" bottomPadding="2" rightPadding="2">
+								<pen lineWidth="0.5" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle" markup="html">
+								<font fontName="BancoPopolareFont" size="9"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$P{data}.isPresenzaMitigazioneRischioVulcanico() ? ("Vulcanico: " + $P{data}.getNoteMitigazioneRischioVulcanico()) : ""]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+							<reportElement positionType="Float" x="0" y="40" width="503" height="10" isRemoveLineWhenBlank="true" forecolor="#003365" uuid="97c3e2e3-6fa7-4ea8-9339-16d595c02338">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								<printWhenExpression><![CDATA[$P{data}.isPresenzaMitigazioneRischioAltro() == true]]></printWhenExpression>
+							</reportElement>
+							<box topPadding="2" leftPadding="2" bottomPadding="2" rightPadding="2">
+								<pen lineWidth="0.5" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle" markup="html">
+								<font fontName="BancoPopolareFont" size="9"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$P{data}.isPresenzaMitigazioneRischioAltro() ? ("Altro: " + $P{data}.getNoteMitigazioneRischioAltro()) : ""]]></textFieldExpression>
+						</textField>
+					</frame>
+				</frame>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="391" width="554" height="36" uuid="499a18a3-91f9-4bae-9ad7-0677b86e77af">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textField>
+					<reportElement mode="Opaque" x="0" y="0" width="150" height="16" backcolor="#BDD7EE" uuid="35b75a64-15b2-4820-ac48-854cb1a27d98">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Presenza Add-on Tassonomico"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="150" y="0" width="70" height="16" backcolor="#FFFFFF" uuid="7359a19c-0082-440f-94c3-ff48078a64c3"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="220" y="0" width="172" height="16" backcolor="#BDD7EE" uuid="a84931e7-aad3-4eaf-ad90-f52778352699"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Rischio comunicato dalla Banca"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="392" y="0" width="162" height="16" backcolor="#FFFFFF" uuid="253da7a4-3f8d-425a-9f8c-8c18cd2e8517"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="0" y="16" width="554" height="20" forecolor="#003365" uuid="c64125ca-46d3-486c-93f4-37171ffb73d8"/>
+					<box topPadding="2" leftPadding="2" bottomPadding="2" rightPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Qualora sia necessario compilare l'ADD-ON TASSONOMICO il Provider dovrà dare chiara ed effettiva dimostrazione dell’apprezzamento del rischio fisico comunicato dall'Istituto nella determinazione del valore di mercato, con qualsiasi metodo di stima utilizzato o ulteriori specifiche in merito. Si rimandano gli approfondimenti al questionario compilato con foto dimostrative da storicizzarsi tra gli allegati."]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+</jasperReport>

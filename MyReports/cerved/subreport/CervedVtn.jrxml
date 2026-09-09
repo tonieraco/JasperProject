@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.0.final using JasperReports Library version 6.3.0  -->
+<!-- 2019-10-31T11:18:00 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="525" pageHeight="797" columnWidth="525" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="15493650-9929-4a20-8bb5-55c208902c5d">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#BEBEBE"/>
+			<bottomPen lineWidth="0.5" lineColor="#BEBEBE"/>
+		</box>
+	</style>
+	<subDataset name="FotoDataset" uuid="9452f93d-86d7-4201-9aec-697d68dcdf3e">
+		<field name="foto" class="java.lang.String">
+			<fieldDescription><![CDATA[_THIS]]></fieldDescription>
+		</field>
+	</subDataset>
+	<subDataset name="DatoVtnDataset" uuid="090f0fc1-7593-4a86-b1c2-9b946f302b49">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="datoVtn" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.cerved.data.CervedPdfDatoVtn">
+			<fieldDescription><![CDATA[_THIS]]></fieldDescription>
+		</field>
+	</subDataset>
+	<parameter name="data" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.cerved.data.CervedPdfMainCollection"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<detail>
+		<band height="265">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<textField>
+				<reportElement positionType="Float" mode="Opaque" x="0" y="2" width="525" height="14" forecolor="#FFFFFF" backcolor="#879C3F" uuid="816ad997-ed0a-4efb-baf2-c34523026252">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<box leftPadding="5" rightPadding="1">
+					<topPen lineWidth="1.0" lineColor="#C9CDD3"/>
+					<leftPen lineWidth="0.0" lineColor="#C9CDD3"/>
+					<bottomPen lineWidth="1.0" lineColor="#C9CDD3"/>
+					<rightPen lineWidth="0.0" lineColor="#C9CDD3"/>
+				</box>
+				<textElement verticalAlignment="Top">
+					<font fontName="Arial_BNL" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{data}.getVtnTitle()]]></textFieldExpression>
+			</textField>
+			<frame>
+				<reportElement x="0" y="36" width="525" height="27" uuid="f3c4b93a-ea47-45df-9282-431d871ca43e"/>
+				<componentElement>
+					<reportElement x="100" y="12" width="198" height="15" uuid="5b6ccc62-6c0a-4de8-a539-ac63dc550003"/>
+					<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
+						<datasetRun subDataset="DatoVtnDataset" uuid="f3448cfd-df8e-4b10-8754-2c1a91c52184">
+							<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{data}.getDatoVtnResidenziale())]]></dataSourceExpression>
+						</datasetRun>
+						<jr:listContents height="15" width="198">
+							<textField>
+								<reportElement x="0" y="0" width="198" height="14" uuid="1bb4da07-7567-4a62-984b-d320e5312398"/>
+								<textElement>
+									<font fontName="Arial_BNL" size="8"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{datoVtn}.getAnno() + ":   " + $F{datoVtn}.getValore()]]></textFieldExpression>
+							</textField>
+						</jr:listContents>
+					</jr:list>
+				</componentElement>
+				<staticText>
+					<reportElement x="87" y="0" width="100" height="12" uuid="5b23cd31-a87b-4c21-8c5a-df819c777fc3"/>
+					<textElement textAlignment="Center">
+						<font fontName="Arial_BNL" size="8"/>
+					</textElement>
+					<text><![CDATA[Residenziale]]></text>
+				</staticText>
+				<componentElement>
+					<reportElement x="323" y="12" width="197" height="15" uuid="d4bfb725-8c5b-4245-bc06-01b607d9b72e"/>
+					<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
+						<datasetRun subDataset="DatoVtnDataset" uuid="5079697a-3070-460d-838d-d7173c60d076">
+							<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{data}.getDatoVtnCommerciale())]]></dataSourceExpression>
+						</datasetRun>
+						<jr:listContents height="15" width="197">
+							<textField>
+								<reportElement x="0" y="0" width="197" height="15" uuid="825af028-5587-48df-8e5b-796d5576c7cb"/>
+								<textElement>
+									<font fontName="Arial_BNL" size="8"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{datoVtn}.getAnno() + ":   " + $F{datoVtn}.getValore()]]></textFieldExpression>
+							</textField>
+						</jr:listContents>
+					</jr:list>
+				</componentElement>
+				<staticText>
+					<reportElement x="305" y="0" width="100" height="12" uuid="06ac336e-bc58-412a-9619-0ad8b4765cb0"/>
+					<textElement textAlignment="Center">
+						<font fontName="Arial_BNL" size="8"/>
+					</textElement>
+					<text><![CDATA[Commerciale]]></text>
+				</staticText>
+			</frame>
+			<image hAlign="Center" vAlign="Middle" onErrorType="Blank">
+				<reportElement positionType="Float" x="52" y="63" width="425" height="197" isRemoveLineWhenBlank="true" uuid="75873b62-cfd9-4c78-90fa-970d461ffa25">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<box padding="20">
+					<topPen lineWidth="1.0" lineColor="#BABABA"/>
+					<leftPen lineWidth="1.0" lineColor="#BABABA"/>
+					<bottomPen lineWidth="1.0" lineColor="#BABABA"/>
+					<rightPen lineWidth="1.0" lineColor="#BABABA"/>
+				</box>
+				<imageExpression><![CDATA[$P{data}.getVtnPath()]]></imageExpression>
+			</image>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement key="" positionType="Float" mode="Transparent" x="0" y="17" width="525" height="15" isPrintWhenDetailOverflows="true" forecolor="#000000" backcolor="rgba(135, 156, 63, 0.0)" uuid="513c1948-e509-4593-932e-5465af093bd2">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box bottomPadding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Top">
+					<font fontName="Arial" size="7" isBold="false" isItalic="true"/>
+					<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{data}.getVtnSubTitle()]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

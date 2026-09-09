@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.0.final using JasperReports Library version 6.3.0  -->
+<!-- 2021-12-15T12:17:06 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="dettaglioDatoImmobiliare" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="3b156187-ed97-4a76-8f1c-f187db37170c">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<subDataset name="datasetDettaglio" uuid="696f2602-c115-4a44-b6a5-8a75420d5356">
+		<field name="dettaglio" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.cerved.data.CervedPdfConsistenzaConValoriDettaglio">
+			<fieldDescription><![CDATA[_THIS]]></fieldDescription>
+		</field>
+	</subDataset>
+	<field name="dettaglios" class="java.util.Collection"/>
+	<field name="lotto" class="java.lang.String">
+		<fieldDescription><![CDATA[lotto]]></fieldDescription>
+	</field>
+	<detail>
+		<band height="15" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<frame>
+				<reportElement x="0" y="0" width="525" height="15" uuid="e4f7b054-794b-42ee-8df9-a41313314b4e"/>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="26" height="15" backcolor="#EDEDED" uuid="3fcc13fb-f66e-4cef-a748-1800f3bf144c">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+						<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{lotto}]]></textFieldExpression>
+				</textField>
+				<componentElement>
+					<reportElement x="26" y="0" width="499" height="15" backcolor="#EDEDED" uuid="9a5fe1a7-6d3f-4b61-ba1f-f03daa857f07">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
+						<datasetRun subDataset="datasetDettaglio" uuid="15f4b0eb-c802-48c0-b187-fa28d0e413d9">
+							<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{dettaglios})]]></dataSourceExpression>
+						</datasetRun>
+						<jr:listContents height="15" width="499">
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="104" height="15" isRemoveLineWhenBlank="true" backcolor="#EDEDED" uuid="c42955ad-fc05-436c-bed9-d15802c03e99">
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box leftPadding="2" bottomPadding="1">
+									<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+								</box>
+								<textElement verticalAlignment="Middle">
+									<font fontName="Arial" size="8" isBold="false"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{dettaglio}.getIdentificativiCatastali()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="104" y="0" width="80" height="15" backcolor="#EDEDED" uuid="5324e559-9b66-4921-bb88-2035308e8826">
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box leftPadding="2">
+									<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+								</box>
+								<textElement verticalAlignment="Middle">
+									<font fontName="Arial" size="8" isBold="false"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{dettaglio}.getDestinazione()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="184" y="0" width="50" height="15" backcolor="#EDEDED" uuid="74bb8bac-52fc-4ee0-8236-df902cda6d1e">
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box leftPadding="0" rightPadding="2">
+									<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+								</box>
+								<textElement textAlignment="Right" verticalAlignment="Middle">
+									<font fontName="Arial" size="8" isBold="false"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{dettaglio}.getSupComm()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="234" y="0" width="68" height="15" backcolor="#EDEDED" uuid="1109eb35-c7e7-46f4-bd34-8025554b1702">
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box leftPadding="0" rightPadding="2">
+									<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+								</box>
+								<textElement textAlignment="Right" verticalAlignment="Middle">
+									<font fontName="Arial" size="8" isBold="false"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{dettaglio}.getValore()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="302" y="0" width="70" height="15" backcolor="#EDEDED" uuid="69bbf19c-cb16-4d4b-b574-38d41c0e4d45">
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box leftPadding="0" rightPadding="2">
+									<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+								</box>
+								<textElement textAlignment="Right" verticalAlignment="Middle">
+									<font fontName="Arial" size="8" isBold="false"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{dettaglio}.getValoreCauzionaleVisibile().equals("1") ? $F{dettaglio}.getValoreCauzionale() : ""]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="372" y="0" width="62" height="15" backcolor="#EDEDED" uuid="0f0e4a76-1242-4b7e-b4b6-85b6620167f3">
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box leftPadding="0" rightPadding="2">
+									<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+								</box>
+								<textElement textAlignment="Right" verticalAlignment="Middle">
+									<font fontName="Arial" size="8" isBold="false"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{dettaglio}.getValoreAssicurabileVisibile().equals("1") ? $F{dettaglio}.getValoreAssicurabile() : ""]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="434" y="0" width="65" height="15" backcolor="#EDEDED" uuid="7343758d-399a-49ee-85e9-e3ead5c473ff">
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box leftPadding="0" rightPadding="2">
+									<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+									<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#C9CDD3"/>
+								</box>
+								<textElement textAlignment="Right" verticalAlignment="Middle">
+									<font fontName="Arial" size="8" isBold="false"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{dettaglio}.getValoreVenditaForzataVisibile().equals("1") ? $F{dettaglio}.getValoreVenditaForzata() : ""]]></textFieldExpression>
+							</textField>
+						</jr:listContents>
+					</jr:list>
+				</componentElement>
+			</frame>
+		</band>
+	</detail>
+</jasperReport>

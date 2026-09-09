@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.0.final using JasperReports Library version 6.3.0  -->
+<!-- 2026-07-13T10:49:08 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="170c5b6d-6a79-4601-801c-974412c4fe64">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="data" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.bancobpm.data.BancoBPMPdfData"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="241">
+			<frame>
+				<reportElement positionType="Float" x="0" y="29" width="555" height="20" uuid="d5c24c61-59fa-48d5-9720-ffa54176fcc2"/>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="0" y="0" width="70" height="20" forecolor="#003365" backcolor="#FAF8C6" uuid="08804e57-6d7a-4b49-8bda-86cfeed77a27"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMetodoDiStimaDCFA()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="70" y="0" width="484" height="20" forecolor="#000000" uuid="6da5cd84-ff09-4620-9ca2-f8f702c5e866"/>
+					<box topPadding="2" leftPadding="2" bottomPadding="2" rightPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["<style isBold=\"true\">" + "VALORE DI TRASFORMAZIONE:" + "</style>" + " è un criterio di stima che valuta un bene suscettibile di una trasformazione attraverso la differenza tra il previsto valore di mercato del bene trasformato e il costo di trasformazione."]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="49" width="555" height="20" uuid="18cd038a-6c91-4c6e-9e67-92380e0416ea"/>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="0" y="0" width="70" height="20" forecolor="#003365" backcolor="#FAF8C6" uuid="55a49759-8292-4764-800f-c73dc9b5f576"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMetodoDiStimaMCA()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="70" y="0" width="484" height="20" forecolor="#000000" uuid="a5070b72-d401-471c-a136-933912a20475"/>
+					<box topPadding="2" leftPadding="2" bottomPadding="2" rightPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["<style isBold=\"true\">" + "METODO DEL CONFRONTO DI MERCATO (MCA):" + "</style>" + " è un procedimento di stima del valore o del canone di mercato degli immobili, attraverso il confronto tra l'immobile oggetto di stima ed un insieme di immobili di confronto simili, contrattati di recente e di prezzo o canone noti."]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="89" width="555" height="20" uuid="822b6bb7-7711-48f4-8c82-2b1eb9a258a8"/>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="0" y="0" width="70" height="20" forecolor="#003365" backcolor="#FAF8C6" uuid="8eb81367-8776-4f4d-8171-29b632949491"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMetodoDiStimaAltro()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="70" y="0" width="484" height="20" forecolor="#000000" uuid="83221121-f754-4700-a24c-2e82e623ab05"/>
+					<box topPadding="2" leftPadding="2" bottomPadding="2" rightPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["<style isBold=\"true\">" + "ALTRO: " + "</style>" + $P{data}.getMetodoDiStimaAltroDettaglio()]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="69" width="555" height="20" uuid="c64270be-3b01-4c0e-bf9d-99e55088b44d"/>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="0" y="0" width="70" height="20" forecolor="#003365" backcolor="#FAF8C6" uuid="c95566a0-c4c1-4e58-b6c1-62f64c02fa6a"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMetodoDiStimaCostoDiRicostruzioneDeprezzato()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="70" y="0" width="484" height="20" forecolor="#000000" uuid="baadd57c-1ebe-47f6-b124-1c27b4f45feb"/>
+					<box topPadding="2" leftPadding="2" bottomPadding="2" rightPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["<style isBold=\"true\">" + "COSTO DI RICOSTRUZIONE DEPREZZATO:" + "</style>" + " è un procedimento che si basa sulla stima del valore dell'area edificata e del costo di ricostruzione del fabbricato esistente, eventualmente deprezzato per la vetustà e per l'obsolescenza."]]></textFieldExpression>
+				</textField>
+			</frame>
+			<textField>
+				<reportElement mode="Opaque" x="0" y="1" width="70" height="24" backcolor="#DDEBF7" uuid="3a8c8d61-a16d-46d4-b98a-e000f25461b3"/>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{data}.getLabelMetodoStimaASIS()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="70" y="1" width="484" height="24" backcolor="#DDEBF7" uuid="1c9c1745-5227-4667-9907-6bf4f2e33ff4"/>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["STIMA DEL CESPITE ALLO STATO ATTUALE (AS IS)"]]></textFieldExpression>
+			</textField>
+			<frame>
+				<reportElement positionType="Float" x="0" y="141" width="555" height="20" uuid="530de8dc-61f0-4a56-87c3-d812ec7335dd"/>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="0" y="0" width="70" height="20" forecolor="#003365" backcolor="#FAF8C6" uuid="1e04dc36-4ba7-4a2f-8f07-c38507b176d8"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMetodoDiStimaMCAAsCompleted()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="70" y="0" width="484" height="20" forecolor="#000000" uuid="c356ee97-0981-4065-98c1-5edb9ce2ca76"/>
+					<box topPadding="2" leftPadding="2" bottomPadding="2" rightPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["<style isBold=\"true\">" + "METODO DEL CONFRONTO DI MERCATO (MCA):" + "</style>" + " è un procedimento di stima del valore o del canone di mercato degli immobili, attraverso il confronto tra l'immobile oggetto di stima ed un insieme di immobili di confronto simili, contrattati di recente e di prezzo o canone noti."]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="161" width="555" height="20" uuid="6695ce00-f35d-4e23-b7dc-00775338d7ae"/>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="0" y="0" width="70" height="20" forecolor="#003365" backcolor="#FAF8C6" uuid="417c398d-5227-411a-8424-b6af6a1904b5"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMetodoDiStimaDCFAAsCompleted()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="70" y="0" width="484" height="20" forecolor="#000000" uuid="ced70857-d03f-4cd6-9caf-d1294528573c"/>
+					<box topPadding="2" leftPadding="2" bottomPadding="2" rightPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["<style isBold=\"true\">" + "ANALISI DEL FLUSSO DI CASSA SCONTATO (DCFA):" + "</style>" + " è un procedimento di stima che si basa sul calcolo del valore attuale netto del flusso di cassa di un immobile alla data della valutazione. Il flusso di cassa è costituito dai costi e ricavi dell'immobile da valutare."]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="181" width="555" height="20" uuid="2ffb0ec8-2a3e-48c5-a91d-82cb093aa6ad"/>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="0" y="0" width="70" height="20" forecolor="#003365" backcolor="#FAF8C6" uuid="8f73545c-3b3c-4700-ae8f-05c4c9d6497e"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMetodoDiStimaCapitalizzazioneDirettaAsCompleted()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="70" y="0" width="484" height="20" forecolor="#000000" uuid="77b84c94-d54f-4bea-8e8c-554691faf529"/>
+					<box topPadding="2" leftPadding="2" bottomPadding="2" rightPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["<style isBold=\"true\">" + "CAPITALIZZAZIONE DIRETTA  (DC):" + "</style>" + " è un procedimento di stima che converte in modo diretto il canone di mercato annuale dell'immobile da valutare nel valore di mercato dell'immobile stesso, dividendo il reddito annuo per il saggio di capitalizzazione."]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="201" width="555" height="20" uuid="b5503e6c-7620-493b-bcd7-1a4e4f1818b3"/>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="0" y="0" width="70" height="20" forecolor="#003365" backcolor="#FAF8C6" uuid="fc463c72-94b6-4cc4-8d29-7f4073aab9c1"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMetodoDiStimaCostoDiRicostruzioneDeprezzatoAsCompleted()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="70" y="0" width="484" height="20" forecolor="#000000" uuid="6b4be973-d069-476a-96b2-5131e6291fc3"/>
+					<box topPadding="2" leftPadding="2" bottomPadding="2" rightPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["<style isBold=\"true\">" + "COSTO DI RICOSTRUZIONE DEPREZZATO:" + "</style>" + " è un procedimento che si basa sulla stima del valore dell'area edificata e del costo di ricostruzione del fabbricato esistente, eventualmente deprezzato per la vetustà e per l'obsolescenza."]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="221" width="555" height="20" uuid="4fbcb88a-1048-4833-a9e0-ea08fa387682"/>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="0" y="0" width="70" height="20" forecolor="#003365" backcolor="#FAF8C6" uuid="1d0d5c14-41f2-405e-9260-be675d239601"/>
+					<box leftPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getMetodoDiStimaAltroAsCompleted()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="70" y="0" width="484" height="20" forecolor="#000000" uuid="0cd7bb6f-d60a-4a73-b2ce-b745e0ebd2c1"/>
+					<box topPadding="2" leftPadding="2" bottomPadding="2" rightPadding="2">
+						<pen lineWidth="0.5" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["<style isBold=\"true\">" + "ALTRO: " + "</style>" + $P{data}.getMetodoDiStimaAltroDettaglioAsCompleted()]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="113" width="555" height="24" uuid="9bfdb5e6-9dd3-4df2-826e-fdc68eb3e478"/>
+				<textField>
+					<reportElement mode="Opaque" x="0" y="0" width="70" height="24" backcolor="#DDEBF7" uuid="836f6126-10a2-4d7e-a9a8-259213b4d0d7"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getLabelMetodoStimaASCompleted()]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Opaque" x="70" y="0" width="484" height="24" backcolor="#DDEBF7" uuid="6618c5e5-094c-495d-aeab-0f068c76aad8">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["STIMA DEL CESPITE A LAVORI ULTIMATI (AS COMPLETED)"]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+</jasperReport>

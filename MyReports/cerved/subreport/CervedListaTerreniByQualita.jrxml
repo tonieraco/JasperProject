@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.5.1.final utlizzo versione della libreria JasperReports6.5.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="525" pageHeight="797" columnWidth="525" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="15493650-9929-4a20-8bb5-55c208902c5d">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#BEBEBE"/>
+			<bottomPen lineWidth="0.5" lineColor="#BEBEBE"/>
+		</box>
+	</style>
+	<subDataset name="listaTerreniByQualitaDataset" uuid="1d9c428f-79b3-4bf1-ac81-c864345e1537">
+		<field name="listaTerreniByQualita" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.cerved.data.CervedPdfTerrenoByQualita">
+			<fieldDescription><![CDATA[_THIS]]></fieldDescription>
+		</field>
+	</subDataset>
+	<parameter name="data" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.cerved.data.CervedPdfMainCollection"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<detail>
+		<band height="47">
+			<frame>
+				<reportElement positionType="Float" x="0" y="0" width="525" height="47" uuid="2a6fb39d-7c1e-4098-9670-f7eb84628ae1">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textField>
+					<reportElement key="" mode="Opaque" x="210" y="15" width="190" height="16" forecolor="#000000" backcolor="#EDEDED" uuid="f1315897-1f10-45c3-991f-18aded0c3f82">
+						<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial_BNL" size="8" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Sup. Commerciale"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement key="" mode="Opaque" x="0" y="15" width="210" height="16" forecolor="#000000" backcolor="#EDEDED" uuid="e73bf458-185e-4f4a-bae0-0a6615924f01">
+						<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial_BNL" size="8" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Qualità"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement key="" mode="Opaque" x="400" y="15" width="124" height="16" forecolor="#000000" backcolor="#EDEDED" uuid="7b0ab68e-0458-41ee-bade-17db89629f5f">
+						<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial_BNL" size="8" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Valore"]]></textFieldExpression>
+				</textField>
+				<componentElement>
+					<reportElement x="0" y="31" width="525" height="16" uuid="2dac0d28-56d9-4f1d-a6af-3bdf4fb5a38a">
+						<property name="net.sf.jasperreports.export.headertoolbar.table.name" value=""/>
+					</reportElement>
+					<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
+						<datasetRun subDataset="listaTerreniByQualitaDataset" uuid="5bbf488d-73fd-4093-be28-28a3986f3d8e">
+							<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{data}.getListaTerreniByQualita())]]></dataSourceExpression>
+						</datasetRun>
+						<jr:listContents height="16" width="525">
+							<textField isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="210" height="16" uuid="cda1198f-f1f9-438f-ace5-6c5d49ef5b54">
+									<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box topPadding="1" leftPadding="2" bottomPadding="1" rightPadding="2">
+									<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+									<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+								</box>
+								<textElement textAlignment="Left" verticalAlignment="Middle">
+									<font fontName="Arial" size="6"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{listaTerreniByQualita}.getQualita()]]></textFieldExpression>
+							</textField>
+							<textField isBlankWhenNull="true">
+								<reportElement x="210" y="0" width="190" height="16" uuid="9ce990f7-7f78-4a0a-9be3-4a68e27c5b43">
+									<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box topPadding="1" leftPadding="2" bottomPadding="1" rightPadding="2">
+									<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+									<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+								</box>
+								<textElement textAlignment="Right" verticalAlignment="Middle">
+									<font fontName="Arial" size="6"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{listaTerreniByQualita}.getSupCommerciale()]]></textFieldExpression>
+							</textField>
+							<textField isBlankWhenNull="true">
+								<reportElement x="400" y="0" width="124" height="16" uuid="ac3bfef6-2a4d-4727-ab29-3d2e53cad4e4">
+									<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box topPadding="1" leftPadding="2" bottomPadding="1" rightPadding="2">
+									<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+									<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#BABABA"/>
+								</box>
+								<textElement textAlignment="Right" verticalAlignment="Middle">
+									<font fontName="Arial" size="6"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{listaTerreniByQualita}.getValore()]]></textFieldExpression>
+							</textField>
+						</jr:listContents>
+					</jr:list>
+				</componentElement>
+				<textField>
+					<reportElement positionType="Float" mode="Opaque" x="0" y="0" width="525" height="14" forecolor="#FFFFFF" backcolor="#879C3F" uuid="84eccdd1-60d3-4c8a-8fb1-d401f5c9739c">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+					</reportElement>
+					<box leftPadding="5" rightPadding="1">
+						<topPen lineWidth="1.0" lineColor="#C9CDD3"/>
+						<leftPen lineWidth="0.0" lineColor="#C9CDD3"/>
+						<bottomPen lineWidth="1.0" lineColor="#C9CDD3"/>
+						<rightPen lineWidth="0.0" lineColor="#C9CDD3"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial_BNL" size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Elenco Terreni raggruppati per qualità"]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+</jasperReport>

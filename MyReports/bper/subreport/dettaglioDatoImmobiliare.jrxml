@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.1.final utlizzo versione della libreria JasperReports5.2.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="dettaglioDatoImmobiliare" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="3b156187-ed97-4a76-8f1c-f187db37170c">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<subDataset name="dataset1" uuid="696f2602-c115-4a44-b6a5-8a75420d5356">
+		<field name="cadastral" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.bper.data.Cadastral">
+			<fieldDescription><![CDATA[_THIS]]></fieldDescription>
+		</field>
+	</subDataset>
+	<field name="descrizioneUnitaStima" class="java.lang.String">
+		<fieldDescription><![CDATA[descrizioneUnitaStima]]></fieldDescription>
+	</field>
+	<field name="supComm" class="java.lang.String">
+		<fieldDescription><![CDATA[supComm]]></fieldDescription>
+	</field>
+	<field name="destinazione" class="java.lang.String">
+		<fieldDescription><![CDATA[destinazione]]></fieldDescription>
+	</field>
+	<field name="valoreAttualeMercato" class="java.lang.String">
+		<fieldDescription><![CDATA[valoreAttualeMercato]]></fieldDescription>
+	</field>
+	<field name="cadastral" class="java.util.Collection"/>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<frame>
+				<reportElement x="0" y="0" width="546" height="30" uuid="a3a3d64b-b910-4762-947a-f8929fa0ea77"/>
+				<componentElement>
+					<reportElement stretchType="RelativeToTallestObject" x="80" y="0" width="466" height="30" uuid="43138b54-7513-48f4-924a-14665291d246">
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					</reportElement>
+					<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
+						<datasetRun subDataset="dataset1" uuid="8a8dc73b-3769-402c-a753-082376f2e7ad">
+							<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{cadastral})]]></dataSourceExpression>
+						</datasetRun>
+						<jr:listContents height="30" width="466">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToTallestObject" x="62" y="0" width="20" height="30" uuid="c81cdc1b-f9a1-4c72-9dcf-af8b204cabe8">
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box topPadding="3" bottomPadding="3" rightPadding="0">
+									<topPen lineWidth="0.4" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.4" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.4" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.4" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="BancoPopolareFont" size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{cadastral}.getCategoria()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToTallestObject" x="82" y="0" width="28" height="30" uuid="d71ee78c-554b-45c4-b9aa-3a19f961c976">
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box>
+									<topPen lineWidth="0.4" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.4" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.4" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.4" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="BancoPopolareFont" size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{cadastral}.getFoglio()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToTallestObject" x="110" y="0" width="30" height="30" uuid="60f78815-e831-4d8e-83ab-05fd53821eb3">
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box>
+									<topPen lineWidth="0.4" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.4" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.4" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.4" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="BancoPopolareFont" size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{cadastral}.getParticella()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToTallestObject" x="140" y="0" width="26" height="30" uuid="0ad4240e-71ad-4422-8c04-a2262aa45508">
+									<property name="com.jaspersoft.studio.unit.width" value="px"/>
+								</reportElement>
+								<box>
+									<topPen lineWidth="0.4" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.4" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.4" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.4" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="BancoPopolareFont" size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA["0".equals($F{cadastral}.getSubalterno()) ? "" : $F{cadastral}.getSubalterno()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToTallestObject" x="166" y="0" width="60" height="30" uuid="e17de8b8-f72c-4784-a70d-7f615ac64743"/>
+								<box>
+									<topPen lineWidth="0.4" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.4" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.4" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.4" lineStyle="Solid" lineColor="#A6A6A6"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="BancoPopolareFont" size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{cadastral}.getValore()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="62" height="30" uuid="50363653-bb59-4938-9412-58c193f08c4d">
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box topPadding="3" bottomPadding="3" rightPadding="0">
+									<topPen lineWidth="0.4" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.4" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.4" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.4" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="BancoPopolareFont" size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{cadastral}.getDestinazione()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToTallestObject" x="226" y="0" width="60" height="30" uuid="1b2e4bcc-0b65-4254-8fe6-d48ca96ef6d0"/>
+								<box>
+									<topPen lineWidth="0.4" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.4" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.4" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.4" lineStyle="Solid" lineColor="#A6A6A6"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="BancoPopolareFont" size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{cadastral}.getCauzionale()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToTallestObject" x="286" y="0" width="60" height="30" uuid="08489735-746f-428e-83f4-3c12d4bb3a1f"/>
+								<box>
+									<topPen lineWidth="0.4" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.4" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.4" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.4" lineStyle="Solid" lineColor="#A6A6A6"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="BancoPopolareFont" size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{cadastral}.getAssicurabile()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToTallestObject" x="346" y="0" width="60" height="30" uuid="f512a9d7-cc76-4b74-a257-3a9b7595c71c"/>
+								<box>
+									<topPen lineWidth="0.4" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.4" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.4" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.4" lineStyle="Solid" lineColor="#A6A6A6"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="BancoPopolareFont" size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{cadastral}.getPropertyValue()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToTallestObject" x="406" y="0" width="60" height="30" uuid="e60e6b55-00f4-4c45-aaea-ce400f4c49f6"/>
+								<box>
+									<topPen lineWidth="0.4" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.4" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.4" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.4" lineStyle="Solid" lineColor="#A6A6A6"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="BancoPopolareFont" size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{cadastral}.getProntoRealizzo()]]></textFieldExpression>
+							</textField>
+						</jr:listContents>
+					</jr:list>
+				</componentElement>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="80" height="30" uuid="c4987b45-b139-4e14-ad9c-0f744467df88"/>
+					<box padding="1" leftPadding="1">
+						<topPen lineWidth="0.4" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.4" lineStyle="Solid" lineColor="#A6A6A6"/>
+						<bottomPen lineWidth="0.4" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.4" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="7" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{descrizioneUnitaStima}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+</jasperReport>

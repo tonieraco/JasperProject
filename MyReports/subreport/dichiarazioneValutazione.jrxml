@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.0.final using JasperReports Library version 6.3.0  -->
+<!-- 2025-09-01T12:28:34 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="CervedElementiComparazione" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="4e841fd9-2393-43fe-beaa-74213041040c">
+	<subDataset name="omiDataset" uuid="1d9c428f-79b3-4bf1-ac81-c864345e1537">
+		<field name="valoriOMIs" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.cerved.data.CervedPdfValoriOMI">
+			<fieldDescription><![CDATA[_THIS]]></fieldDescription>
+		</field>
+	</subDataset>
+	<parameter name="data" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.cerved.data.CervedPdfMainCollection"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="43" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement key="" mode="Transparent" x="0" y="0" width="555" height="40" forecolor="#000000" backcolor="rgba(135, 156, 63, 0.0)" uuid="fb7f3d9b-0253-4097-a577-37c8395ea67a">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box bottomPadding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Top" markup="styled">
+					<font fontName="BancoPopolareFont" size="9" isItalic="false"/>
+					<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[(($P{data}.isTestoCaratteristicheLimitiIncaricoCerved() == true) ? "Il presente Rapporto di Valutazione è stato redatto in conformità alle 'Linee Guida per la valutazione degli immobili in garanzia delle esposizioni creditizie' (ABI, 6 dicembre 2024), che <i>sono state redatte nella consapevolezza che per essere considerati affidabili gli standard di valutazione dovrebbero tenere conto degli standard di valutazione riconosciuti a livello internazionale ed in particolare delle versioni più aggiornate degli International Valuation Standards (IVS 2025), degli European Valuation Standards (EVS 2025), dei RICS Valuation – Global Standards (2025), che incorporano gli IVSC Intenational Valuation Standards, e del Codice delle Valutazioni Immobiliari – Italian Property Valuation Standard (Edizione 2018, Tecnoborsa) in considerazione della realtà nazionale.</i>" : "Il presente Rapporto di Valutazione è stato redatto in conformità alle 'Linee Guida ABI' (30 Novembre 2018).") +"\n"+
+"\nIn particolare, si fa riferimento ai seguenti Requisiti presenti nelle citate \"Linee Guida\" ABI: \n"+
+"<li>R.1 Requisito 1 – Valore di Mercato con attenzione al punto R.1.2.1 che richiamando il Regolamento 575/2013/UE all'art. 4, comma 1, punto 76 definisce come: <i>l'importo stimato al quale l'immobile verrebbe venduto alla data della valutazione in un'operazione svolta tra un venditore e un acquirente consenzienti alle normali condizioni di mercato dopo un'adeguata promozione commerciale, nell'ambito della quale entrambe le parti hanno agito con cognizione di causa, con prudenza e senza essere soggette a costrizioni.</i></li>" +
+"<li>R.2 Codice di condotta dei periti (Valutatori) con al suo interno il punto R.2.3 Definizione di perito (Valutatore) dove sono elencati i requisiti di un perito;</li>" +
+"<li>R.3 Requisito 3 – Procedure e metodi di valutazione;</li>" +
+($P{data}.isValutazioneFULL() == true ? "<li>R.4 Requisito 4 – Rapporto di Valutazione, con al suo interno il punto R.4.3 Legittimità edilizia e urbanistica.</li>" :"<li>R.4 Requisito 4 – Rapporto di Valutazione.</li>") + 
+"\n\nIn base alla tipologia della valutazione, si è posta particolare attenzione alle note esplicative presenti nelle citate \"Linee Guida\": " +
+
+("MEVU.1".equals($P{data}.getModalitaDiValutazioneCode()) ? "<li>N.1 Nota Esplicativa 1 - Applicazione del Metodo del confronto di mercato (MCA);</li>" :"") +
+("MEVU.3".equals($P{data}.getModalitaDiValutazioneCode()) ? "<li>N.2 Nota Esplicativa 2 - Metodo Finanziario o reddituale;</li>" :"") +
+("MEVU.4".equals($P{data}.getModalitaDiValutazioneCode()) ? "<li>N.3 Nota Esplicativa 3 - Metodo dei Costi;</li>" :"") +
+
+($P{data}.isImmobiliInSviluppoVisibile() == true ? "<li>N.4 Nota Esplicativa 4 - Immobili in Sviluppo;</li>" :"") +
+"<li>N.5 Nota Esplicativa 5 - Misura delle superfici immobiliari;</li>" +
+($P{data}.isRiesameValutazioniVisibile() == true ? "<li>N.6 Nota Esplicativa 6 - Riesame delle valutazioni.</li>" :"") +
+
+"\n\nPer tutti gli altri valori presenti nel rapporto fornito si rimanda a quanto presente nelle citate \"Linee Guida\" all'Appendice 1 – Valori diversi dal valore di mercato: " +
+($P{data}.isValoreDiCreditoIpotecarioVisibile() == true ? "<li>A.1.2 Valore di Credito Ipotecario: per valore di credito ipotecario (Mortgage Lending Value - MLV) definito anche valore cauzionale, si intende <i>\"il valore dell'immobile quale determinato in base ad una prudente valutazione della futura commerciabilità dell'immobile, tenuto conto delle caratteristiche durevoli a lungo termine dell'immobile, delle condizioni normali e locali del mercato, dell'uso corrente dell'immobile e dei suoi appropriati usi alternativi\";</i></li>" :"") +
+($P{data}.isValoreAssicurabileVisibile() == true ? "<li>A.1.3 Valore Assicurabile: per \"valore assicurabile\" di un immobile si intende <i>\"il costo della sostituzione del bene danneggiato con materiali di pari genere e qualità, senza alcuna detrazione per ammortamento\"</i>. Lo stesso di norma corrisponde al Costo di ricostruzione a nuovo, al netto dell'area e degli altri costi accessori;</li>" :"") +
+($P{data}.isValoreVenditaForzataVisibile() == true ? "<li>A.1.4 Valore di Vendita Forzata: per valore di vendita forzata si intende <i>\"la somma ottenibile per l'immobile nei casi in cui, per qualsiasi ragione, il venditore è costretto a cedere l'immobile a condizioni non conformi alla definizione di valore di mercato\"</i>;</li>" :"") +
+($P{data}.isJudicialValueVisible() == true ? "<li>A.1.5 Judicial Market Value – Valore di mercato con assunzione: per valore di mercato con assunzione si intende quel valore del bene immobile a garanzia di un credito inesigibile stimato dal perito in virtù delle condizioni limitanti che derivano dalla procedura esecutiva o stragiudiziale, avviate per il recupero del credito. In tale ipotesi il valore è connesso a specifiche assunzioni che considerano tutti gli aspetti oggettivi e soggettivi propri della procedura di esecuzione immobiliare (quali ad esempio: la destinazione d'uso del bene, l'efficienza del Tribunale di riferimento, ecc.).</li>" :"") +
+($P{data}.isPropertyValueVisible() == true ? "<li>Nella valutazione del Property Value sono state considerate le caratteristiche proprie dell'immobile oggetto di valutazione (localizzazione, tipologia e caratteristiche fisiche), del ciclo di mercato, nonché i rischi futuri (di mercato ed ESG) che determinano le variazioni dei prezzi nel tempo per tutta la durata del finanziamento in coerenza con quanto previsto dall'art.229 del Regolamento (UE) 2024/1623 e dall'aggiornamento delle Linee Guida ABI del 6 dicembre 2024.</li>" :"") +
+"" +
+(($P{data}.isPredictiveValueToTwelveVisible() == true || $P{data}.isPredictiveValueToThirtySixVisible() == true) ? "\n\nInfine, per i Predictive Market Values:": "")+
+($P{data}.isPredictiveValueToTwelveVisible() == true ? "\n<li>Predictive Value a 12 mesi: indicazione prospettica del valore del bene nel medio termine ai fini del calcolo del lifetime expected loss in ottica IFRS 9. In particolare, tale indicatore stima il valore futuro di un bene sulla base di previsioni o analisi predittive e viene determinato utilizzando modelli statistici, algoritmi di machine learning o altre metodologie avanzate che integrano dati storici e variabili rilevanti per prevedere future dinamiche di mercato. </li>" : "") +
+($P{data}.isPredictiveValueToThirtySixVisible() == true ? "\n<li>Predictive Value a 36 mesi: calcolo prospettico del valore del bene nel lungo termine ai fini del calcolo del lifetime expected loss in ottica IFRS. In particolare, tale indicatore stima il valore futuro di un bene, sul lungo termine, sulla base di previsioni o analisi predittive e viene determinato utilizzando modelli statistici, algoritmi di machine learning o altre metodologie avanzate che integrano dati storici e variabili rilevanti per prevedere future dinamiche di mercato.</li>" : "") +
+"\n\nIn base alla tipologia della valutazione e alla destinazione d'uso degli immobili, sono state inoltre osservate l'Appendice 2, 3 e 4." +
+
+($P{data}.isValutazioneFULL() != true ? "\n\nIl presente Rapporto di Valutazione è stato redatto, secondo le indicazioni della Committenza, sulla base della documentazione resa disponibile dal Cliente (ad esempio: valutazione precedente) in fase di conferimento dell'incarico e dei limiti e condizioni di servizio con i limiti dettati dalla particolare situazione degli immobili e dalla finalità della valutazione (verifiche su garanzie in portafoglio, o aggiornamento e monitoraggio periodico del valore della garanzia)." :"") + 
+
+($P{data}.isValutazioneDriveBy() == true ? "\n\nIn caso di valutazione con solo sopralluogo esterno è implicita l'assunzione speciale che l'immobile non venga nuovamente ispezionato internamente e che le condizioni interne si presumano invariate rispetto alla valutazione precedente e documentata." :"") + 
+
+($P{data}.isValutazioneDesktop() == true ? "\n\nIn caso di valutazione senza sopralluogo è implicita l'assunzione speciale che l'immobile non venga nuovamente ispezionato e che le condizioni si presumano invariate rispetto alla valutazione precedente e documentata." :"") + 
+
+
+(($P{data}.isValutazioneDriveBy() == true || $P{data}.isValutazioneDesktop() == true) ? "\n\nIn particolare, i limiti d'indagine hanno riguardato:\n<li>la non effettuazione del sopralluogo;</li><li>l'utilizzo della sola documentazione fornita dalla committenza (assunzione);</li><li>l'impossibilità di effettuare più approfondite indagini di tipo edilizio e urbanistico;</li><li>lo stato occupazionale.</li>" :"") + 
+
+("MEVU.2".equals($P{data}.getModalitaDiValutazioneCode()) ? "\n\nConsiderati i citati limiti d'indagine e l'oggettiva impossibilità di applicare la procedura Market Comparison Approach (MCA) a causa delle scarse informazioni disponibili, per la valutazione degli immobili in oggetto si applica il metodo di stima sintetico-comparativa, che è il procedimento di stima del prezzo di mercato basato sull'impiego di un unico parametro di confronto tecnico o economico, preso come termine di paragone, e di una relazione di proporzionalità diretta tra il valore di stima e il parametro dell'immobile oggetto di valutazione." :"")+
+
+"\n\nE' fatto divieto di divulgare a terzi il presente Rapporto di Valutazione senza il preventivo consenso scritto di "+  $P{data}.getNomeSocieta().trim().toUpperCase() + "." +
+"\n\nIl presente Rapporto di Valutazione e' stato elaborato sulla base dei dati trasmessi dal valutatore" +
+(($P{data}.isTestoCaratteristicheLimitiIncaricoCerved() == true) ? ", tramite applicativo client web proprietario CERVED," :"") +" in data "+  $P{data}.getDataValutazione() + (($P{data}.isTestoCaratteristicheLimitiIncaricoCerved() == true) ? "\n\n<style isItalic=\"true\">Tutti i soggetti coinvolti nella valutazione hanno espressamente dichiarato di non versare in concreto in una situazione di conflitto di interessi rispetto al processo di commercializzazione del credito e che non vi è alcun rapporto di parentela o relazione di natura professionale e patrimoniale con:\n" +
+"<li>i soggetti coinvolti nel processo di erogazione del credito a garanzia del quale viene posto l'immobile oggetto di valutazione;</li>" +
+"<li>i soggetti destinatari del finanziamento garantito dall'immobile oggetto di valutazione.</li></style>" : "") + 
+"\n\n<style isItalic=\"true\">Nessun soggetto coinvolto nella valutazione ha percepito alcuna commissione connessa al risultato della valutazione.</style>"]]></textFieldExpression>
+			</textField>
+			<break>
+				<reportElement x="0" y="42" width="99" height="1" uuid="c423e9cd-0c05-40d7-a0b5-06f78206d14c"/>
+			</break>
+		</band>
+	</detail>
+</jasperReport>

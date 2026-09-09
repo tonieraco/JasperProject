@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 7.0.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2026-09-04T09:55:05 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="170c5b6d-6a79-4601-801c-974412c4fe64">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="data" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.bancobpm.data.BancoBPMPdfData"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="136">
+			<frame>
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="1" width="555" height="16" uuid="2e921848-5eef-462d-a3fb-08c017a5e4a9"/>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Transparent" x="0" y="0" width="555" height="16" backcolor="#F2F2F2" uuid="0103fcdb-d8d9-4e99-aee3-eff8999a5367"/>
+					<box topPadding="2" leftPadding="2" bottomPadding="2" rightPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getLimitiAssunzNote()]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement x="0" y="20" width="555" height="72" uuid="ba9eada8-696b-4d83-a3e6-3a6a6b9e7ef2"/>
+				<frame>
+					<reportElement x="0" y="0" width="555" height="24" uuid="8fde5929-5338-40fe-bfa3-c277e1964f13"/>
+					<textField>
+						<reportElement mode="Opaque" x="0" y="0" width="555" height="24" backcolor="#DDEBF7" uuid="b915f154-a802-4c5f-bb44-3bacf6b4a964"/>
+						<box padding="2">
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Left" verticalAlignment="Middle">
+							<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+						</textElement>
+						<textFieldExpression><![CDATA["CONVEZIONE EDILIZIA"]]></textFieldExpression>
+					</textField>
+				</frame>
+				<frame>
+					<reportElement positionType="Float" x="0" y="24" width="555" height="16" uuid="a5b5cee4-67cb-4273-9fd1-d39f52074b1d"/>
+					<textField isBlankWhenNull="true">
+						<reportElement stretchType="RelativeToTallestObject" mode="Opaque" x="0" y="0" width="140" height="16" backcolor="#FFFFFF" uuid="6d07867d-abb0-449c-b5fa-909d8537e06c"/>
+						<box>
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Left" verticalAlignment="Middle">
+							<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Riferimento"]]></textFieldExpression>
+					</textField>
+					<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+						<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="140" y="0" width="255" height="16" backcolor="#F2F2F2" uuid="fde93956-7692-498b-aa87-63cd27d28d66"/>
+						<box topPadding="2" leftPadding="2" bottomPadding="2" rightPadding="2">
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Left" verticalAlignment="Middle">
+							<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{data}.getLimitiAssunzRiferimento()]]></textFieldExpression>
+					</textField>
+					<textField isBlankWhenNull="true">
+						<reportElement stretchType="RelativeToTallestObject" mode="Opaque" x="395" y="0" width="65" height="16" backcolor="#FFFFFF" uuid="c91183d1-e8df-485a-adee-23f683d2ab64"/>
+						<box>
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Data"]]></textFieldExpression>
+					</textField>
+					<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+						<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="460" y="0" width="95" height="16" backcolor="#F2F2F2" uuid="f895768c-6b75-4f9e-8145-d2f13f0ba79e"/>
+						<box topPadding="2" leftPadding="2" bottomPadding="2" rightPadding="2">
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Left" verticalAlignment="Middle">
+							<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{data}.getLimitiAssunzData()]]></textFieldExpression>
+					</textField>
+				</frame>
+				<frame>
+					<reportElement positionType="Float" x="0" y="40" width="395" height="16" uuid="05a60461-9b04-4afa-98b8-9df8757fc729"/>
+					<textField isBlankWhenNull="true">
+						<reportElement stretchType="RelativeToTallestObject" mode="Opaque" x="0" y="0" width="140" height="16" backcolor="#FFFFFF" uuid="b5cd220c-b002-4b17-9ee3-459a7dd8069a"/>
+						<box>
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Left" verticalAlignment="Middle">
+							<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Prezzo massimo di cessione"]]></textFieldExpression>
+					</textField>
+					<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+						<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="140" y="0" width="255" height="16" backcolor="#F2F2F2" uuid="a6ace5bc-9b71-4bb3-8dd3-33372b1f2fda"/>
+						<box topPadding="2" leftPadding="2" bottomPadding="2" rightPadding="2">
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Left" verticalAlignment="Middle">
+							<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{data}.getLimitiAssunzPrezzoMassimo()]]></textFieldExpression>
+					</textField>
+				</frame>
+				<frame>
+					<reportElement positionType="Float" x="0" y="56" width="555" height="16" uuid="54594fd2-36ff-43b4-a91a-8de66aea00d3"/>
+					<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+						<reportElement stretchType="RelativeToTallestObject" mode="Opaque" x="0" y="0" width="140" height="16" isRemoveLineWhenBlank="true" backcolor="#FFFFFF" uuid="bb83a70a-421f-4858-bf61-10dcf76decbf"/>
+						<box>
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Left" verticalAlignment="Middle">
+							<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Note convenzione"]]></textFieldExpression>
+					</textField>
+					<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+						<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="140" y="0" width="415" height="16" isRemoveLineWhenBlank="true" backcolor="#F2F2F2" uuid="1a58bec0-6b43-435c-9ddd-82bf6dbea61e"/>
+						<box topPadding="2" leftPadding="2" bottomPadding="2" rightPadding="2">
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Left" verticalAlignment="Middle">
+							<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{data}.getLimitiAssunzNoteConvenzione()]]></textFieldExpression>
+					</textField>
+				</frame>
+			</frame>
+			<frame>
+				<reportElement x="0" y="96" width="555" height="40" uuid="df5b9628-fc22-4f25-86d0-046d2fb25150"/>
+				<textField>
+					<reportElement positionType="Float" mode="Opaque" x="0" y="0" width="555" height="24" backcolor="#DDEBF7" uuid="af753830-1106-4b83-bf7b-77e6fc0135ae"/>
+					<box padding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["ALTRE INFORMAZIONI"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" mode="Transparent" x="0" y="24" width="555" height="16" backcolor="#F2F2F2" uuid="c3c3f5dd-42c2-411f-9317-93522a307bbc"/>
+					<box topPadding="2" leftPadding="2" bottomPadding="2" rightPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="BancoPopolareFont" size="9" isBold="false" isItalic="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getLimitiAssunzAltreInfo()]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+</jasperReport>
