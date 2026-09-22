@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 7.0.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2026-09-22T08:40:04 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="BancoPopolare" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8066f63a-371e-4f7a-aa01-f4ee31a91e2b">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<subDataset name="dataset1" uuid="3f7bfd13-d12f-46e0-85a8-2340aff1e7b3">
+		<field name="valori" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.bancopopolare.data.vprvma.RiepilogoValori">
+			<fieldDescription><![CDATA[_THIS]]></fieldDescription>
+		</field>
+	</subDataset>
+	<parameter name="data" class="it.rlvalue.rlvalue.practice.pdfRenderers.jasper.bancopopolare.data.pv.BancoPopolarePVData"/>
+	<field name="valori" class="java.util.Collection"/>
+	<detail>
+		<band height="305">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement key="" mode="Opaque" x="0" y="0" width="240" height="20" forecolor="#000000" backcolor="#C5D9F1" uuid="0769d72d-a1ad-4073-a361-ddf820c6012d">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box leftPadding="4" bottomPadding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+					<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA["DETERMINAZIONE DEL PROPERTY VALUE"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement key="" mode="Opaque" x="240" y="0" width="194" height="20" forecolor="#000000" backcolor="#C5D9F1" uuid="1c45e4ea-1926-49b0-a7b9-ec75dae57dae">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box bottomPadding="2" rightPadding="8">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isItalic="false"/>
+					<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA["RAPPORTO N."]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement key="" mode="Opaque" x="434" y="0" width="120" height="20" forecolor="#000000" backcolor="#C5D9F1" uuid="96bd3151-983a-4803-a48d-5c307d3a86b7">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box bottomPadding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#C9CDD3"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isItalic="false"/>
+					<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{data}.getNumeroRapporto()]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement key="" mode="Transparent" x="0" y="30" width="525" height="40" forecolor="#000000" backcolor="rgba(135, 156, 63, 0.0)" uuid="2a8f814d-ed4a-4905-9777-da5cd79a596b">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box bottomPadding="2">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Top" markup="styled">
+					<font fontName="Arial" size="8" isItalic="false"/>
+					<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Ai fini della determinazione del Property Value, vengono considerati i seguenti fattori:"+"\n"+
+" - Ciclo immobiliare che è valutato tramite un modello econometrico previsionale di lungo periodo, calibrato sulla durata residua del finanziamento e differenziato per microarea, tipologia immobiliare e stato manutentivo;"+"\n"+
+" - ESG - Performance energetica che rileva eventuali riduzioni di valore legate alla classe energetica e agli obblighi normativi di riqualificazione europei;"+"\n"+
+" - ESG - Resilienza che considera l’esposizione dell’immobile a rischi acuti e cronici, sulla base della posizione e delle caratteristiche specifiche del bene."+"\n"+
+"\n"+
+"Gli ESG sociali non generano un haircut dedicato, poiché la relativa svalutazione è già compresa negli aggiustamenti di mercato storici o previsionali applicati al ciclo immobiliare. Tali modelli integrano indicatori macroeconomici come popolazione, tassi demografici, disoccupazione, valore aggiunto, inflazione e spesa pubblica, ciascuno valutato con la propria granularità territoriale."+"\n"+
+"Gli ESG governance non prevedono un haircut specifico, poiché la relativa svalutazione è già compresa negli aggiustamenti applicati per la transizione energetica. In questo modo il loro impatto risulta già integrato nel modello senza necessità di ulteriori decurtazioni."+"\n"+
+"Anche la Location e Tipologia immobiliare non prevedono un haircut specifico, poiché la relativa svalutazione è già compresa negli aggiustamenti di mercato storici o previsionali. Tali modelli tengono conto della micro‑area, della categoria immobiliare e della distinzione tra nuovo e usato, incorporando quindi l’effetto di queste variabili nella stima prudenziale del valore."+"\n"+
+"Le componenti Conformità normativa, Fungibilità e Redditività non generano ulteriori decurtazioni, poiché il loro effetto è già considerato nella determinazione del valore di mercato attraverso le verifiche svolte in sopralluogo. Eventuali svalutazioni aggiuntive vengono applicate solo se esplicitate nelle note valutative, ad esempio in presenza di criticità manutentive o variazioni della microzona."+"\n\n"+
+"L’Haircut PV complessivo è determinato dalla somma delle singole componenti previste dal modello."]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement key="" positionType="Float" mode="Opaque" x="0" y="80" width="92" height="16" forecolor="#000000" backcolor="#C5D9F1" uuid="53702719-2623-48e0-a4bd-a25a6a66eae3"/>
+				<box leftPadding="4" bottomPadding="2">
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+					<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA["0,00 %"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement key="" positionType="Float" mode="Opaque" x="92" y="80" width="92" height="16" forecolor="#000000" backcolor="#C5D9F1" uuid="be68f5c6-8de1-478c-b019-b9f6a9614750"/>
+				<box leftPadding="4" bottomPadding="2">
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+					<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{data}.getPvHaircutMarketPerc() + " %"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement key="" positionType="Float" mode="Opaque" x="184" y="80" width="92" height="16" forecolor="#000000" backcolor="#C5D9F1" uuid="4faf78c8-2243-497c-a0a9-6a84783b2dbe"/>
+				<box leftPadding="4" bottomPadding="2">
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+					<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{data}.getPvHaircutHaircutTransizionePerc() + " %"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement key="" positionType="Float" mode="Opaque" x="276" y="80" width="92" height="16" forecolor="#000000" backcolor="#C5D9F1" uuid="7ff4e4f8-83c7-4249-9ca0-8ccc4e0dbb57"/>
+				<box leftPadding="4" bottomPadding="2">
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+					<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{data}.getPvHaircutHaircutRischioFisicoPerc() + " %"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement key="" positionType="Float" mode="Opaque" x="368" y="80" width="92" height="16" forecolor="#000000" backcolor="#C5D9F1" uuid="06420ff8-cb3d-472f-aa05-38a072a82ec5"/>
+				<box leftPadding="4" bottomPadding="2">
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+					<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA["0,00 %"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement key="" positionType="Float" mode="Opaque" x="460" y="80" width="92" height="16" forecolor="#000000" backcolor="#C5D9F1" uuid="b9f76aee-7775-4d44-9381-e6c2b8901b47"/>
+				<box leftPadding="4" bottomPadding="2">
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+					<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA["0,00 %"]]></textFieldExpression>
+			</textField>
+			<frame>
+				<reportElement positionType="Float" x="0" y="96" width="552" height="16" isRemoveLineWhenBlank="true" uuid="7e5a54a8-3399-439e-baa3-bc87207132fd"/>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement key="" positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="0" y="0" width="92" height="16" forecolor="#000000" backcolor="#FFFFCC" uuid="772c2475-81c3-43d8-aba8-dcf7f26f4238">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="4" bottomPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Componente terreno"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement key="" positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="92" y="0" width="92" height="16" isRemoveLineWhenBlank="true" forecolor="#000000" backcolor="#FFFFCC" uuid="37c14634-2277-479b-9fd0-b300db6c3dd0">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="4" bottomPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Ciclo immobiliare"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement key="" positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="184" y="0" width="92" height="16" isRemoveLineWhenBlank="true" forecolor="#000000" backcolor="#FFFFCC" uuid="4911e30e-1bda-442b-a309-2ad5434d358f">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="4" bottomPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+					</textElement>
+					<textFieldExpression><![CDATA["ESG - Performance energetica"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement key="" positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="276" y="0" width="92" height="16" isRemoveLineWhenBlank="true" forecolor="#000000" backcolor="#FFFFCC" uuid="da5947b0-5b0a-4aa9-b63e-8381eb7b2a18">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="4" bottomPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+					</textElement>
+					<textFieldExpression><![CDATA["ESG - Resilienza"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement key="" positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="368" y="0" width="92" height="16" isRemoveLineWhenBlank="true" forecolor="#000000" backcolor="#FFFFCC" uuid="f1553836-1c46-468e-bc7b-336ad7ddf35d">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="4" bottomPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+					</textElement>
+					<textFieldExpression><![CDATA["ESG - Fattori sociali"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement key="" positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="460" y="0" width="92" height="16" isRemoveLineWhenBlank="true" forecolor="#000000" backcolor="#FFFFCC" uuid="ef6f1ff0-bfff-4c6f-86ce-e0f6302b3a2e">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="4" bottomPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+					</textElement>
+					<textFieldExpression><![CDATA["ESG - Governance"]]></textFieldExpression>
+				</textField>
+			</frame>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement key="" positionType="Float" mode="Opaque" x="0" y="120" width="111" height="16" forecolor="#000000" backcolor="#C5D9F1" uuid="e80d86e1-a90c-4fb4-ad1e-11936229ccb9"/>
+				<box leftPadding="4" bottomPadding="2">
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+					<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA["0,00 %"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement key="" positionType="Float" mode="Opaque" x="111" y="120" width="111" height="16" forecolor="#000000" backcolor="#C5D9F1" uuid="7b397848-1f47-4c6a-a815-4532590f04d9"/>
+				<box leftPadding="4" bottomPadding="2">
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+					<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA["0,00 %"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement key="" positionType="Float" mode="Opaque" x="222" y="120" width="110" height="16" forecolor="#000000" backcolor="#C5D9F1" uuid="810f8aca-bab9-453e-9fd6-e2358ea8ccc3"/>
+				<box leftPadding="4" bottomPadding="2">
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+					<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA["0,00 %"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement key="" positionType="Float" mode="Opaque" x="332" y="136" width="110" height="16" forecolor="#000000" backcolor="#FFFFCC" uuid="dea26440-8079-4c2f-8667-ee3a15ccf9aa">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box leftPadding="4" bottomPadding="2">
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+					<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Fungibilità"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement key="" positionType="Float" mode="Opaque" x="222" y="136" width="110" height="16" forecolor="#000000" backcolor="#FFFFCC" uuid="5e3416da-cea1-497f-b54c-4d0cc16e42a6">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box leftPadding="4" bottomPadding="2">
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+					<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Conformità normativa"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement key="" positionType="Float" mode="Opaque" x="111" y="136" width="111" height="16" forecolor="#000000" backcolor="#FFFFCC" uuid="b0db6d37-fd82-402f-8a98-577ba77ed5a2">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box leftPadding="4" bottomPadding="2">
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+					<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Tipologia bene"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement key="" positionType="Float" mode="Opaque" x="0" y="136" width="111" height="16" forecolor="#000000" backcolor="#FFFFCC" uuid="452c050b-b164-49c1-b4bf-05d32612a1fd">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box leftPadding="4" bottomPadding="2">
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+					<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Location"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement key="" positionType="Float" mode="Opaque" x="0" y="160" width="111" height="16" forecolor="#FFFFFF" backcolor="#002060" uuid="59f6424f-5433-4223-9a03-8f06e7ec66fd">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box leftPadding="4" bottomPadding="2">
+					<pen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+					<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Haircut PV"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement key="" positionType="Float" mode="Opaque" x="0" y="176" width="111" height="16" forecolor="#000000" backcolor="#C5D9F1" uuid="38bd1442-8277-4ee7-92cc-060b9e3708bd">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box leftPadding="4" bottomPadding="2">
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+					<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{data}.getPercentagePropertyValue() + " %"]]></textFieldExpression>
+			</textField>
+			<frame>
+				<reportElement positionType="Float" x="0" y="200" width="315" height="56" uuid="cbf69ec8-43fb-49dc-8b45-22b5cf11e702"/>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement key="" positionType="Float" mode="Opaque" x="0" y="5" width="315" height="16" forecolor="#000000" backcolor="#C5D9F1" uuid="55d5c15c-276a-426d-8b98-047c2dab1d67">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="4" bottomPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+					</textElement>
+					<textFieldExpression><![CDATA["RIEPILOGO VALORI"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement key="" positionType="Float" mode="Opaque" x="210" y="21" width="105" height="19" forecolor="#000000" backcolor="#DCE6F1" uuid="92781958-5f99-42ee-aa54-c2b500c49655">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="4" bottomPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="styled">
+						<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+					</textElement>
+					<textFieldExpression><![CDATA["PV"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement key="" positionType="Float" mode="Opaque" x="150" y="21" width="60" height="19" forecolor="#000000" backcolor="#DCE6F1" uuid="4454dc83-b473-4321-9329-d3536a58f26a">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="4" bottomPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="styled">
+						<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+					</textElement>
+					<textFieldExpression><![CDATA["HAIRCUT %"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement key="" positionType="Float" mode="Opaque" x="0" y="21" width="150" height="19" forecolor="#000000" backcolor="#DCE6F1" uuid="c14e9186-6bc8-49b7-b771-5c819c1c28a6">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="4" bottomPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="styled">
+						<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+					</textElement>
+					<textFieldExpression><![CDATA["VALORE DI MERCATO"]]></textFieldExpression>
+				</textField>
+				<frame>
+					<reportElement positionType="Float" x="1" y="40" width="314" height="16" uuid="f3dacd60-f5aa-4545-bb64-eb0b11eb3fd0"/>
+					<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+						<reportElement key="" positionType="Float" mode="Opaque" x="-1" y="0" width="150" height="16" forecolor="#000000" backcolor="#FFFFFF" uuid="eb694416-6103-488a-96a1-be35ee4f7729">
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						</reportElement>
+						<box leftPadding="4" bottomPadding="2" rightPadding="4">
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+							<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+							<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{data}.getTotaleValoreDiMercato() + " €"]]></textFieldExpression>
+					</textField>
+					<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+						<reportElement key="" positionType="Float" mode="Opaque" x="149" y="0" width="60" height="16" forecolor="#000000" backcolor="#FFFFFF" uuid="0a32c067-43e9-4a72-a41b-d94a07fa1b5c">
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						</reportElement>
+						<box leftPadding="4" bottomPadding="2" rightPadding="4">
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+							<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+							<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{data}.getPercentagePropertyValue() + " %"]]></textFieldExpression>
+					</textField>
+					<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+						<reportElement key="" positionType="Float" mode="Opaque" x="209" y="0" width="105" height="16" forecolor="#000000" backcolor="#FFFFFF" uuid="f024e226-a1f8-4c78-8d3b-52e70e204f0b">
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						</reportElement>
+						<box leftPadding="4" bottomPadding="2" rightPadding="4">
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+							<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+							<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{data}.getTotalePV() + " €"]]></textFieldExpression>
+					</textField>
+				</frame>
+			</frame>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement key="" positionType="Float" mode="Opaque" x="332" y="120" width="110" height="16" forecolor="#000000" backcolor="#C5D9F1" uuid="d9e71c74-7a3b-409e-9102-f39cde4bdaf5">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box leftPadding="4" bottomPadding="2">
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+					<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA["0,00 %"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement key="" positionType="Float" mode="Opaque" x="442" y="120" width="110" height="16" forecolor="#000000" backcolor="#C5D9F1" uuid="2bb759c4-b058-44f3-bd7f-fa632b0569cf"/>
+				<box leftPadding="4" bottomPadding="2">
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+					<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA["0,00 %"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement key="" positionType="Float" mode="Opaque" x="442" y="136" width="110" height="16" forecolor="#000000" backcolor="#FFFFCC" uuid="201e9ab6-4e82-4797-af55-08fcd787d570">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box leftPadding="4" bottomPadding="2">
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+					<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Redditività"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement key="" positionType="Float" mode="Opaque" x="111" y="160" width="129" height="16" forecolor="#FFFFFF" backcolor="#002060" uuid="4145c614-0c89-41ac-8626-99b87016d01a">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box leftPadding="4" bottomPadding="2">
+					<pen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+					<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Durata res. finanziamento"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement key="" positionType="Float" mode="Opaque" x="111" y="176" width="129" height="16" forecolor="#000000" backcolor="#C5D9F1" uuid="98be4007-22fe-443b-828c-d2d3f48f4c0a">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box leftPadding="4" bottomPadding="2">
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+					<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{data}.getAnniFinanziamento()]]></textFieldExpression>
+			</textField>
+			<frame>
+				<reportElement positionType="Float" x="0" y="265" width="555" height="16" uuid="bfa233ec-d4d7-488e-b517-8f007c266fc9"/>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement key="" mode="Transparent" x="0" y="0" width="555" height="16" forecolor="#000000" backcolor="rgba(135, 156, 63, 0.0)" uuid="9ec65f85-045b-4b17-95bb-9dd5857d0dec">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box bottomPadding="2">
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Justified" verticalAlignment="Top" markup="styled">
+						<font fontName="Arial" size="8" isItalic="false"/>
+						<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{data}.getNote()]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="200" width="554" height="105" uuid="79072f4c-7b78-45a0-a113-9b7382f7081e"/>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement key="" positionType="Float" mode="Opaque" x="0" y="5" width="554" height="16" forecolor="#000000" backcolor="#C5D9F1" uuid="4ab0ba1c-21a2-4707-b8c2-5c9150acd03b">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="4" bottomPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+					</textElement>
+					<textFieldExpression><![CDATA["RIEPILOGO VALORI"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement key="" positionType="Float" mode="Opaque" x="0" y="21" width="50" height="84" forecolor="#000000" backcolor="#DCE6F1" uuid="ebf336e6-2fb6-45b8-bc2f-f669a3d49cd3">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="4" bottomPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+						<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+					</textElement>
+					<textFieldExpression><![CDATA["N."]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement key="" positionType="Float" mode="Opaque" x="50" y="21" width="45" height="84" forecolor="#000000" backcolor="#DCE6F1" uuid="c9c60486-3818-42d6-a0ce-0477e59475b2">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="4" bottomPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" rotation="Left" markup="styled">
+						<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+					</textElement>
+					<textFieldExpression><![CDATA["FOGLIO"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement key="" positionType="Float" mode="Opaque" x="95" y="21" width="45" height="84" forecolor="#000000" backcolor="#DCE6F1" uuid="d8fdd34e-b7b3-4649-bfef-b688f1038f44">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="4" bottomPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" rotation="Left" markup="styled">
+						<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+					</textElement>
+					<textFieldExpression><![CDATA["MAPPALE"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement key="" positionType="Float" mode="Opaque" x="140" y="21" width="45" height="84" forecolor="#000000" backcolor="#DCE6F1" uuid="e126079a-a6db-4ec9-a4e2-dff78c88b4f8">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="4" bottomPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" rotation="Left" markup="styled">
+						<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+					</textElement>
+					<textFieldExpression><![CDATA["SUB"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement key="" positionType="Float" mode="Opaque" x="185" y="21" width="45" height="84" forecolor="#000000" backcolor="#DCE6F1" uuid="e7ada481-d30d-4ae8-a75a-ba000ff2d40c">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="4" bottomPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" rotation="Left" markup="styled">
+						<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+					</textElement>
+					<textFieldExpression><![CDATA["CATEGORIA"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement key="" positionType="Float" mode="Opaque" x="230" y="21" width="60" height="84" forecolor="#000000" backcolor="#DCE6F1" uuid="e3ff23a0-d371-4bed-8f0d-e43c03241ba7">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="4" bottomPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" rotation="Left" markup="styled">
+						<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+					</textElement>
+					<textFieldExpression><![CDATA["SUP. COMM"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement key="" positionType="Float" mode="Opaque" x="449" y="21" width="105" height="84" forecolor="#000000" backcolor="#DCE6F1" uuid="717565e2-b911-4954-9c9c-cca8f2883c51">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="4" bottomPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" rotation="Left" markup="styled">
+						<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+					</textElement>
+					<textFieldExpression><![CDATA["PV"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement key="" positionType="Float" mode="Opaque" x="400" y="21" width="49" height="84" forecolor="#000000" backcolor="#DCE6F1" uuid="97f77345-93bb-4254-b016-51d3628cfc6d">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="4" bottomPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" rotation="Left" markup="styled">
+						<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+					</textElement>
+					<textFieldExpression><![CDATA["HAIRCUT %"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement key="" positionType="Float" mode="Opaque" x="290" y="21" width="110" height="84" forecolor="#000000" backcolor="#DCE6F1" uuid="51850909-93c7-41fd-847d-8a4f660d2bc4">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box leftPadding="4" bottomPadding="2">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" rotation="Left" markup="styled">
+						<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+						<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+					</textElement>
+					<textFieldExpression><![CDATA["VALORE DI MERCATO"]]></textFieldExpression>
+				</textField>
+			</frame>
+			<componentElement>
+				<reportElement positionType="Float" x="0" y="305" width="554" height="16" uuid="e4edc378-96b8-495b-9fe4-c0c915bdc7ef"/>
+				<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
+					<datasetRun subDataset="dataset1" uuid="7d4135f0-1c52-41b0-b857-60ba99382115">
+						<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{valori})]]></dataSourceExpression>
+					</datasetRun>
+					<jr:listContents height="16" width="554">
+						<frame>
+							<reportElement positionType="Float" x="0" y="0" width="554" height="16" uuid="66ff62a3-5a8e-48a9-bb8b-f14cb83c826f"/>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement key="" positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="0" y="0" width="50" height="16" forecolor="#000000" backcolor="#FFFFFF" uuid="f9671596-49fe-4706-bccc-0cffb1cfb16e">
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box leftPadding="4" bottomPadding="2">
+									<pen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+									<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+									<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement key="" positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="50" y="0" width="45" height="16" forecolor="#000000" backcolor="#FFFFCC" uuid="56fa9070-1375-4975-8cb9-bb0be9ab9473">
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box leftPadding="4" bottomPadding="2">
+									<pen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+									<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+									<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{valori}.getFoglio()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement key="" positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="95" y="0" width="45" height="16" forecolor="#000000" backcolor="#FFFFCC" uuid="1ddf69fb-b572-445b-bf4e-a5b524c1e3eb">
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box leftPadding="4" bottomPadding="2">
+									<pen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+									<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+									<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{valori}.getMappale()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement key="" positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="140" y="0" width="45" height="16" forecolor="#000000" backcolor="#FFFFCC" uuid="c9e089c8-aeed-47f0-b9a2-1f6d38f578ca">
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box leftPadding="4" bottomPadding="2">
+									<pen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+									<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+									<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{valori}.getSub()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement key="" positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="185" y="0" width="45" height="16" forecolor="#000000" backcolor="#FFFFCC" uuid="5c814ab6-1124-4805-a3ad-0990f2274a85">
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box leftPadding="4" bottomPadding="2">
+									<pen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+									<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+									<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{valori}.getCategoria()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement key="" positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="230" y="0" width="60" height="16" forecolor="#000000" backcolor="#FFFFCC" uuid="2f8ef012-1d13-41e2-b504-d390dec70663">
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box leftPadding="4" bottomPadding="2" rightPadding="4">
+									<pen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Right" verticalAlignment="Middle" markup="styled">
+									<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+									<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{valori}.getSuperficie()]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement key="" positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="290" y="0" width="110" height="16" forecolor="#000000" backcolor="#FFFFCC" uuid="a9b30589-7b2a-4c67-a4a2-c1a1809af618">
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box leftPadding="4" bottomPadding="2" rightPadding="4">
+									<pen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Right" verticalAlignment="Middle" markup="styled">
+									<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+									<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{valori}.getValoriDiMercato() + " €"]]></textFieldExpression>
+							</textField>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement key="" positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="400" y="0" width="49" height="16" forecolor="#000000" backcolor="#FFFFCC" uuid="49328d69-0060-4943-9497-8c29f83b8334">
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box leftPadding="4" bottomPadding="2" rightPadding="4">
+									<pen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Right" verticalAlignment="Middle" markup="styled">
+									<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+									<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+								</textElement>
+							</textField>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement key="" positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="449" y="0" width="105" height="16" forecolor="#000000" backcolor="#FFFFCC" uuid="973c0552-13b2-464e-98b0-717ebc86b931">
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box leftPadding="4" bottomPadding="2" rightPadding="4">
+									<pen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Right" verticalAlignment="Middle" markup="styled">
+									<font fontName="Arial" size="8" isBold="true" isItalic="false"/>
+									<paragraph lineSpacing="Proportional" lineSpacingSize="1.5" spacingBefore="3"/>
+								</textElement>
+							</textField>
+						</frame>
+					</jr:listContents>
+				</jr:list>
+			</componentElement>
+		</band>
+	</detail>
+</jasperReport>

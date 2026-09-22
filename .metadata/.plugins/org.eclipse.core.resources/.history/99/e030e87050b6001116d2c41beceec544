@@ -31,7 +31,6 @@ encoding/BancoBPM_Fungibilita.jrxml=UTF-8
 encoding/BancoBPM_SAL.jrxml=UTF-8
 encoding/BancoBPM_SAL_LegittimitaUrbanisticaCOR.jrxml=UTF-8
 encoding/BancoPopolare_PV.jrxml=UTF-8
-encoding/BancoPopolare_PV_Haircut.jrxml=UTF-8
 encoding/BancoPopolare_PV_conValoriV2.jrxml=UTF-8
 encoding/certificazioneEnergeticaMultiAsset.jrxml=UTF-8
 encoding/dettaglioConsistenzeValoriAssicurabile.jrxml=UTF-8
